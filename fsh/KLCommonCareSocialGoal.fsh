@@ -44,10 +44,10 @@ Description: "FFB goal as defined by FFB in Danish municipalities"
 
 Instance: AndreasLivsmaal
 InstanceOf: KLCommonCareSocialGoal
-Title: "AndreasLivsmaal"
-Description: "Livsmål for Andreas"
+Title: "AndreasMålOgØnsker"
+Description: "Mål og ønsker for Andreas"
 Usage: #example
-* category = KLCommonCareSocialCodes#416fe27d-3ccf-4390-8742-8b52a9d8dc78 "FFB livsmål"
+* category = KLCommonCareSocialCodes#416fe27d-3ccf-4390-8742-8b52a9d8dc78 "FFB borgers mål og ønsker"
 * description.text = "Andreas ønsker en hverdag med venner og aktiviteter, så han har noget at stå op til og søde mennesker at være sammen med. Det er vigtigt for ham at være ren og pæn, og selv stå for det i videst mulig omfang."
 * subject = Reference(Andreas)
 * lifecycleStatus = #active
@@ -87,9 +87,9 @@ Usage: #example
 * target[severitySlice].measure.coding.system = KLCommonCareSocialCodes
 * target[severitySlice].detailCodeableConcept.coding.code = #8328ce4a-6238-4f73-bf1a-74aadb68eff8
 * target[severitySlice].detailCodeableConcept.coding.display = "Let nedsat funktionsevne"
-* target[severitySlice].detailCodeableConcept.coding.system = "urn:oid:1.2.208.176.2.22"
+* target[severitySlice].detailCodeableConcept.coding.system = FFB
 * target[changeValueSlice].measure.coding.code = #90c48f03-f194-4b2f-ad7d-6cba1069ae48
 * target[changeValueSlice].measure.coding.system = KLCommonCareSocialCodes
 * target[changeValueSlice].detailCodeableConcept.coding.code = #d41c8072-52f8-42b5-9375-ddbea454d27f
 * target[changeValueSlice].detailCodeableConcept.coding.display = "Udvikle funktionsevne"
-* target[changeValueSlice].detailCodeableConcept.coding.system = "urn:oid:1.2.208.176.2.22"
+* target[changeValueSlice].detailCodeableConcept.coding.system = FFB

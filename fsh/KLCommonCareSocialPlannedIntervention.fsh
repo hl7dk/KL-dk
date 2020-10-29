@@ -61,7 +61,7 @@ Instance: AndreasSocialeRelationer
 InstanceOf: KLCommonCareSocialPlannedIntervention
 Usage: #example
 * basedOn = Reference(NySocialIndsats)
-* activity.detail.code.coding[0].code = FFB#05cd5e81-1a3a-4bdd-901b-7ec96c12d990 "Støtte til sociale relationer"
+* activity.detail.code.coding[0] = FFB#05cd5e81-1a3a-4bdd-901b-7ec96c12d990 "Støtte til sociale relationer"
 * activity.detail.status = CarePlanActivityStatus#in-progress
 * subject = Reference(Andreas)
 * intent = CarePlanIntentCodes#order

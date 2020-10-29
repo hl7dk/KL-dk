@@ -47,6 +47,16 @@ Description: "Botilbudet Hvidbjerghus som defineret af https://findsocialetilbud
 * telecom.value = "+45 97872525"
 * telecom.system = ContactPointCodes#phone
 
+Instance: BotilbudetSommergaarden
+InstanceOf: KLCommonOrganization
+Title: "BotilbudetSommergaarden"
+Usage: #example
+Description: "Botilbudet Sommergaarden, som er et fiktivt eksempel"
+* name = "Botilbudet Sommergaarden"
+* telecom.value = "+45 77889910"
+* telecom.system = ContactPointCodes#phone
+
+
 Instance: LaegerneHasserisBymidte
 InstanceOf: KLCommonOrganization
 Title: "LaegerneHasserisBymidte"

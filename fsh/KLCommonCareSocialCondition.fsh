@@ -83,10 +83,10 @@ InstanceOf: KLCommonCareSocialCondition
 Description: "Example of the citizen, Mark, who has a pressure ulcer"
 Usage: #example
 * code.coding[0] = FSIII#I4.4 "Problemer med tryksår"
-* code.coding[1] = SCT#420324007 "tryksår stadium 2"
+* code.coding[1] = SCT#420324007 "Pressure ulcer stage 2"
 * code.text = "Tryksår i stadium 2, siddende på venstre lår. 4cmx5cm, dybde 3mm, ingen infektion."
 * clinicalStatus = CONCLIN#active
-* category.coding.system = "http://hl7.org/fhir/ValueSet/condition-category"
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
 * category.coding.code = #problem-list-item
 * subject = Reference(Mark)
 * recordedDate = 2020-06-05
@@ -102,10 +102,9 @@ Usage: #example
 * code.coding = FSIII#J3.8
 * code.coding.display = "Gå"
 * code.text = "Hun har en meget dårlig gangfunktion, selv om hun bruger rollator"
-* category.coding.system = "http://hl7.org/fhir/ValueSet/condition-category"
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
 * category.coding.code = #problem-list-item
-* severity = FSIII#B4
-* severity.coding.display = "Svære begrænsninger"
+* severity = FSIII#B4 "Svære begrænsninger"
 * subject = Reference(Judith)
 * recordedDate = 2020-08-11
 * asserter = Reference(HanneFraVisitationenAalborg)
@@ -119,9 +118,9 @@ Usage: #example
 * clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
 * code.coding = FFB#8f32c948-41c4-49d7-8913-cdeede2e7fe1
 * code.coding.display = "Gøre rent"
-* severity.coding = FFB#cae545f5-2813-4d79-98fc-0a7d770af3c
+* severity.coding = FFB#cae545f5-2813-4d79-98fc-0a7d770af3cd
 * severity.coding.display = "Svært nedsat funktionsevne"
-* category.coding.system = "http://hl7.org/fhir/ValueSet/condition-category"
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
 * category.coding.code = #problem-list-item
 * recordedDate = 2020-08-12
 * asserter = Reference(BirteFraVisitationenMorsoe)
@@ -135,9 +134,9 @@ Usage: #example
 * clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
 * code.coding = FFB#8f32c948-41c4-49d7-8913-cdeede2e7fe1
 * code.coding.display = "Gøre rent"
-* severity.coding = FFB#cae545f5-2813-4d79-98fc-0a7d770af3c
+* severity.coding = FFB#cae545f5-2813-4d79-98fc-0a7d770af3cd
 * severity.coding.display = "Svært nedsat funktionsevne"
-* category.coding.system = "http://hl7.org/fhir/ValueSet/condition-category"
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
 * category.coding.code = #problem-list-item
 * recordedDate = 2020-08-12
 * asserter = Reference(BirteFraVisitationenMorsoe)
@@ -149,8 +148,10 @@ InstanceOf: KLCommonCareSocialCondition
 Description: "Example of the citizen, Andreas, where a performer makes a note regarding his ability to take care of his own health, when the condition is not previously known"
 Usage: #example
 * subject = Reference(Andreas)
-* clinicalStatus.coding.code = #unconfirmed
+* clinicalStatus.coding.code = #active
 * clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
+* verificationStatus.coding.code = #unconfirmed
+* verificationStatus.coding.system = VerSTATUS
 * code.coding = FFB#4a58417e-9a75-43f2-9763-66505050159f	"Varetage egen sundhed"
 * recordedDate = 2020-12-12
 * note.text = "Andreas spiser mere og mere usundt, og ser ud til at have haft en betydelig vægtstigning efter at være begyndt i botilbuddet."

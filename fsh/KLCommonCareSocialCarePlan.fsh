@@ -75,7 +75,6 @@ Usage: #example
 * careTeam = Reference(MidlertidigtOpholdBotilbuddetHvidbjerghus)
 * addresses[0] = Reference(AndreasMaalgruppeUdviklingshamning)
 * addresses[0].extension[conditionRank].valuePositiveInt = 1
-* addresses[1] = Reference(AndreasDiabetes)
 * activity[carePlanEvaluation].outcomeReference = Reference(AndreasStottebehov)
 * activity[carePlanEvaluation].detail.code = KLCommonCareSocialCodes#effe55c7-572c-4a99-8fb4-2a9dda2f6572
 * activity[carePlanEvaluation].detail.status = CarePlanActivityStatus#completed

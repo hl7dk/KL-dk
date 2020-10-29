@@ -22,3 +22,4 @@ Alias:          KLToolsCodeSystem = http://kl.dk/fhir/common/caresocial/CodeSyst
 Alias:          SCTConditionCodes = http://hl7.org/fhir/ValueSet/condition-code
 Alias:          KLCommonCareSocialCodes = http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes
 Alias:          LOINC = http://loinc.org
+Alias:          VerSTATUS = http://terminology.hl7.org/CodeSystem/condition-ver-status

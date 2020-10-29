@@ -63,7 +63,7 @@ Instance: AndreasMor
 InstanceOf: RelatedPerson
 Title: "Andreas' Mor, Gitte Hansen"
 Description: "Eksempel på pårørende Andreas' mor Gitte"
-Usage: #inline
+Usage: #example
 * relationship = #MTH
 * name.given = "Gitte"
 * name.family = "Hansen"

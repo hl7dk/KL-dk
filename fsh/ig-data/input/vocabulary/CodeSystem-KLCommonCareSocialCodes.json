@@ -1,7 +1,7 @@
 {
   "resourceType": "CodeSystem",
   "id": "KLCommonCareSocialCodes",
-  "url": "http://kl.dk/fhir/common/caresocial/CodeSystem/",
+  "url": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
   "version": "20200908",
   "name": "KLCommomCareSocialCodes",
   "title": "KLCommomCareSocialCodes",

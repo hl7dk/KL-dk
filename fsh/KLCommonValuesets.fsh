@@ -757,7 +757,7 @@ Description: "SNOMED CT observation codes used in Dansih municipalities"
 * SCT#373801008 //"WHO-funktionsstatusskala" //mangler observable entity/evaluation procedure
 * SCT#36048009 //"Glucosemåling"
 * SCT#103228002 //"Hæmoglobinmætning med oxygen"
-* KLCommonCareSocialCodes#e30a95fd-7abd-478b-9a9d-e02dfdd73fd5 //"WHO-5 værdi"
+* KLCommonproprietaryObservation#e30a95fd-7abd-478b-9a9d-e02dfdd73fd5 //"WHO-5 værdi"
 * SCT#85256008 //"Sindsstemning"
 * SCT#404949004 //"Hvilemønster"
 * SCT#406202006 //"Træk vedr. energi"
@@ -788,9 +788,9 @@ Description: "Codes that identify who's perspective the matter-of-interest is co
 * FFB#63338442-7b2e-405b-acc0-142361ef19f1 //Oplysninger fra andre
 * FFB#f6ea2920-7dde-491e-a489-6b99a3904069 //Sagsbehandler bemærkninger
 
-// CodeSystem: KLCommonCareSocialCodes
-// Title: "Codes associated with KLCommonCareSocial"
-// Description: "Administrative/technical codes, not defined elsewhere, associated with KLCommonCareSocial"
+ CodeSystem: KLCommonproprietaryObservation
+ Title: "KLCommonproprietaryObservation"
+ Description: "Temporary Observationcodes Codes associated with KLCommonCareSocial"
 // * #829ac647-c7fc-4964-836b-f708d886e0e3 "oplysning" "oplysning er foretaget ved kontakt"
 // * #9269c9a2-8220-447b-a127-811275b41062 "vurdering/bevilling" "vurdering og/eller bevilling er foretaget ved kontakt"
 // * #9f03dfbb-7a97-45a5-94db-d4c3501714a9 "opfølgning" "opfølgning foretaget ved kontakt"
@@ -833,4 +833,4 @@ Description: "Codes that identify who's perspective the matter-of-interest is co
 // * #4a069078-c3c3-4c67-899d-4e8876026f48Ja "Proceduren fulgt" "Proceduren for observationen, som beskrevet af KL, er fulgt"
 // * #17772b27-bc9d-4d62-9515-d268a98a3a27 "Proceduren ikke fulgt pga. delvis besvarelse/udførelse" "Proceduren for observationen, som beskrevet af KL, er ikke fulgt pga. delvis besvarelse/udførelse"
 // * #a3231c9a-5569-49c4-8760-4fffbf0b2b80 "Proceduren ikke fulgt pga. afvigelse i test-setup/omgivelser" "Proceduren for observationen, som beskrevet af KL, er ikke fulgt pga. afvigelse i test-setup/omgivelser"
-// * #e30a95fd-7abd-478b-9a9d-e02dfdd73fd5 "WHO-5 værdi" "Observation vedr. WHO 5 Well being index"
+* #e30a95fd-7abd-478b-9a9d-e02dfdd73fd5 "WHO-5 værdi" "Observation vedr. WHO 5 Well being index"

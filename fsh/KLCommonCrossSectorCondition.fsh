@@ -46,8 +46,8 @@ Title: "AndreasMålgruppeUdviklingshæmning"
 * code.coding[FFBCodesCT] = FFB#97c355cc-84e3-46d0-ac1b-00bc627d089f "Udviklingshæmning"
 * subject = Reference(Andreas) 
 
-Instance: AndreasDiabetes
-InstanceOf: KLCommonCrossSectorCondition
-Title: "AndreasDiabetes"
-* code.coding[ICD10codes] = SKS-D#DE11 "Type 2-diabetes"
-* subject = Reference(Andreas) 
+//Instance: AndreasDiabetes
+//InstanceOf: KLCommonCrossSectorCondition
+//Title: "AndreasDiabetes"
+//* code.coding[ICD10codes] = SKS-D#DE11 "Type 2-diabetes" (kan ikke valideres fordi der ikke er adgang til koderne)
+//* subject = Reference(Andreas) 
