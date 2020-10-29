@@ -762,6 +762,8 @@ Description: "SNOMED CT observation codes used in Dansih municipalities"
 * SCT#404949004 //"Hvilemønster"
 * SCT#406202006 //"Træk vedr. energi"
 * SCT#247752005 //"Interesseniveau"
+* LOINC#64098-7 //6-min walking test
+* SCT#165263003 //walking distance
 
 ValueSet: KLInformationGatheringTypeCodes
 Title: "KLInformationGatheringTypeCodes"

@@ -1,0 +1,25 @@
+{
+  "package-id": "dk.fhir.ig.kl.common.caresocial",
+  "canonical": "http://kl.dk/fhir/common/caresocial",
+  "title": "FKI Implementation Guide",
+  "introduction": "Danish municipalities implementation guide for common informationmodel",
+  "list": [
+    {
+      "version": "current",
+      "desc": "Continuous Integration Build (latest in version control)",
+      "path": "http://build.fhir.org/ig/example/example-ig",
+      "status": "ci-build",
+      "current": true
+    },
+    {
+      "version": "0.0.1",
+      "date": "2099-01-01",
+      "desc": "Initial STU ballot (Mmm yyyy Ballot)",
+      "path": "http://example.org/fhir/STU1",
+      "status": "ballot",
+      "sequence": "STU 1",
+      "fhirversion": "4.0.1",
+      "current": true
+    }
+  ]
+}

@@ -21,3 +21,4 @@ Alias:          MedComClinicalEmail = https://fhir.simplifier.net/MedCom-FHIR-Me
 Alias:          KLToolsCodeSystem = http://kl.dk/fhir/common/caresocial/CodeSystem/KLToolsCodes
 Alias:          SCTConditionCodes = http://hl7.org/fhir/ValueSet/condition-code
 Alias:          KLCommonCareSocialCodes = http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes
+Alias:          LOINC = http://loinc.org

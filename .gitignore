@@ -1,1 +1,16 @@
 fsh/build/**
+.DS_Store
+Thumbs.db
+/SUSHI-GENERATED-FILES.md
+/ig.ini
+/input-cache
+/input
+/output
+/temp
+/template
+/_updatePublisher.sh
+/_genonce.bat
+/_gencontinuous.bat
+/_genonce.sh
+/_gencontinuous.sh
+/_updatePublisher.bat
