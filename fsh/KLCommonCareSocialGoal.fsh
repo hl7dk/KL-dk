@@ -1,6 +1,6 @@
 Profile: KLCommonCareSocialGoal
 Parent: Goal
-Title: "CommonCareSocialGoal"
+Title: "KLCommonCareSocialGoal"
 Description: "Goal as defined in Danish municipalities"
 
 * category 1..1
@@ -29,6 +29,25 @@ Description: "Goal as defined in Danish municipalities"
 * addresses only Reference(KLCommonCareSocialCondition or KLCommonCareSocialMatterOfInterest)
 * addresses.extension contains ConditionRank named conditionRank 0..1 //only one with ConditionRank 1, this needs to be a condition, not an information. 
 //* outcomeReference only Reference(KLCommonCareSocialSeverity) // Design målopfyldelse som reference til Severity, Severity.note kan bruges til tilhørende notat.
+* extension contains
+   GoalRelationship named goalRelationship 0..1
+* extension[goalRelationship].extension[type].valueCodeableConcept.text = "based-on" //bruges til at relaterer et delmål, til et indsatsmål
+* extension[goalRelationship].extension[target].valueReference only Reference(KLCommonCareSocialGoal)
+
+* category ^short = "[DK] målkategori"
+* target[severitySlice] ^short = "[DK] målSværhedsgrad"
+* target[changeValueSlice] ^short = "[DK] måltype"
+* description ^short = "[DK] målbeskrivelse"
+* subject ^short = "[DK] målSubjekt"
+* expressedBy ^short = "[DK] målAnsvarlig"
+* addresses ^short = "[DK] målrelateret"
+* addresses.extension[conditionRank] ^short = "[DK] målrelateretRang"
+* note.text ^short = "[DK] målnotat"
+* outcomeReference ^short = "[DK] målopfyldelse"
+* outcomeCode.text ^short = "[DK] målresultat"
+* target.measure ^short = "[DK] målemetode"
+* extension[goalRelationship].extension[type].valueCodeableConcept ^short = "[DK] delmålBaseretPå"
+* extension[goalRelationship].extension[target].valueReference ^short = "[DK] delmålBaseretPå"
 
 Profile: KLCommonCareSocialPurpose
 Title: "CommonCareSocialPurpose"
@@ -42,7 +61,50 @@ Parent: KLCommonCareSocialGoal
 Description: "FFB goal as defined by FFB in Danish municipalities"
 * category = KLCommonCareSocialCodes#0bb3daef-538d-45dc-b444-abdbcb63f6bc "FFB indsatsmål"
 
-Instance: AndreasLivsmaal
+Instance: JudithForventetTilstand
+InstanceOf: KLCommonCareSocialGoal
+Title: "JudithForventetTilstand"
+Description: "Forventet tilstand for Judith, der har et mobilitetsproblem"
+Usage: #example
+* category = KLCommonCareSocialCodes#ca552020-6ed1-4cdc-b0d4-32697f1f27ad //"FSIII tilstandsmål"
+* description = KLCommonCareSocialCodes#e182c5dc-9f91-474a-92e8-f62be3d498f4 "Tilstand forsvinder, mindskes eller forbliver uændret"
+* target[severitySlice].measure.coding.code = #66959f77-6e2a-4574-8423-3ff097f8b9fa //severity
+* target[severitySlice].measure.coding.system = KLCommonCareSocialCodes
+* target[severitySlice].detailCodeableConcept.coding = FSIII#B2 "Moderate begrænsninger"
+* addresses = Reference(ConditionWalking)
+* subject = Reference(Judith)
+* expressedBy = Reference(HanneFraVisitationenAalborg)
+* lifecycleStatus = GoalStatusCodes#active
+
+Instance: MarkForventetTilstand
+InstanceOf: KLCommonCareSocialGoal
+Title: "MarkForventetTilstand"
+Description: "Forventet tilstand for Mark, der har et tryksårsproblem"
+Usage: #example
+* category = KLCommonCareSocialCodes#ca552020-6ed1-4cdc-b0d4-32697f1f27ad "FSIII tilstandsmål"
+* description.text = "Tryksåret er helet"
+* target[changeValueSlice].measure.coding.code = #90c48f03-f194-4b2f-ad7d-6cba1069ae48
+* target[changeValueSlice].measure.coding.system = KLCommonCareSocialCodes
+* target[changeValueSlice].detailCodeableConcept.coding = FSIII#81c827de-ef31-4410-aa57-0d1d1bc6c264 "forsvinder"
+* addresses = Reference(ConditionPressureUlcer)
+* subject = Reference(Mark)
+* expressedBy = Reference(HanneFraVisitationenAalborg)
+* lifecycleStatus = GoalStatusCodes#active
+
+Instance: MarkIndsatsmaal
+InstanceOf: KLCommonCareSocialGoal
+Title: "MarkForventetTilstand"
+Description: "FSIII indsatsmål for Mark, der har et tryksårsproblem"
+Usage: #example
+* category = KLCommonCareSocialCodes#e6f35a88-6665-4471-9dce-9a98854532b4 "FSIII indsatsmål"
+* description.text = "Målemetoden: Sårets areal sættes op for Marks tryksår"
+* target.measure.coding = SCT#420753006 "Pressure ulcer surface area (observable entity)"
+* addresses = Reference(ConditionPressureUlcer)
+* subject = Reference(Mark)
+* expressedBy = Reference(HanneFraVisitationenAalborg)
+* lifecycleStatus = GoalStatusCodes#active
+
+Instance: AndreasMaalOnsker
 InstanceOf: KLCommonCareSocialGoal
 Title: "AndreasMålOgØnsker"
 Description: "Mål og ønsker for Andreas"
@@ -50,7 +112,7 @@ Usage: #example
 * category = KLCommonCareSocialCodes#416fe27d-3ccf-4390-8742-8b52a9d8dc78 "FFB borgers mål og ønsker"
 * description.text = "Andreas ønsker en hverdag med venner og aktiviteter, så han har noget at stå op til og søde mennesker at være sammen med. Det er vigtigt for ham at være ren og pæn, og selv stå for det i videst mulig omfang."
 * subject = Reference(Andreas)
-* lifecycleStatus = #active
+* lifecycleStatus = GoalStatusCodes#active
 
 Instance: AndreasIndsatsformaal
 InstanceOf: KLCommonCareSocialPurpose
@@ -60,7 +122,7 @@ Usage: #example
 * category = KLCommonCareSocialCodes#424827b1-23aa-4848-962b-56ee47def560 "Indsatsformål"
 * description.text = "Andreas ønsker en hverdag med venner og aktiviteter, så han har noget at stå op til og søde mennesker at være sammen med. Det er vigtigt for ham at være ren og pæn, og selv stå for det i videst mulig omfang."
 * subject = Reference(Andreas)
-* lifecycleStatus = #active
+* lifecycleStatus = GoalStatusCodes#active
 
 Instance: AndreasIndsatsformaal2
 InstanceOf: KLCommonCareSocialPurpose
@@ -70,10 +132,10 @@ Usage: #example
 * category = KLCommonCareSocialCodes#424827b1-23aa-4848-962b-56ee47def560 "Indsatsformål"
 * description.text = "understøtte Andreas i selv at tilegne sig færdigheder, der gør at han kan have kontakt med andre både ift. at samarbejdende om praktiske ting og ift klare almindelige sociale situationer som fx at se film eller spise med en gruppe af jævnaldrende. Desuden at holde orden på sit eget værelse, så han undgår frustration over ikke at kunne finde sine ting."
 * subject = Reference(Andreas)
-* lifecycleStatus = #active
+* lifecycleStatus = GoalStatusCodes#active
 
 Instance: Andreasindsatsmaal
-InstanceOf: KLCommonCareSocialGoal
+InstanceOf: KLCommonCareSocialFFBGoal
 Title: "AndreasIndsatsmål"
 Description: "Indsatsmål for Andreas"
 Usage: #example
@@ -81,7 +143,7 @@ Usage: #example
 * category.coding.display = "FFB indsatsmål"
 * category.coding.system = KLCommonCareSocialCodes
 * subject = Reference(Andreas)
-* lifecycleStatus = #active
+* lifecycleStatus = GoalStatusCodes#active
 * description.text = "holder orden på sit eget værelse"
 * target[severitySlice].measure.coding.code = #66959f77-6e2a-4574-8423-3ff097f8b9fa
 * target[severitySlice].measure.coding.system = KLCommonCareSocialCodes
@@ -93,3 +155,19 @@ Usage: #example
 * target[changeValueSlice].detailCodeableConcept.coding.code = #d41c8072-52f8-42b5-9375-ddbea454d27f
 * target[changeValueSlice].detailCodeableConcept.coding.display = "Udvikle funktionsevne"
 * target[changeValueSlice].detailCodeableConcept.coding.system = FFB
+* addresses = Reference(ConditionCleaning)
+* addresses.extension[conditionRank].valuePositiveInt = 1
+
+Instance: AndreasDelmaal
+InstanceOf: KLCommonCareSocialGoal
+Title: "AndreasDelmål"
+Description: "Delmål for Andreas"
+Usage: #example
+* category.coding = KLCommonCareSocialCodes#6746d4af-145a-4bfd-a672-05c0cf11b53b "FFB delmål"
+* subject = Reference(Andreas)
+* lifecycleStatus = GoalStatusCodes#active
+* description.text = "Første delmål er at Andreas hver morgen for ryddet sit gulv for tøj, og sorteret det i rent og beskidt."
+* note.text = "Andreas støttes hver morgen i at få ryddet gulvet. Der er hængt et piktogram op med rutinen trin for trin"
+* note.time = 2020-09-10
+* extension[goalRelationship].extension[type].valueCodeableConcept.text = "based-on" //bruges til at relaterer et delmål, til et indsatsmål
+* extension[goalRelationship].extension[target].valueReference = Reference(Andreasindsatsmaal)

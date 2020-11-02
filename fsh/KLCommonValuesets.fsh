@@ -764,6 +764,7 @@ Description: "SNOMED CT observation codes used in Dansih municipalities"
 * SCT#247752005 //"Interesseniveau"
 * LOINC#64098-7 //6-min walking test
 * SCT#165263003 //walking distance
+* SCT#420753006 //|Pressure ulcer surface area (observable entity)|
 
 ValueSet: KLInformationGatheringTypeCodes
 Title: "KLInformationGatheringTypeCodes"
