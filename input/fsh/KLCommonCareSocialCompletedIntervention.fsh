@@ -1,6 +1,6 @@
 Profile: KLCommonCareSocialCompletedIntervention
 Parent: Procedure
-Title: "CommonCareSocialCompletedIntervention"
+Title: "KLCommonCareSocialCompletedIntervention"
 Description: "Documentation for completed inteventions (activities related to one and only one encounter) in Danish municipalities"
 
 * complication 0..1
@@ -20,8 +20,8 @@ Description: "Documentation for completed inteventions (activities related to on
 * complication.text ^short = "[DK] leveretIndsatsAfvigelsestekst"
 * note.text ^short = "[DK] leveretIndsatsNotat"
 * subject ^short = "[DK] leveretIndsatsSubjekt"
-* recorder ^short = "[DK] leveretIndsatsDokumenterendeLeverand�r"
-* code ^short = "[DK] leveretIndsatsKode"
+* recorder ^short = "[DK] leveretIndsatsDokumenterendeLeverandør"
+* code.coding ^short = "[DK] leveretIndsatsKode"
 * basedOn ^short = "[DK] leveretIndsatsbevilling"
 * encounter ^short = "[DK] leveretIndsatsKontakt"
 * performedPeriod.start ^short = "[DK] leveretIndsatsStart"
