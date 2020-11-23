@@ -20,7 +20,6 @@ Description: "Goal as defined in Danish municipalities"
 * target[severitySlice].detail[x] only CodeableConcept
 * target[severitySlice].detailCodeableConcept from KLSeverities
 * target[severitySlice].measure = KLCommonCareSocialCodes#66959f77-6e2a-4574-8423-3ff097f8b9fa //"funktionsevneniveau"
-
 * target[changeValueSlice].detail[x] only CodeableConcept
 * target[changeValueSlice].detailCodeableConcept from KLChangeValueCodes
 * target[changeValueSlice].measure = KLCommonCareSocialCodes#90c48f03-f194-4b2f-ad7d-6cba1069ae48 //"måltype"
@@ -28,11 +27,12 @@ Description: "Goal as defined in Danish municipalities"
 * expressedBy only Reference(KLCommonPractitioner or KLCommonCitizen)
 * addresses only Reference(KLCommonCareSocialCondition or KLCommonCareSocialMatterOfInterest)
 * addresses.extension contains ConditionRank named conditionRank 0..1 //only one with ConditionRank 1, this needs to be a condition, not an information. 
-//* outcomeReference only Reference(KLCommonCareSocialSeverity) // Design målopfyldelse som reference til Severity, Severity.note kan bruges til tilhørende notat.
 * extension contains
    GoalRelationship named goalRelationship 0..1
 * extension[goalRelationship].extension[type].valueCodeableConcept.text = "based-on" //bruges til at relaterer et delmål, til et indsatsmål
 * extension[goalRelationship].extension[target].valueReference only Reference(KLCommonCareSocialGoal)
+* outcomeCode.extension contains
+   MatterOfInterestInformer named matterOfInterestInformer 0..1
 
 * category ^short = "[DK] målkategori"
 * target[severitySlice] ^short = "[DK] målSværhedsgrad"
@@ -43,8 +43,8 @@ Description: "Goal as defined in Danish municipalities"
 * addresses ^short = "[DK] målrelateret"
 * addresses.extension[conditionRank] ^short = "[DK] målrelateretRang"
 * note.text ^short = "[DK] målnotat"
-* outcomeReference ^short = "[DK] målopfyldelse"
-* outcomeCode.text ^short = "[DK] målresultat"
+* outcomeCode.text ^short = "[DK] målvurdering"
+* outcomeCode.extension[matterOfInterestInformer] ^short = "[DK] målvurderingsInformant"
 * target.measure ^short = "[DK] målemetode"
 * extension[goalRelationship].extension[type].valueCodeableConcept ^short = "[DK] delmålBaseretPå"
 * extension[goalRelationship].extension[target].valueReference ^short = "[DK] delmålBaseretPå"
@@ -110,9 +110,12 @@ Title: "AndreasMålOgØnsker"
 Description: "Mål og ønsker for Andreas"
 Usage: #example
 * category = KLCommonCareSocialCodes#416fe27d-3ccf-4390-8742-8b52a9d8dc78 "FFB borgers mål og ønsker"
-* description.text = "Andreas ønsker en hverdag med venner og aktiviteter, så han har noget at stå op til og søde mennesker at være sammen med. Det er vigtigt for ham at være ren og pæn, og selv stå for det i videst mulig omfang."
+* description.text = "Andreas ønsker en hverdag med venner og aktiviteter, så han har noget at stå op til og søde mennesker at være sammen med. Det er vigtigt for ham at være ren og pæn, og selv stå for det i videst muligt omfang."
 * subject = Reference(Andreas)
 * lifecycleStatus = GoalStatusCodes#active
+* expressedBy = Reference(BirteFraVisitationenMorsoe)
+
+
 
 Instance: AndreasIndsatsformaal
 InstanceOf: KLCommonCareSocialPurpose
@@ -123,6 +126,7 @@ Usage: #example
 * description.text = "Andreas ønsker en hverdag med venner og aktiviteter, så han har noget at stå op til og søde mennesker at være sammen med. Det er vigtigt for ham at være ren og pæn, og selv stå for det i videst mulig omfang."
 * subject = Reference(Andreas)
 * lifecycleStatus = GoalStatusCodes#active
+* expressedBy = Reference(BirteFraVisitationenMorsoe)
 
 Instance: AndreasIndsatsformaal2
 InstanceOf: KLCommonCareSocialPurpose
@@ -133,6 +137,7 @@ Usage: #example
 * description.text = "understøtte Andreas i selv at tilegne sig færdigheder, der gør at han kan have kontakt med andre både ift. at samarbejdende om praktiske ting og ift klare almindelige sociale situationer som fx at se film eller spise med en gruppe af jævnaldrende. Desuden at holde orden på sit eget værelse, så han undgår frustration over ikke at kunne finde sine ting."
 * subject = Reference(Andreas)
 * lifecycleStatus = GoalStatusCodes#active
+* expressedBy = Reference(BirteFraVisitationenMorsoe)
 
 Instance: Andreasindsatsmaal
 InstanceOf: KLCommonCareSocialFFBGoal
@@ -157,6 +162,34 @@ Usage: #example
 * target[changeValueSlice].detailCodeableConcept.coding.system = FFB
 * addresses = Reference(ConditionCleaning)
 * addresses.extension[conditionRank].valuePositiveInt = 1
+* expressedBy = Reference(BirteFraVisitationenMorsoe)
+
+Instance: AndreasindsatsmaalOpfolgning
+InstanceOf: KLCommonCareSocialFFBGoal
+Title: "AndreasIndsatsmål"
+Description: "Indsatsmål for Andreas, som dokumenteret efter opfølgningstidspunktet (Tilstanden ikke opdateret, fordi implementation guiden ikke versionshåndterer)"
+Usage: #example
+* category.coding.code = #0bb3daef-538d-45dc-b444-abdbcb63f6bc
+* category.coding.display = "FFB indsatsmål"
+* category.coding.system = KLCommonCareSocialCodes
+* subject = Reference(Andreas)
+* lifecycleStatus = GoalStatusCodes#completed
+* description.text = "holder orden på sit eget værelse"
+* target[severitySlice].measure.coding.code = #66959f77-6e2a-4574-8423-3ff097f8b9fa
+* target[severitySlice].measure.coding.system = KLCommonCareSocialCodes
+* target[severitySlice].detailCodeableConcept.coding.code = #8328ce4a-6238-4f73-bf1a-74aadb68eff8
+* target[severitySlice].detailCodeableConcept.coding.display = "Let nedsat funktionsevne"
+* target[severitySlice].detailCodeableConcept.coding.system = FFB
+* target[changeValueSlice].measure.coding.code = #90c48f03-f194-4b2f-ad7d-6cba1069ae48
+* target[changeValueSlice].measure.coding.system = KLCommonCareSocialCodes
+* target[changeValueSlice].detailCodeableConcept.coding.code = #d41c8072-52f8-42b5-9375-ddbea454d27f
+* target[changeValueSlice].detailCodeableConcept.coding.display = "Udvikle funktionsevne"
+* target[changeValueSlice].detailCodeableConcept.coding.system = FFB
+* addresses = Reference(ConditionCleaning)
+* addresses.extension[conditionRank].valuePositiveInt = 1
+* outcomeCode.text = "Andreas har fået styr på morgenrutiner omkring oprydning på værelset. Skal dog stadig mindes om oprydning ind imellem og har brug for støtte fra piktogrammer."
+* outcomeCode.extension[matterOfInterestInformer].valueCodeableConcept = FFB#f6ea2920-7dde-491e-a489-6b99a3904069 "Sagsbehandler"
+* expressedBy = Reference(BirteFraVisitationenMorsoe)
 
 Instance: AndreasDelmaal
 InstanceOf: KLCommonCareSocialGoal
@@ -171,3 +204,4 @@ Usage: #example
 * note.time = 2020-09-10
 * extension[goalRelationship].extension[type].valueCodeableConcept.text = "based-on" //bruges til at relaterer et delmål, til et indsatsmål
 * extension[goalRelationship].extension[target].valueReference = Reference(Andreasindsatsmaal)
+* expressedBy = Reference(AnneFraHvidbjerghus)

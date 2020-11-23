@@ -2,9 +2,7 @@ fsh/build/**
 .DS_Store
 Thumbs.db
 /SUSHI-GENERATED-FILES.md
-/ig.ini
 /input-cache
-/input
 /output
 /temp
 /template
@@ -14,3 +12,4 @@ Thumbs.db
 /_genonce.sh
 /_gencontinuous.sh
 /_updatePublisher.bat
+/fsh-generated

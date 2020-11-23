@@ -212,11 +212,14 @@ Description: "Danish municipality FFB condition codes"
 *  FFB#70443014-3faf-402d-abcf-396bfad32eb9 //"Varetage økonomi"
 *  FFB#885400cc-dd71-479e-8993-3fc48fdd6710 //"Vaske sig"
 *  FFB#bd67597b-e80f-427f-8cf9-79d01eff91fc //"Vaske tøj"
-*  FFB#3591c972-5b15-4bbd-86c7-91622cda56e8 //"Virkelighedsopfattelse"
-*  FFB#759ddc8e-57c0-4aa6-8d32-14d8eb51c5dd //"Ændre og opretholde kropsstilling"
-*  FFB#08aa68ce-acd6-4e03-b6b5-091811324345 //"Økonomisk situation"
-*  FFB#69dbfad7-859a-4596-8737-8054f6b4948f //"Fysisk helbred"
-*  FFB#081ab1be-7dc1-41fa-803c-12a146eb0b74 //"Sundhedsfaglig behandling og træning"
+* FFB#3591c972-5b15-4bbd-86c7-91622cda56e8 //"Virkelighedsopfattelse"
+* FFB#759ddc8e-57c0-4aa6-8d32-14d8eb51c5dd //"Ændre og opretholde kropsstilling"
+* FFB#08aa68ce-acd6-4e03-b6b5-091811324345 //"Økonomisk situation"
+* FFB#69dbfad7-859a-4596-8737-8054f6b4948f //"Fysisk helbred"
+* FFB#081ab1be-7dc1-41fa-803c-12a146eb0b74 //"Sundhedsfaglig behandling og træning"
+* FFB#df194a84-6e4b-4f14-a194-d8d9d9a1fcad //"Personer i netværk"
+* FFB#22eef871-6650-426f-8b79-8d40a6c62808 //"Holdninger i omgivelserne"
+* FFB#83342ff3-5f2e-4914-b045-e98357685866 //"Boligområde"
 
 ValueSet: KLConditionCodesFSIII
 Title: "KLConditionCodesFSIII"
@@ -467,9 +470,7 @@ Description: "FFB Themes"
 * FFB#dfbe6ff6-223b-436a-b864-8ba29bda41e2 //"Samfundsliv"
 * FFB#d1495b2c-1452-4e49-8dbe-8193af5d8823 //"Mobilitet"
 * FFB#eef71492-65f5-4297-aa95-3c3a6866ddef //"Praktiske opgaver"
-* FFB#df194a84-6e4b-4f14-a194-d8d9d9a1fcad //"Personer i netværk"
-* FFB#22eef871-6650-426f-8b79-8d40a6c62808 //"Holdninger i omgivelserne"
-* FFB#83342ff3-5f2e-4914-b045-e98357685866 //"Boligområde"
+* FFB#7445fb2b-0009-43d9-b49b-1b9782f2fcd9 //Omgivelsesfaktorer// "områder"
 
 ValueSet: KLFollowUpCodesFSIII
 Title: "KLFollowUpCodesFSIII"
@@ -749,22 +750,56 @@ Description: "Codes that indicate whether an intervention had complications or n
 
 ValueSet: KLObservationCodes
 Title: "KLObservationCodes"
-Description: "SNOMED CT observation codes used in Dansih municipalities"
-* SCT#271649006 //"Systolisk blodtryk"
-* SCT#271650006 //"Diastolisk blodtryk"
-* SCT#8499008 //"Puls"
+Description: "proprietory, SNOMED CT and LOINC observation codes used in Danish municipalities"
+//Vital signs
+* SCT#446226005	//Diastolic blood pressure on admission	
+* SCT#400975005	//Standing diastolic blood pressure	
+* SCT#407557002	//Lying diastolic blood pressure	
+* SCT#407555005	//Sitting diastolic blood pressure	
+* SCT#271650006	//Diastolic blood pressure
+* SCT#72313002	//Systolic arterial pressure
+* SCT#400974009	//Standing systolic blood pressure	
+* SCT#399304008	//Systolic blood pressure on admission	
+* SCT#407556006	//Lying systolic blood pressure	
+* SCT#407554009	//Sitting systolic blood pressure	
+* SCT#271649006	//Systolic blood pressure
+* codes from system SCT where concept is-a #431314004 //SpO2
+* SCT#422119006	//Brachial pulse rate	
+* SCT#429614003	//Posterior tibial pulse rate	
+* SCT#429525003	//Dorsalis pedis pulse rate	
+* SCT#399017001	//Heart rate on admission	
+* SCT#78564009	//Pulse rate	
+* SCT#444981005	//Resting heart rate	
+* SCT#364075005	//Heart rate
+* SCT#424927000 //	Body weight with shoes	
+* SCT#445541000	// Dry body weight	
+* SCT#425024002	// Body weight without shoes	
+* SCT#364589006	//Birth weight	
+* SCT#27113001	//Body weight
+* codes from system SCT where concept is-a #86290005 //(Respiratory rate)
+* codes from system SCT where concept is-a #276885007 // Core Body temperature
+//fuctional observation
 * SCT#450738001 //"Thirty second chair stand test score"
-* SCT#373801008 //"WHO-funktionsstatusskala" //mangler observable entity/evaluation procedure
-* SCT#36048009 //"Glucosemåling"
-* SCT#103228002 //"Hæmoglobinmætning med oxygen"
+* LOINC#64098-7 //6-min walking test
+* SCT#165263003 //walking distance
+//Pain scores
+* SCT#443394008 //|Visual analog scale pain score (observable entity)|
+* SCT#225908003 //|Pain score (observable entity)|
+//Fra spørgeskemaer
 * KLCommonproprietaryObservation#e30a95fd-7abd-478b-9a9d-e02dfdd73fd5 //"WHO-5 værdi"
-* SCT#85256008 //"Sindsstemning"
 * SCT#404949004 //"Hvilemønster"
 * SCT#406202006 //"Træk vedr. energi"
 * SCT#247752005 //"Interesseniveau"
-* LOINC#64098-7 //6-min walking test
-* SCT#165263003 //walking distance
+* SCT#301438001 //|Ability to mobilize (observable entity)|
+* SCT#284773001 //|Ability to perform personal care activity (observable entity)|
+* SCT#284545001 //|Ability to perform activities of everyday life (observable entity)|
+* SCT#364624006 //|Pain / sensation observable (observable entity)|
+* SCT#285854004 //|Emotion (observable entity)|
+* SCT#736535009 //|EuroQol visual analogue score (observable entity)|
+* SCT#736534008 //"EuroQol five dimension five level index value (observable entity)"
+//From examples
 * SCT#420753006 //|Pressure ulcer surface area (observable entity)|
+* SCT#36048009 //"Glucosemåling"
 
 ValueSet: KLInformationGatheringTypeCodes
 Title: "KLInformationGatheringTypeCodes"

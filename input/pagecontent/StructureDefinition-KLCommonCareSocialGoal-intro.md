@@ -7,13 +7,15 @@ The goal itself is described using Goal.target and/or Goal.description. The targ
 
 Goal.adresses has an extension (ConditionRank), which provide the means to prioritize the Conditions and MatterOfInterest that the goal addresses. The ConditionRank should be used in FFB to express the condition, which the goal primarily addresses (måltilstand), which is equivalent to rank 1. Other Condition or Information resources does not need to specify a rank. FFB only requires a Condition with rank 1 for "FFB Indsatsmål", relating more conditions and matterOfInteres ressources is optional.
 
-The goal outcome attributes are expressed as required by "FFB Indsatsmål", with an outcome severity in Goal.outcomeReference, and a note about outcome in Goal.outcome.code.text.
+The goal outcome attributes are expressed as required by "FFB Indsatsmål", with a note about outcome in Goal.outcomeCode.text, and the informer of that outcome stated in Goal.outcomeCode.extention:matterOfInterestInformer. Other than this, the goal outcome is often documented as a change in the condition. However, this is already handled by the Goal.adresses attribute. For reporting use cases, you just need to explicitely state at which points in time you need reporting of Goals and Conditions.
 
-There may be several instanses of annotation stored in Goal.note.text, which describe how working with the goal progresses. Goal.note should be populated with a time and an author whenever relevant. Should not be confused with the Goal.description and Goal.outcome.code.text.
+There may be several instanses of annotation stored in Goal.note.text, which describe how working with the goal progresses. Goal.note should be populated with a time and an author whenever relevant. Should not be confused with the Goal.description and Goal.outcomeCode.text.
 
 Note that FFB, for some goals describe, whose goal it is. E.g. "borgers mål og ønsker" should be documented as described by the citizen. However, the Goal.expressedBy attribute should always be populated with the responsible practitioner. If describing the different roles of the documentation process in more detail is needed, use a Provanance resource and set the Goal as Provenance.target.
 
-In Goal.extension:goalRelationship.type.text the string "based-on" define that the goal is based on another more overall goal. Goal.extension:goalRelationship.target references this overall goal. The relationship is used to link sub-goals (delmål) and intervention goals (indsatsmål) in FFB.   
+In Goal.extension:goalRelationship.type.text the string "based-on" define that the goal is based on another more overall goal. Goal.extension:goalRelationship.target references this overall goal. The relationship is used to link sub-goals (delmål) and intervention goals (indsatsmål) in FFB.
+
+Goal.target.measure is used to express the type of observations, that should be performed to follow the goal, E.g. Pressure Ulcer Surface area observations, for goal related to curing an ulcer (FSIII målemetode). Goal.target.measure has a binding to an Observation ValueSet, which may be extended as needed. If possible, extend with observation codes fra SNOMED CT, and report the codes used to Local Government Denmark (KL).
 
 The FHIR Goal ressource has a mandatory attribute Goal.lifecycleStatus with a binding to a status ValueSet. The whole ValueSet may be used, but you may constrain it, and only use "proposed" for all goals that are not yet active, "active" for active goals, and "completed" for all goals that are either reached or no longer being persued.
 
@@ -43,10 +45,11 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 |målrelateret|Den eller de Tilstande eller Oplysninger, der er relvant for målet.|Goal.addresses|
 |målrelateretRang|Heltal der identificerer den tilstand som målet primært er tilknyttet|Goal.addresses.extension:conditionRank|
 |målnotat|Løbende notat, der fortæller hvordan det går med at arbejde med målet.|Goal.note.text|
-|målopfyldelse|Klasse der udtrykker hvordan det går med at opfylde målet.|Goal.outcomeReference|
-|målresultat|En beskrivelse af om målet er opfyldt.|Goal.outcomeCode.text|
+|målvurdering|En beskrivelse af om målet er opfyldt.|Goal.outcomeCode.text|
+|målvurderingsInformant|Klasse der udtrykker, hvem der har vurderet målet.|Goal.outcomeCode.extention:matterOfInterestInformer|
 |målemetode|Den type af observationer der skal til for at følge med i dette mål.|Goal.target.measure|
 |delmålBaseretPå|Det FFB indsatsmål, som et FFB delmål er baseret på.|Goal.extension:goalRelationship.target / Goal.extension:goalRelationship.type|
+|målstatus|Status for målet|Goal.lifecycleStatus|
 
 
 
