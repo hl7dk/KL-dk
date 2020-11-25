@@ -14,6 +14,7 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 |   FKI-attribut      | Definition        | FHIR  |
 | ------------- |-------------| -----|
 |leveretIndsatsstatus|Indikation af hvor i det kliniske forløb indsatsen er.|Procedure.status|
+|leveretIndsatsstatusTekst|Grund til at en indsats ikke er gennemført|Procedure.statusReason.text|
 |leveretIndsatsAfvigelseskode|En klasse der, hvis den er til stede, angiver på hvilken måde indsatsen ikke er leveret i overensstemmelse med den PlanlagteIndsats.|Procedure.complication.coding|
 |leveretIndsatsAfvigelsestekst|Beskrivelse af hvilken afvigelse der er ift. det planlagte|Procedure.complication.text|
 |leveretIndsatsNotat|Beskrivelse af hvilken indsats der konkret er leveret.|Procedure.note.text|

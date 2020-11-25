@@ -24,6 +24,13 @@ Description:    "Eksempel på medarbejderen Abraham fra akutsygeplejen"
 * name.given = "Abraham"
 * name.family = "Murakami"
 
+Instance:       NatasjaFraSygeplejen
+InstanceOf:     KLCommonPractitioner
+Title:          "NatasjaFraSygeplejen"
+Description:    "Eksempel på medarbejderen Natasja fra sygeplejen"
+* name.given = "Natasja"
+* name.family = "Petersen"
+
 Instance:       AnneFraHvidbjerghus
 InstanceOf:     KLCommonPractitioner
 Title:          "AnneFraHvidbjerghus"

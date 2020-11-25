@@ -43,7 +43,7 @@ Description:    "Planned interventions (indsats/ydelse) in Danish Municipalities
 Instance: PressureUlcerIntervention
 InstanceOf: KLCommonCareSocialPlannedIntervention
 Title: "PlannedUlcerIntervention"
-Description: "Mark's planned pressure ulcer intervention"
+Description: "Mark's planned pressure ulcer intervention, with one associated encounter"
 Usage: #example
 * activity.detail.code = FSIII#G1.39 "Sårbehandling"
 * activity.detail.description = "Tryksår på venstre ben skal tilses og behandles dagligt. Vigtigt at tjekke for infektion"
@@ -56,6 +56,7 @@ Usage: #example
 * subject = Reference(Mark)
 * author = Reference(HjemmesygeplejeSonderborg)
 * activity.detail.performer = Reference(HjemmesygeplejeSonderborg)
+* activity.outcomeReference = Reference(MarkogSaarsygeplejerske)
 
 Instance: AndreasSocialeRelationer
 InstanceOf: KLCommonCareSocialPlannedIntervention
