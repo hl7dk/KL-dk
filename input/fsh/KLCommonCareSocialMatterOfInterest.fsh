@@ -3,8 +3,8 @@ Parent:         Observation
 Title:          "KLCommonCareSocialMatterOfInterest"
 Description:    "Matter or area of interest in relation to the care of the citizen, as used in Danish municipalities (Oplysning/Område/Tema)"
 * code from KLInformationCodes (required)
-
-* value[x] only string
+* value[x] only CodeableConcept
+* valueCodeableConcept from KLSeveritiesFSIII
 * subject only Reference(KLCommonCitizen)
 * encounter only Reference(KLCommonCareSocialEncounter)
 
@@ -29,19 +29,19 @@ Description:    "Matter or area of interest in relation to the care of the citiz
 * hasMember contains 
     InformationSeverity 0..1
 
-* hasMember[InformationSeverity] only Reference(KLCommonCareSocialInformationSeverity)
+//* hasMember[InformationSeverity] only Reference(KLCommonCareSocialInformationSeverity)
 
 * extension contains
    MatterOfInterestInformer named matterOfInterestInformer 0..1
 
 * code ^short = "[DK] oplysningskode"
-* valueString ^short = "[DK] oplysningstekst"
+* valueCodeableConcept.text ^short = "[DK] oplysningstekst"
+* valueCodeableConcept.coding ^short = "[DK] oplysningssværhedsgrad"
 * subject ^short = "[DK] oplysningssubjekt"
 * encounter ^short = "[DK] oplysningskontakt"
 * performer ^short = "[DK] oplysningsansvarlig"
 * basedOn ^short = "[DK] oplysningsordre"
 * effectiveDateTime ^short = "[DK] oplysningstid"
-* hasMember[InformationSeverity] ^short = "[DK] oplysningssværhedsgrad"
 * extension[matterOfInterestInformer] ^short = "[DK] oplysningsinformant"
 
 
@@ -55,20 +55,21 @@ Usage: #example
 * code.coding.system = FSIII
 * code.coding.display = "Mobilitet"
 * effectiveDateTime = 2020-08-11T15:28:17-01:00
-* valueString = "Judith har faldtendens, men er meget dedikeret ift. at lære at bruge sin rollator indendørs og udendørs, og desuden går hun en tur på 30min hver dag"
+* valueCodeableConcept.text = "Judith har faldtendens, men er meget dedikeret ift. at lære at bruge sin rollator indendørs og udendørs, og desuden går hun en tur på 30min hver dag"
+* valueCodeableConcept.coding = FSIII#B3
 * status = #final
 
 Instance: MentalInformationMads
 InstanceOf: KLCommonCareSocialMatterOfInterest
 Title: "MentalInformationMads"
-Description: "Mads' mobility"
+Description: "Mads' mentale funktioner, borger"
 Usage: #example
 * subject = Reference(Mads)
 * code.coding.code = #25c5c614-305f-46cd-9891-55d564fc30cf
 * code.coding.system = FFB
 * code.coding.display = "Mentale funktioner"
 * effectiveDateTime = 2020-12-12T13:16:19-04:00
-* valueString = "Besøg hos Mads, hvor hans mor, Malene, deltager, 3.
+* valueCodeableConcept.text = "Besøg hos Mads, hvor hans mor, Malene, deltager, 3.
 september 20xx: Mads fortæller, at han har svært ved at holde orden og have styr
 på sine ting. Han vil gerne have noget af ”det der struktur”. Han
 fortæller, at han bliver meget gal, når han bliver presset og ikke
@@ -81,14 +82,14 @@ behandler ham ordentligt eller ikke forstår ham"
 Instance: MentalInformationMadsOthers
 InstanceOf: KLCommonCareSocialMatterOfInterest
 Title: "MentalInformationMadsOthers"
-Description: "Mads' mobility"
+Description: "Mads' mentale funktioner, oplyst af andre"
 Usage: #example
 * subject = Reference(Mads)
 * code.coding.code = #25c5c614-305f-46cd-9891-55d564fc30cf
 * code.coding.system = FFB
 * code.coding.display = "Mentale funktioner"
 * effectiveDateTime = 2020-12-12T13:16:19-04:00
-* valueString = "Besøg hos Mads, hvor hans mor, Malene, deltager, 3.
+* valueCodeableConcept.text = "Besøg hos Mads, hvor hans mor, Malene, deltager, 3.
 september 20xx: Mads’ mor fortæller, at det altid har været nødvendigt at forberede
 Mads i god tid, hvis der skulle ske noget ud over det sædvanlige.
 Ligesom det har været nødvendigt at give tid til at omstille sig til at

@@ -35,3 +35,4 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 |kontaktudfører|Liste af fagpersoner, der gennemfører kontakten|Encounter.participant|
 |kontaktsubjekt|Den borger kontakten vedrører|Encounter.subject|
 |kontaktklasse|Klasse, der udtrykker en generel kategori for kontakten, som rækker ud over den kommunale kontekst.|Encounter.class|
+|kontaktansvarlig|Den organisation der er ansvarlig for kontakten|Encounter.serviceProvider|

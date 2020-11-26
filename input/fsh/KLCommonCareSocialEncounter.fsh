@@ -18,6 +18,7 @@ Description:    "Encounters used for care and social services in Danish municipa
 * participant ^short = "[DK] kontaktudfører"
 * subject ^short = "[DK] kontaktsubjekt"
 * class ^short = "[DK] kontaktklasse"
+* serviceProvider ^short = "[DK] kontaktansvarlig"
 
 Instance: MarkFollowUpPlanned
 InstanceOf: KLCommonCareSocialEncounter
