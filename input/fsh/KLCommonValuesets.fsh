@@ -322,13 +322,13 @@ Description: "Severities related to conditions in FFB (funktionsevneniveau)"
 ValueSet: KLSeveritiesFSIII // <260245000 |Værdier vedr. fund|
 Title: "KLSeveritiesFSIII"
 Description: "Severities related to conditions in FSIII home care (funktionsniveau)"
-* codes from system FSIII where concept descendent-of #B
-//* FSIII#B1 //"Ingen/ubetydelige begrænsninger"
-//* FSIII#B2 //"Lette begrænsninger"
-//* FSIII#B3 //"Moderate begrænsninger"
-//* FSIII#B4 //"Svære begrænsninger"
-//* FSIII#B5 //"Totale brgrænsninger"
-//* FSIII#B6 //"Ikke relevant"
+//* codes from system FSIII where concept descendent-of #B
+* FSIII#B1 //"Ingen/ubetydelige begrænsninger"
+* FSIII#B2 //"Lette begrænsninger"
+* FSIII#B3 //"Moderate begrænsninger"
+* FSIII#B4 //"Svære begrænsninger"
+* FSIII#B5 //"Totale brgrænsninger"
+* FSIII#B6 //"Ikke relevant"
 
 ValueSet: KLChangeValueCodes
 Title: "KLChangeValueCodes"
