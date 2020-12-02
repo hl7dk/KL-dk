@@ -16,8 +16,8 @@ title: "Implementation Guide for fælleskommunal informationsmodel"
 description: Danish municipalities implementation guide for common informationmodel
 status: draft
 license: CC0-1.0
-date: 2020-10-29
-version: 0.1.7
+date: 2020-12-02
+version: 0.1.8
 fhirVersion: 4.0.1
 copyrightYear: 2020+
 releaseLabel: CI Build
