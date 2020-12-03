@@ -17,17 +17,17 @@ Description:    "Matter or area of interest in relation to the care of the citiz
 * effective[x] 1..1
 * effective[x] only dateTime
 
-* hasMember ^slicing.discriminator.type = #value
-* hasMember ^slicing.discriminator.path = "resolve().code" /*this is sliced by the code value of the target of the reference 
-                                                            there is a small risk that a self-reference to a home care area will pass the validator. 
-                                                            The alternative is to slice by profile, but this is said to take up a lot of computational power*/ 
-* hasMember ^slicing.rules = #open
-* hasMember ^slicing.ordered = false   // can be omitted, since false is the default
-* hasMember ^slicing.description = "Slice based on the code of the Observation, which is referenced"  // optional - does not appear
+// * hasMember ^slicing.discriminator.type = #value
+// * hasMember ^slicing.discriminator.path = "resolve().code" /*this is sliced by the code value of the target of the reference 
+//                                                             there is a small risk that a self-reference to a home care area will pass the validator. 
+//                                                             The alternative is to slice by profile, but this is said to take up a lot of computational power*/ 
+// * hasMember ^slicing.rules = #open
+// * hasMember ^slicing.ordered = false   // can be omitted, since false is the default
+// * hasMember ^slicing.description = "Slice based on the code of the Observation, which is referenced"  // optional - does not appear
 
-//Declaring the slices, and their cardinalities, 
-* hasMember contains 
-    InformationSeverity 0..1
+// //Declaring the slices, and their cardinalities, 
+// * hasMember contains 
+//     InformationSeverity 0..1
 
 //* hasMember[InformationSeverity] only Reference(KLCommonCareSocialInformationSeverity)
 
@@ -43,6 +43,7 @@ Description:    "Matter or area of interest in relation to the care of the citiz
 * basedOn ^short = "[DK] oplysningsordre"
 * effectiveDateTime ^short = "[DK] oplysningstid"
 * extension[matterOfInterestInformer] ^short = "[DK] oplysningsinformant"
+* status ^short = "[DK] oplysningsstatus"
 
 
 Instance: MobilityInformationJudith
@@ -57,6 +58,35 @@ Usage: #example
 * effectiveDateTime = 2020-08-11T15:28:17-01:00
 * valueCodeableConcept.text = "Judith har faldtendens, men er meget dedikeret ift. at lære at bruge sin rollator indendørs og udendørs, og desuden går hun en tur på 30min hver dag"
 * valueCodeableConcept.coding = FSIII#B3
+* performer = Reference(HanneFraVisitationenAalborg)
+* status = #final
+
+Instance: RespirationCirculationInformationMark
+InstanceOf: KLCommonCareSocialMatterOfInterest
+Title: "RespirationCirculationInformationMark"
+Description: "Respiration and circulation for Mark"
+Usage: #example
+* subject = Reference(Mark)
+* code.coding.code = #I7
+* code.coding.system = FSIII
+* code.coding.display = "Respiration og cirkulation"
+* effectiveDateTime = 2020-06-05
+* valueCodeableConcept.text = "Mark har tendens til hævede fødder og ben, så der er et potentielt problem med cirkulationen, som kan forværre Mark's tryksår"
+* performer = Reference(HanneFraVisitationenAalborg)
+* status = #final
+
+Instance: SkinInformationMark
+InstanceOf: KLCommonCareSocialMatterOfInterest
+Title: "SkinInformationMark"
+Description: "Skin information for Mark"
+Usage: #example
+* subject = Reference(Mark)
+* code.coding.code = #I4
+* code.coding.system = FSIII
+* code.coding.display = "Hud og slimhinder"
+* effectiveDateTime = 2020-06-05
+* valueCodeableConcept.text = "Tryksår konstateret, ellers er Marks hud fin"
+* performer = Reference(HanneFraVisitationenAalborg)
 * status = #final
 
 Instance: MentalInformationMads
@@ -78,6 +108,7 @@ er som om, han ikke kan tænke. Det kan også ske, hvis andre ikke
 behandler ham ordentligt eller ikke forstår ham"
 * status = #final
 * extension[matterOfInterestInformer].valueCodeableConcept = FFB#25b4e705-2e9a-47a2-b11a-c829316b9d3a
+* performer = Reference(KristinaFraVoksensocialomraadet)
 
 Instance: MentalInformationMadsOthers
 InstanceOf: KLCommonCareSocialMatterOfInterest
@@ -126,3 +157,4 @@ overdrevne. […] Der ses ikke øvrige symptomer på angst, OCD,
 depression eller psykose."
 * status = #final
 * extension[matterOfInterestInformer].valueCodeableConcept = FFB#63338442-7b2e-405b-acc0-142361ef19f1
+* performer = Reference(KristinaFraVoksensocialomraadet)

@@ -17,13 +17,13 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 {:class="grid"}
 |   FKI-attribut      | Definition        | FHIR  |
 | ------------- |-------------| -----|
-|oplysningsaktivitetstype|Den type af oplysningsaktivitet der udføres|clinicalImpression.Code|
+|oplysningsaktivitetstype|Den type af oplysningsaktivitet der udføres|ClinicalImpression.code.coding|
 |oplysningsaktivitetsubjekt|Den borger som oplysningerne vedrører|ClinicalImpression.subject|
 |oplysningsaktivitetsudfører|Den fagperson, der udfører oplysningsaktiviteten|ClinicalImpression.assessor|
-|oplysningsaktivitetstid|Det seneste tidspunkt hvor oplysningsaktiviteten fandt sted|ClinicalImpression.effective.datetime|
+|oplysningsaktivitetstid|Det seneste tidspunkt hvor oplysningsaktiviteten fandt sted|ClinicalImpression.effectiveDateTime|
 |oplysningsaktivitetskontakt|Den seneste kontakt hvor oplysningsaktiviteten fandt sted|ClinicalImpression.encounter|
-|oplysningsaktivitetsordre|Den henvendelse eller henvisning der er grunden til at oplysningsaktiviteten finder sted.|ClinicalImpression:extension.basedOn.ServiceRequest|
-|oplysningsaktivitetsObservationstype|Klasse, der angiver om de tilknyttede observationer er oplysninger eller vurderinger.|ClinicalImpression.investigation.code|
+|oplysningsaktivitetsordre|Den henvendelse eller henvisning der er grunden til at oplysningsaktiviteten finder sted|ClinicalImpression:extension.basedOnServiceRequest|
+|oplysningsaktivitetsObservationstype|Klasse, der angiver om de tilknyttede observationer er oplysninger eller vurderinger.|ClinicalImpression.investigation.code.coding|
 |OplysningsaktivitetsOplysning|Oplysning, organiseret under et fagligt emneområde, der er fremkommet under oplysningsaktiviteten|ClinicalImpression.investigation.item|
 |oplysningsaktivitetskonklusion|Vurdering, der er konklusion på oplysningsaktiviteten.|ClinicalImpression.investigation.item|
 |oplysningsaktivitetstilstande|Tilstand, der er udredt ifm oplysningsaktiviteten.|ClinicalImpression.finding.itemreference|

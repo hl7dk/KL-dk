@@ -54,3 +54,15 @@ Description: "Kontakt hvor der leveres en sårbehandling til Mark efter planen"
 * subject = Reference(Mark)
 * participant.individual = Reference(NatasjaFraSygeplejen)
 * class = V3ACTCODES#HH
+
+Instance: MarkogUdredningSygepleje
+InstanceOf: KLCommonCareSocialEncounter
+Title: "MarkogUdredningSygepleje"
+Usage: #example
+Description: "Kontakt hvor der udføres en sygeplejefaglig udredning på Mark"
+* type = KLCommonCareSocialCodes#829ac647-c7fc-4964-836b-f708d886e0e3 //oplysning
+* period.start = 2020-06-05
+* status = EncounterStatus#finished
+* subject = Reference(Mark)
+* participant.individual = Reference(HanneFraVisitationenAalborg)
+* class = V3ACTCODES#HH

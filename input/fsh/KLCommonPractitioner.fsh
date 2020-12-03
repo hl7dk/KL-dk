@@ -37,3 +37,10 @@ Title:          "AnneFraHvidbjerghus"
 Description:    "Eksempel på medarbejderen Anne fra botilbudet Hvidbjerghus"
 * name.given = "Anne"
 * name.family = "Hansen"
+
+Instance:       KristinaFraVoksensocialomraadet
+InstanceOf:     KLCommonPractitioner
+Title:          "KristinaFraVoksensocialområdet"
+Description:    "Eksempel på medarbejderen Kristina fra Voksensocialområdet i Holstebro"
+* name.given = "Kristina"
+* name.family = "Jensen"

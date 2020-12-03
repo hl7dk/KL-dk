@@ -92,6 +92,7 @@ Usage: #example
 * recordedDate = 2020-06-05
 * extension[followUpEncounter].valueReference = Reference(MarkFollowUpPlanned)
 * asserter = Reference(HanneFraVisitationenAalborg)
+* evidence.detail = Reference(Reference(SkinInformationMark)
 
 Instance: ConditionWalking
 InstanceOf: KLCommonCareSocialCondition

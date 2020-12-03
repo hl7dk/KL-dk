@@ -24,3 +24,4 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 |oplysningsordre|Den henvendelse/henvisning, der har udløst at oplysningsaktiviteten er igangsat|Observation.basedOn|
 |oplysningstid|Det tidspunkt hvor oplysningen er vurderet.|Observation.effectiveDateTime|
 |oplysningsinformant|Klasse der udtrykker hvem oplysningen kommer fra.|Observation.extension:matterOfInterestInformer|
+|oplysningsstatus|Klasse der udtrykker, hvor i sin proces, oplysningen er.|Observation.status|
