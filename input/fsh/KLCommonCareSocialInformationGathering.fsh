@@ -21,8 +21,9 @@ Description: "Information gathering resource used to group all the information c
 * extension[basedOnServiceRequest] ^short = "[DK] oplysningsaktivitetsordre"
 * investigation.code.coding ^short = "[DK] oplysningsaktivitetsObservationstype"
 * investigation.item ^short = "[DK] OplysningsaktivitetsOplysning"
-* investigation.item ^short = "[DK] oplysningsaktivitetskonklusion"
-* finding.itemReference ^short = "[DK] oplysningsaktivitetstilstande"
+* investigation.item ^short = "[DK] oplysningsaktivitetsKonklusion"
+* finding.itemReference ^short = "[DK] oplysningsaktivitetsTilstand"
+* status ^short = "[DK] oplysningsaktivitetsstatus"
 
 Instance: NursingStatusMark
 InstanceOf: KLCommonCareSocialInformationGathering

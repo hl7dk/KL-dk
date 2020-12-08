@@ -9,11 +9,21 @@ Description: "Observations and measurements performed in Danish municipalities"
 * performer only Reference(KLCommonPractitioner)
 * basedOn only Reference(KLCommonCareSocialPlannedIntervention or KLCommonCareSocialServiceRequest or KLCommonCareSocialCarePlan)
 
+* code.coding ^short = "[DK] observationskode"
+* value[x] ^short = "[DK] observationsresultat"
+* valueQuantity.unit ^short = "[DK] observationsenhed"
+* subject ^short = "[DK] observationssubjekt"
+* encounter ^short = "[DK] observationskontakt"
+* performer ^short = "[DK] observationsansvarlig"
+* basedOn ^short = "[DK] observationBaseretPå"
+* effective[x] ^short = "[DK] observationstid"
+* status ^short = "[DK] observationsstatus"
+
 Instance: MarksPuls
 InstanceOf: KLCommonCareSocialObservation
 Usage: #example
 Title: "MarksPuls"
-Description: "Observation af Marks puls"
+Description: "Observation af Marks puls (OBS: Mere specifik profil for puls findes i værktøjsprojektet, dette er udelukkende et eksempel,  dette er udelukkende et eksempel for denne implememnattion guide)"
 * code = SCT#8499008 "Puls"
 * subject = Reference(Mark)
 * performer = Reference(AbrahamFraAkutSygeplejen)
@@ -28,7 +38,7 @@ Instance: MarksDiastoliske
 InstanceOf: KLCommonCareSocialObservation
 Usage: #example
 Title: "MarksDiastoliske"
-Description: "Observation af Marks diastoliske blodtryk"
+Description: "Observation af Marks diastoliske blodtryk (OBS: Mere specifik profil for blodtryk findes i værktøjsprojektet, dette er udelukkende et eksempel for denne implememnattion guide)"
 * code = SCT#271650006 "Diastolisk blodtryk"
 * subject = Reference(Mark)
 * performer = Reference(AbrahamFraAkutSygeplejen)
@@ -38,4 +48,19 @@ Description: "Observation af Marks diastoliske blodtryk"
 * valueQuantity.system = UCUM
 * valueQuantity.code = #mm[Hg]
 * status = #final
+
+Instance: MarksBlodsukker
+InstanceOf: KLCommonCareSocialObservation
+Usage: #example
+Title: "MarksBlodsukker"
+Description: "Observation af Marks blodsukker"
+* code = SCT#36048009 "Glucosemåling"
+* subject = Reference(Mark)
+* performer = Reference(AbrahamFraAkutSygeplejen)
+* valueQuantity.value = 3.6
+* valueQuantity.unit = "mmol/l"
+* valueQuantity.system = UCUM
+* valueQuantity.code = #mmol/L
+* status = #final
+
 
