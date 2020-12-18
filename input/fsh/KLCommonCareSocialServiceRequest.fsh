@@ -12,7 +12,7 @@ Description:    "Referals/requests used in Danish municipalities"
 * orderDetail from KLInterventions
 * subject only Reference(KLCommonCitizen)
 * authoredOn 1..1
-* reasonReference only Reference(KLCommonCrossSectorCondition or KLCommonCareSocialStructuredFollowUp) //kan måske slicies på "type" fordi der er hhv en observation og en condition
+* reasonReference only Reference(KLCommonCrossSectorCondition or KLCommonCareSocialFollowUp) //kan måske slicies på "type" fordi der er hhv en observation og en condition
 
 
 * requester ^short = "[DK] henvendelsesHenvisningAnsvarlig"

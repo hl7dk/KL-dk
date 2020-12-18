@@ -44,3 +44,10 @@ Title:          "KristinaFraVoksensocialområdet"
 Description:    "Eksempel på medarbejderen Kristina fra Voksensocialområdet i Holstebro"
 * name.given = "Kristina"
 * name.family = "Jensen"
+
+Instance:       MarianneLaege
+InstanceOf:     KLCommonPractitioner
+Title:          "MarianneLæge"
+Description:    "Eksempel på læge Marianne"
+* name.given = "Marianne"
+* name.family = "Aagaard"

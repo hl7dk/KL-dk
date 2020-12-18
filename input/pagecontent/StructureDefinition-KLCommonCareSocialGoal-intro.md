@@ -36,14 +36,14 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 {:class="grid"}
 |   FKI-attribut      | Definition        | FHIR  |
 | ------------- |-------------| -----|
-|målkategori|Den slags mål der er tale om.|Goal.category|
+|målkategori|Klasse, der udtrykker hvilket mål der er tale om.|Goal.category|
 |målSværhedsgrad|En klasse, der udtrykker en tilstands mål for sværhedsgrad.|Goal.target[severitySlice]|
 |måltype|En klasse der udtrykker, om målet er at indsatsen skal ændre eller fastholde en tilstand, og i hvilken grad.|Goal.target[changeValueSlice]|
 |målbeskrivelse|Beskrivelse af hvad målet er.|Goal.description|
 |målSubjekt|Den borger som målet er opstillet for.|Goal.subject|
 |målAnsvarlig|Den fagperson der er ansvarlig for oprettelsen af målet|Goal.expressedBy|
 |målrelateret|Den eller de Tilstande eller Oplysninger, der er relvant for målet.|Goal.addresses|
-|målrelateretRang|Heltal der identificerer den tilstand som målet primært er tilknyttet|Goal.addresses.extension:conditionRank|
+|målrelateretRang|Heltal, der udtrykker hvordan målgruppen er prioriteret, så der kan skelnes mellem primær målgruppe og øvrige målgrupper|Goal.addresses.extension:conditionRank|
 |målnotat|Løbende notat, der fortæller hvordan det går med at arbejde med målet.|Goal.note.text|
 |målvurdering|En beskrivelse af om målet er opfyldt.|Goal.outcomeCode.text|
 |målvurderingsInformant|Klasse der udtrykker, hvem der har vurderet målet.|Goal.outcomeCode.extention:matterOfInterestInformer|

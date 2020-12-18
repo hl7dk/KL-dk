@@ -47,6 +47,6 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 |indsatsDelAfPlan|Planlagt indsatsforløb, som den planlagte indsats er en del af.|CarePlan.basedOn|
 |indsatsbegrundelse|Tilstand som indsatsen rettes mod|CarePlan.activity.detail.reasonReference|
 |indsatsmål|Mål knyttet til indsatsen|CarePlan.activity.detail.goal|
-|indsatsgennemførtAktivitet|Kontakter der er gennemført for at gennemføre den planlagte indsats|CarePlan.activity.outcomeReference|
+|indsatsgennemførtAktivitet|Kontakter, der er gennemført som del af den planlagte indsats|CarePlan.activity.outcomeReference|
 |indsatsændringshistorie|Tidligere versioner af PlanlagtIndsats, hvor der er sket klinisk relevante ændringer|CarePlan:extension.relevantHistory|
 |indsatsAktivitetsstatus|Indikerer om indsatsen er igangsat, eller om den ikke er startet, eller er færdiggjort|CarePlan.activity.detail.status|

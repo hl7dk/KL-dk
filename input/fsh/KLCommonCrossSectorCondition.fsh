@@ -1,6 +1,6 @@
 Profile:        KLCommonCrossSectorCondition
 Parent:         Condition
-Title:          "CommonCrossSectorCondition"
+Title:          "KLCommonCrossSectorCondition"
 Description:    "Conditions which may be used for cross sector exchange in Denmark, as expressed by Danish municipalities."
 
 //Slicing code, declaring disciminator, and slicing type
@@ -40,14 +40,34 @@ Description:    "Conditions which may be used for cross sector exchange in Denma
 * note.author[x] only Reference
 * note.authorReference only Reference(Practitioner)
 
+* code.coding ^short = "[DK] tværorganisatoriskTilstandskode"
+* code.text ^short = "[DK] tværorganisatoriskTilstandsvurdering"
+* subject ^short = "[DK] tværorganisatoriskTilstandsubjekt"
+* asserter ^short = "[DK] tværorganisatoriskTilstandAnsvarlig"
+* recorder ^short = "[DK] tværorganisatoriskTilstandDokumentationsansvarlig"
+* verificationStatus ^short = "[DK] tværorganisatoriskTilstandstatus"
+* clinicalStatus ^short = "[DK] tværorganisatoriskTilstandstatus"
+* onset[x] ^short = "[DK] tværorganisatoriskTilstandstart"
+* abatement[x] ^short = "[DK] tværorganisatoriskTilstandsafslutningstid"
+* recordedDate ^short = "[DK] tværorganisatoriskTilstandregistreringstid"
+* note ^short = "[DK] tværorganisatoriskTilstandFagligtNotat"
+
 Instance: AndreasMaalgruppeUdviklingshamning
 InstanceOf: KLCommonCrossSectorCondition
 Title: "AndreasMålgruppeUdviklingshæmning"
+Description: "Andreas' målgruppe"
+Usage: #example
 * code.coding[FFBCodesCT] = FFB#97c355cc-84e3-46d0-ac1b-00bc627d089f "Udviklingshæmning"
 * subject = Reference(Andreas) 
 
-//Instance: AndreasDiabetes
-//InstanceOf: KLCommonCrossSectorCondition
-//Title: "AndreasDiabetes"
-//* code.coding[ICD10codes] = SKS-D#DE11 "Type 2-diabetes" (kan ikke valideres fordi der ikke er adgang til koderne)
-//* subject = Reference(Andreas) 
+Instance: JudithDiabetes
+InstanceOf: KLCommonCrossSectorCondition
+Title: "JudithDiabetes"
+Description: "En diagnose som registreret i kommunen, hvor Hanne fra Aalborg har registreret informationen fra lægen Marianne, som fx kunne komme fra diabetescenteret på hospitalet"
+Usage: #example
+* code.coding[ICD10codes] = SKS-D#DE11 "Type 2-diabetes (kan ikke valideres fordi der ikke er adgang til koderne)"
+* subject = Reference(Judith)
+* asserter = Reference(MarianneLaege)
+* recorder = Reference(HanneFraVisitationenAalborg)
+* onsetDateTime = 2017-04-01
+* recordedDate = 2020-03-15

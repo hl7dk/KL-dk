@@ -7,7 +7,7 @@ Condition.severity.coding has as valid values the functioning ability levels (FF
 
 Condition.recordedDate is the date where the condition was first recorded, NOT the date where the problem first known to be present.
 
-Condition.clinicalStatus should be populated with the value "active" if the citizen has the condition, and inactive if the citizen no longer have the condition. It should be "unconfirmed", if a note is associated with a condition code, which is not already active (this is specific to FFB).
+Condition.clinicalStatus should be populated with the value "active" if the citizen has the condition, and inactive if the citizen no longer have the condition. Condition.verificationStatus should be set to "unconfirmed", if a note is associated with a condition code, which is not already active and confirmed (this is specific to FFB). In most other use cases, Condition.verificationStatus should be "confirmed". clinicalStatus is mandatory, and it is a good idea to always provide the verificationStatus. If not populated, the condition is assumed to be "confirmed".
 
 Conditions are related to a professional context (through its code). These are the different contexts in which codelists of conditions are formulated:
 
@@ -40,15 +40,15 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 | ------------- |-------------| -----|
 |tilstandskode|Udtrykker hvilken klasse tilstanden tilhører.|Condition.code.coding|
 |tilstandssværhedsgrad|Udtrykker hvilken klasse tilstandens sværhedsgrad har.|Condition.severity.coding|
-|tilstandsstatus|Klasse der udtrykker en status for om tilstanden er til stede eller ej.|Condition.clinicalStatus|
+|tilstandsstatus|Klasse der udtrykker en status for om tilstanden er til stede eller ej.|Condition.clinicalStatus og Condition.verificationStatus|
 |tilstandsvurdering|Beskrivelse af en persontilstand |Condition.code.text|
 |tilstandFagligtNotat|Beskrivelse af løbende status, der ikke ændrer på vurdering, og sværhedsgrad.|Condition.note.text|
 |tilstandsoprettelsestid|tidsangivelse for hvornår tilstanden først blev oprettet i journalen|Condition.recordedDate|
-|tilstandsafslutningstid|tidsangivelse for hvornår tilstanden forstås som afsluttet. Med afsluttet menes at tilstanden enten ikke mere er et problem for borgeren, eller at tilstandsansvarlig ikke længere har ansvaret for tilstanden.|Condition.abatementDateTime|
+|tilstandsafslutningstid|tidsangivelse for hvornår tilstanden er afsluttet. Med afsluttet menes at tilstanden ikke mere er et problem for borger.|Condition.abatementDateTime|
 |tilstandsplanlagtOpfølgning|Kontakt, hvor det planlægges at følge op på tilstanden |Condition.extension:followUpEncounter|
 |tilstandsårsag|Årsag til en persontilstand |Condition.extension:dueTo|
 |tilstandssubjekt|Den borger som har tilstanden|Condition.subject|
-|tilstandsansvarlig|Den der bedømmer borgerns tilstand|Condition.asserter|
+|tilstandsansvarlig|Den fagperson, der bedømmer borgerns tilstand|Condition.asserter|
 |tilstandsændringshistorie|Tidligere versioner af tilstanden, hvor der er sket klinisk relevante ændringer|Condition.extension:eventHistory|
 |tilstandsevidens|Oplysning fra en udredning eller afklaring, der ligger til grund for denne tilstand, eller opfølgningsresultater, der er opfølgning på denne tilstand til forskellige tider.|Condition.evidence.detail|
 |tilstandsfokus|Klasse der udtrykker, om en faggruppe har tilstanden i fokus for sine indsatser|Condition.category.coding|

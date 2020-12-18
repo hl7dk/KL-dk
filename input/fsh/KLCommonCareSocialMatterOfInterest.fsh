@@ -71,7 +71,7 @@ Usage: #example
 * code.coding.system = FSIII
 * code.coding.display = "Respiration og cirkulation"
 * effectiveDateTime = 2020-06-05
-* valueCodeableConcept.text = "Mark har tendens til hævede fødder og ben, så der er et potentielt problem med cirkulationen, som kan forværre Mark's tryksår"
+* valueCodeableConcept.text = "Mark har tendens til hævede fødder og ben, så der er et potentielt problem med cirkulationen, som kan forvære Mark's tryksår"
 * performer = Reference(HanneFraVisitationenAalborg)
 * status = #final
 

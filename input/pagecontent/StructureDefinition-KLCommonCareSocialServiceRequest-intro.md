@@ -32,5 +32,5 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 |henvendelsesHenvisningsSubjekt|Den borger som henvisningen/henvendelsen vedrører|ServiceRequest.subject|
 |henvendelsesHenvisningstid|Det tidspunkt hvor henvisning/henvendelsen er forfattet af den ansvarlige|ServiceRequest.authoredOn|
 |borgerIndforståetMedHenvisningHenvendelse|Klasse der angiver om borger er indforstået med henvendelsen|SeviceRequest.extension: SubjectConsentToLiaising|
-|henvendelsesHenvisningsbegrundelse|Den borgertilstand, der er grund til at en instans henvender sig til kommunen.|SeviceRequest.reasonReference|
+|henvendelsesHenvisningsbegrundelse|Den borgertilstand, der ligger til grund for henvendelsen/henvisningen. |SeviceRequest.reasonReference|
 |henvendelseHenvisningsårsagsreference|Et klassificeret opfølgningsresultat, der er baggrund for at borger revisiteres.|ServiceRequest.reasonReference|
