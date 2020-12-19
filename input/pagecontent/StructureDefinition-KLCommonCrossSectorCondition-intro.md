@@ -4,7 +4,7 @@ The CommonCrossSectorCondition is used for the documentation and exchange of con
 * Diagnosis or problems as registered by general practitioners (using ICPC2) 
 * Conditions that other municipalities have previously cared for (Using FSIII and FFB condition codes)
 * An FFB target-group registration (Using FFB target group codes)
-* Condition that the citizen, next-of-kin or others tell about (No codes used, the problem is just described)
+* Condition that the citizen, next-of-kin or others tell about (No codes used)
 
 A short description of the citizens condition can be provided in Condition.code.text, which is especially important if the condition does not have a code or if the code is not very specific. If the external party wishes to send more thorough descriptions or historic notes about the condition, they may be added using Condition.note - in addition to text, Condition.note contains a date and author, making it possible to refer to historic notes documented by others, than the one autoring the Condition itself.
 

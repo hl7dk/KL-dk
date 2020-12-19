@@ -16,9 +16,9 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 | ------------- |-------------| -----|
 |opfølgningskode|Klasse, der udtrykker at der evalueres på den indsats der er igangsat.|Observation.code.coding|
 |opfølgningsresultat|Tekst der udtrykker hvad resultatet af opfølgningen er.|Observation.valueCodeableConcept.text|
-|struktureretOpfølgningsresultat|Struktureret resultat af en opfølgningen|Observation.valueCodeableConcept.coding|
-|opfølgningsubjekt|Den borger, der er genstand for opfølgningen|Observation.subject|
+|opfølgningsresultatStruktureret|Struktureret resultat af en opfølgningen|Observation.valueCodeableConcept.coding|
+|opfølgningssubjekt|Den borger, der er genstand for opfølgningen|Observation.subject|
 |opfølgningsKontakt|Den kontakt hvor opfølgningen er foretaget|Observation.encounter|
 |opfølgningsansvarlig|Den fagperson der har ansvaret for opfølgningen|Observation.performer|
 |opfølgningstid|Det tidspunkt, hvor opfølgningen er foretaget|Observation.effectiveDateTime|
-|struktureretopfølgningsresultat|Struktureret resultat af opfølgningen|Observation.hasMember|
+|opfølgningsstatus|Kode der udtrykker, hvor i sin proces, opfølgningen er|Observation.status|

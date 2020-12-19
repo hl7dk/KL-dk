@@ -33,6 +33,7 @@ Description: "Observation af Marks puls (OBS: Mere specifik profil for puls find
 * valueQuantity.system = UCUM
 * valueQuantity.code = #{beats}/min
 * status = #final
+* effectiveDateTime = 2020-06-21
 
 Instance: MarksDiastoliske
 InstanceOf: KLCommonCareSocialObservation
@@ -48,13 +49,15 @@ Description: "Observation af Marks diastoliske blodtryk (OBS: Mere specifik prof
 * valueQuantity.system = UCUM
 * valueQuantity.code = #mm[Hg]
 * status = #final
+* effectiveDateTime = 2020-06-21
 
 Instance: MarksBlodsukker
 InstanceOf: KLCommonCareSocialObservation
 Usage: #example
 Title: "MarksBlodsukker"
 Description: "Observation af Marks blodsukker"
-* code = SCT#36048009 "Glucosemåling"
+* code.coding[0] = SCT#434912009 // |glucosekoncentration i blod|
+* code.coding[1] = NPU#NPU02195 //
 * subject = Reference(Mark)
 * performer = Reference(AbrahamFraAkutSygeplejen)
 * valueQuantity.value = 3.6
@@ -62,5 +65,7 @@ Description: "Observation af Marks blodsukker"
 * valueQuantity.system = UCUM
 * valueQuantity.code = #mmol/L
 * status = #final
+* effectiveDateTime = 2020-06-21
+* basedOn = Reference(HenvisningFraLageVedrAkutSygepleje)
 
 

@@ -23,3 +23,4 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 |vurderingsansvarlig|Den fagperson der er ansvarlig for vurderingen.|Observation.performer|
 |vurderingBaseretPå|Den henvendelse/henvisning som vurderingen er opsummering/svar på.|Observation.basedOn|
 |vurderingstid|Det tidspunkt hvor vurderingen er foretaget.|Observation.effectiveDateTime|
+|vurderingsstatus|Klasse der udtrykker, hvor i sin proces, vurderingen er.|Observation.status|

@@ -1,5 +1,5 @@
 ### Scope and usage
-CommonCareSocialCitizensOwnObservation is used to document, performance level (udførelse) or importance level (betydning) as defined by FSIII. Note that each of the observations require its own instance of this model. The observation only makes sense linked to an already defined Codition or MatterOfInterest. Consequently, the focus-attribute is mandatory.
+CommonCareSocialCitizensOwnObservation is used to document, performance level (udførelse) or importance level (betydning) as defined by FSIII. Note that each of the observations require its own instance of this model. The observation only makes sense linked to an already defined Condition or MatterOfInterest. Consequently, the focus-attribute is mandatory.
 
 The code-attribute refers to either performance level or importance level using a required ValueSet, and the result is expressed in valueCodeableConcept, which is also bound to a required FSIII valueSet. Observation and value codes should be correctly matched, so that a performance-result is not used with a importance observation-code.
 

@@ -32,6 +32,7 @@ Description:    "Professional evaluation on citizen status based on gathered inf
 * performer ^short = "[DK] vurderingsansvarlig"
 * basedOn ^short = "[DK] vurderingBaseretPå"
 * effectiveDateTime ^short = "[DK] vurderingstid"
+* status ^short = "[DK] vurderingsstatus"
 
 Instance: AndreasStottebehov
 InstanceOf: KLCommonCareSocialEvaluation

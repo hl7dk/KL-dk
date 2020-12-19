@@ -1,4 +1,4 @@
-Alias: SCTConditionValueset = http://hl7.org/fhir/ValueSet/condition-code
+Alias:          SCTConditionValueset = http://hl7.org/fhir/ValueSet/condition-code
 Alias:          FSIII = http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII
 Alias:          FFB = http://kl.dk/fhir/common/caresocial/CodeSystem/FFB
 Alias:          SCT = http://snomed.info/sct

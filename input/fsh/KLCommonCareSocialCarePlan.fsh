@@ -82,7 +82,7 @@ Usage: #example
 Instance: NySocialIndsats
 InstanceOf: KLCommonCareSocialCarePlan
 * subject = Reference(Andreas)
-* description = "Andreas plan for midlertidigt ophold omfatter socialpædagogiske tiltag, med fokus på at klare sig selv i hverdagsaktiviteter, og opbygge relationer til personale og de andre beboere. Ved indsatsens afslutning skal Andreas genvurderes mhp. at finde en permanent løsning, der tilsvarer Andreas funktionsniveau."
+* description = "Andreas plan for alment botilbud omfatter socialpædagogiske tiltag, med fokus på at klare sig selv i hverdagsaktiviteter, og opbygge relationer til personale og de andre beboere."
 * careTeam = Reference(AlmBotilbud)
 * category = KLCommonCareSocialCodes#4a297733-4d66-4726-a933-590d55cf91e0 "Social indsats"
 * addresses = Reference(AndreasMaalgruppeUdviklingshamning)

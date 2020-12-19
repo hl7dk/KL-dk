@@ -58,7 +58,16 @@ Title: "AndreasMålgruppeUdviklingshæmning"
 Description: "Andreas' målgruppe"
 Usage: #example
 * code.coding[FFBCodesCT] = FFB#97c355cc-84e3-46d0-ac1b-00bc627d089f "Udviklingshæmning"
-* subject = Reference(Andreas) 
+* subject = Reference(Andreas)
+* asserter = Reference(MarianneLaege)
+* recorder = Reference(BirteFraVisitationenMorsoe)
+* recordedDate = 2020-07-06
+* onsetAge.value = 0
+* onsetAge.code = #a
+* onsetAge.system = UCUM
+* onsetAge.unit = "år"
+* clinicalStatus = #active
+* verificationStatus = #confirmed
 
 Instance: JudithDiabetes
 InstanceOf: KLCommonCrossSectorCondition
@@ -71,3 +80,5 @@ Usage: #example
 * recorder = Reference(HanneFraVisitationenAalborg)
 * onsetDateTime = 2017-04-01
 * recordedDate = 2020-03-15
+* clinicalStatus = #active
+* verificationStatus = #confirmed

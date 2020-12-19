@@ -483,7 +483,7 @@ Description: "Follow-up codes used in FSIII"
 ValueSet: KLFollowUpCodesFFB
 Title: "KLFollowUpCodesFFB"
 Description: "Follow-up codes used in FFB" //ISA 90479ffa-bf46-4b3a-a172-91f2798e2a43
-* FFB#1e971d84-10a4-4ef8-a8b3-0daa4c7d088a //"Fortsæt indsats"
+* FFB#1e971d84-10a4-4ef8-a8b3-0daa4c7d088a //"Træf afgørelse om fortsættelse af indsats"
 * FFB#b4c01aa8-82fd-44e4-83ff-ca19ec02c779 //"Træf afgørelse om afslutning af indsats og visiter til ny"
 * FFB#d7d03656-4c87-4e67-9146-aa5990460f16 //"Træf afgørelse om afslutning af indsats"
 
@@ -750,7 +750,7 @@ Description: "Codes that indicate whether an intervention had complications or n
 
 ValueSet: KLObservationCodes
 Title: "KLObservationCodes"
-Description: "proprietory, SNOMED CT and LOINC observation codes used in Danish municipalities"
+Description: "SNOMED CT and LOINC observation codes used in Danish municipalities"
 //Vital signs
 * SCT#446226005	//Diastolic blood pressure on admission	
 * SCT#400975005	//Standing diastolic blood pressure	
@@ -797,9 +797,24 @@ Description: "proprietory, SNOMED CT and LOINC observation codes used in Danish 
 * SCT#285854004 //|Emotion (observable entity)|
 * SCT#736535009 //|EuroQol visual analogue score (observable entity)|
 * SCT#736534008 //"EuroQol five dimension five level index value (observable entity)"
-//From examples
 * SCT#420753006 //|Pressure ulcer surface area (observable entity)|
-* SCT#36048009 //"Glucosemåling"
+* SCT#434912009 // |glucosekoncentration i blod|
+* NPU#NPU14924 "U—Urin; egenskabsart(liste; stix; proc.)"
+* NPU#NPU10504 "U—Acetoacetat; arb.k.(proc.) = ?"
+* NPU#NPU17997 "U—Albumin; arb.k.(proc.) = ?"
+* NPU#NPU10506 "U—Bacterium, nitrit-producerende; arb.k.(proc.) = ?"
+* NPU#NPU01372 "U—Bilirubiner; arb.k.(proc.) = ?"
+* NPU#NPU03963 "U—Erythrocytter; arb.k.(proc.) = ?"
+* NPU#NPU04207 "U—Glucose; arb.k.(proc.) = ?"
+* NPU#NPU02415 "U—Hydrogen-ion; pH(proc.) = ?"
+* NPU#NPU04208 "U—Hæmoglobin; arb.k.(proc.) = ?"
+* NPU#NPU03987 "U—Leukocytter; arb.k.(proc.) = ?"
+* NPU#NPU21578 "U—Nitrit; arb.k.(proc.) = ?"
+* NPU#NPU04864 "U—Porphobilinogen; arb.k.(proc.) = ?"
+* NPU#NPU04206 "U—Protein; arb.k.(proc.) = ?"
+* NPU#NPU03694 "Pt—Urin; rel.massetæthed(20 °C/vand, 20 °C; proc.) = ?"
+* NPU#NPU03697 "U—Urobilinogen; arb.k.(proc.) = ?"
+* NPU#NPU02195 "P(vB; fPt)—Glucose; stofk. = ? mmol/L"
 
 ValueSet: KLInformationGatheringTypeCodes
 Title: "KLInformationGatheringTypeCodes"
@@ -870,3 +885,23 @@ Description: "Codes that identify who's perspective the matter-of-interest is co
 // * #17772b27-bc9d-4d62-9515-d268a98a3a27 "Proceduren ikke fulgt pga. delvis besvarelse/udførelse" "Proceduren for observationen, som beskrevet af KL, er ikke fulgt pga. delvis besvarelse/udførelse"
 // * #a3231c9a-5569-49c4-8760-4fffbf0b2b80 "Proceduren ikke fulgt pga. afvigelse i test-setup/omgivelser" "Proceduren for observationen, som beskrevet af KL, er ikke fulgt pga. afvigelse i test-setup/omgivelser"
 * #e30a95fd-7abd-478b-9a9d-e02dfdd73fd5 "WHO-5 værdi" "Observation vedr. WHO 5 Well being index"
+
+CodeSystem: NPU
+Title: "NPU"
+Description: "NPUcodes used i danish municipalities"
+* #NPU14924 "U—Urin; egenskabsart(liste; stix; proc.)"
+* #NPU10504 "U—Acetoacetat; arb.k.(proc.) = ?"
+* #NPU17997 "U—Albumin; arb.k.(proc.) = ?"
+* #NPU10506 "U—Bacterium, nitrit-producerende; arb.k.(proc.) = ?"
+* #NPU01372 "U—Bilirubiner; arb.k.(proc.) = ?"
+* #NPU03963 "U—Erythrocytter; arb.k.(proc.) = ?"
+* #NPU04207 "U—Glucose; arb.k.(proc.) = ?"
+* #NPU02415 "U—Hydrogen-ion; pH(proc.) = ?"
+* #NPU04208 "U—Hæmoglobin; arb.k.(proc.) = ?"
+* #NPU03987 "U—Leukocytter; arb.k.(proc.) = ?"
+* #NPU21578 "U—Nitrit; arb.k.(proc.) = ?"
+* #NPU04864 "U—Porphobilinogen; arb.k.(proc.) = ?"
+* #NPU04206 "U—Protein; arb.k.(proc.) = ?"
+* #NPU03694 "Pt—Urin; rel.massetæthed(20 °C/vand, 20 °C; proc.) = ?"
+* #NPU03697 "U—Urobilinogen; arb.k.(proc.) = ?"
+* #NPU02195 "P(vB; fPt)—Glucose; stofk. = ? mmol/L"

@@ -20,6 +20,6 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 |observationssubjekt|Den borger, for hvem der er foretaget en observation.|Observation.subject|
 |observationskontakt|Den kontakt, hvor observationen er foretaget.|Observation.encounter|
 |observationsansvarlig|Den der er ansvarlig for observationen.|Observation.performer|
-|observationBaseretPå|Indsats eller indsatsforløb, som denne observation er del af.|Observation.basedOn|
+|observationBaseretPå|Indsats, indsatsforløb eller henvisning som denne observation er del af udmøntningen af|Observation.basedOn|
 |observationstid|Tidspunkt for observationen.|Observation.effective|
 |observationsstatus|Klasse der udtrykker, hvor i sin proces, observationen er.|Observation.status|

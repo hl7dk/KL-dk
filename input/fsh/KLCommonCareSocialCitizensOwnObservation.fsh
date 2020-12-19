@@ -42,13 +42,4 @@ Description: "Judiths vurdering af egen evne til at gå"
 * focus = Reference(ConditionWalking)
 * effectiveDateTime = 2020-08-11
 * status = #final
-
-
-//|borgervurderingskode|Klasse som udtrykker, at der observeres på borgers evne til at udføre funktion eller aktivitet.|Observation.code.coding|
-//|borgervurderingsresultat|Klasse, der udtrykker resultatet af borgers vurdering.|Observation.valueCodeableConcept.coding|
-//|borgervurderingssubjektsubjekt|Den borger, som er genstad for vurdering.|Observation.subject|
-//|borgervurderingskontakt|Den kontakt, hvor vurderingen er foretaget.|Observation.encounter|
-//|observationsansvarlig|Den fagperson der er ansvarlig for observationen.|Observation.performer|
-//|borgervurderingsfokus|Tilstand, som denne borgervurdering er direkte observation på.|Observation.focus|
-//|borgervurderingstid|Tidspunkt for borgervurderingen.|Observation.effectiveDateTime|
-//|borgervurderingsstatus|||
+* performer = Reference(HanneFraVisitationenAalborg)

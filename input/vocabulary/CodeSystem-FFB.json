@@ -871,7 +871,7 @@
     "display": "Status på indsats",
     "concept": [ {
       "code": "1e971d84-10a4-4ef8-a8b3-0daa4c7d088a",
-      "display": "Fortsæt indsats"
+      "display": "Træf afgørelse om fortsættelse af indsats"
     }, {
       "code": "b4c01aa8-82fd-44e4-83ff-ca19ec02c779",
       "display": "Træf afgørelse om afslutning af indsats og visiter til ny"
