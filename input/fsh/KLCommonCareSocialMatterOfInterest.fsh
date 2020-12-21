@@ -1,6 +1,6 @@
 Profile:        KLCommonCareSocialMatterOfInterest
 Parent:         Observation
-Title:          "KLCommonCareSocialMatterOfInterest"
+Title:          "MatterOfInterest"
 Description:    "Matter or area of interest in relation to the care of the citizen, as used in Danish municipalities (Oplysning/Område/Tema)"
 * code from KLInformationCodes (required)
 * value[x] only CodeableConcept
@@ -48,8 +48,8 @@ Description:    "Matter or area of interest in relation to the care of the citiz
 
 Instance: MobilityInformationJudith
 InstanceOf: KLCommonCareSocialMatterOfInterest
-Title: "MobilityInformationJudith"
-Description: "Judith's mobility"
+Title: "Mobilitet Judith"
+Description: "Områdenotat vedr. Judiths mobilitet"
 Usage: #example
 * subject = Reference(Judith)
 * code.coding.code = #J3
@@ -63,8 +63,8 @@ Usage: #example
 
 Instance: RespirationCirculationInformationMark
 InstanceOf: KLCommonCareSocialMatterOfInterest
-Title: "RespirationCirculationInformationMark"
-Description: "Respiration and circulation for Mark"
+Title: "Respiration og cirkulation Mark"
+Description: "Områdenotat vedr. respiration og cirkulation for Mark"
 Usage: #example
 * subject = Reference(Mark)
 * code.coding.code = #I7
@@ -77,8 +77,8 @@ Usage: #example
 
 Instance: SkinInformationMark
 InstanceOf: KLCommonCareSocialMatterOfInterest
-Title: "SkinInformationMark"
-Description: "Skin information for Mark"
+Title: "Hud og slimhinder Mark"
+Description: "Områdenotat vedr. hud og slimhinder for Mark"
 Usage: #example
 * subject = Reference(Mark)
 * code.coding.code = #I4
@@ -91,8 +91,8 @@ Usage: #example
 
 Instance: MentalInformationMads
 InstanceOf: KLCommonCareSocialMatterOfInterest
-Title: "MentalInformationMads"
-Description: "Mads' mentale funktioner, borger"
+Title: "Mentale funktioner Mads, borgerperspektiv"
+Description: "Mads' mentale funktioner, med perspektivet, at det er oplysninger fra borger"
 Usage: #example
 * subject = Reference(Mads)
 * code.coding.code = #25c5c614-305f-46cd-9891-55d564fc30cf
@@ -112,8 +112,8 @@ behandler ham ordentligt eller ikke forstår ham"
 
 Instance: MentalInformationMadsOthers
 InstanceOf: KLCommonCareSocialMatterOfInterest
-Title: "MentalInformationMadsOthers"
-Description: "Mads' mentale funktioner, oplyst af andre"
+Title: "Mentale funktioner Mads, andres perspektiv"
+Description: "Mads' mentale funktioner, med perspektivet, at det er oplysninger af andre"
 Usage: #example
 * subject = Reference(Mads)
 * code.coding.code = #25c5c614-305f-46cd-9891-55d564fc30cf

@@ -29,7 +29,7 @@ Description:    "Referals/requests used in Danish municipalities"
 
 Instance: HenvendelseFraMorVedrSocialIndsats
 InstanceOf: KLCommonCareSocialServiceRequest
-Title: "HenvendelseFraMorVedrSocialIndsats"
+Title: "Henvendelse mor social indsats"
 Description: "Henvendelse fra mor vedr. social indsats"
 Usage: #example
 * requester = Reference(SocialOgSundhedMorsoe)
@@ -47,7 +47,7 @@ Usage: #example
 
  Instance: HenvendelseFraMorVedrSocialIndsatsProvenance
  InstanceOf: Provenance
- Title: "Provenance til HenvendelseFraMorVedrSocialIndsats"
+ Title: "Provenance, henvendelse mor social indsats"
  Description: "Ekstraoplysninger vedr. dokumentationsarbejdsgang og ansvar for henvendelse fra mor vedr. social indsats"
  Usage: #example
 * target = Reference(HenvendelseFraMorVedrSocialIndsats)
@@ -71,7 +71,7 @@ Usage: #example
 
 Instance: HenvisningFraLageVedrAkutSygepleje
 InstanceOf: KLCommonCareSocialServiceRequest
-Title: "HenvisningFraLægeVedrAkutSygepleje"
+Title: "Henvisning læge akut sygepleje"
 Description: "Henvisning fra læge vedr. akut sygepleje"
 Usage: #example
 * requester = Reference(LaegerneHasserisBymidte)
@@ -86,7 +86,7 @@ Usage: #example
 
 Instance: HenvisningFraLageVedrAkutSygeplejeProvenance
 InstanceOf: Provenance
-Title: "Provenance til HenvisningFraLægeVedrAkutSygepleje"
+Title: "Provenance, henvisning læge akut sygepleje"
  Description: "Ekstraoplysninger vedr. dokumentationsarbejdsgang og ansvar for henvisning fra læge vedr. akut sygepleje"
 Usage: #example
 * target = Reference(HenvisningFraLageVedrAkutSygepleje)
@@ -100,12 +100,12 @@ Usage: #example
 
 Instance: InternHenvendelseEfterOpfolgning
 InstanceOf: KLCommonCareSocialServiceRequest
-Title: "InternHenvendelseEfterOpfølgning"
+Title: "Intern henvendelse efter opfølgning"
 Description: "Intern henvisning i hjemmeplejen, efter en opfølgning der viste behov for revisitation"
 Usage: #example
 * requester = Reference(HanneFraVisitationenAalborg)
 * extension[requesterType].valueCodeableConcept = FSIII#A4 "Hjemmeplejen"
-* reasonCode.text = "Sidste opfølgning på Marks hjemmepleje viste behov for revisitation pga. forringet funktionsevne især relateret til mobilitet og daglige opgaver"
+* reasonCode.text = "Sidste opfølgning på Marks hjemmepleje viste behov for revisitation fordi funktionsevnen er blevet bedre, særligt ift. mobilitet. Der skal ses på om nogle af §83 indsatserne, med fordel kan gøres til §83a for yderligere at styrke hverdags rehabiliteringsindsatsen og dermed borgers funktionsniveau."
 * code = KLCommonCareSocialCodes#ad865929-7363-4b2d-a271-01993181fbaf "Hjemmepleje"
 * orderDetail[0] = FSIII#H1.4 "Mobilitet"
 * orderDetail[1] = FSIII#H2.2 "RH Hverdagens aktiviteter"
@@ -113,6 +113,7 @@ Usage: #example
 * authoredOn = 2020-04-11
 * status = #active
 * intent = #proposal
+* reasonReference = Reference(MarkHjemmeplejeRevisitation)
 
 Instance: InternHenvendelseEfterOpfolgningProvenance
 InstanceOf: Provenance

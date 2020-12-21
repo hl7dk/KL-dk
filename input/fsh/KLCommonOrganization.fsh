@@ -1,11 +1,11 @@
 Profile: KLCommonOrganization
 Parent: Organization
-Title: "CommonOrganization"
+Title: "Organization"
 Description:    "Organisation as expressed by Danish municipalities."
 
 Instance: HjemmesygeplejeSonderborg
 InstanceOf: KLCommonOrganization
-Title: "HjemmesygeplejeSønderborg"
+Title: "Hjemmesygepleje sønderborg"
 Usage: #example
 Description: "Hjemmesygepleje – visitation –hjemmehjælp i Sønderborg kommune som defineret af SOR"
 * identifier[0].value = "330411000016001"
@@ -16,7 +16,7 @@ Description: "Hjemmesygepleje – visitation –hjemmehjælp i Sønderborg kommu
 
 Instance: SocialOgSundhedMorsoe
 InstanceOf: KLCommonOrganization
-Title: "SocialOgSundhedMorsø"
+Title: "Social og sundhed Morsø"
 Usage: #example
 Description: "Social og Sundhed, Morsø Kommune, som defineret af SOR"
 * identifier[0].value = "449201000016001"
@@ -27,7 +27,7 @@ Description: "Social og Sundhed, Morsø Kommune, som defineret af SOR"
 
 Instance: SundhedsforvaltningAalborg
 InstanceOf: KLCommonOrganization
-Title: "SundhedsforvaltningAalborg"
+Title: "Sundhedsforvaltning Aalborg"
 Usage: #example
 Description: "Sundheds- og kulturforvaltningen, Aalborg Kommune, som defineret af SOR"
 * identifier[0].value = "922661000016005"
@@ -38,7 +38,7 @@ Description: "Sundheds- og kulturforvaltningen, Aalborg Kommune, som defineret a
 
 Instance: BotilbudetHvidbjerghus
 InstanceOf: KLCommonOrganization
-Title: "BotilbudetHvidbjerghus"
+Title: "Botilbudet Hvidbjerghus"
 Usage: #example
 Description: "Botilbudet Hvidbjerghus som defineret af https://findsocialetilbud.dk/sociale-tilbud/botilbuddet-hvidbjerghus, og SOR"
 * identifier[0].value = "699941000016001"
@@ -49,7 +49,7 @@ Description: "Botilbudet Hvidbjerghus som defineret af https://findsocialetilbud
 
 Instance: BotilbudetSommergaarden
 InstanceOf: KLCommonOrganization
-Title: "BotilbudetSommergaarden"
+Title: "Botilbudet Sommergaarden"
 Usage: #example
 Description: "Botilbudet Sommergaarden, som er et fiktivt eksempel"
 * name = "Botilbudet Sommergaarden"

@@ -1,6 +1,6 @@
 Profile:        KLCommonCareSocialEncounter
 Parent:         Encounter
-Title:          "KLCommonCareSocalEncounter"
+Title:          "Encounter"
 Description:    "Encounters used for care and social services in Danish municipalities."
 
 * type from KLEncounterTypes (required)
@@ -22,7 +22,7 @@ Description:    "Encounters used for care and social services in Danish municipa
 
 Instance: MarkFollowUpPlanned
 InstanceOf: KLCommonCareSocialEncounter
-Title: "MarkOpfølgningPlanlagt"
+Title: "Mark Opfølgning Planlagt"
 Usage: #example
 Description: "Mark's planlagte opfølgning, med periode.start fremtidigt"
 * type = KLCommonCareSocialCodes#9f03dfbb-7a97-45a5-94db-d4c3501714a9 "opfølgning"
@@ -33,7 +33,7 @@ Description: "Mark's planlagte opfølgning, med periode.start fremtidigt"
 
 Instance: MarkOgAkutsygeplejerske
 InstanceOf: KLCommonCareSocialEncounter
-Title: "MarkOgAkutsygeplejerske"
+Title: "Mark og Akutsygeplejerske"
 Usage: #example
 Description: "Kontakt hvor der leveres en akutindsats til Mark"
 * type = KLCommonCareSocialCodes#15775b0a-7ec6-469e-9d3c-a81fbc9a1b45 "udførelse af akutindsats"
@@ -45,7 +45,7 @@ Description: "Kontakt hvor der leveres en akutindsats til Mark"
 
 Instance: MarkogSaarsygeplejerske
 InstanceOf: KLCommonCareSocialEncounter
-Title: "MarkogSårsygepleje"
+Title: "Mark og sårsygepleje"
 Usage: #example
 Description: "Kontakt hvor der leveres en sårbehandling til Mark efter planen"
 * type = KLCommonCareSocialCodes#784275f1-6822-4a88-b361-d958007d5253	//udførelse af planlagt indsats "udførelse af akutindsats"
@@ -57,7 +57,7 @@ Description: "Kontakt hvor der leveres en sårbehandling til Mark efter planen"
 
 Instance: MarkogUdredningSygepleje
 InstanceOf: KLCommonCareSocialEncounter
-Title: "MarkogUdredningSygepleje"
+Title: "Mark og udredningSygepleje"
 Usage: #example
 Description: "Kontakt hvor der udføres en sygeplejefaglig udredning på Mark"
 * type = KLCommonCareSocialCodes#829ac647-c7fc-4964-836b-f708d886e0e3 //oplysning

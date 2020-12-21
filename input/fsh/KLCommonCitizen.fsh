@@ -1,6 +1,6 @@
 Profile:        KLCommonCitizen
 Parent:         Patient
-Title:          "CommonCitizen"
+Title:          "Citizen"
 Description:    "Citizen demographics, as expressed by Danish municipalities"
 
 Instance: Mark

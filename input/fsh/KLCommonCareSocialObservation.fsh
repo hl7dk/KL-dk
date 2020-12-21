@@ -1,6 +1,6 @@
 Profile: KLCommonCareSocialObservation
 Parent: Observation
-Title: "KLCommonCareSocialObservation"
+Title: "Observation"
 Description: "Observations and measurements performed in Danish municipalities"
 
 * code from KLObservationCodes (extensible)
@@ -22,7 +22,7 @@ Description: "Observations and measurements performed in Danish municipalities"
 Instance: MarksPuls
 InstanceOf: KLCommonCareSocialObservation
 Usage: #example
-Title: "MarksPuls"
+Title: "Marks puls"
 Description: "Observation af Marks puls (OBS: Mere specifik profil for puls findes i værktøjsprojektet, dette er udelukkende et eksempel,  dette er udelukkende et eksempel for denne implememnattion guide)"
 * code = SCT#8499008 "Puls"
 * subject = Reference(Mark)
@@ -38,7 +38,7 @@ Description: "Observation af Marks puls (OBS: Mere specifik profil for puls find
 Instance: MarksDiastoliske
 InstanceOf: KLCommonCareSocialObservation
 Usage: #example
-Title: "MarksDiastoliske"
+Title: "Marks diastoliske blodtryk"
 Description: "Observation af Marks diastoliske blodtryk (OBS: Mere specifik profil for blodtryk findes i værktøjsprojektet, dette er udelukkende et eksempel for denne implememnattion guide)"
 * code = SCT#271650006 "Diastolisk blodtryk"
 * subject = Reference(Mark)
@@ -54,7 +54,7 @@ Description: "Observation af Marks diastoliske blodtryk (OBS: Mere specifik prof
 Instance: MarksBlodsukker
 InstanceOf: KLCommonCareSocialObservation
 Usage: #example
-Title: "MarksBlodsukker"
+Title: "Marks blodsukker"
 Description: "Observation af Marks blodsukker"
 * code.coding[0] = SCT#434912009 // |glucosekoncentration i blod|
 * code.coding[1] = NPU#NPU02195 //

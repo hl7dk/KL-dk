@@ -1,6 +1,6 @@
 Profile: KLCommonCareSocialGoal
 Parent: Goal
-Title: "KLCommonCareSocialGoal"
+Title: "Goal"
 Description: "Goal as defined in Danish municipalities"
 
 * category 1..1
@@ -50,20 +50,20 @@ Description: "Goal as defined in Danish municipalities"
 * extension[goalRelationship].extension[target].valueReference ^short = "[DK] delmålBaseretPå"
 
 Profile: KLCommonCareSocialPurpose
-Title: "CommonCareSocialPurpose"
+Title: "Goal - Purpose"
 Parent: KLCommonCareSocialGoal
 Description: "Purpose as defined by FFB in Danish municipalities"
 * category = KLCommonCareSocialCodes#424827b1-23aa-4848-962b-56ee47def560
 
 Profile: KLCommonCareSocialFFBGoal
-Title: "KLCommonCareSocialFFBGoal"
+Title: "Goal - FFB Intervention"
 Parent: KLCommonCareSocialGoal
 Description: "FFB goal as defined by FFB in Danish municipalities"
 * category = KLCommonCareSocialCodes#0bb3daef-538d-45dc-b444-abdbcb63f6bc "FFB indsatsmål"
 
 Instance: JudithForventetTilstand
 InstanceOf: KLCommonCareSocialGoal
-Title: "JudithForventetTilstand"
+Title: "Judith forventet tilstand"
 Description: "Forventet tilstand for Judith, der har et mobilitetsproblem"
 Usage: #example
 * category = KLCommonCareSocialCodes#ca552020-6ed1-4cdc-b0d4-32697f1f27ad //"FSIII tilstandsmål"
@@ -78,7 +78,7 @@ Usage: #example
 
 Instance: MarkForventetTilstand
 InstanceOf: KLCommonCareSocialGoal
-Title: "MarkForventetTilstand"
+Title: "Mark forventet tilstand"
 Description: "Forventet tilstand for Mark, der har et tryksårsproblem"
 Usage: #example
 * category = KLCommonCareSocialCodes#ca552020-6ed1-4cdc-b0d4-32697f1f27ad "FSIII tilstandsmål"
@@ -93,7 +93,7 @@ Usage: #example
 
 Instance: MarkIndsatsmaal
 InstanceOf: KLCommonCareSocialGoal
-Title: "MarkForventetTilstand"
+Title: "Mark indsatsmål"
 Description: "FSIII indsatsmål for Mark, der har et tryksårsproblem"
 Usage: #example
 * category = KLCommonCareSocialCodes#e6f35a88-6665-4471-9dce-9a98854532b4 "FSIII indsatsmål"
@@ -106,7 +106,7 @@ Usage: #example
 
 Instance: AndreasMaalOnsker
 InstanceOf: KLCommonCareSocialGoal
-Title: "AndreasMålOgØnsker"
+Title: "Andreas mål og ønsker"
 Description: "Mål og ønsker for Andreas"
 Usage: #example
 * category = KLCommonCareSocialCodes#416fe27d-3ccf-4390-8742-8b52a9d8dc78 "FFB borgers mål og ønsker"
@@ -115,11 +115,9 @@ Usage: #example
 * lifecycleStatus = GoalStatusCodes#active
 * expressedBy = Reference(BirteFraVisitationenMorsoe)
 
-
-
 Instance: AndreasIndsatsformaal
 InstanceOf: KLCommonCareSocialPurpose
-Title: "AndreasIndsatsformål"
+Title: "Andreas indsatsformål"
 Description: "Indsatsformål for Andreas"
 Usage: #example
 * category = KLCommonCareSocialCodes#424827b1-23aa-4848-962b-56ee47def560 "Indsatsformål"
@@ -130,8 +128,8 @@ Usage: #example
 
 Instance: AndreasIndsatsformaal2
 InstanceOf: KLCommonCareSocialPurpose
-Title: "AndreasIndsatsformål2"
-Description: "Indsatsformål for Andreas"
+Title: "Andreas indsatsformål ifm ny indsats"
+Description: "Indsatsformål for Andreas ifm. at han skifter fra midlertidig til almen botilbud"
 Usage: #example
 * category = KLCommonCareSocialCodes#424827b1-23aa-4848-962b-56ee47def560 "Indsatsformål"
 * description.text = "understøtte Andreas i selv at tilegne sig færdigheder, der gør at han kan have kontakt med andre både ift. at samarbejdende om praktiske ting og ift klare almindelige sociale situationer som fx at se film eller spise med en gruppe af jævnaldrende. Desuden at holde orden på sit eget værelse, så han undgår frustration over ikke at kunne finde sine ting."
@@ -141,7 +139,7 @@ Usage: #example
 
 Instance: Andreasindsatsmaal
 InstanceOf: KLCommonCareSocialFFBGoal
-Title: "AndreasIndsatsmål"
+Title: "Andreas indsatsmål"
 Description: "Indsatsmål for Andreas"
 Usage: #example
 * category.coding.code = #0bb3daef-538d-45dc-b444-abdbcb63f6bc
@@ -166,7 +164,7 @@ Usage: #example
 
 Instance: AndreasindsatsmaalOpfolgning
 InstanceOf: KLCommonCareSocialFFBGoal
-Title: "AndreasIndsatsmål"
+Title: "Andreas opfølgning på indsatsmål"
 Description: "Indsatsmål for Andreas, som dokumenteret efter opfølgningstidspunktet (Tilstanden ikke opdateret, fordi implementation guiden ikke versionshåndterer)"
 Usage: #example
 * category.coding.code = #0bb3daef-538d-45dc-b444-abdbcb63f6bc
@@ -193,7 +191,7 @@ Usage: #example
 
 Instance: AndreasDelmaal
 InstanceOf: KLCommonCareSocialGoal
-Title: "AndreasDelmål"
+Title: "Andreas Delmål"
 Description: "Delmål for Andreas"
 Usage: #example
 * category.coding = KLCommonCareSocialCodes#6746d4af-145a-4bfd-a672-05c0cf11b53b "FFB delmål"

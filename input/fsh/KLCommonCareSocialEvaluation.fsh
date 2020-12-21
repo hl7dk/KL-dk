@@ -1,6 +1,6 @@
 Profile:        KLCommonCareSocialEvaluation
 Parent:         Observation
-Title:          "KLCommonCareSocialEvaluation"
+Title:          "Evaluation"
 Description:    "Professional evaluation on citizen status based on gathered information, conditions, observations and citizen preferences used in Danish municipalities"
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
@@ -36,8 +36,8 @@ Description:    "Professional evaluation on citizen status based on gathered inf
 
 Instance: AndreasStottebehov
 InstanceOf: KLCommonCareSocialEvaluation
-Title: "AndreasStøttebehov"
-Description: "Andreas støttebehov"
+Title: "Andreas støttebehov"
+Description: "Visitationen vurderer at Andreas har et højt støttebehov"
 Usage: #example
 * code.coding[klEvaluationCode] = KLCommonCareSocialCodes#effe55c7-572c-4a99-8fb4-2a9dda2f6572 "FFB støttebehovsvurdering"
 * code.coding[sctEvaluationCode] = SCT#225344000 //"vurdering af graden af påkrævet hjælp"
@@ -50,7 +50,7 @@ Usage: #example
 
 Instance: MarkHelhedsvurdering
 InstanceOf: KLCommonCareSocialEvaluation
-Title: "MarkHelhedsvurdering"
+Title: "Mark helhedsvurdering"
 Description: "Eksempel på Marks helhedvurdering, som er opdateret efter der er lavet en sygeplejefaglig udredning"
 Usage: #example
 * code.coding[klEvaluationCode] = KLCommonCareSocialCodes#54c4ffea-7caf-4edc-8aa9-ef6e0be26c4c //"FSIII helhedsvurdering"

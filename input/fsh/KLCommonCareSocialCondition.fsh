@@ -97,7 +97,8 @@ Usage: #example
 
 Instance: ConditionWalking
 InstanceOf: KLCommonCareSocialCondition
-Description: "Example of the citizen, Judith, who has troubles walking"
+Description: "Borgeren judith der har udfordringer med at gå"
+Title: "Judith Gå"
 Usage: #example
 * clinicalStatus.coding.code = #active
 * clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
@@ -113,7 +114,8 @@ Usage: #example
 
 Instance: ConditionCleaning
 InstanceOf: KLCommonCareSocialCondition
-Description: "Example of the citizen, Andreas, who has troubles cleaning"
+Description: "Borgeren Andreas der har udfordringer med rengøring"
+Title: "Andreas rengøring"
 Usage: #example
 * subject = Reference(Andreas)
 * clinicalStatus.coding.code = #active
@@ -129,7 +131,8 @@ Usage: #example
 
 Instance: ConditionCleaningWithNote
 InstanceOf: KLCommonCareSocialCondition
-Description: "Example of the citizen, Andreas, who has troubles cleaning, and a performer that makes a note during his stay at Hvidbjerghus"
+Title: "Andreas rengøring med notat"
+Description: "Borgeren Andreas der har udfordringer med rengøring, og en udfører fra Hvidbjerghus, der laver et notat"
 Usage: #example
 * subject = Reference(Andreas)
 * clinicalStatus.coding.code = #active
@@ -147,7 +150,8 @@ Usage: #example
 
 Instance: ConditionCareingForOwnHealthPerformerNoteFFB
 InstanceOf: KLCommonCareSocialCondition
-Description: "Example of the citizen, Andreas, where a performer makes a note regarding his ability to take care of his own health, when the condition is not previously known"
+Title: "Andreas notat varetage egen sundhed"
+Description: "Andreas notat vedr. det at varetage egen sundhed, når tilstanden ikke er kendt"
 Usage: #example
 * subject = Reference(Andreas)
 * clinicalStatus.coding.code = #active

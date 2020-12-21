@@ -1,6 +1,6 @@
 Profile:        KLCommonCrossSectorCondition
 Parent:         Condition
-Title:          "KLCommonCrossSectorCondition"
+Title:          "CrossSectorCondition"
 Description:    "Conditions which may be used for cross sector exchange in Denmark, as expressed by Danish municipalities."
 
 //Slicing code, declaring disciminator, and slicing type
@@ -54,7 +54,7 @@ Description:    "Conditions which may be used for cross sector exchange in Denma
 
 Instance: AndreasMaalgruppeUdviklingshamning
 InstanceOf: KLCommonCrossSectorCondition
-Title: "AndreasMålgruppeUdviklingshæmning"
+Title: "Andreas målgruppe udviklingshæmning"
 Description: "Andreas' målgruppe"
 Usage: #example
 * code.coding[FFBCodesCT] = FFB#97c355cc-84e3-46d0-ac1b-00bc627d089f "Udviklingshæmning"
@@ -71,7 +71,7 @@ Usage: #example
 
 Instance: JudithDiabetes
 InstanceOf: KLCommonCrossSectorCondition
-Title: "JudithDiabetes"
+Title: "Judith diabetes"
 Description: "En diagnose som registreret i kommunen, hvor Hanne fra Aalborg har registreret informationen fra lægen Marianne, som fx kunne komme fra diabetescenteret på hospitalet"
 Usage: #example
 * code.coding[ICD10codes] = SKS-D#DE11 "Type 2-diabetes (kan ikke valideres fordi der ikke er adgang til koderne)"

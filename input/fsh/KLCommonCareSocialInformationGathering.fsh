@@ -1,5 +1,5 @@
 Profile: KLCommonCareSocialInformationGathering
-Title: "KLCommonCareSocialInformationGathering"
+Title: "InformationGathering"
 Parent: ClinicalImpression
 Description: "Information gathering resource used to group all the information collected in a clinical process such af a nursing status, a functional ability evaluation or a social paedagogical review"
 * code from KLInformationGatheringTypeCodes (required)
@@ -27,6 +27,7 @@ Description: "Information gathering resource used to group all the information c
 
 Instance: NursingStatusMark
 InstanceOf: KLCommonCareSocialInformationGathering
+Title: "Mark sygeplejefaglig udredning"
 Description: "Borgeren Marks sygeplejefaglige udredning"
 Usage: #example
 * code.coding = KLCommonCareSocialCodes#47fd1468-89da-4803-9d7a-ecc039a30d92 "sygeplejefaglig udredning, FSIII"

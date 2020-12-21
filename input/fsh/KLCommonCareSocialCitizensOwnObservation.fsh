@@ -1,5 +1,5 @@
 Profile: KLCommonCareSocialCitizensOwnObservation
-Title: "KLCommonCareSocialCitizensOwnObservation"
+Title: "CitizensOwnObservation"
 Parent: Observation
 Description: "Citizens own observation of performance level (udførelse) or importance level (betydning) as defined by FSIII"
 
@@ -34,7 +34,7 @@ Description: "Citizens own observation of performance level (udførelse) or impo
 Instance: JudithGaa
 InstanceOf: KLCommonCareSocialCitizensOwnObservation
 Usage: #example
-Title: "JudithGåEgenvurdering"
+Title: "Judith Gå Egenvurdering"
 Description: "Judiths vurdering af egen evne til at gå"
 * code.coding = FSIII#D
 * valueCodeableConcept = FSIII#D2

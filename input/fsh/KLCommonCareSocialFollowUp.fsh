@@ -1,6 +1,6 @@
 Profile:        KLCommonCareSocialFollowUp
 Parent:         Observation
-Title:          "KLCommonCareSocialFollowUp"
+Title:          "FollowUp"
 Description:    "Follow-up results used in Danish municipalities"
 
 * code = SCT#712744002 // |Evaluation of care plan (procedure)| opfølgning
@@ -23,7 +23,7 @@ Description:    "Follow-up results used in Danish municipalities"
 
 Instance: MarkHjemmeplejeRevisitation
 InstanceOf: KLCommonCareSocialFollowUp
-Title: "MarksHjemmeplejeRevisitation"
+Title: "Marks Hjemmepleje Revisitation"
 Description: "Eksempel på opfølgningsresultatet revisitation"
 Usage: #example
 * subject = Reference(Mark)
@@ -36,7 +36,7 @@ Usage: #example
 
 Instance: AndreasRevisitation
 InstanceOf: KLCommonCareSocialFollowUp
-Title: "AndreasRevisitation"
+Title: "Andreas Revisitation"
 Description: "Eksempel på opfølgningsresultatet revisitation"
 Usage: #example
 * subject = Reference(Andreas)

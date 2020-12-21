@@ -1,6 +1,6 @@
 Profile: KLCommonCareSocialCompletedIntervention
 Parent: Procedure
-Title: "KLCommonCareSocialCompletedIntervention"
+Title: "CompletedIntervention"
 Description: "Documentation for completed inteventions (activities related to one and only one encounter) in Danish municipalities"
 
 * complication 0..1
@@ -29,7 +29,7 @@ Description: "Documentation for completed inteventions (activities related to on
 
 Instance: AkutSygeplejeMark
 InstanceOf: KLCommonCareSocialCompletedIntervention
-Title: "AkutSygeplejeMark"
+Title: "Akutsygepleje Mark"
 Description: "Levering af indsats til Mark vedr. undersøgelser og måling af værdier efter henvisning fra læge vedr. akut sygepleje"
 Usage: #example
 * status = #completed

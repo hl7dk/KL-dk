@@ -1,6 +1,6 @@
 Profile: KLCommonCareSocialCarePlan
 Parent: CarePlan
-Title: "KLCommonCareSocialCarePlan"
+Title: "CarePlan"
 Description: "Overall CarePlan for Danish municipalities, for individual plans regarding social care, and health act §140 and §119"
 
 * category from KLCarePlanCategoryCodes (extensible)
@@ -60,8 +60,8 @@ Description: "Overall CarePlan for Danish municipalities, for individual plans r
 
 Instance: FFBIndsats
 InstanceOf: KLCommonCareSocialCarePlan
-Title: "FFBIndsats"
-Description: "Eksempel på social indsats"
+Title: "Andreas midlertidigt ophold"
+Description: "Andreas social indsats vedr. midlertidigt ophold"
 Usage: #example
 * status = RequestStatusCodes#active
 * intent = CarePlanIntentCodes#order
@@ -81,6 +81,9 @@ Usage: #example
 
 Instance: NySocialIndsats
 InstanceOf: KLCommonCareSocialCarePlan
+Title: "Andreas alment botilbud"
+Description: "Andreas social indsats vedr. almen botilbud"
+Usage: #example
 * subject = Reference(Andreas)
 * description = "Andreas plan for alment botilbud omfatter socialpædagogiske tiltag, med fokus på at klare sig selv i hverdagsaktiviteter, og opbygge relationer til personale og de andre beboere."
 * careTeam = Reference(AlmBotilbud)

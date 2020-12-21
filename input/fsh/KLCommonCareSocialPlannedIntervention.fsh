@@ -1,6 +1,6 @@
 Profile:        KLCommonCareSocialPlannedIntervention
 Parent:         CarePlan
-Title:          "KLCommonCareSocialPlannedIntervention"
+Title:          "PlannedIntervention"
 Description:    "Planned interventions (indsats/ydelse) in Danish Municipalities"
 
 * activity.detail.code from KLInterventions (required)
@@ -42,8 +42,8 @@ Description:    "Planned interventions (indsats/ydelse) in Danish Municipalities
 
 Instance: PressureUlcerIntervention
 InstanceOf: KLCommonCareSocialPlannedIntervention
-Title: "PlannedUlcerIntervention"
-Description: "Mark's planned pressure ulcer intervention, with one associated encounter"
+Title: "Mark tryksårsindsats"
+Description: "Mark's planlagte tryksårsindsats, med én tilknyttet kontakt"
 Usage: #example
 * activity.detail.code = FSIII#G1.39 "Sårbehandling"
 * activity.detail.description = "Tryksår på venstre ben skal tilses og behandles dagligt. Vigtigt at tjekke for infektion"
@@ -60,6 +60,7 @@ Usage: #example
 
 Instance: AndreasSocialeRelationer
 InstanceOf: KLCommonCareSocialPlannedIntervention
+Title: "Andreas' ydelse sociale relationer"
 Usage: #example
 * basedOn = Reference(NySocialIndsats)
 * activity.detail.code.coding[0] = FFB#05cd5e81-1a3a-4bdd-901b-7ec96c12d990 "Støtte til sociale relationer"
@@ -71,6 +72,7 @@ Usage: #example
 
 Instance: AndreasDagligeOpgaver
 InstanceOf: KLCommonCareSocialPlannedIntervention
+Title: "Andreas' ydelse daglige opgaver"
 Usage: #example
 * basedOn = Reference(NySocialIndsats)
 * activity.detail.code = FFB#638f44df-6bf2-47f8-9935-b8fdc83e5bf5 "Støtte til daglige opgaver i hjemmet"
