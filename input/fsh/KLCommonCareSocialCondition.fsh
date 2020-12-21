@@ -1,6 +1,6 @@
 Profile:        KLCommonCareSocialCondition
 Parent:         Condition
-Title:          "KLCommonCareSocialCondition"
+Title:          "Condition"
 Description:    """
 Detailed information about conditions in Danish municiplities health, social and elderly care.
 """

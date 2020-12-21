@@ -1,6 +1,6 @@
 Profile:        KLCommonCareSocialServiceRequest
 Parent:         ServiceRequest
-Title:          "KLCommonCareSocialServiceRequest"
+Title:          "ServiceRequest"
 Description:    "Referals/requests used in Danish municipalities"
 
 * requester 1..1
