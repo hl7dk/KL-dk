@@ -778,10 +778,17 @@ Description: "SNOMED CT and LOINC observation codes used in Danish municipalitie
 * SCT#27113001	//Body weight
 * codes from system SCT where concept is-a #86290005 //(Respiratory rate)
 * codes from system SCT where concept is-a #276885007 // Core Body temperature
+* SCT#248334005 //|Length of body (observable entity)|
+* SCT#276351002 // |Infant length (observable entity)|
+* SCT#276353004 //|Crown heel length (observable entity)|
+* SCT#248333004 //|Standing height (observable entity)|
 //fuctional observation
 * SCT#450738001 //"Thirty second chair stand test score"
 * LOINC#64098-7 //6-min walking test
 * SCT#165263003 //walking distance
+//TOBS Observations
+* SCT#6942003 //|bevidsthedsniveau|
+* SCT#444714004 //|Assessment of consciousness level (procedure)|
 //Pain scores
 * SCT#443394008 //|Visual analog scale pain score (observable entity)|
 * SCT#225908003 //|Pain score (observable entity)|
