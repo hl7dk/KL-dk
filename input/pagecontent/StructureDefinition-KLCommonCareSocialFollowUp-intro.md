@@ -7,6 +7,8 @@ The ObservationCode is mandatory, and fixed to a specific SNOMED CT code that si
 
 Note that this ressource may reference an Encounter. Use this opportunity only if the follow-up takes place in an actual meeting between a practitioner and citizen.
 
+The focus of the follow-up can be documented in Observation.focus, so that it becomes explicite which conditions and interventions this follow-up result pertains to.
+
 ### Conversions between Danish information model and FHIR-profile
 
 Nedenstående tabel oversætter mellem de attributter der er defineret i den fælleskommunale informationsmodel (FKI), definerer kort den enkelte attribut på dansk og specificerer, hvilke af FHIR-profilens atributter, der skal bruges til specifikation af indholdet. 
@@ -22,3 +24,4 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 |opfølgningsansvarlig|Den fagperson der har ansvaret for opfølgningen|Observation.performer|
 |opfølgningstid|Det tidspunkt, hvor opfølgningen er foretaget|Observation.effectiveDateTime|
 |opfølgningsstatus|Kode der udtrykker, hvor i sin proces, opfølgningen er|Observation.status|
+|opfølgningsfokus|Den eller de tilstande og indsatser der er fokus for opfølgningen.|Observation.focus|
