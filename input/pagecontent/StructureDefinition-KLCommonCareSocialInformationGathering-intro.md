@@ -1,5 +1,5 @@
 # Scope and usage
-The CommonCareSocialInformationGathering may be instatiated, whenever an information gathering activity occur. The InformatioGathering-profile groups data from of information gathering process e.g. therapeutic examination and nursing statuses (therapeutisk udredning og sygeplejefaglig udredning). The full list of supported information gathering types are expressed as a ValueSet for ClinicalImpression.code.coding
+The CommonCareSocialInformationGathering may be instatiated, whenever an information gathering activity occur. The InformationGathering-profile groups data from of information gathering process e.g. therapeutic examination and nursing statuses (therapeutisk udredning og sygeplejefaglig udredning). The full list of supported information gathering types are expressed as a ValueSet for ClinicalImpression.code.coding
 
 The result of an information gathering is:
 * "information", which reference [KLCommonCareSocialMatterOfInterest](StructureDefinition-KLCommonCareSocialMatterOfInterest.html), and is structured according to FSIII area codes, FFB general information codes or FFB theme codes. Use ClinicalImpression.investigation.code.coding and ClinicalImpression.investigation.item
