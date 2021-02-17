@@ -57,6 +57,8 @@ Detailed information about conditions in Danish municiplities health, social and
 //Specifying note (fagligt notat)
 * note.author[x] only Reference
 * note.authorReference only Reference(KLCommonPractitioner)
+* note.extension contains
+   MatterOfInterestInformer named matterOfInterestInformer 0..1
 
 //Specifying dansih descriptions
 * code.coding ^short = "[DK] tilstandskode"
@@ -77,6 +79,7 @@ Detailed information about conditions in Danish municiplities health, social and
 * extension[eventHistory] ^short = "[DK] tilstandsændringshistorie" 
 * evidence.detail ^short = "[DK] tilstandsevidens (herunder tilstandOplysning og tilstandOpfølgningsresultat)" 
 * category.coding ^short = "[DK] tilstandsfokus"
+* note.extension[matterOfInterestInformer] ^short = "[DK] tilstandsInformant"
 
 
 Instance: ConditionPressureUlcer

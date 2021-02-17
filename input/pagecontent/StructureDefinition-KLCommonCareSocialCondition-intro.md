@@ -21,7 +21,7 @@ Condition.category is, in this implementation, used as a way to determine whethe
 
 Ending a condition have two meanings. The first is that the citizen no longer has the condition e.g. a pressure ulcer has healed. In this case, Condition.clinicalStatus=inactive and Condition.abatementTime is the date where the condition was no longer a problem. The second meaning of "ended" is that the condition falls out of focus in a professional context e.g. if the citizen moves, or another professional group takes over the care for the citizen. In this case, the Condition.category looses its "problem-list-item" flag. The idea is to state that from a citizen viewpoint the condition has not changed, but in this professional context it is no longer in focus.
 
-Condition.code.text holds a short description or evaluation of the condition including how serious it is. The attribute is mandatory for the home nursing context. The attribute should only be changed, if the condition significatly changes e.g. a pressure ulcer that is significantly worse or better. All other text descriptions and notes should be placed in Condition.note.text. For most use cases, it is important that notes explicitely state the author in Condition.note.author.
+Condition.code.text holds a short description or evaluation of the condition including how serious it is. The attribute is mandatory for the home nursing context. The attribute should only be changed, if the condition significatly changes e.g. a pressure ulcer that is significantly worse or better. All other text descriptions and notes should be placed in Condition.note.text. For most use cases, it is important that notes explicitely state the author in Condition.note.author. Special care should be taken if you want to explicitely state the source of the information, as it is explicitely done in FFB for 'activity and participation conditions'. It is recommended that 'information from the citizen', 'information from others' and 'employee evaluation'(sagsbehandlers bemærkning) are documented using three separate Condition.note.text and with the correct associated code in Condition.note:extension.matterOfInterestInformer. The employee evaluation should be documented in short form in Condition.code.text.
 
 Condition.extension:dueTo is the reason for the condition, which is an optional attribute in FSIII. It references either KLCommonCareSocialCondition or KLCommonCrossSectorCondition.
 
@@ -29,7 +29,7 @@ Condition follow-up is documented using Condition.extension:followUpEncounter, w
 
 Condition.evidence.detail may hold a reference to both KLCommonCareSocialMatterOfInterest and KLCommonCareSocialEvaluation. Associated KLCommonCareSocialEvaluations are previous follow-up results. Associated KLCommonCareSocialMatterOfInterest's are information about the citizen recorded under the headings defined by FFB Themes, Areas (FSIII områder), which are related to this specific condition. E.g. if the condition is "J3.4 - Færden i forskellige omgivelser" then there might be associated information recorded as a KLCommonCareSocialMatterOfInterest within the code "J3 - Mobilitet".
 
-Conditions may have several different versions. Those that are important from a municipality viewpoint may be followed using the extension:EventHistory. 
+Conditions may have several different versions. Those that are important from a municipality viewpoint may be followed using the extension:EventHistory.
 
 ### Conversions between Danish information model and FHIR-profile
 
@@ -43,6 +43,7 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 |tilstandsstatus|Klasse der udtrykker en status for om tilstanden er til stede eller ej.|Condition.clinicalStatus og Condition.verificationStatus|
 |tilstandsvurdering|Beskrivelse af en persontilstand |Condition.code.text|
 |tilstandFagligtNotat|Beskrivelse af løbende status, der ikke ændrer på vurdering, og sværhedsgrad.|Condition.note.text|
+|tilstandsInformant|Klasse der udtrykker hvem oplysninger vedr. tilstanden kommer fra.|Condition.note.extension:matterOfInterestInformer|
 |tilstandsoprettelsestid|tidsangivelse for hvornår tilstanden først blev oprettet i journalen|Condition.recordedDate|
 |tilstandsafslutningstid|tidsangivelse for hvornår tilstanden er afsluttet. Med afsluttet menes at tilstanden ikke mere er et problem for borger.|Condition.abatementDateTime|
 |tilstandsplanlagtOpfølgning|Kontakt, hvor det planlægges at følge op på tilstanden |Condition.extension:followUpEncounter|
