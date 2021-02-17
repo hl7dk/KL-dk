@@ -60,3 +60,4 @@ Usage: #example
 * status = #final
 * subject = Reference(Mark)
 * performer = Reference(HanneFraVisitationenAalborg)
+* encounter = Reference(MarkogUdredningSygepleje)
