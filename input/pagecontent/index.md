@@ -54,7 +54,13 @@ In the end of Andreas temporary stay, a follow-up on Andreas social intervention
 [Mads](Patient-Mads.html) is a citizen with a few recorded FFB Themes. The the difference between having a [citizen perspective on an FFB Theme](Observation-MentalInformationMads.html) or having [information from others](Observation-MentalInformationMadsOthers.html) is illustrated in this short example.
 
 ### Overview
-Comming
+In the image below, on overview of FKI is provided. The illustration does not include any attributes, and only the most important relationships.
+![Overview of FKI FHIR profiles](./FHIROverview.png)
+
+#### Occasion to act 
+The occasion to act in the municipality health and social care system, is a request for help from a citizen or next-of-kin, a referal from a health provider or an internal or between municipality request. In FKI, the municipality registration of a recieved request or referal can be documented using [ServiceRequest](StructureDefinition-KLCommonCareSocialServiceRequest.html). The reason for a request, may be a diagnosis or condition already known by another health provider, which can be documented using [CrossSectorCondition](StructureDefinition-KLCommonCrossSectorCondition.html). The reason could also be that a follow-up result has shown the need to re-do the visitation of the citizen, which is documented using [FollowUp](StructureDefinition-KLCommonCareSocialFollowUp.html).
+
+An 'occation to act' is most typically a reason to start activity planning. However, in some acute cases, it may be needed to start execution of intervention based on the service request alone. This is often the case for acute home nursing, requested by general practioners.
 
 ### Versioning and change management
 
