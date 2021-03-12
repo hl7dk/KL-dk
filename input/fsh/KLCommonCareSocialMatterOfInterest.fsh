@@ -4,7 +4,7 @@ Title:          "MatterOfInterest"
 Description:    "Matter or area of interest in relation to the care of the citizen, as used in Danish municipalities (Oplysning/Område/Tema)"
 * code from KLInformationCodes (required)
 * value[x] only CodeableConcept
-* valueCodeableConcept from KLSeveritiesFSIII
+* valueCodeableConcept.coding from KLSeveritiesFSIII
 * subject only Reference(KLCommonCitizen)
 * encounter only Reference(KLCommonCareSocialEncounter)
 

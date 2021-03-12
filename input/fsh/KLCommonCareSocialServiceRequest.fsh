@@ -57,7 +57,7 @@ Usage: #example
 * agent[0].onBehalfOf = Reference(SocialOgSundhedMorsoe)
 * agent[1].type = #informant
 * agent[1].who = Reference(AndreasMor)
-* reason =  #TREAT
+* reason = #TREAT
 
 Instance: AndreasMor
 InstanceOf: RelatedPerson
