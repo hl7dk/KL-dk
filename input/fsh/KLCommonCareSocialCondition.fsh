@@ -40,7 +40,7 @@ Detailed information about conditions in Danish municiplities health, social and
 //See extension file for the locally defined and,
 //aliases for the externaly defined
 * extension contains
-   ExtEventHist named eventHistory 0..1 and 
+   ExtEventHist named eventHistory 0..* and 
    ExtDueTo named dueTo 0..1 and
    FollowUpEncounter named followUpEncounter 0..1
 

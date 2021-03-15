@@ -37,3 +37,9 @@ Description: "Extension for pointing to who's perspective the matter-of-interest
 * value[x] 1..1
 * value[x] only CodeableConcept
 * value[x] from KLMatterOfInterestInformerFFB
+
+Extension: ExtEventHist
+Title: "EventHist"
+Description: "Event history, pointing to earlier significant versions of this resource. Comparable to http://hl7.org/fhir/StructureDefinition/event-eventHistory, working for Conditions"
+* value[x] 1..1
+* value[x] only Reference(Provenance)
