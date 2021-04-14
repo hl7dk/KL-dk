@@ -29,7 +29,7 @@ Description:    "Conditions which may be used for cross sector exchange in Denma
 * code.coding[ICD10codes] from KLICD10SKS (required)
 * code.coding[ICD10codes].system = SKS-D
 
-* code.coding[ICPC2codes] from KLICPC2 (required)
+* code.coding[ICPC2codes] from ICPC2DK (required)
 * code.coding[ICPC2codes].system = ICPC2DK
 
 //Specifying datatype of abatement, subject, asserter and evidence

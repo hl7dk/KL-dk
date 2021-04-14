@@ -43,7 +43,7 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 |målSubjekt|Den borger som målet er opstillet for.|Goal.subject|
 |målAnsvarlig|Den fagperson der er ansvarlig for oprettelsen af målet|Goal.expressedBy|
 |målrelateret|Den eller de Tilstande eller Oplysninger, der er relvant for målet.|Goal.addresses|
-|målrelateretRang|Heltal, der udtrykker hvordan målgruppen er prioriteret, så der kan skelnes mellem primær målgruppe og øvrige målgrupper|Goal.addresses.extension:conditionRank|
+|målrelateretRang|Heltal, der udtrykker hvordan tilstanden er prioriteret, så der kan skelnes mellem primær tilstand og øvrige tilstande|Goal.addresses.extension:conditionRank|
 |målnotat|Løbende notat, der fortæller hvordan det går med at arbejde med målet.|Goal.note.text|
 |målvurdering|En beskrivelse af om målet er opfyldt.|Goal.outcomeCode.text|
 |målvurderingsInformant|Klasse der udtrykker, hvem der har vurderet målet.|Goal.outcomeCode.extention:matterOfInterestInformer|

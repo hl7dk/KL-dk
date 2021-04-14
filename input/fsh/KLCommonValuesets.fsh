@@ -298,8 +298,8 @@ Title: "KLICD10SKS"
 Description: "ICD10 codes as defined by SKS in Denmark excluding the main hierachy code D"
 * codes from system SKS-D
 
-ValueSet: KLICPC2
-Title: "KLICPC2"
+ValueSet: ICPC2DK
+Title: "ICPC2DK"
 Description: "the Danish edition of ICPC2 codes as defined by KiAP"
 * codes from system ICPC2DK
 
@@ -677,6 +677,14 @@ Description: "Interventions as described by FSIII and FFB"
 * codes from valueset KLPreventionInterventionsFSIII
 * codes from valueset KLInterventionsFFB
 
+ValueSet: KLInterventionsFSIII
+Title: "KLInterventionsFSIII" 
+Description: "Interventions as described by FSIII"
+* codes from valueset KLNursingInterventionsFSIII
+* codes from valueset KLHomeCareInterventionsFSIII
+* codes from valueset KLTrainingInterventionsFSIII
+* codes from valueset KLPreventionInterventionsFSIII
+
 ValueSet: KLEncounterTypes
 Title: "KLEncounterTypes"
 Description: "Encounter types in Danish municipality health, social and elderly care (note that these are specific to this model, they are not replicas of a municipality terminology service)"
@@ -793,7 +801,7 @@ Description: "SNOMED CT and LOINC observation codes used in Danish municipalitie
 * SCT#443394008 //|Visual analog scale pain score (observable entity)|
 * SCT#225908003 //|Pain score (observable entity)|
 //Fra spørgeskemaer
-* KLCommonproprietaryObservation#e30a95fd-7abd-478b-9a9d-e02dfdd73fd5 //"WHO-5 værdi"
+* KLCommonproprietary#e30a95fd-7abd-478b-9a9d-e02dfdd73fd5 //"WHO-5 værdi"
 * SCT#404949004 //"Hvilemønster"
 * SCT#406202006 //"Træk vedr. energi"
 * SCT#247752005 //"Interesseniveau"
@@ -846,9 +854,9 @@ Description: "Codes that identify who's perspective the matter-of-interest is co
 * FFB#63338442-7b2e-405b-acc0-142361ef19f1 //Oplysninger fra andre
 * FFB#f6ea2920-7dde-491e-a489-6b99a3904069 //Sagsbehandler bemærkninger
 
- CodeSystem: KLCommonproprietaryObservation
- Title: "KLCommonproprietaryObservation"
- Description: "Temporary Observationcodes Codes associated with KLCommonCareSocial"
+ CodeSystem: KLCommonproprietary
+ Title: "KLCommonProprietary"
+ Description: "Proprietary codes associated with KLCommonCareSocial, partial list, ID's likely to change."
 // * #829ac647-c7fc-4964-836b-f708d886e0e3 "oplysning" "oplysning er foretaget ved kontakt"
 // * #9269c9a2-8220-447b-a127-811275b41062 "vurdering/bevilling" "vurdering og/eller bevilling er foretaget ved kontakt"
 // * #9f03dfbb-7a97-45a5-94db-d4c3501714a9 "opfølgning" "opfølgning foretaget ved kontakt"

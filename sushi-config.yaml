@@ -29,8 +29,9 @@ publisher:
 
 jurisdiction: urn:iso:std:iso:3166#DNK "Denmark"
 
-#dependencies:
+dependencies:
 #  hl7.fhir.us.core: 3.1.0
+  dk.fhir.ig.dk-core: current
 parameters:
   show-inherited-invariants: false
 

@@ -1,7 +1,8 @@
 Profile:        KLCommonPractitioner
 Parent:         Practitioner
 Title:          "Practioner"
-Description:    "Practitioners as expressed by Danish municipalities."
+Description:    "Practitioners as expressed by dk-core."
+
 
 Instance:       BirteFraVisitationenMorsoe
 InstanceOf:     KLCommonPractitioner

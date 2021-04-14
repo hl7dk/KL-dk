@@ -1,7 +1,6 @@
 Extension: FollowUpEncounter
 Title:     "FollowupEncounter"
 Description: "Extension for pointing to previous and planned follow up encounters for a condition"
-
 * value[x] 1..1
 * value[x] only Reference(KLCommonCareSocialEncounter)
 
@@ -11,6 +10,12 @@ Description: "Extension for pointing to type of organisation/person that request
 * value[x] 1..1
 * value[x] only CodeableConcept
 * value[x] from KLRequestFromFSIII
+
+Extension: MunicipalityCaseNumber
+Title: "Casenumber"
+Description: "Extension for municipality Case numbers"
+* value[x] only KLCommonOfficialCaseIdentifier or KLCommonMunicipalitySpecificCaseIdentifier
+
 
 Extension: SubjectConsentToLiaising
 Title: "SubjectConsentToLiaising"

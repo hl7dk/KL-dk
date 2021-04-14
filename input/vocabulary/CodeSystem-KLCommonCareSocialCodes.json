@@ -1,7 +1,7 @@
 {
   "resourceType": "CodeSystem",
   "id": "KLCommonCareSocialCodes",
-  "url": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+  "url": "http://kl.dk/fhir/common/caresocial/CodeSystem/",
   "version": "20200908",
   "name": "KLCommomCareSocialCodes",
   "title": "KLCommomCareSocialCodes",
@@ -99,6 +99,9 @@
       "display": "FSIII tilstandsmål",
       "definition": "Tilstandsmål som defineret af FSIII - ofte i form af en forventet tilstand"
     }, {
+      "code": "ffb9886b-d04e-46b1-9165-a400f91f822b",
+      "display": "FSIII borgers ønsker og mål"
+    }, {
       "code": "0bb3daef-538d-45dc-b444-abdbcb63f6bc",
       "display": "FFB indsatsmål",
       "definition": "Indsatsmål i FFB - er de konkrete faglige mål der arbejdes med, og som er knyttet til tilstande og opfølgninger"
@@ -172,7 +175,7 @@
       "definition": "Der anmodes om sundhedsfremme og forebyggelse"
     }, {
       "code": "490ab7be-ddb1-4a54-baf1-009fe6e8a83b",
-      "display": "Sygepleje",
+      "display": "Hjemmesygepleje",
       "definition": "Der anmodes om sygepleje"
     }, {
       "code": "ad865929-7363-4b2d-a271-01993181fbaf",
