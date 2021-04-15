@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "id": "KLCommonCareSocialCodes",
+  "id": "KLCommomCareSocialCodes",
   "url": "http://kl.dk/fhir/common/caresocial/CodeSystem/",
   "version": "20200908",
   "name": "KLCommomCareSocialCodes",
@@ -57,6 +57,28 @@
       "code": "e70c66c0-a939-493b-8ea8-5b7e7b48ba1a",
       "display": "generelle oplysninger, FSIII",
       "definition": "indhentning af generelle oplysninger jævnfør FSIII"
+    } ]
+  }, {
+    "code": "b5731132-f6b9-4a47-995d-681d2b755d4f",
+    "display": "Kilde",
+    "definition": "Person der er kilde til oplysning eller vurdering",
+    "concept": [ {
+      "code": "25b4e705-2e9a-47a2-b11a-c829316b9d3a",
+      "display": "Borger",
+      "definition": "Borger er kilde til oplysning eller vurdering"
+    }, {
+      "code": "f6ea2920-7dde-491e-a489-6b99a3904069",
+      "display": "Sagsbehandler",
+      "definition": "Sagsbehandler er kilde til oplysning eller vurdering"
+    }, {
+      "code": "63338442-7b2e-405b-acc0-142361ef19f1",
+      "display": "Andre",
+      "definition": "Andre end borger og sagsbehandler er kilde til oplysning eller vurdering. Fx læge, pårørende og udfører",
+      "concept": [ {
+        "code": "f00a6844-1005-401d-965d-1c5859df7beb",
+        "display": "Udfører",
+        "definition": "Udfører er kilde til oplysning eller vurdering"
+      } ]
     } ]
   }, {
     "code": "25303acd-dcaf-4a8e-a8a3-3961a43858aa",

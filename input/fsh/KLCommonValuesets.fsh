@@ -723,10 +723,11 @@ Title: "KLGoalTypeCodes"
 Description: "Codes used to distinguish different kinds of goals"
 * KLCommonCareSocialCodes#ca552020-6ed1-4cdc-b0d4-32697f1f27ad //"FSIII tilstandsmål"
 * KLCommonCareSocialCodes#e6f35a88-6665-4471-9dce-9a98854532b4 //"FSIII indsatsmål"
-* KLCommonCareSocialCodes#416fe27d-3ccf-4390-8742-8b52a9d8dc78 //"FFB livsmål"
+* KLCommonCareSocialCodes#416fe27d-3ccf-4390-8742-8b52a9d8dc78 //"FFB borgers ønsker og mål"
 * KLCommonCareSocialCodes#424827b1-23aa-4848-962b-56ee47def560 //"Indsatsformål"
 * KLCommonCareSocialCodes#0bb3daef-538d-45dc-b444-abdbcb63f6bc //"FFB indsatsmål"
 * KLCommonCareSocialCodes#6746d4af-145a-4bfd-a672-05c0cf11b53b //"FFB delmål"
+* KLCommonCareSocialCodes#ffb9886b-d04e-46b1-9165-a400f91f822b //FSIII borgers ønsker og mål
 
 ValueSet: KLEvaluationTypeCodes
 Title: "KLEvaluationTypeCodes"
@@ -850,9 +851,10 @@ Description: "Codes that identify valid items in an investigation in Danish muni
 ValueSet: KLMatterOfInterestInformerFFB
 Title: "KLMatterOfInterestInformerFFB"
 Description: "Codes that identify who's perspective the matter-of-interest is comming from"
-* KLCommonCareSocialCodes#25b4e705-2e9a-47a2-b11a-c829316b9d3a //Oplysninger fra borgeren
-* KLCommonCareSocialCodes#63338442-7b2e-405b-acc0-142361ef19f1 //Oplysninger fra andre
-* KLCommonCareSocialCodes#f6ea2920-7dde-491e-a489-6b99a3904069 //Sagsbehandler bemærkninger
+* KLCommonCareSocialCodes#25b4e705-2e9a-47a2-b11a-c829316b9d3a //borger
+* KLCommonCareSocialCodes#63338442-7b2e-405b-acc0-142361ef19f1 //andre (fx læge, pårørende og udfører)
+* KLCommonCareSocialCodes#f6ea2920-7dde-491e-a489-6b99a3904069 //Sagsbehandler
+* KLCommonCareSocialCodes#f00a6844-1005-401d-965d-1c5859df7beb //Udfører
 
  CodeSystem: KLCommonproprietary
  Title: "KLCommonProprietary"

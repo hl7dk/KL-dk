@@ -4,9 +4,9 @@ CommonCareSocialEvaluation is used for documenting the result of an evaluation, 
 
 The Observation.code is mandatory, and fixed to a ValueSet specified by Local Govenment Denmark (KL), which may be suplemented with a SNOMED CT code.
 
-This resource has a text-based results in Observation.valueCodeableConcept.text, but can have a coded result as well. The coded result is only defined for structured needs assessment (FFB støttebehovsvurdering), and is represented in Observation.codeableConcept.coding. This means that Observation.codeableConcept.coding is only allowed if the Observation.code is effe55c7-572c-4a99-8fb4-2a9dda2f6572|FFB støttebehovsvurdering|, and possibly the SNOMED CT code 225344000 |Assessment of degree of assistance required (procedure)|.
+This resource has a text-based results in Observation.valueCodeableConcept.text, but can have a coded result as well. The coded result is only defined for structured needs assessment (FFB støttebehovsvurdering), and is represented in Observation.codeableConcept.coding. This means that Observation.codeableConcept.coding is only allowed if the Observation.code is effe55c7-572c-4a99-8fb4-2a9dda2f6572"FFB støttebehovsvurdering", and possibly the SNOMED CT code 225344000 "Assessment of degree of assistance required (procedure)".
 
-The CommonCareSocialEvaluation may reference a CommonCareSocialServiceRequest, if the evaluation is percieved as an answer to that request. 
+The Evaluation may reference a ServiceRequest, if the evaluation is percieved as an answer to that request. 
 
 ### Conversions between Danish information model and FHIR-profile
 

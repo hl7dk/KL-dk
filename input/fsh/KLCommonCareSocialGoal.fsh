@@ -186,7 +186,7 @@ Usage: #example
 * addresses = Reference(ConditionCleaning)
 * addresses.extension[conditionRank].valuePositiveInt = 1
 * outcomeCode.text = "Andreas har fået styr på morgenrutiner omkring oprydning på værelset. Skal dog stadig mindes om oprydning ind imellem og har brug for støtte fra piktogrammer."
-* outcomeCode.extension[matterOfInterestInformer].valueCodeableConcept = FFB#f6ea2920-7dde-491e-a489-6b99a3904069 "Sagsbehandler"
+* outcomeCode.extension[matterOfInterestInformer].valueCodeableConcept = KLCommonCareSocialCodes#f6ea2920-7dde-491e-a489-6b99a3904069 "Sagsbehandler"
 * expressedBy = Reference(BirteFraVisitationenMorsoe)
 
 Instance: AndreasDelmaal

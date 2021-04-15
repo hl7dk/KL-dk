@@ -107,7 +107,7 @@ kan overskue, det han skal. Så får han ondt bag i hovedet, og det
 er som om, han ikke kan tænke. Det kan også ske, hvis andre ikke
 behandler ham ordentligt eller ikke forstår ham"
 * status = #final
-* extension[matterOfInterestInformer].valueCodeableConcept = FFB#25b4e705-2e9a-47a2-b11a-c829316b9d3a
+* extension[matterOfInterestInformer].valueCodeableConcept = KLCommonCareSocialCodes#25b4e705-2e9a-47a2-b11a-c829316b9d3a
 * performer = Reference(KristinaFraVoksensocialomraadet)
 
 Instance: MentalInformationMadsOthers
@@ -156,5 +156,5 @@ udadreagerende, når han er vred. Vreden udløses af naturlige
 overdrevne. […] Der ses ikke øvrige symptomer på angst, OCD,
 depression eller psykose."
 * status = #final
-* extension[matterOfInterestInformer].valueCodeableConcept = FFB#63338442-7b2e-405b-acc0-142361ef19f1
+* extension[matterOfInterestInformer].valueCodeableConcept = KLCommonCareSocialCodes#63338442-7b2e-405b-acc0-142361ef19f1
 * performer = Reference(KristinaFraVoksensocialomraadet)

@@ -1,7 +1,7 @@
 ## Scope and usage
 The KLCommonCareSocialMatterOfInterest is used in Danish Municipalities, and may be instantiated whenever information about the citizen is recorded, under the headings defined by FFB Themes, Areas (FSIII områder), General Information (FSIII generelle oplysninger). For each heading, a new instance of CommonCareSocialInformation is used. If using the findingInformer extension, each of the matterOfInterest informers’ perspectives have their own instance. I.e. one FFB theme may be associated with three different instances, if all matter-of-interest informers are documented explicitly. 
 
-Observation.valueCodeableConcept holds the text-based result of the observation. For FSIII areas, in special cases, a severity may be recorded together with or instead of the text. This should be recorded, using valueCodedeableConcept.coding.
+Observation.valueCodeableConcept holds the text-based result of the observation.
 
 The documentation of the care-pathway may be supported using the Observation.encounter which tells in which encounter the KLCommonCareSocialMatterOfInterest has been recorded. Observation.basedOn may tell, which ServiceRequest resulted in the information gathering that this KLCommonCareSocialMatterOfInterest is part of.
 
@@ -21,6 +21,6 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 |områdekontakt|Den kontakt hvor oplysningsaktiviteten har fundet sted.|Observation.encounter|
 |områdeansvarlig|Den fagperson, der er ansvarlig for oplysningsaktiviteten|Observation.performer|
 |områdeordre|Den anledning, der har udløst at oplysningsaktiviteten er igangsat|Observation.basedOn|
-|områdetid|Det tidspunkt hvor området er vurderet.|Observation.effectiveDateTime|
+|områdetid|Det tidspunkt hvor området er oplyst.|Observation.effectiveDateTime|
 |områdeinformant|Klasse der udtrykker hvem område/tema er belyst af.|Observation.extension:matterOfInterestInformer|
 |områdestatus|Klasse der udtrykker, hvor i sin proces, oplysning af området er.|Observation.status|
