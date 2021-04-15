@@ -7,13 +7,15 @@ When a citizen or next-of-kin request a service from the municipality, the reque
 
 The subjectConsentToLiasing extension is used in FFB to signify whether the citizen knows about the service request or not. It should not be stated unless it is explicitely known, and only for FFB.
 
-ServiceRequest.reasonCode.text (henvendelsesHenvisningsårsag) is the text-based description of why an entity have contacted the municipality and asked for help. Sometimes, this text already describes what exactly should be delivered. Sometimes, it describes some concern that the municipality should look further into. As such, the attribute relates directly to the text option for "FSIII Henvendelses-/henvisningsårsag".
+ServiceRequest.reasonCode.text (anledningsårsag) is the text-based description of why an entity have contacted the municipality and asked for help. Sometimes, this text already describes what exactly should be delivered. Sometimes, it describes some concern that the municipality should look further into. As such, the attribute relates directly to the text option for "FSIII Henvendelses-/henvisningsårsag".
 
-SeviceRequest.reasonReference (henvendelsesHenvisningsbegrundelse) is a CrossSectorCondition that describe the citizen's disease, reduced functioning or problem, which is the background for the ServiceRequest. As such, the attribute relates directly to the condition and diagnosis options for "FSIII Henvendelses-/henvisningsårsag".
+SeviceRequest.reasonReference (anledningsbegrundelse) is a FocusCondition that describe the citizen's disease, reduced functioning or problem, which is the background for the ServiceRequest. As such, the attribute relates directly to the condition and diagnosis options for "FSIII Henvendelses-/henvisningsårsag".
 
 ServiceRequest.code.coding and ServiceRequest.orderDetail.coding may be used to explicitely state, what kind of interventions the requester wants for the citizen. That is not to say, that these are the interventions that the citizen is autorized to recieve (unless the intent-attribute is 'order'). ServiceRequest.orderDetail.coding relates to the intervention option for "FSIII Henvendelses-/henvisningsårsag". If more than one type of intervention is required, e.g. both nursing and training, two service requests should be present, with two different ServiceRequest.code.coding.
 
 ServiceRequest.reasonReference also makes it possible to follow the care-pathway. In the case of a re-evaluation of a citizen (re-visitation), it is interesting which follow-up (opfølgning), was the reason for it.
+
+ServiceRequest:extension.municipalityCaseNumber is a relation to the municipality case (Sag). The officialCaseIdentifier uses an official http-adress and uuid to relate to a municipality case (Rammearkitektur: Sag.ID). The municipalitySpecificCaseIdentifier uses a municipality specific ID as a value, and a relates to the organization that owns this caseIdentifier(Rammearkitektur Sag.Sagsnummer og Sag.ejer Sagsaktør).
 
 ### Conversions between Danish information model and FHIR-profile
 
@@ -22,15 +24,16 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 {:class="grid"}
 |   FKI-attribut      | Definition        | FHIR  |
 | ------------- |-------------| -----|
-|henvendelsesHenvisningAnsvarlig|Den som har ansvar for henvendelsen/henvisningen|ServiceRequest.requester|
-|henvendelsesHenvisningFra|Klasse der angiver, hvilken instans, der har henvist eller har henvendt sig.|ServiceRequest.extension: RequesterType|
-|henvendelsesHenvisningsårsag|Beskrivelse af årsagen til henvisningen/henvendelsen|ServiceRequest.reasonCode.text|
-|henvendelsesHenvisningsstatus|Klasse der udtrykker status for henvendelsen|ServiceRequest.status|
-|henvendelsesHenvisningsHensigt|Klasse der udtrykker hensigten med henvendelsen|ServiceRequest.intent|
-|henvendelsesHenvisningsIndsats|Klasse der udtrykker, hvilken type kommunal indsats/ydelse der anmodes om.|ServiceRequest.code.coding|
-|henvendelsesHenvisningsAnmodetIndsats|Klasse der udtrykker, hvilken kommunal indsats/ydelse der anmodes om.|Servicerequest.orderDetail.coding|
-|henvendelsesHenvisningsSubjekt|Den borger som henvisningen/henvendelsen vedrører|ServiceRequest.subject|
-|henvendelsesHenvisningstid|Det tidspunkt hvor henvisning/henvendelsen er forfattet af den ansvarlige|ServiceRequest.authoredOn|
-|borgerIndforståetMedHenvisningHenvendelse|Klasse der angiver om borger er indforstået med henvendelsen|SeviceRequest.extension: SubjectConsentToLiaising|
-|henvendelsesHenvisningsbegrundelse|Den borgertilstand, der ligger til grund for henvendelsen/henvisningen. |SeviceRequest.reasonReference|
-|henvendelseHenvisningsårsagsreference|Et klassificeret opfølgningsresultat, der er baggrund for at borger revisiteres.|ServiceRequest.reasonReference|
+|anledningAnsvarlig|Den som har ansvar for henvendelsen/henvisningen|ServiceRequest.requester|
+|anledningFra|Klasse der angiver, hvilken instans, der har henvist eller har henvendt sig.|ServiceRequest.extension: RequesterType|
+|anledningsårsag|Beskrivelse af årsagen til henvisningen/henvendelsen|ServiceRequest.reasonCode.text|
+|anledningsstatus|Klasse der udtrykker status for henvendelsen|ServiceRequest.status|
+|anledningsHensigt|Klasse der udtrykker hensigten med henvendelsen|ServiceRequest.intent|
+|anledningsIndsats|Klasse der udtrykker, hvilken type kommunal indsats/ydelse der anmodes om.|ServiceRequest.code.coding|
+|anledningsAnmodetIndsats|Klasse der udtrykker, hvilken kommunal indsats/ydelse der anmodes om.|Servicerequest.orderDetail.coding|
+|anledningsSubjekt|Den borger som henvisningen/henvendelsen vedrører|ServiceRequest.subject|
+|anledningstid|Det tidspunkt hvor henvisning/henvendelsen er forfattet af den ansvarlige|ServiceRequest.authoredOn|
+|anledningBorgerIndforståetMed|Klasse der angiver om borger er indforstået med henvendelsen|SeviceRequest.extension: SubjectConsentToLiaising|
+|anledningsbegrundelse|Den borgertilstand, der ligger til grund for henvendelsen/henvisningen. |SeviceRequest.reasonReference|
+|anledningsårsagsreference|Et klassificeret opfølgningsresultat, der er baggrund for at borger revisiteres.|ServiceRequest.reasonReference|
+|anledningseHenvisningDokumenteretISag|Kommunalt Sagsnummer. Enten officielt uuid eller kommune-specifikt nummer|ServiceRequest:extension.municipalityCaseNumber|

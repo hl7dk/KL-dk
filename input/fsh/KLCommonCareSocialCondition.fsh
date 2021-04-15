@@ -42,11 +42,12 @@ Detailed information about conditions in Danish municiplities health, social and
 * extension contains
    ExtEventHist named eventHistory 0..* and 
    ExtDueTo named dueTo 0..1 and
-   FollowUpEncounter named followUpEncounter 0..1
+   FollowUpEncounter named followUpEncounter 0..1 and
+   ConditionLastAssertedDate named conditionLastAssertedDate 0..1
 
 //Specifying the use af the extension in this profile, by constraining content futher
 * extension[dueTo].value[x] only Reference
-* extension[dueTo].valueReference only Reference(KLCommonCareSocialCondition or KLCommonCrossSectorCondition)
+* extension[dueTo].valueReference only Reference(KLCommonCareSocialCondition or KLCommonCareSocialFocusCondition)
 
 //Specifying datatype of abatement, subject, asserter and evidence
 * abatement[x] only dateTime
@@ -80,7 +81,8 @@ Detailed information about conditions in Danish municiplities health, social and
 * evidence.detail ^short = "[DK] tilstandsevidens (herunder tilstandOplysning og tilstandOpfølgningsresultat)" 
 * category.coding ^short = "[DK] tilstandsfokus"
 * note.extension[matterOfInterestInformer] ^short = "[DK] tilstandsInformant"
-
+* extension[conditionLastAssertedDate] ^short = "[DK] tilstandSidstVurderetTid"
+ 
 
 Instance: ConditionPressureUlcer
 InstanceOf: KLCommonCareSocialCondition

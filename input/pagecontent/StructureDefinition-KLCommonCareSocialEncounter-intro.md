@@ -27,12 +27,12 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 {:class="grid"}
 |   FKI-attribut      | Definition        | FHIR  |
 | ------------- |-------------| -----|
-|kontaktstatus|Klasse der indikerer om kontakten er igangværende, eller om dokumentationen repræsentere en fremtidig intention eller er historisk|Encounter.status|
-|kontakttype|Klasse der udtrykker typen af aktivitet der gennemføres ved kontakten|Encounter.type.coding|
-|kontaktstart|Kontaktens start, eller planlagte start|Encounter.period.start|
-|kontaktslut|Kontaktens sluttidspunkt, eller planlagte sluttidspunkt|Encounter.period.end|
-|kontaktlængde|Kontaktens længde, eller planlagte længde. |Encounter.length|
-|kontaktudfører|Liste af fagpersoner, der gennemfører kontakten|Encounter.participant|
-|kontaktsubjekt|Den borger kontakten vedrører|Encounter.subject|
-|kontaktklasse|Klasse, der udtrykker en generel kategori for kontakten, som rækker ud over den kommunale kontekst.|Encounter.class|
-|kontaktansvarlig|Den organisation der er ansvarlig for kontakten|Encounter.serviceProvider|
+|borgerkontaktstatus|Klasse der indikerer om kontakten er igangværende, eller om dokumentationen repræsentere en fremtidig intention eller er historisk|Encounter.status|
+|borgerkontakttype|Klasse der udtrykker typen af aktivitet der gennemføres ved kontakten|Encounter.type.coding|
+|borgerkontaktstart|Kontaktens start, eller planlagte start|Encounter.period.start|
+|borgerkontaktslut|Kontaktens sluttidspunkt, eller planlagte sluttidspunkt|Encounter.period.end|
+|borgerkontaktlængde|Kontaktens længde, eller planlagte længde. |Encounter.length|
+|borgerkontaktudfører|Liste af fagpersoner, der gennemfører kontakten|Encounter.participant|
+|borgerkontaktsubjekt|Den borger kontakten vedrører|Encounter.subject|
+|borgerkontaktklasse|Klasse, der udtrykker en generel kategori for kontakten, som rækker ud over den kommunale kontekst.|Encounter.class|
+|borgerkontaktansvarlig|Den organisation der er ansvarlig for kontakten|Encounter.serviceProvider|

@@ -26,6 +26,8 @@ CarePlan.activity.detail.goal holds the connection between an intervention and i
 
 CarePlan:extension.relevantHistory makes it possible to track earlierssignificant versions of the PlannedIntervention.
 
+CarePlan:extension.municipalityCaseNumber is a relation to the municipality case (Sag). The officialCaseIdentifier uses an official http-adress and uuid to relate to a municipality case (Rammearkitektur: Sag.ID). The municipalitySpecificCaseIdentifier uses a municipality specific ID as a value, and a relates to the organization that owns this caseIdentifier(Rammearkitektur Sag.Sagsnummer og Sag.ejer Sagsaktør).
+
 ### Conversions between Danish information model and FHIR-profile
 
 Nedenstående tabel oversætter mellem de attributter der er defineret i den fælleskommunale informationsmodel (FKI), definerer kort den enkelte attribut på dansk og specificere hvilke af FHIR-profilens atributter der skal bruges til specifikation af indholdet
@@ -50,3 +52,4 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 |indsatsgennemførtAktivitet|Kontakter, der er gennemført som del af den planlagte indsats|CarePlan.activity.outcomeReference|
 |indsatsændringshistorie|Tidligere versioner af PlanlagtIndsats, hvor der er sket klinisk relevante ændringer|CarePlan:extension.relevantHistory|
 |indsatsAktivitetsstatus|Indikerer om indsatsen er igangsat, eller om den ikke er startet, eller er færdiggjort|CarePlan.activity.detail.status|
+|indsatsDokumenteretISag|Kommunalt Sagsnummer. enten officielt uuid eller kommune-specifikt nummer|CarePlan:extension.municipalityCaseNumber|

@@ -16,12 +16,12 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 {:class="grid"}
 |   FKI-attribut      | Definition        | FHIR  |
 | ------------- |-------------| -----|
-|opfølgningskode|Klasse, der udtrykker at der evalueres på den indsats der er igangsat.|Observation.code.coding|
+|opfølgningsresultatKode|Klasse, der udtrykker at der evalueres på den indsats der er igangsat.|Observation.code.coding|
 |opfølgningsresultat|Tekst der udtrykker hvad resultatet af opfølgningen er.|Observation.valueCodeableConcept.text|
 |opfølgningsresultatStruktureret|Struktureret resultat af en opfølgningen|Observation.valueCodeableConcept.coding|
-|opfølgningssubjekt|Den borger, der er genstand for opfølgningen|Observation.subject|
-|opfølgningsKontakt|Den kontakt hvor opfølgningen er foretaget|Observation.encounter|
-|opfølgningsansvarlig|Den fagperson der har ansvaret for opfølgningen|Observation.performer|
-|opfølgningstid|Det tidspunkt, hvor opfølgningen er foretaget|Observation.effectiveDateTime|
-|opfølgningsstatus|Kode der udtrykker, hvor i sin proces, opfølgningen er|Observation.status|
-|opfølgningsfokus|Den eller de tilstande og indsatser der er fokus for opfølgningen.|Observation.focus|
+|opfølgningsresultatSubjekt|Den borger, der er genstand for opfølgningen|Observation.subject|
+|opfølgningsresultatKontakt|Den kontakt hvor opfølgningen er foretaget|Observation.encounter|
+|opfølgningsresultatAnsvarlig|Den fagperson der har ansvaret for opfølgningen|Observation.performer|
+|opfølgningsresultatTid|Det tidspunkt, hvor opfølgningen er foretaget|Observation.effectiveDateTime|
+|opfølgningsresultatStatus|Kode der udtrykker, hvor i sin proces, opfølgningen er|Observation.status|
+|opfølgningsresultatFokus|Den eller de tilstande og indsatser der er fokus for opfølgningen.|Observation.focus|

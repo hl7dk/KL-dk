@@ -13,15 +13,15 @@ Description:    "Follow-up results used in Danish municipalities"
 * effective[x] only dateTime
 * focus only Reference(KLCommonCareSocialPlannedIntervention or KLCommonCareSocialCondition or KLCommonCareSocialCarePlan) // As in Gateway - however, consider if the relationship might be reversed dropping the use of the focus attribute.
 
-* code.coding ^short = "[DK] opfølgningskode"
+* code.coding ^short = "[DK] opfølgningsresultatkode"
 * valueCodeableConcept.text ^short = "[DK] opfølgningsresultat"
 * valueCodeableConcept.coding ^short = "[DK] struktureretOpfølgningsresultat"
-* subject ^short = "[DK] opfølgningsubjekt"
-* encounter ^short = "[DK] opfølgningsKontakt"
-* performer ^short = "[DK] opfølgningsansvarlig"
-* effectiveDateTime ^short = "[DK] opfølgningstid"
-* status ^short = "[DK] opfølgningsstatus"
-* focus ^short = "[DK] opfølgningsfokus"
+* subject ^short = "[DK] opfølgningsresultatSubjekt"
+* encounter ^short = "[DK] opfølgningsresultatKontakt"
+* performer ^short = "[DK] opfølgningsresultatAnsvarlig"
+* effectiveDateTime ^short = "[DK] opfølgningsresultatTid"
+* status ^short = "[DK] opfølgningsresultatStatus"
+* focus ^short = "[DK] opfølgningsresultatFokus"
 
 Instance: MarkHjemmeplejeRevisitation
 InstanceOf: KLCommonCareSocialFollowUp

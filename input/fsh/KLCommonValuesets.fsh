@@ -814,22 +814,22 @@ Description: "SNOMED CT and LOINC observation codes used in Danish municipalitie
 * SCT#736534008 //"EuroQol five dimension five level index value (observable entity)"
 * SCT#420753006 //|Pressure ulcer surface area (observable entity)|
 * SCT#434912009 // |glucosekoncentration i blod|
-* NPU#NPU14924 "U—Urin; egenskabsart(liste; stix; proc.)"
-* NPU#NPU10504 "U—Acetoacetat; arb.k.(proc.) = ?"
-* NPU#NPU17997 "U—Albumin; arb.k.(proc.) = ?"
-* NPU#NPU10506 "U—Bacterium, nitrit-producerende; arb.k.(proc.) = ?"
-* NPU#NPU01372 "U—Bilirubiner; arb.k.(proc.) = ?"
-* NPU#NPU03963 "U—Erythrocytter; arb.k.(proc.) = ?"
-* NPU#NPU04207 "U—Glucose; arb.k.(proc.) = ?"
-* NPU#NPU02415 "U—Hydrogen-ion; pH(proc.) = ?"
-* NPU#NPU04208 "U—Hæmoglobin; arb.k.(proc.) = ?"
-* NPU#NPU03987 "U—Leukocytter; arb.k.(proc.) = ?"
-* NPU#NPU21578 "U—Nitrit; arb.k.(proc.) = ?"
-* NPU#NPU04864 "U—Porphobilinogen; arb.k.(proc.) = ?"
-* NPU#NPU04206 "U—Protein; arb.k.(proc.) = ?"
-* NPU#NPU03694 "Pt—Urin; rel.massetæthed(20 °C/vand, 20 °C; proc.) = ?"
-* NPU#NPU03697 "U—Urobilinogen; arb.k.(proc.) = ?"
-* NPU#NPU02195 "P(vB; fPt)—Glucose; stofk. = ? mmol/L"
+* NPU#NPU14924 //"U—Urin; egenskabsart(liste; stix; proc.)"
+* NPU#NPU10504 //"U—Acetoacetat; arb.k.(proc.) = ?"
+* NPU#NPU17997 //"U—Albumin; arb.k.(proc.) = ?"
+* NPU#NPU10506 //"U—Bacterium, nitrit-producerende; arb.k.(proc.) = ?"
+* NPU#NPU01372 //"U—Bilirubiner; arb.k.(proc.) = ?"
+* NPU#NPU03963 //"U—Erythrocytter; arb.k.(proc.) = ?"
+* NPU#NPU04207 //"U—Glucose; arb.k.(proc.) = ?"
+* NPU#NPU02415 //"U—Hydrogen-ion; pH(proc.) = ?"
+* NPU#NPU04208 //"U—Hæmoglobin; arb.k.(proc.) = ?"
+* NPU#NPU03987 //"U—Leukocytter; arb.k.(proc.) = ?"
+* NPU#NPU21578 //"U—Nitrit; arb.k.(proc.) = ?"
+* NPU#NPU04864 //"U—Porphobilinogen; arb.k.(proc.) = ?"
+* NPU#NPU04206 //"U—Protein; arb.k.(proc.) = ?"
+* NPU#NPU03694 //"Pt—Urin; rel.massetæthed(20 °C/vand, 20 °C; proc.) = ?"
+* NPU#NPU03697 //"U—Urobilinogen; arb.k.(proc.) = ?"
+* NPU#NPU02195 //"P(vB; fPt)—Glucose; stofk. = ? mmol/L"
 
 ValueSet: KLInformationGatheringTypeCodes
 Title: "KLInformationGatheringTypeCodes"
@@ -850,9 +850,9 @@ Description: "Codes that identify valid items in an investigation in Danish muni
 ValueSet: KLMatterOfInterestInformerFFB
 Title: "KLMatterOfInterestInformerFFB"
 Description: "Codes that identify who's perspective the matter-of-interest is comming from"
-* FFB#25b4e705-2e9a-47a2-b11a-c829316b9d3a //Oplysninger fra borgeren
-* FFB#63338442-7b2e-405b-acc0-142361ef19f1 //Oplysninger fra andre
-* FFB#f6ea2920-7dde-491e-a489-6b99a3904069 //Sagsbehandler bemærkninger
+* KLCommonCareSocialCodes#25b4e705-2e9a-47a2-b11a-c829316b9d3a //Oplysninger fra borgeren
+* KLCommonCareSocialCodes#63338442-7b2e-405b-acc0-142361ef19f1 //Oplysninger fra andre
+* KLCommonCareSocialCodes#f6ea2920-7dde-491e-a489-6b99a3904069 //Sagsbehandler bemærkninger
 
  CodeSystem: KLCommonproprietary
  Title: "KLCommonProprietary"

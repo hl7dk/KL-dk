@@ -12,9 +12,14 @@ Description: "Extension for pointing to type of organisation/person that request
 * value[x] from KLRequestFromFSIII
 
 Extension: MunicipalityCaseNumber
-Title: "Casenumber"
-Description: "Extension for municipality Case numbers"
+Title: "MunicipalityCasenumber"
+Description: "Extension for municipality case numbers"
 * value[x] only KLCommonOfficialCaseIdentifier or KLCommonMunicipalitySpecificCaseIdentifier
+
+Extension: ConditionLastAssertedDate
+Title: "ConditionLastAssertedDate"
+Description: "Extension for the last date a condition was confirmed valid with its current clinical- and verification status, stage and severity, typically the last performed follow-up"
+* value[x] only dateTime
 
 
 Extension: SubjectConsentToLiaising

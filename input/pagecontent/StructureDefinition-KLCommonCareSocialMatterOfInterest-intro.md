@@ -15,13 +15,12 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 {:class="grid"}
 |   FKI-attribut      | Definition        | FHIR  |
 | ------------- |-------------| -----|
-|oplysningskode|Klasse der udtrykker, hvilket fagligt emneområde, oplysningen tilhører. |Observation.code.coding|
-|oplysningstekst|Oplysningen udtrykt som tekst|Observation.valueCodeableConcept.text|
-|oplysningssværhedsgrad|Sværhedsgraden af de udfordringer som indhentede informationer observationer og vurderinger har belyst, organiseret under faglige emneområder|Observation.valueCodeableConcept.coding|
-|oplysningssubjekt|Den borger som oplysningen omhandler|Observation.subject|
-|oplysningskontakt|Den kontakt hvor oplysningsaktiviteten har fundet sted.|Observation.encounter|
-|oplysningsansvarlig|Den fagperson, der er ansvarlig for oplysningen|Observation.performer|
-|oplysningsordre|Den henvendelse/henvisning, der har udløst at oplysningsaktiviteten er igangsat|Observation.basedOn|
-|oplysningstid|Det tidspunkt hvor oplysningen er vurderet.|Observation.effectiveDateTime|
-|oplysningsinformant|Klasse der udtrykker hvem oplysningen kommer fra.|Observation.extension:matterOfInterestInformer|
-|oplysningsstatus|Klasse der udtrykker, hvor i sin proces, oplysningen er.|Observation.status|
+|områdekode|Klasse der udtrykker området der belyses. |Observation.code.coding|
+|områdetekst|Oplysningen af området udtrykt som tekst|Observation.valueCodeableConcept.text|
+|områdesubjekt|Den borger som oplysningen af området omhandler|Observation.subject|
+|områdekontakt|Den kontakt hvor oplysningsaktiviteten har fundet sted.|Observation.encounter|
+|områdeansvarlig|Den fagperson, der er ansvarlig for oplysningsaktiviteten|Observation.performer|
+|områdeordre|Den anledning, der har udløst at oplysningsaktiviteten er igangsat|Observation.basedOn|
+|områdetid|Det tidspunkt hvor området er vurderet.|Observation.effectiveDateTime|
+|områdeinformant|Klasse der udtrykker hvem område/tema er belyst af.|Observation.extension:matterOfInterestInformer|
+|områdestatus|Klasse der udtrykker, hvor i sin proces, oplysning af området er.|Observation.status|

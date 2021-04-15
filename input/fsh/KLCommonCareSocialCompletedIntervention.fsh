@@ -14,18 +14,18 @@ Description: "Documentation for completed inteventions (activities related to on
 * note.author[x] 0..0
 
 //Danish descriptions
-* status ^short = "[DK] leveretIndsatsstatus"
-* statusReason.text  ^short = "[DK] leveretIndsatsstatusTekst"
-* complication.coding ^short = "[DK] leveretIndsatsAfvigelseskode"
-* complication.text ^short = "[DK] leveretIndsatsAfvigelsestekst"
-* note.text ^short = "[DK] leveretIndsatsNotat"
-* subject ^short = "[DK] leveretIndsatsSubjekt"
-* recorder ^short = "[DK] leveretIndsatsDokumenterendeLeverandør"
-* code.coding ^short = "[DK] leveretIndsatsKode"
-* basedOn ^short = "[DK] leveretIndsatsbevilling"
-* encounter ^short = "[DK] leveretIndsatsKontakt"
-* performedPeriod.start ^short = "[DK] leveretIndsatsStart"
-* performedPeriod.end ^short = "[DK] leveretIndsatsSlut"
+* status ^short = "[DK] leveretIndsatsAktivitetstatus"
+* statusReason.text  ^short = "[DK] leveretIndsatsAktivitetstatusTekst"
+* complication.coding ^short = "[DK] leveretIndsatsAktivitetAfvigelseskode"
+* complication.text ^short = "[DK] leveretIndsatsAktivitetAfvigelsestekst"
+* note.text ^short = "[DK] leveretIndsatsAktivitetNotat"
+* subject ^short = "[DK] leveretIndsatsAktivitetSubjekt"
+* recorder ^short = "[DK] leveretIndsatsAktivitetDokumenterendeLeverandør"
+* code.coding ^short = "[DK] leveretIndsatsAktivitetKode"
+* basedOn ^short = "[DK] leveretIndsatsAktivitetbevilling"
+* encounter ^short = "[DK] leveretIndsatsAktivitetKontakt"
+* performedPeriod.start ^short = "[DK] leveretIndsatsAktivitetStart"
+* performedPeriod.end ^short = "[DK] leveretIndsatsAktivitetSlut"
 
 Instance: AkutSygeplejeMark
 InstanceOf: KLCommonCareSocialCompletedIntervention

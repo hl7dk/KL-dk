@@ -27,12 +27,16 @@ Description: "Overall CarePlan for Danish municipalities, for individual plans r
 * author only Reference(KLCommonOrganization)
 * careTeam only Reference(KLCommonServicePerformer) // Careteam indeholder både tilbuds-typen og den organisation der står for levering af tilbudet
 * addresses.extension contains ConditionRank named conditionRank 0..1 //primær og sekundær målgruppe https://chat.fhir.org/#narrow/stream/179166-implementers/topic/CarePlan.20addresses
-* addresses only Reference(KLCommonCrossSectorCondition) 
+* addresses only Reference(KLCommonCareSocialFocusCondition) 
 * extension contains RelevantHist named relevantHistory 0..*
 * activity ^slicing.discriminator.type = #value
 * activity ^slicing.discriminator.path = "detail.code"
 * activity ^slicing.rules = #open
 * activity ^slicing.ordered = false 
+
+* extension contains
+   MunicipalityCaseNumber named municipalityCaseNumber 0..*
+    
 
 * activity contains
    carePlanEvaluation 0..*
@@ -56,7 +60,8 @@ Description: "Overall CarePlan for Danish municipalities, for individual plans r
 * extension[relevantHistory] ^short = "[DK] indsatsforløbændringshistorie" 
 * goal[ffbgoal] ^short = "[DK] indsatsforløbsmål" 
 * activity[carePlanEvaluation].outcomeReference ^short = "[DK] støttebehovsvurdering"
-* activity[carePlanEvaluation].detail.code.coding ^short = "[DK] støttebehovsvurdering"  
+* activity[carePlanEvaluation].detail.code.coding ^short = "[DK] støttebehovsvurdering"
+* extension[municipalityCaseNumber] ^short = "[DK] indsatsforløbDokumenteretISag" 
 
 Instance: FFBIndsats
 InstanceOf: KLCommonCareSocialCarePlan

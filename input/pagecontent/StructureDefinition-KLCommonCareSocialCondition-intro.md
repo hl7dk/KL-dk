@@ -23,13 +23,15 @@ Ending a condition have two meanings. The first is that the citizen no longer ha
 
 Condition.code.text holds a short description or evaluation of the condition including how serious it is. The attribute is mandatory for the home nursing context. The attribute should only be changed, if the condition significatly changes e.g. a pressure ulcer that is significantly worse or better. All other text descriptions and notes should be placed in Condition.note.text. For most use cases, it is important that notes explicitely state the author in Condition.note.author. Special care should be taken if you want to explicitely state the source of the information, as it is explicitely done in FFB for 'activity and participation conditions'. It is recommended that 'information from the citizen', 'information from others' and 'employee evaluation'(sagsbehandlers bemærkning) are documented using three separate Condition.note.text and with the correct associated code in Condition.note:extension.matterOfInterestInformer. The employee evaluation should be documented in short form in Condition.code.text.
 
-Condition.extension:dueTo is the reason for the condition, which is an optional attribute in FSIII. It references either KLCommonCareSocialCondition or KLCommonCrossSectorCondition.
+Condition.extension:dueTo is the reason for the condition, which is an optional attribute in FSIII. It references either KLCommonCareSocialCondition or KLCommonCareSocialFocusCondition.
 
 Condition follow-up is documented using Condition.extension:followUpEncounter, which points to a future encounter, with Encounter.type= "opfølgning".
 
 Condition.evidence.detail may hold a reference to both KLCommonCareSocialMatterOfInterest and KLCommonCareSocialEvaluation. Associated KLCommonCareSocialEvaluations are previous follow-up results. Associated KLCommonCareSocialMatterOfInterest's are information about the citizen recorded under the headings defined by FFB Themes, Areas (FSIII områder), which are related to this specific condition. E.g. if the condition is "J3.4 - Færden i forskellige omgivelser" then there might be associated information recorded as a KLCommonCareSocialMatterOfInterest within the code "J3 - Mobilitet".
 
 Conditions may have several different versions. Those that are important from a municipality viewpoint may be followed using the extension:EventHistory.
+
+Condition.extension:conditionLastAssertedDate holds information about the last date a condition was confirmed valid in its current state. Eg. with its current clinical- and verification status, and severity. In municipalities, this is often the date of the last performed follow-up, given that the follow-up has included an active evaluation of this particular condition. Note that the condition need not have changed (e.g. severity or status) to have a new conditionLastAssertedDate
 
 ### Conversions between Danish information model and FHIR-profile
 
@@ -44,8 +46,8 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 |tilstandsvurdering|Beskrivelse af en persontilstand |Condition.code.text|
 |tilstandFagligtNotat|Beskrivelse af løbende status, der ikke ændrer på vurdering, og sværhedsgrad.|Condition.note.text|
 |tilstandsInformant|Klasse der udtrykker hvem oplysninger vedr. tilstanden kommer fra.|Condition.note.extension:matterOfInterestInformer|
-|tilstandsoprettelsestid|tidsangivelse for hvornår tilstanden først blev oprettet i journalen|Condition.recordedDate|
-|tilstandsafslutningstid|tidsangivelse for hvornår tilstanden er afsluttet. Med afsluttet menes at tilstanden ikke mere er et problem for borger.|Condition.abatementDateTime|
+|tilstandsoprettelsestid|Tidsangivelse for hvornår tilstanden først blev oprettet i journalen|Condition.recordedDate|
+|tilstandsafslutningstid|Tidsangivelse for hvornår tilstanden er afsluttet. Med afsluttet menes at tilstanden ikke mere er et problem for borger.|Condition.abatementDateTime|
 |tilstandsplanlagtOpfølgning|Kontakt, hvor det planlægges at følge op på tilstanden |Condition.extension:followUpEncounter|
 |tilstandsårsag|Årsag til en persontilstand |Condition.extension:dueTo|
 |tilstandssubjekt|Den borger som har tilstanden|Condition.subject|
@@ -53,3 +55,4 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 |tilstandsændringshistorie|Tidligere versioner af tilstanden, hvor der er sket klinisk relevante ændringer|Condition.extension:eventHistory|
 |tilstandsevidens|Oplysning fra en udredning eller afklaring, der ligger til grund for denne tilstand, eller opfølgningsresultater, der er opfølgning på denne tilstand til forskellige tider.|Condition.evidence.detail|
 |tilstandsfokus|Klasse der udtrykker, om en faggruppe har tilstanden i fokus for sine indsatser|Condition.category.coding|
+|tilstandSidstVurderetTid|Tidsangivelse for hvornår tilstanden sidst er vurderet valid i sin nuværende form (fx sværhedsgrad og status).|Condition.extension:conditionLastAssertedDate|

@@ -1,7 +1,7 @@
-Profile:        KLCommonCrossSectorCondition
+Profile:        KLCommonCareSocialFocusCondition
 Parent:         Condition
-Title:          "CrossSectorCondition"
-Description:    "Conditions which may be used for cross sector exchange in Denmark, as expressed by Danish municipalities."
+Title:          "FocusCondition"
+Description:    "Conditions which may be used to express the focus of an intervention or the problem of a citizen in Danish municipalities. Mostly used for cross sector use cases."
 
 //Slicing code, declaring disciminator, and slicing type
 * code.coding ^slicing.discriminator.type = #value
@@ -53,7 +53,7 @@ Description:    "Conditions which may be used for cross sector exchange in Denma
 * note ^short = "[DK] tværorganisatoriskTilstandFagligtNotat"
 
 Instance: AndreasMaalgruppeUdviklingshamning
-InstanceOf: KLCommonCrossSectorCondition
+InstanceOf: KLCommonCareSocialFocusCondition
 Title: "Andreas målgruppe udviklingshæmning"
 Description: "Andreas' målgruppe"
 Usage: #example
@@ -70,7 +70,7 @@ Usage: #example
 * verificationStatus = #confirmed
 
 Instance: JudithDiabetes
-InstanceOf: KLCommonCrossSectorCondition
+InstanceOf: KLCommonCareSocialFocusCondition
 Title: "Judith diabetes"
 Description: "En diagnose som registreret i kommunen, hvor Hanne fra Aalborg har registreret informationen fra lægen Marianne, som fx kunne komme fra diabetescenteret på hospitalet"
 Usage: #example

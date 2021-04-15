@@ -10,15 +10,15 @@ Description:    "Encounters used for care and social services in Danish municipa
 * subject only Reference(KLCommonCitizen)
 
 
-* status ^short = "[DK] kontaktstatus"
-* type.coding ^short = "[DK] kontakttype"
-* period.start ^short = "[DK] kontaktstart"
-* period.end ^short = "[DK] kontaktslut"
-* length ^short = "[DK] kontaktlængde"
-* participant ^short = "[DK] kontaktudfører"
-* subject ^short = "[DK] kontaktsubjekt"
-* class ^short = "[DK] kontaktklasse"
-* serviceProvider ^short = "[DK] kontaktansvarlig"
+* status ^short = "[DK] borgerkontaktstatus"
+* type.coding ^short = "[DK] borgerkontakttype"
+* period.start ^short = "[DK] borgerkontaktstart"
+* period.end ^short = "[DK] borgerkontaktslut"
+* length ^short = "[DK] borgerkontaktlængde"
+* participant ^short = "[DK] borgerkontaktudfører"
+* subject ^short = "[DK] borgerkontaktsubjekt"
+* class ^short = "[DK] borgerkontaktklasse"
+* serviceProvider ^short = "[DK] borgerkontaktansvarlig"
 
 Instance: MarkFollowUpPlanned
 InstanceOf: KLCommonCareSocialEncounter

@@ -13,18 +13,18 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 {:class="grid"}
 |   FKI-attribut      | Definition        | FHIR  |
 | ------------- |-------------| -----|
-|leveretIndsatsstatus|Indikation af hvor i det kliniske forløb indsatsen er.|Procedure.status|
-|leveretIndsatsstatusTekst|Grund til at en indsats ikke er gennemført|Procedure.statusReason.text|
-|leveretIndsatsAfvigelseskode|En klasse der, hvis den er til stede, angiver på hvilken måde indsatsen ikke er leveret i overensstemmelse med den PlanlagteIndsats.|Procedure.complication.coding|
-|leveretIndsatsAfvigelsestekst|Beskrivelse af hvilken afvigelse der er ift. det planlagte|Procedure.complication.text|
-|leveretIndsatsNotat|Beskrivelse af hvilken indsats der konkret er leveret.|Procedure.note.text|
-|leveretIndsatsSubjekt|Den borger som indsatsen er leveret til.|Procedure.subject|
-|leveretIndsatsDokumenterendeLeverandør|Den leverandør, som er ansvarlig for dokumentationen af den leverede indsats.|Procedure.recorder|
-|leveretIndsatsKode|Klasse, der udtrykker hvad den leverede indsats omhandler.|Procedure.code.coding|
-|leveretIndsatsbevilling|Den autorisation som leveringen er baseret på via en reference til den planlagte og bevilgede indsats eller en henvisning fra læge. Er kun fraværende når leverandøren leverer noget andet end det planlagte på eget initiativ.|Procedure.basedOn|
-|leveretIndsatsKontakt|Den kontakt, hvor denne del af indsatsen leveres.|Procedure.encounter|
-|leveretIndsatsStart|Starttidspunkt for levering af indsatsen.|Procedure.performedPeriod.start|
-|leveretIndsatsSlut|Sluttidspunkt for levering af indsatsen.|Procedure.performedPeriod.end|
+|leveretIndsatsAktivitetstatus|Indikation af hvor i det kliniske forløb indsatsen er.|Procedure.status|
+|leveretIndsatsAktivitetstatusTekst|Grund til at en indsats ikke er gennemført|Procedure.statusReason.text|
+|leveretIndsatsAktivitetAfvigelseskode|En klasse der, hvis den er til stede, angiver på hvilken måde indsatsen ikke er leveret i overensstemmelse med den PlanlagteIndsats.|Procedure.complication.coding|
+|leveretIndsatsAktivitetAfvigelsestekst|Beskrivelse af hvilken afvigelse der er ift. det planlagte|Procedure.complication.text|
+|leveretIndsatsAktivitetNotat|Beskrivelse af hvilken indsats der konkret er leveret.|Procedure.note.text|
+|leveretIndsatsAktivitetSubjekt|Den borger som indsatsen er leveret til.|Procedure.subject|
+|leveretIndsatsAktivitetDokumenterendeLeverandør|Den leverandør, som er ansvarlig for dokumentationen af den leverede indsats.|Procedure.recorder|
+|leveretIndsatsAktivitetKode|Klasse, der udtrykker hvad den leverede indsats omhandler.|Procedure.code.coding|
+|leveretIndsatsAktivitetbevilling|Den autorisation som leveringen er baseret på via en reference til den planlagte og bevilgede indsats eller en henvisning fra læge. Er kun fraværende når leverandøren leverer noget andet end det planlagte på eget initiativ.|Procedure.basedOn|
+|leveretIndsatsAktivitetKontakt|Den kontakt, hvor denne del af indsatsen leveres.|Procedure.encounter|
+|leveretIndsatsAktivitetStart|Starttidspunkt for levering af indsatsen.|Procedure.performedPeriod.start|
+|leveretIndsatsAktivitetSlut|Sluttidspunkt for levering af indsatsen.|Procedure.performedPeriod.end|
 
 
 

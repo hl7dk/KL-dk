@@ -1,5 +1,5 @@
 ### Scope and usage
-The CommonCrossSectorCondition is used for the documentation and exchange of conditions, that does not originate from the municipality from which a citizen currently recieves their care, but which are nevertheless important for the care or treatment that the citizen recieves from the municipality. As the conditions originates from different organisations, they have different code systems and Value sets associated with them, which are documented in different slices of Condition.code.coding. The different types of conditions allowed are:
+The FocusCondition is used for the documentation and exchange of conditions, that does not originate from the municipality from which a citizen currently recieves their care, but which are nevertheless important for the care or treatment that the citizen recieves from the municipality. As the conditions originates from different organisations, they have different code systems and Value sets associated with them, which are documented in different slices of Condition.code.coding. The different types of conditions allowed are:
 * Diagnoses from hospitals (using ICD10/SKS-D codes)
 * Diagnosis or problems as registered by general practitioners (using ICPC2) 
 * Conditions that other municipalities have previously cared for (Using FSIII and FFB condition codes)

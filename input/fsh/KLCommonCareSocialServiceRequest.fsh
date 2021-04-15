@@ -7,25 +7,27 @@ Description:    "Referals/requests used in Danish municipalities"
 * requester only Reference(Organization or KLCommonPractitioner) //organization used for people from the outside, KLCommonPractitioner for internal requests
 * extension contains
     RequesterType named requesterType 0..1 and
-    SubjectConsentToLiaising named subjectConsentToLiasing 0..1
+    SubjectConsentToLiaising named subjectConsentToLiasing 0..1 and
+    MunicipalityCaseNumber named municipalityCaseNumber 0..*
+
 * code from KLServicesTypes
 * orderDetail from KLInterventions
 * subject only Reference(KLCommonCitizen)
 * authoredOn 1..1
-* reasonReference only Reference(KLCommonCrossSectorCondition or KLCommonCareSocialFollowUp) //kan måske slicies på "type" fordi der er hhv en observation og en condition
+* reasonReference only Reference(KLCommonCareSocialFocusCondition or KLCommonCareSocialFollowUp) //kan måske slicies på "type" fordi der er hhv en observation og en condition
 
-
-* requester ^short = "[DK] henvendelsesHenvisningAnsvarlig"
-* extension[requesterType] ^short = "[DK] henvendelsesHenvisningFra"
-* reasonCode.text ^short = "[DK] henvendelsesHenvisningsÅrsag"
-* status ^short = "[DK] henvendelsesHenvisningsStatus"
-* intent ^short = "[DK] henvendelsesHenvisningsHensigt"
-* code.coding ^short = "[DK] henvendelsesHenvisningsIndsats"
-* orderDetail.coding ^short = "[DK] henvendelsesHenvisningsAnmodetIndsats"
-* subject ^short = "[DK] henvendelsesHenvisningsSubjekt"
-* authoredOn ^short = "[DK] henvendelsesHenvisningstid"
-* extension[subjectConsentToLiasing] ^short = "[DK] borgerIndforståetMedHenvisningHenvendelse"
-* reasonReference ^short = "[DK] Afhængig af datatype enten henvendelsesHenvisningsBegrundelse eller henvendelsesHenvisningsÅrsagsreference"
+* requester ^short = "[DK] anledningAnsvarlig"
+* extension[requesterType] ^short = "[DK] anledningFra"
+* reasonCode.text ^short = "[DK] anledningsÅrsag"
+* status ^short = "[DK] anledningsStatus"
+* intent ^short = "[DK] anledningsHensigt"
+* code.coding ^short = "[DK] anledningsIndsats"
+* orderDetail.coding ^short = "[DK] anledningsAnmodetIndsats"
+* subject ^short = "[DK] anledningsSubjekt"
+* authoredOn ^short = "[DK] anledningstid"
+* extension[subjectConsentToLiasing] ^short = "[DK] anledningBorgerIndforståetMed"
+* reasonReference ^short = "[DK] Afhængig af datatype enten anledningsBegrundelse eller anledningsÅrsagsreference"
+* extension[municipalityCaseNumber] ^short = "[DK] anledningDokumenteretISag"
 
 Instance: HenvendelseFraMorVedrSocialIndsats
 InstanceOf: KLCommonCareSocialServiceRequest

@@ -34,16 +34,16 @@ Description:    "Matter or area of interest in relation to the care of the citiz
 * extension contains
    MatterOfInterestInformer named matterOfInterestInformer 0..1
 
-* code ^short = "[DK] oplysningskode"
-* valueCodeableConcept.text ^short = "[DK] oplysningstekst"
-* valueCodeableConcept.coding ^short = "[DK] oplysningssværhedsgrad"
-* subject ^short = "[DK] oplysningssubjekt"
-* encounter ^short = "[DK] oplysningskontakt"
-* performer ^short = "[DK] oplysningsansvarlig"
-* basedOn ^short = "[DK] oplysningsordre"
-* effectiveDateTime ^short = "[DK] oplysningstid"
-* extension[matterOfInterestInformer] ^short = "[DK] oplysningsinformant"
-* status ^short = "[DK] oplysningsstatus"
+* code ^short = "[DK] områdeKode"
+* valueCodeableConcept.text ^short = "[DK] områdeTekst"
+* valueCodeableConcept.coding ^short = "[DK] områdeSværhedsgrad"
+* subject ^short = "[DK] områdeSubjekt"
+* encounter ^short = "[DK] områdeKontakt"
+* performer ^short = "[DK] områdeSnsvarlig"
+* basedOn ^short = "[DK] områdeOrdre"
+* effectiveDateTime ^short = "[DK] områdeTid"
+* extension[matterOfInterestInformer] ^short = "[DK] områdeInformant"
+* status ^short = "[DK] områdeStatus"
 
 
 Instance: MobilityInformationJudith
