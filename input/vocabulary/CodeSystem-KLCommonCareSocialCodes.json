@@ -1,10 +1,10 @@
 {
   "resourceType": "CodeSystem",
-  "id": "KLCommomCareSocialCodes",
+  "id": "KLCommonCareSocialCodes",
   "url": "http://kl.dk/fhir/common/caresocial/CodeSystem/",
   "version": "20200908",
-  "name": "KLCommomCareSocialCodes",
-  "title": "KLCommomCareSocialCodes",
+  "name": "KLCommonCareSocialCodes",
+  "title": "KLCommonCareSocialCodes",
   "status": "active",
   "description": "Administrative/technical codes in Local Govenment Denmark (KL), associated with KLCommonCareSocial",
   "hierarchyMeaning": "is-a",

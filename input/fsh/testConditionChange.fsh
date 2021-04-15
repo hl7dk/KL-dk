@@ -1,7 +1,20 @@
-//Denne test kræver patienten Patient/1936763, Practitioner/7777777,  opfølgningskontakten Encounter/333 (dato: 2021-02-10)
+//Denne test kræver patienten BorgerEjnar, Practitioner/7777777/NatasjaFraSygeplejen,  opfølgningskontakten Encounter/333 (dato: 2021-02-10)
 //, og dueTo (Condition/444 - sorg over konens død), opfølgningsresultatet (Observation/22), oplysning (Observation/1234)
 
 //tilstand v1
+Instance: BorgerEjnar
+InstanceOf: KLCommonCitizen
+Usage: #example
+* identifier.system = "urn:oid:1.2.208.176.1.2"
+* identifier.value = "0201609995"
+* name.use = #official
+* name.family = "Lauridsen"
+* name.given[0] = "Ejnar"
+* name.given[1] = "Test"
+* gender = #male
+* birthDate = "1960-01-02"
+
+
 Instance: Condition111
 InstanceOf: KLCommonCareSocialCondition
 Usage: #example
@@ -21,8 +34,8 @@ Usage: #example
 * code.text = "Der er problemer med misbrug, særlig drikker borger øl og spiritus om aftenen"
 
 //personer
-* subject = Reference(Patient/1936763)
-* asserter = Reference(Practitioner/7777777)
+* subject = Reference(BorgerEjnar)
+* asserter = Reference(NatasjaFraSygeplejen)
 
 //Datorer
 * recordedDate = 2020-03-17T10:09:27+01:00
@@ -42,7 +55,7 @@ Usage: #example
 * target = Reference(Condition111)
 * recorded = 2020-03-17T10:09:27+01:00
 * agent[0].type = #legal
-* agent[0].who = Reference(Practitioner/7777777)
+* agent[0].who = Reference(NatasjaFraSygeplejen)
 * reason.coding.system =  "http://terminology.hl7.org/CodeSystem/v3-ActReason"
 * reason.coding.code = #TREAT
 
@@ -66,8 +79,8 @@ Usage: #example
 * code.text = "Der er problemer med misbrug, særlig drikker borger øl og spiritus"
 
 //personer
-* subject = Reference(Patient/1936763)
-* asserter = Reference(Practitioner/7777777)
+* subject = Reference(BorgerEjnar)
+* asserter = Reference(NatasjaFraSygeplejen)
 //* asserter = Reference(Bi)
 
 //Datorer
@@ -76,7 +89,7 @@ Usage: #example
 
 //Faglige notater og FFB observationer
 * note.text = "Drikker mindre, der har været et overforbrug, men der er tilsyneladende ikke tale om afhængighed"
-* note.authorReference = Reference(Practitioner/7777777)
+* note.authorReference = Reference(NatasjaFraSygeplejen)
 * note.time = 2020-12-17T10:09:27+01:00
 
 //Opfølgningskontakt
@@ -97,7 +110,7 @@ Usage: #example
 * target = Reference(Condition111v2)
 * recorded = 2020-12-17T10:09:27+01:00
 * agent[0].type = #legal
-* agent[0].who = Reference(Practitioner/7777777)
+* agent[0].who = Reference(NatasjaFraSygeplejen)
 * reason.coding.system =  "http://terminology.hl7.org/CodeSystem/v3-ActReason"
 * reason.coding.code = #TREAT
 
@@ -120,8 +133,8 @@ Usage: #example
 * code.text = "Der er problemer med misbrug, særligt drikker borger øl og spiritus"
 
 //personer
-* subject = Reference(Patient/1936763)
-* asserter = Reference(Practitioner/7777777)
+* subject = Reference(BorgerEjnar)
+* asserter = Reference(NatasjaFraSygeplejen)
 
 //Datorer
 * recordedDate = 2020-03-17T10:09:27+01:00
@@ -146,7 +159,7 @@ Usage: #example
 * target = Reference(Condition111v3)
 * recorded = 2021-02-10T10:09:27+01:00
 * agent[0].type = #legal
-* agent[0].who = Reference(Practitioner/7777777)
+* agent[0].who = Reference(NatasjaFraSygeplejen)
 * reason.coding.system =  "http://terminology.hl7.org/CodeSystem/v3-ActReason"
 * reason.coding.code = #TREAT
 
@@ -155,9 +168,9 @@ Instance: Condition444
 InstanceOf: KLCommonCareSocialFocusCondition
 Usage: #example
 * code.text = "Er i sorg pga. ægtefællens død"
-* subject = Reference(Patient/1936763)
-* asserter = Reference(Practitioner/7777777)
-* recorder = Reference(Practitioner/7777777)
+* subject = Reference(BorgerEjnar)
+* asserter = Reference(NatasjaFraSygeplejen)
+* recorder = Reference(NatasjaFraSygeplejen)
 * recordedDate = 2020-03-17T10:09:27+01:00
 * clinicalStatus.coding.code = #active
 * clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
@@ -170,7 +183,7 @@ Usage: #example
 * type = KLCommonCareSocialCodes#9f03dfbb-7a97-45a5-94db-d4c3501714a9 "opfølgning"
 * period.start = 2021-02-10
 * status = EncounterStatus#planned
-* subject = Reference(Patient/1936763)
+* subject = Reference(BorgerEjnar)
 * class = V3ACTCODES#HH
 
 //opfølgningskontakt version 2
@@ -180,29 +193,29 @@ Usage: #example
 * type = KLCommonCareSocialCodes#9f03dfbb-7a97-45a5-94db-d4c3501714a9 "opfølgning"
 * period.start = 2021-02-10
 * status = EncounterStatus#finished
-* subject = Reference(Patient/1936763)
+* subject = Reference(BorgerEjnar)
 * class = V3ACTCODES#HH
 
 //opfølgningsresultat
 Instance: Observation22
 InstanceOf: KLCommonCareSocialFollowUp
 Usage: #example
-* subject = Reference(Patient/1936763)
+* subject = Reference(BorgerEjnar)
 * code = SCT#712744002
 * valueCodeableConcept.text = "Borger har fået hjælp til håndtering af sin sorg, og drikker ikke for meget længere"
 * valueCodeableConcept = FSIII#E3 "Afsluttes"
 * effectiveDateTime = 2021-02-10
-* performer = Reference(Practitioner/7777777)
+* performer = Reference(NatasjaFraSygeplejen)
 * status = #final
 
 Instance: Observation1234
 InstanceOf: KLCommonCareSocialMatterOfInterest
 Usage: #example
-* subject = Reference(Patient/1936763)
+* subject = Reference(BorgerEjnar)
 * code.coding.code = #I6
 * code.coding.system = FSIII
 * code.coding.display = "Psykosociale forhold"
 * effectiveDateTime = 2020-03-17
 * valueCodeableConcept.text = "Borger drikker for meget, sandsynligvis pga. sorg over ægtefællens død, men der skal selvf"
-* performer = Reference(Practitioner/7777777)
+* performer = Reference(NatasjaFraSygeplejen)
 * status = #final
