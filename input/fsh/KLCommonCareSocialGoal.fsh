@@ -67,10 +67,10 @@ Title: "Judith forventet tilstand"
 Description: "Forventet tilstand for Judith, der har et mobilitetsproblem"
 Usage: #example
 * category = KLCommonCareSocialCodes#ca552020-6ed1-4cdc-b0d4-32697f1f27ad //"FSIII tilstandsmål"
-* description = KLCommonCareSocialCodes#e182c5dc-9f91-474a-92e8-f62be3d498f4 "Tilstand forsvinder, mindskes eller forbliver uændret"
+* description = FSIII#e182c5dc-9f91-474a-92e8-f62be3d498f4 "Tilstand forsvinder, mindskes eller forbliver uændret"
 * target[severitySlice].measure.coding.code = #66959f77-6e2a-4574-8423-3ff097f8b9fa //severity
 * target[severitySlice].measure.coding.system = KLCommonCareSocialCodes
-* target[severitySlice].detailCodeableConcept.coding = FSIII#B2 "Moderate begrænsninger"
+* target[severitySlice].detailCodeableConcept.coding = FSIII#B3 "Moderate begrænsninger"
 * addresses = Reference(ConditionWalking)
 * subject = Reference(Judith)
 * expressedBy = Reference(HanneFraVisitationenAalborg)
@@ -85,7 +85,7 @@ Usage: #example
 * description.text = "Tryksåret er helet"
 * target[changeValueSlice].measure.coding.code = #90c48f03-f194-4b2f-ad7d-6cba1069ae48
 * target[changeValueSlice].measure.coding.system = KLCommonCareSocialCodes
-* target[changeValueSlice].detailCodeableConcept.coding = FSIII#81c827de-ef31-4410-aa57-0d1d1bc6c264 "forsvinder"
+* target[changeValueSlice].detailCodeableConcept.coding = FSIII#81c827de-ef31-4410-aa57-0d1d1bc6c264 "Tilstand forsvinder"
 * addresses = Reference(ConditionPressureUlcer)
 * subject = Reference(Mark)
 * expressedBy = Reference(HanneFraVisitationenAalborg)

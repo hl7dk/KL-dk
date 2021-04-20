@@ -13,11 +13,6 @@
   "description": "Codes from FFB",
   "hierarchyMeaning": "is-a",
   "content": "complete",
-  "filter": [ {
-    "code": "concept",
-    "description": "all descendants excluding the concept",
-    "operator": [ "descendent-of" ]
-  } ],
   "concept": [ {
     "code": "7ac451dc-773b-4877-baaf-1e6b1d5c8e28",
     "display": "Støttebehovsniveau",

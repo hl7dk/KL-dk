@@ -39,6 +39,7 @@ Usage: #example
 
 //Datorer
 * recordedDate = 2020-03-17T10:09:27+01:00
+* extension[conditionLastAssertedDate].valueDateTime = 2020-03-17T10:09:27+01:00
 
 //Opfølgningskontakt
 * extension[followUpEncounter].valueReference = Reference(Encounter333)
@@ -54,7 +55,7 @@ InstanceOf: Provenance
 Usage: #example
 * target = Reference(Condition111)
 * recorded = 2020-03-17T10:09:27+01:00
-* agent[0].type = #legal
+* agent[0].type = AGENTTYPE#legal
 * agent[0].who = Reference(NatasjaFraSygeplejen)
 * reason.coding.system =  "http://terminology.hl7.org/CodeSystem/v3-ActReason"
 * reason.coding.code = #TREAT
@@ -85,6 +86,7 @@ Usage: #example
 
 //Datorer
 * recordedDate = 2020-03-17T10:09:27+01:00
+* extension[conditionLastAssertedDate].valueDateTime = 2020-12-17T10:09:27+01:00
 //* abatementDateTime = 2021-03-10T10:09:27+01:00
 
 //Faglige notater og FFB observationer
@@ -109,7 +111,7 @@ InstanceOf: Provenance
 Usage: #example
 * target = Reference(Condition111v2)
 * recorded = 2020-12-17T10:09:27+01:00
-* agent[0].type = #legal
+* agent[0].type = AGENTTYPE#legal
 * agent[0].who = Reference(NatasjaFraSygeplejen)
 * reason.coding.system =  "http://terminology.hl7.org/CodeSystem/v3-ActReason"
 * reason.coding.code = #TREAT
@@ -138,6 +140,7 @@ Usage: #example
 
 //Datorer
 * recordedDate = 2020-03-17T10:09:27+01:00
+* extension[conditionLastAssertedDate].valueDateTime = 2021-02-10T10:09:27+01:00
 * abatementDateTime = 2021-02-10T10:09:27+01:00
 
 //årsag
@@ -158,7 +161,7 @@ InstanceOf: Provenance
 Usage: #example
 * target = Reference(Condition111v3)
 * recorded = 2021-02-10T10:09:27+01:00
-* agent[0].type = #legal
+* agent[0].type = AGENTTYPE#legal
 * agent[0].who = Reference(NatasjaFraSygeplejen)
 * reason.coding.system =  "http://terminology.hl7.org/CodeSystem/v3-ActReason"
 * reason.coding.code = #TREAT

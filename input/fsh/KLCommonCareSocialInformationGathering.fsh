@@ -41,3 +41,4 @@ Usage: #example
 * investigation[1].item = Reference(SkinInformationMark)
 * finding.itemReference = Reference(ConditionPressureUlcer)
 * status = #completed
+* extension[basedOnServiceRequest].valueReference = Reference(HenvendelseVedrSygeplejeMark)

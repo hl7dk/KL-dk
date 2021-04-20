@@ -13,11 +13,6 @@
   "description": "Codes from FSIII",
   "hierarchyMeaning": "is-a",
   "content": "complete",
-  "filter": [ {
-    "code": "concept",
-    "description": "all descendants excluding the concept",
-    "operator": [ "descendent-of" ]
-  } ],
   "concept": [ {
     "code": "E",
     "display": "Resultat af opfølgning",

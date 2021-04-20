@@ -9,11 +9,6 @@
   "description": "Administrative/technical codes in Local Govenment Denmark (KL), associated with KLCommonCareSocial",
   "hierarchyMeaning": "is-a",
   "content": "complete",
-  "filter": [ {
-    "code": "concept",
-    "description": "all descendants excluding the concept",
-    "operator": [ "descendent-of" ]
-  } ],
   "concept": [ {
     "code": "10deb210-e7e1-4d56-9531-b9ff2102126e",
     "display": "Planlagt indsatsforløb",

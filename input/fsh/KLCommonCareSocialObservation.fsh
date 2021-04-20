@@ -24,7 +24,7 @@ InstanceOf: KLCommonCareSocialObservation
 Usage: #example
 Title: "Marks puls"
 Description: "Observation af Marks puls (OBS: Mere specifik profil for puls findes i værktøjsprojektet, dette er udelukkende et eksempel,  dette er udelukkende et eksempel for denne implememnattion guide)"
-* code = SCT#8499008 "Puls"
+* code = SCT#8499008 "Pulse"
 * subject = Reference(Mark)
 * performer = Reference(AbrahamFraAkutSygeplejen)
 * basedOn = Reference(HenvisningFraLageVedrAkutSygepleje)
@@ -40,7 +40,7 @@ InstanceOf: KLCommonCareSocialObservation
 Usage: #example
 Title: "Marks diastoliske blodtryk"
 Description: "Observation af Marks diastoliske blodtryk (OBS: Mere specifik profil for blodtryk findes i værktøjsprojektet, dette er udelukkende et eksempel for denne implememnattion guide)"
-* code = SCT#271650006 "Diastolisk blodtryk"
+* code = SCT#271650006 "Diastolic blood pressure"
 * subject = Reference(Mark)
 * performer = Reference(AbrahamFraAkutSygeplejen)
 * basedOn = Reference(HenvisningFraLageVedrAkutSygepleje)

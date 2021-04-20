@@ -43,8 +43,8 @@ Usage: #example
 * orderDetail[1] = FFB#638f44df-6bf2-47f8-9935-b8fdc83e5bf5 "Støtte til daglige opgaver i hjemmet"
 * subject = Reference(Andreas)
 * authoredOn = 2020-06-23
-* status = #active
-* intent = #proposal
+* status = REQUESTSTATUS#active
+* intent = REQUESTINTENT#proposal
 * reasonReference = Reference(AndreasMaalgruppeUdviklingshamning)
 
  Instance: HenvendelseFraMorVedrSocialIndsatsProvenance
@@ -54,19 +54,20 @@ Usage: #example
  Usage: #example
 * target = Reference(HenvendelseFraMorVedrSocialIndsats)
 * recorded = 2020-06-23T15:17:24+02:00
-* agent[0].type = #author
+* agent[0].type = AGENTTYPE#author
 * agent[0].who = Reference(BirteFraVisitationenMorsoe)
 * agent[0].onBehalfOf = Reference(SocialOgSundhedMorsoe)
-* agent[1].type = #informant
+* agent[1].type = AGENTTYPE#informant
 * agent[1].who = Reference(AndreasMor)
-* reason = #TREAT
+* reason = PROVENANCEREASON#TREAT
 
 Instance: AndreasMor
 InstanceOf: RelatedPerson
 Title: "Andreas' Mor, Gitte Hansen"
 Description: "Eksempel på pårørende Andreas' mor Gitte"
 Usage: #example
-* relationship = #MTH
+* relationship.coding.code = #MTH
+* relationship.coding.system = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
 * name.given = "Gitte"
 * name.family = "Hansen"
 * patient = Reference(Andreas)
@@ -79,12 +80,27 @@ Usage: #example
 * requester = Reference(LaegerneHasserisBymidte)
 * extension[requesterType].valueCodeableConcept = FSIII#A9 "Egen læge/vagtlæge"
 * reasonCode.text = "Mark har efter et ildebefindende brug for at akutsygeplejen undersøger situationen og måler vitale værdier."
-* code = KLCommonCareSocialCodes#490ab7be-ddb1-4a54-baf1-009fe6e8a83b "Sygepleje"
+* code = KLCommonCareSocialCodes#490ab7be-ddb1-4a54-baf1-009fe6e8a83b "Hjemmesygepleje"
 * orderDetail[0] = FSIII#G1.41 "Undersøgelser og måling af værdier"
 * subject = Reference(Mark)
 * authoredOn = 2020-06-21
-* status = #active
-* intent = #order
+* status = REQUESTSTATUS#active
+* intent = REQUESTINTENT#order
+
+Instance: HenvendelseVedrSygeplejeMark
+InstanceOf: KLCommonCareSocialServiceRequest
+Title: "Henvendelse vedr hjemmesygepleje"
+Description: "Henvisning fra læge vedr. akut sygepleje"
+Usage: #example
+* requester = Reference(SundhedsforvaltningAalborg)
+* extension[requesterType].valueCodeableConcept = FSIII#A1 "Borger"
+* reasonCode.text = "Borger har henvendt sig pga. et sår, der skal undersøges nærmere."
+* code = KLCommonCareSocialCodes#490ab7be-ddb1-4a54-baf1-009fe6e8a83b "Hjemmesygepleje"
+* subject = Reference(Mark)
+* authoredOn = 2020-06-21
+* status = REQUESTSTATUS#active
+* intent = REQUESTINTENT#proposal
+
 
 Instance: HenvisningFraLageVedrAkutSygeplejeProvenance
 InstanceOf: Provenance
@@ -93,12 +109,12 @@ Title: "Provenance, henvisning læge akut sygepleje"
 Usage: #example
 * target = Reference(HenvisningFraLageVedrAkutSygepleje)
 * recorded = 2020-06-21T15:56:24+02:00
-* agent[0].type = #enterer
+* agent[0].type = AGENTTYPE#enterer
 * agent[0].who = Reference(HanneFraVisitationenAalborg)
 * agent[0].onBehalfOf = Reference(SundhedsforvaltningAalborg)
-* agent[1].type = #legal
+* agent[1].type = AGENTTYPE#legal
 * agent[1].who = Reference(LaegerneHasserisBymidte)
-* reason =  #TREAT
+* reason =  PROVENANCEREASON#TREAT
 
 Instance: InternHenvendelseEfterOpfolgning
 InstanceOf: KLCommonCareSocialServiceRequest
@@ -113,8 +129,8 @@ Usage: #example
 * orderDetail[1] = FSIII#H2.2 "RH Hverdagens aktiviteter"
 * subject = Reference(Mark)
 * authoredOn = 2020-04-11
-* status = #active
-* intent = #proposal
+* status = REQUESTSTATUS#active
+* intent = REQUESTINTENT#proposal
 * reasonReference = Reference(MarkHjemmeplejeRevisitation)
 
 Instance: InternHenvendelseEfterOpfolgningProvenance
@@ -123,7 +139,7 @@ Title: "Provenance til InternHenvendelseEfterOpfølgning"
 Usage: #example
 * target = Reference(InternHenvendelseEfterOpfolgning)
 * recorded = 2020-04-11T09:06:15+02:00
-* agent[0].type = #author
+* agent[0].type = AGENTTYPE#author
 * agent[0].who = Reference(HanneFraVisitationenAalborg)
 * agent[0].onBehalfOf = Reference(SundhedsforvaltningAalborg)
-* reason =  #TREAT
+* reason =  PROVENANCEREASON#TREAT

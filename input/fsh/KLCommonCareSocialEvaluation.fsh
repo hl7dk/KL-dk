@@ -17,7 +17,7 @@ Description:    "Professional evaluation on citizen status based on gathered inf
 * code.coding[sctEvaluationCode].system = SCT
 
 * value[x] only CodeableConcept
-* valueCodeableConcept from KLNeedsAssessmentCodesFFB //kun for støttebehov
+* valueCodeableConcept.coding from KLNeedsAssessmentCodesFFB //kun for støttebehov
 * subject only Reference(KLCommonCitizen)
 * encounter only Reference(KLCommonCareSocialEncounter)
 * performer only Reference(KLCommonPractitioner)
@@ -54,7 +54,7 @@ Title: "Mark helhedsvurdering"
 Description: "Eksempel på Marks helhedvurdering, som er opdateret efter der er lavet en sygeplejefaglig udredning"
 Usage: #example
 * code.coding[klEvaluationCode] = KLCommonCareSocialCodes#54c4ffea-7caf-4edc-8aa9-ef6e0be26c4c //"FSIII helhedsvurdering"
-* code.coding[sctEvaluationCode] = SCT#225400002 //|Personal assessment (procedure)| 
+* code.coding[sctEvaluationCode] = SCT#225400002 //|Personal assessment (procedure)|
 * valueCodeableConcept.text = "Mark har dårlig mobilitet, og derfor brug for hjælp til større rengøringsopgaver. Har fået konstateret et tryksår. Har hævede fødder som kan være udtryk for et cirkulatorisk problem."
 * effectiveDateTime = 2020-06-05
 * status = #final
