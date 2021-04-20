@@ -66,7 +66,7 @@ Usage: #example
 * onsetAge.code = #a
 * onsetAge.system = UCUM
 * onsetAge.unit = "år"
-* clinicalStatus = clinSTATUS#active
+* clinicalStatus = CONCLIN#active
 * verificationStatus = VerSTATUS#confirmed
 
 Instance: JudithDiabetes
@@ -80,5 +80,5 @@ Usage: #example
 * recorder = Reference(HanneFraVisitationenAalborg)
 * onsetDateTime = 2017-04-01
 * recordedDate = 2020-03-15
-* clinicalStatus = clinSTATUS#active
+* clinicalStatus = CONCLIN#active
 * verificationStatus = VerSTATUS#confirmed
