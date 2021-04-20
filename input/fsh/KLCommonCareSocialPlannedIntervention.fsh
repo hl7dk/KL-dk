@@ -7,14 +7,19 @@ Description:    "Planned interventions (indsats/ydelse) in Danish Municipalities
 * activity.detail.code 1..1
 * activity.detail.code.coding ^slicing.discriminator.type = #value
 * activity.detail.code.coding ^slicing.discriminator.path = "system"
-* activity.detail.code.coding contains FFBintervention 0..1 and FSIIIlevel2 0..1 and FSIIIlevel3 0..1 and KLECode 0..1
+* activity.detail.code.coding contains 
+   FFBintervention 0..1 and FSIIIlevel2 0..1 and FSIIIlevel3 0..1 and KLECode 0..1
+
 * activity.detail.code.coding[FFBintervention].system = FFB
 * activity.detail.code.coding[FFBintervention] from KLInterventionsFFB
+
 * activity.detail.code.coding[FSIIIlevel2].system = FSIII
 * activity.detail.code.coding[FSIIIlevel2] from KLInterventionsFSIII
+
 * activity.detail.code.coding[FSIIIlevel3].system = KLCommonproprietarySystem
 * activity.detail.code.coding[FSIIIlevel3].code 1..1
 * activity.detail.code.coding[FSIIIlevel3].display 1..1
+
 * activity.detail.code.coding[KLECode].system = KLE
 //* activity.detail.description MS
 * activity.detail.performer only Reference(KLCommonOrganization)
@@ -24,7 +29,11 @@ Description:    "Planned interventions (indsats/ydelse) in Danish Municipalities
 * extension contains
    FollowUpEncounter named followUpEncounter 0..1 and
    RelevantHist named relevantHistory 0..* and
-   MunicipalityCaseNumber named municipalityCaseNumber 0..*
+   MunicipalityCaseNumber named officialmunicipalityCaseNumber 0..1 and
+   MunicipalityCaseNumber named municipalitiSpecificCaseNumber 0..1
+
+* extension[officialmunicipalityCaseNumber].valueIdentifier = KLCommonOfficialCaseIdentifier
+* extension[municipalitiSpecificCaseNumber].valueIdentifier = KLCommonMunicipalitySpecificCaseIdentifier
 
 * basedOn only Reference(KLCommonCareSocialCarePlan)
 * activity.detail.reasonReference only Reference(KLCommonCareSocialCondition)
@@ -49,7 +58,8 @@ Description:    "Planned interventions (indsats/ydelse) in Danish Municipalities
 * activity.outcomeReference ^short = "[DK] indsatsgennemførtAktivitet"
 * extension[relevantHistory] ^short = "[DK] indsatsændringshistorie"
 * activity.detail.status ^short = "[DK] indsatsAktivitetsstatus"
-* extension[municipalityCaseNumber] ^short = "[DK] indsatsDokumenteretISag"
+* extension[officialmunicipalityCaseNumber] ^short = "[DK] anledningDokumenteretISag"
+* extension[municipalitiSpecificCaseNumber] ^short = "[DK] anledningDokumenteretISag"
 
 
 Instance: PressureUlcerIntervention

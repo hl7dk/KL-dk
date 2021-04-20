@@ -293,15 +293,15 @@ Description: "Conditions and target groups as defined by FFB"
 * codes from valueset KLConditionCodesFFB
 * codes from valueset KLTargetGroupsFFB
 
-ValueSet: KLICD10SKS
-Title: "KLICD10SKS"
-Description: "ICD10 codes as defined by SKS in Denmark excluding the main hierachy code D"
-* codes from system SKS-D
+//ValueSet: KLICD10SKS
+//Title: "KLICD10SKS"
+//Description: "ICD10 codes as defined by SKS in Denmark excluding the main hierachy code D"
+//* codes from system "urn:oid:1.2.208.176.2.4.12
 
-ValueSet: ICPC2DK
-Title: "ICPC2DK"
-Description: "the Danish edition of ICPC2 codes as defined by KiAP"
-* codes from system ICPC2DK
+//ValueSet: ICPC2DK
+//Title: "ICPC2DK"
+//Description: "the Danish edition of ICPC2 codes as defined by KiAP"
+//* codes from system ICPC2DK
 
 ValueSet: KLSeverities
 Title: "KLSeverities"

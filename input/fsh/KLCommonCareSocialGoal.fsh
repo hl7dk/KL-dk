@@ -201,5 +201,7 @@ Usage: #example
 * note.text = "Andreas støttes hver morgen i at få ryddet gulvet. Der er hængt et piktogram op med rutinen trin for trin"
 * note.time = 2020-09-10
 * extension[goalRelationship].extension[type].valueCodeableConcept.text = "based-on" //bruges til at relaterer et delmål, til et indsatsmål
+* extension[goalRelationship].extension[type].valueCodeableConcept.coding.system = "http://terminology.hl7.org/CodeSystem/goal-relationship-type"
+* extension[goalRelationship].extension[type].valueCodeableConcept.coding.code = #other
 * extension[goalRelationship].extension[target].valueReference = Reference(Andreasindsatsmaal)
 * expressedBy = Reference(AnneFraHvidbjerghus)

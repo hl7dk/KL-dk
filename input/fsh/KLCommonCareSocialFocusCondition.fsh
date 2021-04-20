@@ -26,10 +26,8 @@ Description:    "Conditions which may be used to express the focus of an interve
 * code.coding[FFBCodesCT] from KLConditionsAndTargetGroupsFFB (required)
 * code.coding[FFBCodesCT].system = FFB
 
-* code.coding[ICD10codes] from KLICD10SKS (required)
-* code.coding[ICD10codes].system = SKS-D
+* code.coding[ICD10codes].system = "urn:oid:1.2.208.176.2.4.12"
 
-* code.coding[ICPC2codes] from ICPC2DK (required)
 * code.coding[ICPC2codes].system = ICPC2DK
 
 //Specifying datatype of abatement, subject, asserter and evidence
@@ -74,7 +72,9 @@ InstanceOf: KLCommonCareSocialFocusCondition
 Title: "Judith diabetes"
 Description: "En diagnose som registreret i kommunen, hvor Hanne fra Aalborg har registreret informationen fra lægen Marianne, som fx kunne komme fra diabetescenteret på hospitalet"
 Usage: #example
-* code.coding[ICD10codes] = SKS-D#DE11 "Type 2-diabetes (kan ikke valideres fordi der ikke er adgang til koderne)"
+* code.coding[ICD10codes].system = "urn:oid:1.2.208.176.2.4.12"
+* code.coding[ICD10codes].code = #DE11
+* code.coding[ICD10codes].display = "Type 2-diabetes (kan ikke valideres fordi der ikke er adgang til koderne)"
 * subject = Reference(Judith)
 * asserter = Reference(MarianneLaege)
 * recorder = Reference(HanneFraVisitationenAalborg)

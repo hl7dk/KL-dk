@@ -35,7 +35,11 @@ Description: "Overall CarePlan for Danish municipalities, for individual plans r
 * activity ^slicing.ordered = false 
 
 * extension contains
-   MunicipalityCaseNumber named municipalityCaseNumber 0..*
+   MunicipalityCaseNumber named officialmunicipalityCaseNumber 0..1 and
+   MunicipalityCaseNumber named municipalitiSpecificCaseNumber 0..1
+
+* extension[officialmunicipalityCaseNumber].valueIdentifier = KLCommonOfficialCaseIdentifier
+* extension[municipalitiSpecificCaseNumber].valueIdentifier = KLCommonMunicipalitySpecificCaseIdentifier
     
 
 * activity contains
@@ -61,7 +65,8 @@ Description: "Overall CarePlan for Danish municipalities, for individual plans r
 * goal[ffbgoal] ^short = "[DK] indsatsforløbsmål" 
 * activity[carePlanEvaluation].outcomeReference ^short = "[DK] støttebehovsvurdering"
 * activity[carePlanEvaluation].detail.code.coding ^short = "[DK] støttebehovsvurdering"
-* extension[municipalityCaseNumber] ^short = "[DK] indsatsforløbDokumenteretISag" 
+* extension[officialmunicipalityCaseNumber] ^short = "[DK] anledningDokumenteretISag"
+* extension[municipalitiSpecificCaseNumber] ^short = "[DK] anledningDokumenteretISag"
 
 Instance: FFBIndsats
 InstanceOf: KLCommonCareSocialCarePlan

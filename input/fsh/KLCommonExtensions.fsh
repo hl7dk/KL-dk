@@ -14,7 +14,7 @@ Description: "Extension for pointing to type of organisation/person that request
 Extension: MunicipalityCaseNumber
 Title: "MunicipalityCasenumber"
 Description: "Extension for municipality case numbers"
-* value[x] only KLCommonOfficialCaseIdentifier or KLCommonMunicipalitySpecificCaseIdentifier
+* value[x] only Identifier
 
 Extension: ConditionLastAssertedDate
 Title: "ConditionLastAssertedDate"
