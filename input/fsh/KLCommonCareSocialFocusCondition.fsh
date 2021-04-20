@@ -62,12 +62,12 @@ Usage: #example
 * asserter = Reference(MarianneLaege)
 * recorder = Reference(BirteFraVisitationenMorsoe)
 * recordedDate = 2020-07-06
-* onsetAge.value = 0
+* onsetAge.value = 1
 * onsetAge.code = #a
 * onsetAge.system = UCUM
 * onsetAge.unit = "år"
-* clinicalStatus = #active
-* verificationStatus = #confirmed
+* clinicalStatus = clinSTATUS#active
+* verificationStatus = VerSTATUS#confirmed
 
 Instance: JudithDiabetes
 InstanceOf: KLCommonCareSocialFocusCondition
@@ -80,5 +80,5 @@ Usage: #example
 * recorder = Reference(HanneFraVisitationenAalborg)
 * onsetDateTime = 2017-04-01
 * recordedDate = 2020-03-15
-* clinicalStatus = #active
-* verificationStatus = #confirmed
+* clinicalStatus = clinSTATUS#active
+* verificationStatus = VerSTATUS#confirmed

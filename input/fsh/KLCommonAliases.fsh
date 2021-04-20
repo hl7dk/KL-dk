@@ -27,3 +27,4 @@ Alias:          GoalRelationship = http://hl7.org/fhir/StructureDefinition/goal-
 Alias:          GoalStatusCodes = http://hl7.org/fhir/goal-status
 Alias:          KLCommonproprietarySystem = http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonproprietary
 Alias:          KLE = https://data.gov.dk/id/classification/KLE
+Alias:          ClinSTATUS = http://terminology.hl7.org/CodeSystem/condition-clinical
