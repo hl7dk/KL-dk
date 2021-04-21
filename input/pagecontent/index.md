@@ -13,7 +13,7 @@ FKI is a core model, which means that it is the recommended way to encapsulate t
 ### Documentation in Danish
 The documentation of the FHIR profiles is also available in a Danish edition for non-FHIR users. This edition is called [FKI Lægmandsforklaringen](./LaegmandsforklaringAlleModellerV0.1.pdf)
 
-The HL7 FHIR-profiles are based on information modelling work done according to a common municipality architectural framework (Fælleskommunal rammearkitektur). The link is coming as soon as possible.
+The HL7 FHIR-profiles are based on [information modelling](./faellskommunalInformationsmodel.pdf) work done according to a common municipality architectural framework (Fælleskommunal rammearkitektur).
 
 ### Getting started
 To get a comprehension of the content included in FKI, and the way it may be combined to form meaningful collections of information, starter-examples have been created.  
