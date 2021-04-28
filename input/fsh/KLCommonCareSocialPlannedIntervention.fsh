@@ -4,7 +4,7 @@ Title:          "PlannedIntervention"
 Description:    "Planned interventions (indsats/ydelse) in Danish Municipalities"
 
 * activity 1..1
-* activity.detail.code 1..1
+//* activity.detail.code 1..1
 * activity.detail.code.coding ^slicing.discriminator.type = #value
 * activity.detail.code.coding ^slicing.discriminator.path = "system"
 * activity.detail.code.coding contains 
@@ -32,8 +32,8 @@ Description:    "Planned interventions (indsats/ydelse) in Danish Municipalities
    MunicipalityCaseNumber named officialmunicipalityCaseNumber 0..1 and
    MunicipalityCaseNumber named municipalitiSpecificCaseNumber 0..1
 
-* extension[officialmunicipalityCaseNumber].valueIdentifier = KLCommonOfficialCaseIdentifier
-* extension[municipalitiSpecificCaseNumber].valueIdentifier = KLCommonMunicipalitySpecificCaseIdentifier
+* extension[officialmunicipalityCaseNumber].valueIdentifier.use = #official
+* extension[municipalitiSpecificCaseNumber].valueIdentifier.use = #usual
 
 * basedOn only Reference(KLCommonCareSocialCarePlan)
 * activity.detail.reasonReference only Reference(KLCommonCareSocialCondition)

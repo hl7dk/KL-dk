@@ -1,0 +1,13 @@
+ {
+ "package-id" : "dk.fhir.ig.kl.common.caresocial",
+ "title" : "FKI, KL-core", 
+ "canonical" : "http://kl.dk/fhir/common/caresocial", 
+ "introduction" : "Implementation Guide for fælleskommunal informationsmodel",
+ "list" : [{
+  "version" : "current",
+  "desc" : "Continuous Integration Build (latest in version control)",
+  "path" : "http://build.fhir.org/ig/hl7dk/KL-dk/",
+  "status" : "ci-build",
+  "fhirVersion": "4.0.1",
+  "current" : true
+ }

@@ -38,8 +38,8 @@ Description: "Overall CarePlan for Danish municipalities, for individual plans r
    MunicipalityCaseNumber named officialmunicipalityCaseNumber 0..1 and
    MunicipalityCaseNumber named municipalitiSpecificCaseNumber 0..1
 
-* extension[officialmunicipalityCaseNumber].valueIdentifier = KLCommonOfficialCaseIdentifier
-* extension[municipalitiSpecificCaseNumber].valueIdentifier = KLCommonMunicipalitySpecificCaseIdentifier
+* extension[officialmunicipalityCaseNumber].valueIdentifier.use = #official
+* extension[municipalitiSpecificCaseNumber].valueIdentifier.use = #usual
     
 
 * activity contains

@@ -11,8 +11,8 @@ Description:    "Referals/requests used in Danish municipalities"
     MunicipalityCaseNumber named officialmunicipalityCaseNumber 0..1 and
     MunicipalityCaseNumber named municipalitiSpecificCaseNumber 0..1
 
-* extension[officialmunicipalityCaseNumber].valueIdentifier = KLCommonOfficialCaseIdentifier
-* extension[municipalitiSpecificCaseNumber].valueIdentifier = KLCommonMunicipalitySpecificCaseIdentifier
+* extension[officialmunicipalityCaseNumber].valueIdentifier.use = #official
+* extension[municipalitiSpecificCaseNumber].valueIdentifier.use = #usual
 
 * code from KLServicesTypes
 * orderDetail from KLInterventions
