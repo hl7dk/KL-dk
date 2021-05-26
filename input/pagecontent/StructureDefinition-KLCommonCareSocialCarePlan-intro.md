@@ -41,4 +41,4 @@ Nedenstående tabel oversætter mellem de attributter, der er defineret i den f�
 |indsatsforløbændringshistorie|Tidligere versioner af Indsatsforløbet, hvor der er sket klinisk relevante ændringer.|CarePlan:extension.relevantHistory|
 |indsatsforløbsmål|Mål for indsatsforløbet.|CarePlan.Goal|
 |støttebehovsvurdering|Vurdering af støttebehov foretaget ifm. formulering af og opfølgning på indsatsforløbet.|CarePlan.activity.outcomeReference (activity.detail.code.coding)|
-|indsatsforløbDokumenteretISag|Kommunalt Sagsnummer. enten officielt uuid eller kommune-specifikt nummer|CarePlan:extension.municipalityCaseNumber|
+|indsatsforløbDokumenteretISag|Kommunalt sagsnummer på den sag, som indsatsforløbet vedrører. Enten officielt uuid eller kommune-specifikt nummer|CarePlan:extension.municipalityCaseNumber|

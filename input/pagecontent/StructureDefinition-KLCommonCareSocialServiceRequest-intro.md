@@ -36,4 +36,4 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 |anledningBorgerIndforståetMed|Klasse der angiver om borger er indforstået med henvendelsen|SeviceRequest.extension: SubjectConsentToLiaising|
 |anledningsbegrundelse|Den borgertilstand, der ligger til grund for henvendelsen/henvisningen. |SeviceRequest.reasonReference|
 |anledningsårsagsreference|Et klassificeret opfølgningsresultat, der er baggrund for at borger revisiteres.|ServiceRequest.reasonReference|
-|anledningseHenvisningDokumenteretISag|Kommunalt Sagsnummer. Enten officielt uuid eller kommune-specifikt nummer|ServiceRequest:extension.municipalityCaseNumber|
+|anledningDokumenteretISag|Kommunalt sagsnummer på den sag, som anledningen vedrører. Enten officielt uuid eller kommune-specifikt nummer|ServiceRequest:extension.municipalityCaseNumber|

@@ -8,11 +8,7 @@ Description:    "Referals/requests used in Danish municipalities"
 * extension contains
     RequesterType named requesterType 0..1 and
     SubjectConsentToLiaising named subjectConsentToLiasing 0..1 and
-    MunicipalityCaseNumber named officialmunicipalityCaseNumber 0..1 and
-    MunicipalityCaseNumber named municipalitiSpecificCaseNumber 0..1
-
-* extension[officialmunicipalityCaseNumber].valueIdentifier.use = #official
-* extension[municipalitiSpecificCaseNumber].valueIdentifier.use = #usual
+    MunicipalityCaseNumber named municipalityCaseNumber 0..1 
 
 * code from KLServicesTypes
 * orderDetail from KLInterventions
@@ -31,8 +27,8 @@ Description:    "Referals/requests used in Danish municipalities"
 * authoredOn ^short = "[DK] anledningstid"
 * extension[subjectConsentToLiasing] ^short = "[DK] anledningBorgerIndforståetMed"
 * reasonReference ^short = "[DK] Afhængig af datatype enten anledningsBegrundelse eller anledningsÅrsagsreference"
-* extension[officialmunicipalityCaseNumber] ^short = "[DK] anledningDokumenteretISag"
-* extension[municipalitiSpecificCaseNumber] ^short = "[DK] anledningDokumenteretISag"
+* extension[municipalityCaseNumber] ^short = "[DK] anledningDokumenteretISag"
+
 
 Instance: HenvendelseFraMorVedrSocialIndsats
 InstanceOf: KLCommonCareSocialServiceRequest
@@ -105,9 +101,9 @@ Usage: #example
 * authoredOn = 2020-06-21
 * status = REQUESTSTATUS#active
 * intent = REQUESTINTENT#proposal
-* extension[officialmunicipalityCaseNumber].valueIdentifier.use = #official
-* extension[officialmunicipalityCaseNumber].valueIdentifier.system = "https://data.gov.dk/id/organization"
-* extension[officialmunicipalityCaseNumber].valueIdentifier.value = "524a66c5-d1b6-4cc4-adca-dad6d058a8f5"
+* extension[municipalityCaseNumber].extension[official].valueIdentifier.use = #official
+* extension[municipalityCaseNumber].extension[official].valueIdentifier.system = "https://data.gov.dk/id/organization"
+* extension[municipalityCaseNumber].extension[official].valueIdentifier.value = "524a66c5-d1b6-4cc4-adca-dad6d058a8f5"
 
 
 Instance: HenvisningFraLageVedrAkutSygeplejeProvenance

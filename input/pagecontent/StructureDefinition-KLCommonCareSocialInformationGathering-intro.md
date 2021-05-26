@@ -26,7 +26,7 @@ Nedenstående tabel oversætter mellem de attributter der er defineret i den fæ
 |oplysningsaktivitetskontakt|Den seneste kontakt hvor oplysningsaktiviteten fandt sted|ClinicalImpression.encounter|
 |oplysningsaktivitetsordre|Den henvendelse eller henvisning der er grunden til at oplysningsaktiviteten finder sted|ClinicalImpression:extension.basedOnServiceRequest|
 |oplysningsaktivitetsObservationstype|Klasse, der angiver om de tilknyttede observationer er oplysninger eller vurderinger.|ClinicalImpression.investigation.code.coding|
-|OplysningsaktivitetsOplysning|Oplysning, organiseret under et fagligt emneområde, der er fremkommet under oplysningsaktiviteten|ClinicalImpression.investigation.item|
+|OplysningsaktivitetsOmråde|Oplysninger organiseret under et fagligt område eller tema|ClinicalImpression.investigation.item|
 |oplysningsaktivitetsKonklusion|Vurdering, der er konklusion på oplysningsaktiviteten.|ClinicalImpression.investigation.item|
 |oplysningsaktivitetsTilstand|Tilstand, der er udredt ifm oplysningsaktiviteten.|ClinicalImpression.finding.itemReference|
 |oplysningsaktivitetsstatus|Klasse der udtrykker, hvor i sin proces, oplysningsaktiviteten er.|ClinicalImpression.status|

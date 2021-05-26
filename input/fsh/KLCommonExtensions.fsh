@@ -14,7 +14,17 @@ Description: "Extension for pointing to type of organisation/person that request
 Extension: MunicipalityCaseNumber
 Title: "MunicipalityCasenumber"
 Description: "Extension for municipality case numbers"
-* value[x] only Identifier
+* extension contains
+    municipalitySpecific 0..1 and
+    official 0..1
+* extension[municipalitySpecific].value[x] only Identifier
+* extension[municipalitySpecific].valueIdentifier.use = #usual
+* extension[municipalitySpecific].valueIdentifier.assigner 1..1
+
+* extension[official].value[x] only Identifier
+* extension[official].valueIdentifier.use = #official
+* extension[official].valueIdentifier.system = "https://data.gov.dk/id/organization"
+
 
 Extension: ConditionLastAssertedDate
 Title: "ConditionLastAssertedDate"

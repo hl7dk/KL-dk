@@ -29,11 +29,7 @@ Description:    "Planned interventions (indsats/ydelse) in Danish Municipalities
 * extension contains
    FollowUpEncounter named followUpEncounter 0..1 and
    RelevantHist named relevantHistory 0..* and
-   MunicipalityCaseNumber named officialmunicipalityCaseNumber 0..1 and
-   MunicipalityCaseNumber named municipalitiSpecificCaseNumber 0..1
-
-* extension[officialmunicipalityCaseNumber].valueIdentifier.use = #official
-* extension[municipalitiSpecificCaseNumber].valueIdentifier.use = #usual
+   MunicipalityCaseNumber named municipalityCaseNumber 0..1
 
 * basedOn only Reference(KLCommonCareSocialCarePlan)
 * activity.detail.reasonReference only Reference(KLCommonCareSocialCondition)
@@ -58,8 +54,7 @@ Description:    "Planned interventions (indsats/ydelse) in Danish Municipalities
 * activity.outcomeReference ^short = "[DK] indsatsgennemførtAktivitet"
 * extension[relevantHistory] ^short = "[DK] indsatsændringshistorie"
 * activity.detail.status ^short = "[DK] indsatsAktivitetsstatus"
-* extension[officialmunicipalityCaseNumber] ^short = "[DK] anledningDokumenteretISag"
-* extension[municipalitiSpecificCaseNumber] ^short = "[DK] anledningDokumenteretISag"
+* extension[municipalityCaseNumber] ^short = "[DK] anledningDokumenteretISag"
 
 
 Instance: PressureUlcerIntervention
