@@ -7,6 +7,7 @@ Description:    "Planned interventions (indsats/ydelse) in Danish Municipalities
 //* activity.detail.code 1..1
 * activity.detail.code.coding ^slicing.discriminator.type = #value
 * activity.detail.code.coding ^slicing.discriminator.path = "system"
+* activity.detail.code.coding ^slicing.rules = #open
 * activity.detail.code.coding contains 
    FFBintervention 0..1 and FSIIIlevel2 0..1 and FSIIIlevel3 0..1 and KLECode 0..1
 

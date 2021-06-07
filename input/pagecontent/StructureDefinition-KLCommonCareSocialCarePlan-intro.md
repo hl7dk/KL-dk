@@ -33,7 +33,7 @@ Nedenstående tabel oversætter mellem de attributter, der er defineret i den f�
 |indsatsforløbsubjekt|Den borger som er genstand for indsatsforløbet.|CarePlan.subject|
 |indsatsforløbansvarlig|Den organisation som er ansvarlig for bevilling og opfølgning på indsatsforløbet.|CarePlan.author|
 |indsatsforløbsleverandør|Den organisation, der er ansvarlig for udførelsen af indsatsforløbet.|CarePlan.careTeam:CareTeam.participant.member|
-|indsatsforløbmålgruppe|Klasse der udtrykker den FFB målgruppe, der er knyttet til en social indsats. (Målgruppen udtrykkes vha profilen FocusCondition)|CarePlan.adresses|
+|indsatsforløbmålgruppe|Forkustilstand der udtrykker den FFB målgruppe, der er knyttet til en social indsats. (Målgruppen udtrykkes vha profilen FocusCondition)|CarePlan.adresses|
 |indsatsforløbmålgruppeRang|Heltal der udtrykker, hvordan målgruppen er prioriteret, så der kan skelnes mellem primær målgruppe og øvrige målgrupper.|CarePlan.adresses:extension.conditionRank|
 |indsatsforløbtilbud|Klasse der udtrykker hvilken type tilbud (i FFB forstand), der skal varetage leveringen af ydelser.|CarePlan.careTeam:CareTeam.category|
 |indsatsforløbhensigt|Indikerer niveauet af autorisation og hvor langt i planlægningen indsatsforløbet er.|CarePlan.intent|
