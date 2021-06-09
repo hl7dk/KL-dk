@@ -7,7 +7,7 @@ Detailed information about conditions in Danish municiplities health, social and
 //Setting the cardinality of the clinical status
 * clinicalStatus 1..1
 //Setting cardinality of recordedDate (oprettelsestid)
-* recordedDate 1..1
+* recordedDate 0..1
 //Declaring the cardinality of code
 * code 1..1
 //Slicing code, declaring disciminator, and slicing type
@@ -35,6 +35,7 @@ Detailed information about conditions in Danish municiplities health, social and
 
 //Setting the value set of the severities attribute
 * severity from KLSeverities (required)
+* severity ?!
 
 //Declaring extensions, used in this profile. 
 //See extension file for the locally defined and,
@@ -83,6 +84,26 @@ Detailed information about conditions in Danish municiplities health, social and
 * note.extension[matterOfInterestInformer] ^short = "[DK] tilstandsInformant"
 * extension[conditionLastAssertedDate] ^short = "[DK] tilstandSidstVurderetTid"
  
+* code.coding SU
+* code.coding[FSIIIConditionCode] SU
+* code.coding[FFBConditionCode] SU
+* code.coding[SCTConditionCode] SU
+* severity.coding SU
+* clinicalStatus SU
+* verificationStatus SU
+* code.text SU
+* note.text SU
+* recordedDate SU
+* abatementDateTime SU
+* extension[followUpEncounter] SU 
+* extension[dueTo]  SU
+* subject  SU
+* asserter  SU
+* extension[eventHistory] SU
+* evidence.detail SU
+* category.coding SU
+* note.extension[matterOfInterestInformer] SU
+* extension[conditionLastAssertedDate] SU
 
 Instance: ConditionPressureUlcer
 InstanceOf: KLCommonCareSocialCondition
