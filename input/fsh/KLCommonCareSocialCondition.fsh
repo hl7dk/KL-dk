@@ -96,7 +96,6 @@ Detailed information about conditions in Danish municiplities health, social and
 * extension[eventHistory] SU
 * evidence.detail SU
 * category.coding SU
-* note.extension[matterOfInterestInformer] SU
 * extension[conditionLastAssertedDate] SU
 
 Instance: ConditionPressureUlcer
