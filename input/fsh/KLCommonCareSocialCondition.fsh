@@ -89,16 +89,10 @@ Detailed information about conditions in Danish municiplities health, social and
 * code.coding[FFBConditionCode] SU
 * code.coding[SCTConditionCode] SU
 * severity.coding SU
-* clinicalStatus SU
-* verificationStatus SU
 * code.text SU
 * note.text SU
-* recordedDate SU
-* abatementDateTime SU
 * extension[followUpEncounter] SU 
 * extension[dueTo]  SU
-* subject  SU
-* asserter  SU
 * extension[eventHistory] SU
 * evidence.detail SU
 * category.coding SU
