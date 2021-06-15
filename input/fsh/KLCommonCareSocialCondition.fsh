@@ -93,6 +93,23 @@ Detailed information about conditions in Danish municiplities health, social and
 * extension[eventHistory] SU
 * extension[conditionLastAssertedDate] SU
 
+
+// Invariant: Severity-not-allowed-in-nursing
+// Description: "The severity is not allowed for nursing conditions"
+// Severity: #error
+// Expression: "(severity.empty() and code.coding.memberOf('http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesNursing'))"
+
+// Invariant: If-severity-is-notRelevant-condition-status-should-reflect-it
+// Description: "The severity might hold a not relevant OR not evaluated status, this should correspond correctly to Condition status attributes"
+// Severity: #error
+// Expression: "(severity.coding.code=’B6’ and (verificationStatus.coding.code='confirmed').not()) 
+//          or (severity.coding.code=’B6’ and clinicalStatus.coding.code.subsumes('inactive'))
+//          or (severity.coding.code=’2254dac8-8aa3-4334-8502-9720194f49ad’ and verificationStatus.coding.code='confirmed')
+//          or (severity.coding.code=’2254dac8-8aa3-4334-8502-9720194f49ad’ and ClinicalStatus.coding.code.subsumes('active'))" 
+
+
+
+
 Instance: ConditionPressureUlcer
 InstanceOf: KLCommonCareSocialCondition
 Description: "Example of the citizen, Mark, who has a pressure ulcer"
