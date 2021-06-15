@@ -85,17 +85,11 @@ Detailed information about conditions in Danish municiplities health, social and
 * extension[conditionLastAssertedDate] ^short = "[DK] tilstandSidstVurderetTid"
  
 * code.coding SU
-* code.coding[FSIIIConditionCode] SU
-* code.coding[FFBConditionCode] SU
-* code.coding[SCTConditionCode] SU
 * severity.coding SU
-* code.text SU
 * note.text SU
 * extension[followUpEncounter] SU 
 * extension[dueTo]  SU
 * extension[eventHistory] SU
-* evidence.detail SU
-* category.coding SU
 * extension[conditionLastAssertedDate] SU
 
 Instance: ConditionPressureUlcer

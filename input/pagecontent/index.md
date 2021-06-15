@@ -11,9 +11,13 @@ FKI is a core model, which means that it is the recommended way to encapsulate t
 * Structuring documentation tools, meassurements and observations commonly used in Danish municipalities. [Implementation guide for FFinst](http://build.fhir.org/ig/hl7dk/KL-dk-tools/branches/main/)
 
 ### Documentation in Danish
-The documentation of the FHIR profiles is also available in a Danish edition for non-FHIR users. This edition is called [FKI Lægmandsforklaringen](./LaegmandsforklaringAlleModellerV0.1.pdf)
+The documentation of the FHIR profiles is also available in a Danish edition for non-FHIR users. This edition is called [Guide til den Fælleskommunale informationsmodel](./FKIGuide.pdf). The guide includes four appendices:
+* [Application of FKI in FFB](./FFB-bilag.pdf)
+* [Application of FKI in FSIII](./FSIII-bilag.pdf)
+* [Explaination of FKI concepts](./FKIBegreber.pdf)
+* [FKI to FKI FHIR conversion](./FKIFHIRBilag.pdf)
 
-The HL7 FHIR-profiles are based on [information modelling](./faellskommunalInformationsmodel.pdf) work done according to a common municipality architectural framework (Fælleskommunal rammearkitektur).
+The HL7 FHIR-profiles are based on [information modelling](./faelleskommunalInformationsmodel.pdf) work done according to a common municipality architectural framework (Fælleskommunal rammearkitektur).
 
 ### Getting started
 To get a comprehension of the content included in FKI, and the way it may be combined to form meaningful collections of information, starter-examples have been created.  
