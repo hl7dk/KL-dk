@@ -36,6 +36,7 @@ Detailed information about conditions in Danish municiplities health, social and
 //Setting the value set of the severities attribute
 * severity from KLSeverities (required)
 * severity ?!
+* severity ^isModifierReason = "The ValueSet include values that modifies the model becuase they state that the condition is not relevant"
 
 //Declaring extensions, used in this profile. 
 //See extension file for the locally defined and,
