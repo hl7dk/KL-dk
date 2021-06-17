@@ -18,6 +18,7 @@ Instance: AlmBotilbud
 InstanceOf: KLCommonServicePerformer
 Usage: #example
 Title: "Almindeligt botilbus Sommergaarden"
+Description: "Almindeligt længerevarende botilbud på Sommergaarden"
 * category.coding.code = #498fe92c-d7f7-41cd-9404-5b38fe113be0          
 * category.coding.display = "Almindeligt længerevarende botilbud til voksne"
 * category.coding.system = FFB

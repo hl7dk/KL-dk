@@ -1,0 +1,5 @@
+== Suppressed Messages ==
+# The examples are not yet fully described
+Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/AndreasDagligeOpgaver. Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/AndreasSocialeRelationer. Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+Unable to find ImplementationGuide.definition.resource.description for the resource Patient/BorgerEjnar. Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
