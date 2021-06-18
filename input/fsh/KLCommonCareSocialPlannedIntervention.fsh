@@ -60,7 +60,7 @@ Description:    "Planned interventions (indsats/ydelse) in Danish Municipalities
 
 Instance: PressureUlcerIntervention
 InstanceOf: KLCommonCareSocialPlannedIntervention
-Title: "Mark tryksårsindsats"
+Title: "MarkTryksårsindsats"
 Description: "Mark's planlagte tryksårsindsats, med én tilknyttet kontakt"
 Usage: #example
 * activity.detail.code.coding[FSIIIlevel2] = FSIII#G1.39 "Sårbehandling"
@@ -78,7 +78,8 @@ Usage: #example
 
 Instance: AndreasSocialeRelationer
 InstanceOf: KLCommonCareSocialPlannedIntervention
-Title: "Andreas' ydelse sociale relationer"
+Title: "AndreasSocialeRelationer"
+Description: "Andreas' ydelse sociale relationer"
 Usage: #example
 * basedOn = Reference(NySocialIndsats)
 * activity.detail.code.coding[FFBintervention] = FFB#05cd5e81-1a3a-4bdd-901b-7ec96c12d990 "Støtte til sociale relationer"
@@ -90,7 +91,8 @@ Usage: #example
 
 Instance: AndreasDagligeOpgaver
 InstanceOf: KLCommonCareSocialPlannedIntervention
-Title: "Andreas' ydelse daglige opgaver"
+Title: "AndreasDagligeOpgaver"
+Description: "Andreas' ydelse daglige opgaver"
 Usage: #example
 * basedOn = Reference(NySocialIndsats)
 * activity.detail.code.coding[FFBintervention] = FFB#638f44df-6bf2-47f8-9935-b8fdc83e5bf5 "Støtte til daglige opgaver i hjemmet"

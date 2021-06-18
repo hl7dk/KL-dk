@@ -6,7 +6,7 @@ Description:    "Citizen demographics, as expressed by dk-core"
 Instance: Mark
 InstanceOf: KLCommonCitizen
 Title: "Mark"
-Description: "KL-Citizen Mark"
+Description: "Borger Mark"
 Usage: #example
 * identifier.value = "mark"
 * name.given = "Mark"
@@ -16,7 +16,7 @@ Usage: #example
 Instance: Andreas
 InstanceOf: KLCommonCitizen
 Title: "Andreas"
-Description: "KL-Citizen Andreas"
+Description: "Borger Andreas"
 Usage: #example
 * identifier.value = "andreas"
 * name.given = "Andreas"
@@ -26,7 +26,7 @@ Usage: #example
 Instance: Judith
 InstanceOf: KLCommonCitizen
 Title: "Judith"
-Description: "KL-Citizen Judith"
+Description: "Borger Judith"
 Usage: #example
 * identifier.value = "judith"
 * name.given = "Judith"
@@ -36,7 +36,7 @@ Usage: #example
 Instance: Mads
 InstanceOf: KLCommonCitizen
 Title: "Mads"
-Description: "KL-Citizen Mads"
+Description: "Borger Mads"
 Usage: #example
 * identifier.value = "mads"
 * name.given = "Mads"

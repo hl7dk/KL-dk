@@ -4,6 +4,8 @@
 //tilstand v1
 Instance: BorgerEjnar
 InstanceOf: KLCommonCitizen
+Title: "BorgerEjnar"
+Description: "Borgeren Ejnar"
 Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0201609995"
@@ -17,6 +19,8 @@ Usage: #example
 
 Instance: Condition111
 InstanceOf: KLCommonCareSocialCondition
+Title: "EjnarProblemerMedMisbrug"
+Description: "Ejnars tilstand:Problemer med misbrug"
 Usage: #example
 //statusattributter
 * clinicalStatus.coding.code = #active
@@ -63,6 +67,8 @@ Usage: #example
 //tilstand v2
 Instance: Condition111v2
 InstanceOf: KLCommonCareSocialCondition
+Title: "EjnarProblemerMedMisbrugV2"
+Description: "Opdatering til version 2 af Ejnars tilstand:Problemer med misbrug"
 Usage: #example
 //statusattributter
 * clinicalStatus.coding.code = #active
@@ -118,6 +124,8 @@ Usage: #example
 
 Instance: Condition111v3
 InstanceOf: KLCommonCareSocialCondition
+Title: "EjnarProblemerMedMisbrugV3"
+Description: "Opdatering til version 3 af Ejnars tilstand:Problemer med misbrug, hvor tilstanden afsluttes"
 Usage: #example
 //statusattributter
 * clinicalStatus.coding.code = #inactive
@@ -169,6 +177,8 @@ Usage: #example
 
 Instance: Condition444
 InstanceOf: KLCommonCareSocialFocusCondition
+Title: "EjnarSorg"
+Description: "Ejnar er i sorg pga. ægtefælles død. Dette anvendes i eksemplet som bagvedliggende årsag til misbrug"
 Usage: #example
 * code.text = "Er i sorg pga. ægtefællens død"
 * subject = Reference(BorgerEjnar)
@@ -182,6 +192,8 @@ Usage: #example
 
 Instance: Encounter333
 InstanceOf: KLCommonCareSocialEncounter
+Title: "EjnarsPlanlagteOpfølgning"
+Description: "Ejnars planlagte opfølgning"
 Usage: #example
 * type = KLCommonCareSocialCodes#9f03dfbb-7a97-45a5-94db-d4c3501714a9 "opfølgning"
 * period.start = 2021-02-10
@@ -192,6 +204,8 @@ Usage: #example
 //opfølgningskontakt version 2
 Instance: Encounter333v2
 InstanceOf: KLCommonCareSocialEncounter
+Title: "EjnarsOpfølgning"
+Description: "Ejnars udførte opfølgning, der er en opdatering af Ejnars planlagte opfølgning"
 Usage: #example
 * type = KLCommonCareSocialCodes#9f03dfbb-7a97-45a5-94db-d4c3501714a9 "opfølgning"
 * period.start = 2021-02-10
@@ -202,6 +216,8 @@ Usage: #example
 //opfølgningsresultat
 Instance: Observation22
 InstanceOf: KLCommonCareSocialFollowUp
+Title: "EjnarOpfølgningsresultat"
+Description: "Ejner opfølgningsresultat"
 Usage: #example
 * subject = Reference(BorgerEjnar)
 * code = SCT#712744002
@@ -213,6 +229,8 @@ Usage: #example
 
 Instance: Observation1234
 InstanceOf: KLCommonCareSocialMatterOfInterest
+Title: "EjnarPsykosociale"
+Description: "Notat vedr. psykosociale forhold, som beskrevet af hjemmesygeplejen ifm sygeplejefaglig udredning"
 Usage: #example
 * subject = Reference(BorgerEjnar)
 * code.coding.code = #I6
