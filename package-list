@@ -2,7 +2,8 @@
  "package-id" : "dk.fhir.ig.kl.common.caresocial",
  "title" : "FKI, KL-core", 
  "canonical" : "http://kl.dk/fhir/common/caresocial", 
- "introduction" : "Implementation Guide for fælleskommunal informationsmodel",
+ "introduction" : "Implementation Guide for the Danish Municipality Information Model",
+ "category" : "Care Planning",
  "list" : [{
   "version" : "current",
   "desc" : "Continuous Integration Build (latest in version control)",
