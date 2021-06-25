@@ -48,11 +48,11 @@ Usage: #example
 * intent = REQUESTINTENT#proposal
 * reasonReference = Reference(AndreasMaalgruppeUdviklingshamning)
 
- Instance: HenvendelseFraMorVedrSocialIndsatsProvenance
- InstanceOf: Provenance
- Title: "Provenance, henvendelse mor social indsats"
- Description: "Ekstraoplysninger vedr. dokumentationsarbejdsgang og ansvar for henvendelse fra mor vedr. social indsats"
- Usage: #example
+Instance: HenvendelseFraMorVedrSocialIndsatsProvenance
+InstanceOf: Provenance
+Title: "Provenance, henvendelse mor social indsats"
+Description: "Ekstraoplysninger vedr. dokumentationsarbejdsgang og ansvar for henvendelse fra mor vedr. social indsats"
+Usage: #example
 * target = Reference(HenvendelseFraMorVedrSocialIndsats)
 * recorded = 2020-06-23T15:17:24+02:00
 * agent[0].type = AGENTTYPE#author

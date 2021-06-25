@@ -1,5 +1,5 @@
 ValueSet: KLConditionCodesHomeCare //Does not expand
-Title: "KLConditionCodesHomeCare"
+Title: "KLConditionCodesHomeCare"   
 Description: "Danish municipality home care condition codes (funktionsevnetilstande)"
 * FSIII#J3.4 //"Færden i forskellige omgivelser"
 * FSIII#J3.8 //"Gå"
@@ -471,6 +471,8 @@ Description: "FFB Themes"
 * FFB#d1495b2c-1452-4e49-8dbe-8193af5d8823 //"Mobilitet"
 * FFB#eef71492-65f5-4297-aa95-3c3a6866ddef //"Praktiske opgaver"
 * FFB#7445fb2b-0009-43d9-b49b-1b9782f2fcd9 //Omgivelsesfaktorer// "områder"
+* FFB#93433530-b85c-4d04-a4fb-5ae26cf16f1c
+* FFB#740934cd-002b-4b96-b92e-b3562eed9448
 
 ValueSet: KLFollowUpCodesFSIII
 Title: "KLFollowUpCodesFSIII"
