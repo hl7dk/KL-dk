@@ -4,7 +4,7 @@ Title:          "MatterOfInterest"
 Description:    "Matter or area of interest in relation to the care of the citizen, as used in Danish municipalities (Oplysning/Område/Tema)"
 * code from KLInformationCodes (required)
 * value[x] only CodeableConcept
-* valueCodeableConcept.coding from KLSeveritiesFSIII
+* valueCodeableConcept.coding from KLMatterOfInterestValues
 * subject only Reference(KLCommonCitizen)
 * encounter only Reference(KLCommonCareSocialEncounter)
 
@@ -36,10 +36,9 @@ Description:    "Matter or area of interest in relation to the care of the citiz
 
 * code ^short = "[DK] områdeKode"
 * valueCodeableConcept.text ^short = "[DK] områdeTekst"
-* valueCodeableConcept.coding ^short = "[DK] områdeSværhedsgrad"
 * subject ^short = "[DK] områdeSubjekt"
 * encounter ^short = "[DK] områdeKontakt"
-* performer ^short = "[DK] områdeSnsvarlig"
+* performer ^short = "[DK] områdeAnsvarlig"
 * basedOn ^short = "[DK] områdeOrdre"
 * effectiveDateTime ^short = "[DK] områdeTid"
 * extension[matterOfInterestInformer] ^short = "[DK] områdeInformant"

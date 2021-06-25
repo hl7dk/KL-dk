@@ -80,6 +80,14 @@ Description: "Danish municipality nursing condition codes"
 * FSIII#I10.2 //"Søvnproblemer"
 * FSIII#I3.3 //"Uhensigtsmæssig vægtændring"
 
+
+
+ValueSet: KLMatterOfInterestValues
+Title: "KLMatterOfInterestValues"
+Description: "Matter of interes values to support when no observations have been made"
+* FSIII#B6 //ikke relevant
+* FFB#2254dac8-8aa3-4334-8502-9720194f49ad //"ikke vurderet"
+
 ValueSet: KLConditionCodesTheraphy
 Title: "KLConditionCodesTheraphy"
 Description: "Danish municipality theraphy condition codes"
