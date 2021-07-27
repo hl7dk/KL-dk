@@ -30,7 +30,7 @@ Description: "Overall CarePlan for Danish municipalities, for individual plans r
 * addresses only Reference(KLCommonCareSocialFocusCondition) 
 * extension contains RelevantHist named relevantHistory 0..*
 * activity ^slicing.discriminator.type = #value
-* activity ^slicing.discriminator.path = "resolve().code"
+* activity ^slicing.discriminator.path = "resolve().outcomeReference.code"
 * activity ^slicing.rules = #open
 * activity ^slicing.ordered = false 
 
