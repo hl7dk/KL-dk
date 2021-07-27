@@ -743,8 +743,10 @@ ValueSet: KLEvaluationTypeCodes
 Title: "KLEvaluationTypeCodes"
 Description: "Codes used to distinguish different kinds of evaluations"
 * KLCommonCareSocialCodes#54c4ffea-7caf-4edc-8aa9-ef6e0be26c4c //"FSIII helhedsvurdering"
-* KLCommonCareSocialCodes#053a301d-1bb8-4cc4-b781-87825ecf0ef8 //"FFB samlet situation"
+* KLCommonCareSocialCodes#053a301d-1bb8-4cc4-b781-87825ecf0ef8 //"FFB vurdering af borgerens situation"
 * KLCommonCareSocialCodes#effe55c7-572c-4a99-8fb4-2a9dda2f6572 //"FFB støttebehovsvurdering"
+* KLCommonCareSocialCodes#3f7a8ca0-afca-4b0d-8773-a99b5f2f8aaf //VUM Borgerens perspektiv på indsatsen
+* KLCommonCareSocialCodes#f52887de-023f-4193-b6b0-4b0a37b1cffc //VUM Borgerens ressourcer i forhold til indsatsen
 
 ValueSet: KLEvaluationTypeCodesSCT
 Title: "KLEvaluationTypeCodesSCT"

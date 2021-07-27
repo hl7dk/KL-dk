@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "id": "KLCommonCareSocialCodes",
+  "id" : "KLCommonCareSocialCodes",
   "url": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
   "version": "20200908",
   "name": "KLCommonCareSocialCodes",
@@ -10,6 +10,79 @@
   "hierarchyMeaning": "is-a",
   "content": "complete",
   "concept": [ {
+    "code": "940f37e6-8a3d-483b-adac-be8af3268a5b",
+    "display": "oplysningsaktivitet",
+    "concept": [ {
+      "code": "f8ebd11a-04f3-4aa0-9786-406e8896c84d",
+      "display": "socialfaglig udredning, VUM/FFB",
+      "definition": "udførelse af socialfaglig udredning som specificeret af VUM og FFB"
+    }, {
+      "code": "0f0f223c-abe3-4720-aab8-c257679a0a4e",
+      "display": "terapeutfaglig udredning, FSIII",
+      "definition": "udførelse af terapeutfaglig udredning jævnfør FSIII"
+    }, {
+      "code": "95e787e0-5490-437d-ae4c-f3736644242f",
+      "display": "afklarende samtale §119, FSIII",
+      "definition": "udførelse af afklarende samtale vedr. sundhedsfremme og forebyggelse jævnfør FSIII"
+    }, {
+      "code": "47fd1468-89da-4803-9d7a-ecc039a30d92",
+      "display": "sygeplejefaglig udredning, FSIII",
+      "definition": "udførelse af sygeplejefaglig udredning jævnfør FSIII"
+    }, {
+      "code": "e5a73b0e-a5d2-430e-931f-6156306ab00f",
+      "display": "funktionsevnevurdering hjemmepleje, FSIII",
+      "definition": "udførelse af funktionsevnevurdering i hjemmeplejen jævnfør FSIII"
+    }, {
+      "code": "e70c66c0-a939-493b-8ea8-5b7e7b48ba1a",
+      "display": "generelle oplysninger, FSIII",
+      "definition": "indhentning af generelle oplysninger jævnfør FSIII"
+    } ]
+  }, {
+    "code": "25303acd-dcaf-4a8e-a8a3-3961a43858aa",
+    "display": "kontaktaktivitet",
+    "definition": "aktivitet der foretages ved kommunal kontakt.",
+    "concept": [ {
+      "code": "829ac647-c7fc-4964-836b-f708d886e0e3",
+      "display": "oplysning",
+      "definition": "oplysning er foretaget ved kontakt"
+    }, {
+      "code": "bb6fc544-7f4f-4b50-8868-1431e0df2381",
+      "display": "observation",
+      "definition": "observation foretaget ved kontakt"
+    }, {
+      "code": "784275f1-6822-4a88-b361-d958007d5253",
+      "display": "udførelse af planlagt indsats",
+      "definition": "Planlagt indsats udført ved kontakt"
+    }, {
+      "code": "9269c9a2-8220-447b-a127-811275b41062",
+      "display": "vurdering/bevilling",
+      "definition": "vurdering og/eller bevilling er foretaget ved kontakt"
+    }, {
+      "code": "15775b0a-7ec6-469e-9d3c-a81fbc9a1b45",
+      "display": "udførelse af akutindsats",
+      "definition": "Akutindsats, bevilget af læge eller akutteam, udført ved kontakt"
+    }, {
+      "code": "9f03dfbb-7a97-45a5-94db-d4c3501714a9",
+      "display": "opfølgning",
+      "definition": "opfølgning foretaget ved kontakt"
+    }, {
+      "code": "c03b426a-4348-407f-b343-f4baa9759c72",
+      "display": "udførelse af ikke-bevilget indsats",
+      "definition": "Indsats, der ikke i forvejen var bevilget, udført ved kontakt"
+    } ]
+  }, {
+    "code": "3762dd32-4123-43a8-815d-ec40d3697652",
+    "display": "indforståelse ifm henvendelse",
+    "concept": [ {
+      "code": "54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb",
+      "display": "ikke indforstået",
+      "definition": "Borger ikke indforstået med henvendelse"
+    }, {
+      "code": "e67035da-9179-466b-99ad-ea86835d38c9",
+      "display": "indforstået",
+      "definition": "Borger indforstået med henvendelse"
+    } ]
+  }, {
     "code": "10deb210-e7e1-4d56-9531-b9ff2102126e",
     "display": "Planlagt indsatsforløb",
     "concept": [ {
@@ -24,34 +97,6 @@
       "code": "e459386d-1474-4c31-89c5-c8bc7a25e3d4",
       "display": "Social indsats",
       "definition": "Det planlagte indsatsforløb er en social indsats, som defineret af FFB, med tilhørende ydelser, målgruppe og tilbud"
-    } ]
-  }, {
-    "code": "940f37e6-8a3d-483b-adac-be8af3268a5b",
-    "display": "oplysningsaktivitet",
-    "concept": [ {
-      "code": "f8ebd11a-04f3-4aa0-9786-406e8896c84d",
-      "display": "socialfaglig udredning, VUM/FFB",
-      "definition": "udførelse af socialfaglig udredning som specificeret af VUM og FFB"
-    }, {
-      "code": "47fd1468-89da-4803-9d7a-ecc039a30d92",
-      "display": "sygeplejefaglig udredning, FSIII",
-      "definition": "udførelse af sygeplejefaglig udredning jævnfør FSIII"
-    }, {
-      "code": "e5a73b0e-a5d2-430e-931f-6156306ab00f",
-      "display": "funktionsevnevurdering hjemmepleje, FSIII",
-      "definition": "udførelse af funktionsevnevurdering i hjemmeplejen jævnfør FSIII"
-    }, {
-      "code": "0f0f223c-abe3-4720-aab8-c257679a0a4e",
-      "display": "terapeutfaglig udredning, FSIII",
-      "definition": "udførelse af terapeutfaglig udredning jævnfør FSIII"
-    }, {
-      "code": "95e787e0-5490-437d-ae4c-f3736644242f",
-      "display": "afklarende samtale §119, FSIII",
-      "definition": "udførelse af afklarende samtale vedr. sundhedsfremme og forebyggelse jævnfør FSIII"
-    }, {
-      "code": "e70c66c0-a939-493b-8ea8-5b7e7b48ba1a",
-      "display": "generelle oplysninger, FSIII",
-      "definition": "indhentning af generelle oplysninger jævnfør FSIII"
     } ]
   }, {
     "code": "b5731132-f6b9-4a47-995d-681d2b755d4f",
@@ -76,39 +121,6 @@
       } ]
     } ]
   }, {
-    "code": "25303acd-dcaf-4a8e-a8a3-3961a43858aa",
-    "display": "kontaktaktivitet",
-    "definition": "aktivitet der foretages ved kommunal kontakt.",
-    "concept": [ {
-      "code": "829ac647-c7fc-4964-836b-f708d886e0e3",
-      "display": "oplysning",
-      "definition": "oplysning er foretaget ved kontakt"
-    }, {
-      "code": "9269c9a2-8220-447b-a127-811275b41062",
-      "display": "vurdering/bevilling",
-      "definition": "vurdering og/eller bevilling er foretaget ved kontakt"
-    }, {
-      "code": "15775b0a-7ec6-469e-9d3c-a81fbc9a1b45",
-      "display": "udførelse af akutindsats",
-      "definition": "Akutindsats, bevilget af læge eller akutteam, udført ved kontakt"
-    }, {
-      "code": "9f03dfbb-7a97-45a5-94db-d4c3501714a9",
-      "display": "opfølgning",
-      "definition": "opfølgning foretaget ved kontakt"
-    }, {
-      "code": "bb6fc544-7f4f-4b50-8868-1431e0df2381",
-      "display": "observation",
-      "definition": "observation foretaget ved kontakt"
-    }, {
-      "code": "c03b426a-4348-407f-b343-f4baa9759c72",
-      "display": "udførelse af ikke-bevilget indsats",
-      "definition": "Indsats, der ikke i forvejen var bevilget, udført ved kontakt"
-    }, {
-      "code": "784275f1-6822-4a88-b361-d958007d5253",
-      "display": "udførelse af planlagt indsats",
-      "definition": "Planlagt indsats udført ved kontakt"
-    } ]
-  }, {
     "code": "253bbdc0-c4ca-4e77-9d3e-3a9e51281636",
     "display": "Mål/formål",
     "concept": [ {
@@ -118,6 +130,14 @@
     }, {
       "code": "ffb9886b-d04e-46b1-9165-a400f91f822b",
       "display": "FSIII borgers ønsker og mål"
+    }, {
+      "code": "e6f35a88-6665-4471-9dce-9a98854532b4",
+      "display": "FSIII indsatsmål",
+      "definition": "Mål for indsatsen i FSIII, som ofte er defineret af udfører. Hvis der specificeres en FSIII målemetode, er det et mål af denne type"
+    }, {
+      "code": "6746d4af-145a-4bfd-a672-05c0cf11b53b",
+      "display": "FFB delmål",
+      "definition": "Delmål i FFB, ligger under indsatsmål, og er som udtrykt af udfører"
     }, {
       "code": "0bb3daef-538d-45dc-b444-abdbcb63f6bc",
       "display": "FFB indsatsmål",
@@ -130,14 +150,6 @@
       "code": "424827b1-23aa-4848-962b-56ee47def560",
       "display": "Indsatsformål",
       "definition": "Det overordnede formål med hele indsatsen (Defineret af FFB men bruges også for FSIII)"
-    }, {
-      "code": "e6f35a88-6665-4471-9dce-9a98854532b4",
-      "display": "FSIII indsatsmål",
-      "definition": "Mål for indsatsen i FSIII, som ofte er defineret af udfører. Hvis der specificeres en FSIII målemetode, er det et mål af denne type"
-    }, {
-      "code": "6746d4af-145a-4bfd-a672-05c0cf11b53b",
-      "display": "FFB delmål",
-      "definition": "Delmål i FFB, ligger under indsatsmål, og er som udtrykt af udfører"
     } ]
   }, {
     "code": "11266a8f-5795-42ab-88ec-4fe5c6c28e80",
@@ -152,45 +164,31 @@
       "definition": "målet udtrykkes i form af en måltype, måltypen er den forventede ændring i tilstanden givet indsatsen"
     } ]
   }, {
-    "code": "3762dd32-4123-43a8-815d-ec40d3697652",
-    "display": "indforståelse ifm henvendelse",
-    "concept": [ {
-      "code": "54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb",
-      "display": "ikke indforstået",
-      "definition": "Borger ikke indforstået med henvendelse"
-    }, {
-      "code": "e67035da-9179-466b-99ad-ea86835d38c9",
-      "display": "indforstået",
-      "definition": "Borger indforstået med henvendelse"
-    } ]
-  }, {
     "code": "95ec4535-8fe8-4296-867c-35de421794cf",
     "display": "evaluering",
     "concept": [ {
+      "code": "053a301d-1bb8-4cc4-b781-87825ecf0ef8",
+      "display": "FFB vurdering af borgers situation",
+      "definition": "Vurdering der sammenholder oplysninger fra udredning mhp en samlet faglig analyse og konklusion."
+    }, {
       "code": "effe55c7-572c-4a99-8fb4-2a9dda2f6572",
       "display": "FFB støttebehovsvurdering",
       "definition": "Angiver, hvor stort et behov borgeren har for hjælp og støtte."
     }, {
+      "code": "3f7a8ca0-afca-4b0d-8773-a99b5f2f8aaf",
+      "display": "VUM Borgerens perspektiv på indsatsen"
+    }, {
+      "code": "f52887de-023f-4193-b6b0-4b0a37b1cffc",
+      "display": "VUM Borgerens ressourcer i forhold til indsatsen"
+    }, {
       "code": "54c4ffea-7caf-4edc-8aa9-ef6e0be26c4c",
       "display": "FSIII helhedsvurdering",
       "definition": "Sagsvurdering, der sammenholder resultaterne af en myndighedsudredning og den øvrige sagsoplysning med henblik på at træffe en afgørelse"
-    }, {
-      "code": "053a301d-1bb8-4cc4-b781-87825ecf0ef8",
-      "display": "FFB samlet situation",
-      "definition": "Vurdering der sammenholder oplysninger fra udredning mhp en samlet faglig analyse og konklusion."
     } ]
   }, {
     "code": "7b41185e-eeb4-437d-8120-5d51bbd27a79",
     "display": "Indsats/ydelses-anmodning",
     "concept": [ {
-      "code": "7fc66c15-0cb3-4c89-9e18-f3a01e6a6592",
-      "display": "Træning",
-      "definition": "Der anmodes om træning"
-    }, {
-      "code": "a71921ea-fe83-441d-933b-cc21d0b3c8c3",
-      "display": "Sundhedsfremme og forebyggelse",
-      "definition": "Der anmodes om sundhedsfremme og forebyggelse"
-    }, {
       "code": "490ab7be-ddb1-4a54-baf1-009fe6e8a83b",
       "display": "Hjemmesygepleje",
       "definition": "Der anmodes om sygepleje"
@@ -198,6 +196,14 @@
       "code": "ad865929-7363-4b2d-a271-01993181fbaf",
       "display": "Hjemmepleje",
       "definition": "Der anmodes om hjemmepleje"
+    }, {
+      "code": "7fc66c15-0cb3-4c89-9e18-f3a01e6a6592",
+      "display": "Træning",
+      "definition": "Der anmodes om træning"
+    }, {
+      "code": "a71921ea-fe83-441d-933b-cc21d0b3c8c3",
+      "display": "Sundhedsfremme og forebyggelse",
+      "definition": "Der anmodes om sundhedsfremme og forebyggelse"
     }, {
       "code": "4a297733-4d66-4726-a933-590d55cf91e0",
       "display": "Social indsats",

@@ -40,7 +40,7 @@ Description: "Overall CarePlan for Danish municipalities, for individual plans r
 * activity contains
    carePlanEvaluation 0..*
 
-* activity[carePlanEvaluation].detail.code = KLCommonCareSocialCodes#effe55c7-572c-4a99-8fb4-2a9dda2f6572
+
 * activity[carePlanEvaluation].outcomeReference only Reference(KLCommonCareSocialEvaluation) //støttebehovsvurdering
 
 * category.coding ^short = "[DK] indsatsforløbKategori"
@@ -58,8 +58,8 @@ Description: "Overall CarePlan for Danish municipalities, for individual plans r
 * status ^short = "[DK] indsatsforløbstatus" 
 * extension[relevantHistory] ^short = "[DK] indsatsforløbændringshistorie" 
 * goal[ffbgoal] ^short = "[DK] indsatsforløbsmål" 
-* activity[carePlanEvaluation].outcomeReference ^short = "[DK] støttebehovsvurdering"
-* activity[carePlanEvaluation].detail.code.coding ^short = "[DK] støttebehovsvurdering"
+* activity[carePlanEvaluation].outcomeReference ^short = "[DK] vurderinger"
+* activity[carePlanEvaluation].detail.code.coding ^short = "[DK] vurderinger"
 * extension[municipalityCaseNumber] ^short = "[DK] anledningDokumenteretISag"
 
 

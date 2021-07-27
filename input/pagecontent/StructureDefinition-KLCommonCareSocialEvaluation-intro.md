@@ -1,6 +1,6 @@
 
 ### Scope and usage
-CommonCareSocialEvaluation is used for documenting the result of an evaluation, typically being the last part of or following an information collection process. The different kinds of evaluations currently supported are defined by FSIII and FFB, and they are "FSIII helhedsvurdering", "FFB samlet situation", og "FFB støttebehovsvurdering". 
+CommonCareSocialEvaluation is used for documenting the result of an evaluation, typically being the last part of or following an information collection process. The different kinds of evaluations currently supported are defined by FSIII and FFB, and they are "FSIII helhedsvurdering", "FFB vurdering af borgers situation", "FFB støttebehovsvurdering", "VUM Borgerens perspektiv på indsatsen", "VUM Borgerens ressourcer i forhold til indsatsen".
 
 The Observation.code is mandatory, and fixed to a ValueSet specified by Local Govenment Denmark (KL), which may be suplemented with a SNOMED CT code.
 

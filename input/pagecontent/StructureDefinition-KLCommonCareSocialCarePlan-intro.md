@@ -13,7 +13,7 @@ CarePlan.intent, CarePlan.status and CarePlan.subject are mandatory in the FHIR 
 
 The relevantHistory extension points to earlier significant versions of the CarePlan. Using the relevantHistory extension is recommended if changes to carePlans over time is of relevance for the use case.
 
-CarePlan.activity.outcomeReference is used to represent assesment of needs (støttebehovsvurdering). It may be used to represent both the initial assesment of needs, and the assesment made when terminating the CarePlan. To make explicite that the activity is an assessment of needs, set activity.detail.code.coding = effe55c7-572c-4a99-8fb4-2a9dda2f6572 "Støttebehovsvurdering".
+CarePlan.activity.outcomeReference is used to represent assesments. Typically Assessment of needs, assessment of citizen resources, and assesment of citizen perspective is relevant, but others may be included. When it comes to of needs (støttebehovsvurdering), it may be used to represent both the initial assesment of needs, and the assesment made when terminating the CarePlan. To make explicite which activity is performed, set activity.detail.code.coding to the appropriate code e.g. effe55c7-572c-4a99-8fb4-2a9dda2f6572 "Støttebehovsvurdering".
 
 CarePlan:extension.municipalityCaseNumber is a relation to the municipality case (Sag). The officialCaseIdentifier uses an official http-adress and uuid to relate to a municipality case (Rammearkitektur: Sag.ID). The municipalitySpecificCaseIdentifier uses a municipality specific ID as a value, and relates to the organization that owns this caseIdentifier(Rammearkitektur Sag.Sagsnummer og Sag.ejer Sagsaktør).
 
@@ -40,5 +40,5 @@ Nedenstående tabel oversætter mellem de attributter, der er defineret i den f�
 |indsatsforløbstatus|Indikerer om der bliver handlet på der planlagte indsatsforløb, eller om dokumentationen repræsentere en fremtidig intention eller er historisk.|CarePlan.status|
 |indsatsforløbændringshistorie|Tidligere versioner af Indsatsforløbet, hvor der er sket klinisk relevante ændringer.|CarePlan:extension.relevantHistory|
 |indsatsforløbsmål|Mål for indsatsforløbet.|CarePlan.Goal|
-|støttebehovsvurdering|Vurdering af støttebehov foretaget ifm. formulering af og opfølgning på indsatsforløbet.|CarePlan.activity.outcomeReference (activity.detail.code.coding)|
+|indsatsforløbVurderinger|Vurderinger foretaget ifm. formulering af og opfølgning på indsatsforløbet.|CarePlan.activity.outcomeReference (activity.detail.code.coding)|
 |indsatsforløbDokumenteretISag|Kommunalt sagsnummer på den sag, som indsatsforløbet vedrører. Enten officielt uuid eller kommune-specifikt nummer|CarePlan:extension.municipalityCaseNumber|
