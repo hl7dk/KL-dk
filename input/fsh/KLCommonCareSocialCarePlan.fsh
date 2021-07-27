@@ -34,14 +34,14 @@ Description: "Overall CarePlan for Danish municipalities, for individual plans r
 * activity ^slicing.rules = #open
 * activity ^slicing.ordered = false 
 
-* extension contains
-   MunicipalityCaseNumber named municipalityCaseNumber 0..1
-    
 * activity contains
    carePlanEvaluation 0..*
 
+* activity[carePlanEvaluation].detail.code.coding from KLEvaluationTypeCodes
+* activity[carePlanEvaluation].outcomeReference only Reference(KLCommonCareSocialEvaluation) //vurderinger
 
-* activity[carePlanEvaluation].outcomeReference only Reference(KLCommonCareSocialEvaluation) //støttebehovsvurdering
+* extension contains
+   MunicipalityCaseNumber named municipalityCaseNumber 0..1
 
 * category.coding ^short = "[DK] indsatsforløbKategori"
 * goal[fpurpose] ^short = "[DK] indsatsforløbFormål" 

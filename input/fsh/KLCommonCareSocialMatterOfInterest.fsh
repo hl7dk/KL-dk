@@ -56,7 +56,6 @@ Usage: #example
 * code.coding.display = "Mobilitet"
 * effectiveDateTime = 2020-08-11T15:28:17-01:00
 * valueCodeableConcept.text = "Judith har faldtendens, men er meget dedikeret ift. at lære at bruge sin rollator indendørs og udendørs, og desuden går hun en tur på 30min hver dag"
-* valueCodeableConcept.coding = FSIII#B3
 * performer = Reference(HanneFraVisitationenAalborg)
 * status = #final
 
