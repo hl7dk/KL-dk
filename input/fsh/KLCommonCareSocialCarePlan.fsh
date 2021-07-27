@@ -29,16 +29,9 @@ Description: "Overall CarePlan for Danish municipalities, for individual plans r
 * addresses.extension contains ConditionRank named conditionRank 0..1 //primær og sekundær målgruppe https://chat.fhir.org/#narrow/stream/179166-implementers/topic/CarePlan.20addresses
 * addresses only Reference(KLCommonCareSocialFocusCondition) 
 * extension contains RelevantHist named relevantHistory 0..*
-* activity ^slicing.discriminator.type = #value
-* activity ^slicing.discriminator.path = "resolve().outcomeReference.code"
-* activity ^slicing.rules = #open
-* activity ^slicing.ordered = false 
 
-* activity contains
-   carePlanEvaluation 0..*
-
-* activity[carePlanEvaluation].detail.code.coding from KLEvaluationTypeCodes
-* activity[carePlanEvaluation].outcomeReference only Reference(KLCommonCareSocialEvaluation) //vurderinger
+* activity.detail.code.coding from KLEvaluationTypeCodes
+* activity.outcomeReference only Reference(KLCommonCareSocialEvaluation) //vurderinger
 
 * extension contains
    MunicipalityCaseNumber named municipalityCaseNumber 0..1
@@ -58,8 +51,8 @@ Description: "Overall CarePlan for Danish municipalities, for individual plans r
 * status ^short = "[DK] indsatsforløbstatus" 
 * extension[relevantHistory] ^short = "[DK] indsatsforløbændringshistorie" 
 * goal[ffbgoal] ^short = "[DK] indsatsforløbsmål" 
-* activity[carePlanEvaluation].outcomeReference ^short = "[DK] vurderinger"
-* activity[carePlanEvaluation].detail.code.coding ^short = "[DK] vurderinger"
+* activity.outcomeReference ^short = "[DK] vurderinger"
+* activity.detail.code.coding ^short = "[DK] vurderinger"
 * extension[municipalityCaseNumber] ^short = "[DK] anledningDokumenteretISag"
 
 
@@ -80,9 +73,9 @@ Usage: #example
 * careTeam = Reference(MidlertidigtOpholdBotilbuddetHvidbjerghus)
 * addresses[0] = Reference(AndreasMaalgruppeUdviklingshamning)
 * addresses[0].extension[conditionRank].valuePositiveInt = 1
-* activity[carePlanEvaluation].outcomeReference = Reference(AndreasStottebehov)
-* activity[carePlanEvaluation].detail.code = KLCommonCareSocialCodes#effe55c7-572c-4a99-8fb4-2a9dda2f6572
-* activity[carePlanEvaluation].detail.status = CarePlanActivityStatus#completed
+* activity.outcomeReference = Reference(AndreasStottebehov)
+* activity.detail.code = KLCommonCareSocialCodes#effe55c7-572c-4a99-8fb4-2a9dda2f6572
+* activity.detail.status = CarePlanActivityStatus#completed
 
 Instance: NySocialIndsats
 InstanceOf: KLCommonCareSocialCarePlan
