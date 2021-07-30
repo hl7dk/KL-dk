@@ -17,7 +17,7 @@ The documentation of the FHIR profiles is also available in a Danish edition for
 * [Explaination of FKI concepts](./FKIBegreber.pdf)
 * [FKI to FKI FHIR conversion](./FKIFHIRBilag.pdf)
 
-The HL7 FHIR-profiles are based on [information modelling](./faelleskommunalInformationsmodel.pdf) work done according to a common municipality architectural framework (Fælleskommunal rammearkitektur).
+The HL7 FHIR-profiles are based on information modelling work done according to a common municipality architectural framework (Fælleskommunal rammearkitektur). You may read the [overview document](./faelleskommunalInformationsmodel.pdf) or dive into the [interactive UML model](https://rammearkitektur.kl.dk/forretningsviden/anvendelsesmodeller/faelleskommunal-informationsmodel-paa-sundheds-aeldre-og-voksensocialomraadet-fki/).
 
 ### Getting started
 To get a comprehension of the content included in FKI, and the way it may be combined to form meaningful collections of information, starter-examples have been created.  
