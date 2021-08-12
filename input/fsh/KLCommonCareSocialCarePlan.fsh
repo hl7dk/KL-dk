@@ -82,7 +82,7 @@ Usage: #example
 * addresses[0] = Reference(AndreasMaalgruppeUdviklingshamning)
 * addresses[0].extension[conditionRank].valuePositiveInt = 1
 * activity.outcomeReference = Reference(AndreasStottebehov)
-* activity.detail.code = KLCommonCareSocialCodes#effe55c7-572c-4a99-8fb4-2a9dda2f6572
+* activity.detail.code = KLCommonCareSocialCodes#95ec4535-8fe8-4296-867c-35de421794cf
 * activity.detail.status = CarePlanActivityStatus#completed
 
 Instance: NySocialIndsats

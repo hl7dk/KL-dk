@@ -1,5 +1,5 @@
 ValueSet: KLConditionCodesHomeCare //Does not expand
-Title: "KLConditionCodesHomeCare"   
+Title: "KLTilstandeKoderHjemmepleje"   
 Description: "Danish municipality home care condition codes (funktionsevnetilstande)"
 * FSIII#J3.4 //"Færden i forskellige omgivelser"
 * FSIII#J3.8 //"Gå"
@@ -34,7 +34,7 @@ Description: "Danish municipality home care condition codes (funktionsevnetilsta
 * FSIII#J4.5 //"Følelsesfunktioner"
 
 ValueSet: KLConditionCodesNursing
-Title: "KLConditionCodesNursing"
+Title: "KLTilstandeKoderSygepleje"
 Description: "Danish municipality nursing condition codes"
 * FSIII#I9.1 //"Akutte smerter"
 * FSIII#I4.9 //"Andre problemer med hud og slimhinder"
@@ -83,13 +83,13 @@ Description: "Danish municipality nursing condition codes"
 
 
 ValueSet: KLMatterOfInterestValues
-Title: "KLMatterOfInterestValues"
+Title: "KLOplysningKoder"
 Description: "Matter of interes values to support when no observations have been made"
 * FSIII#B6 //ikke relevant
 * FFB#2254dac8-8aa3-4334-8502-9720194f49ad //"ikke vurderet"
 
 ValueSet: KLConditionCodesTheraphy
-Title: "KLConditionCodesTheraphy"
+Title: "KLTilstandKoderTræning"
 Description: "Danish municipality theraphy condition codes"
 * FSIII#1e199483-7201-43ef-a685-7fee7f4398ce //"Af- og påklædning"
 * FSIII#1b5ad154-d22c-4949-a5db-c01ccefd64d9 //"Balance"
@@ -133,7 +133,7 @@ Description: "Danish municipality theraphy condition codes"
 * FSIII#65ca1484-390b-4f1e-ba14-86a170ba75b9 //"Ødem"
 
 ValueSet: KLConditionCodesPrevention
-Title: "KLConditionCodesPrevention"
+Title: "KLTilstandKoderForebyggelse"
 Description: "Danish municipality Prevention condition codes"
 * FSIII#57b8979f-cf46-4312-aafa-3a0dd93aa921 //"Alkohol"
 * FSIII#cb55874a-93d9-45c7-a25a-8ff677c24385 //"Søvn og hvile"
@@ -157,7 +157,7 @@ Description: "Danish municipality Prevention condition codes"
 * FSIII#43f0b6da-11da-4eed-b00b-19b2177690b5 //"Håndtere genstande"
 
 ValueSet: KLConditionCodesFFB
-Title: "KLConditionCodesFFB"
+Title: "KLTilstandKoderFFB"
 Description: "Danish municipality FFB condition codes"
 *  FFB#a80e8f96-18ba-4ee4-9496-d3ce882c2f85 //"Anvende kommunikationsudstyr- og teknikker"
 *  FFB#4934e45a-0f93-4c23-a767-2b681378700b //"Bevidsthedstilstand"
@@ -230,7 +230,7 @@ Description: "Danish municipality FFB condition codes"
 * FFB#83342ff3-5f2e-4914-b045-e98357685866 //"Boligområde"
 
 ValueSet: KLConditionCodesFSIII
-Title: "KLConditionCodesFSIII"
+Title: "KLTilstandKoderFSIII"
 Description: "Danish municipality FSIII condition codes"
 * codes from valueset KLConditionCodesHomeCare
 * codes from valueset KLConditionCodesNursing
@@ -238,7 +238,7 @@ Description: "Danish municipality FSIII condition codes"
 * codes from valueset KLConditionCodesPrevention
 
 ValueSet: KLConditionCodes
-Title: "KLConditionCodes"
+Title: "KLTilstandKoder"
 Description: "Danish municipality condition codes"
 * codes from valueset KLConditionCodesHomeCare
 * codes from valueset KLConditionCodesNursing
@@ -247,7 +247,7 @@ Description: "Danish municipality condition codes"
 * codes from valueset KLConditionCodesFFB
 
 ValueSet: KLTargetGroupsFFB
-Title: "KLTargetGroupsFFB"
+Title: "KLMålgrupperFFB"
 Description: "Target groups as defined by FFB"
 * FFB#1f23325e-c9c9-455b-bfe7-b4dcd1bb63e5 //"Sjældent forekommende funktionsnedsættelse"
 * FFB#f1c7ee41-21b4-4dba-9424-c874bf72b5e7 //"Multipel funktionsnedsættelse"
@@ -296,7 +296,7 @@ Description: "Target groups as defined by FFB"
 * FFB#905caa77-2b98-48ce-b0e1-35dc4c1cc4bd //"Andet overgreb"
 
 ValueSet: KLConditionsAndTargetGroupsFFB
-Title: "KLConditionsAndTargetGroupsFFB"
+Title: "KLTilstandeOgMålgrupperFFB"
 Description: "Conditions and target groups as defined by FFB"
 * codes from valueset KLConditionCodesFFB
 * codes from valueset KLTargetGroupsFFB
@@ -312,13 +312,13 @@ Description: "Conditions and target groups as defined by FFB"
 //* codes from system ICPC2DK
 
 ValueSet: KLSeverities
-Title: "KLSeverities"
+Title: "KLSværhedgrader"
 Description: "Severities related to conditions"
 * codes from valueset KLSeveritiesFFB
 * codes from valueset KLSeveritiesFSIII
 
 ValueSet: KLSeveritiesFFB
-Title: "KLSeveritiesFFB"
+Title: "KLFunktionsevneniveauFFB"
 Description: "Severities related to conditions in FFB (funktionsevneniveau)"
 * FFB#2254dac8-8aa3-4334-8502-9720194f49ad //"ikke vurderet"
 * FFB#b508ff66-6326-4862-a6d7-7bbf184c9823 //"Ingen nedsat funktionsevne"
@@ -328,7 +328,7 @@ Description: "Severities related to conditions in FFB (funktionsevneniveau)"
 * FFB#832ae90b-23b5-4063-80aa-0b81bdce680e //"Fuldstændig nedsat funktionsevne"
 
 ValueSet: KLSeveritiesFSIII // <260245000 |Værdier vedr. fund|
-Title: "KLSeveritiesFSIII"
+Title: "KLFunktionsevneniveauFSIII"
 Description: "Severities related to conditions in FSIII home care (funktionsniveau)"
 //* codes from system FSIII where concept descendent-of #B
 * FSIII#B1 //"Ingen/ubetydelige begrænsninger"
@@ -339,34 +339,34 @@ Description: "Severities related to conditions in FSIII home care (funktionsnive
 * FSIII#B6 //"Ikke relevant"
 
 ValueSet: KLChangeValueCodes
-Title: "KLChangeValueCodes"
+Title: "KLMåltypeKoder"
 Description: "Change values for goals (måltype). Express the target value for change of a condition"
 * codes from valueset KLChangeValueCodesFSIII
 * codes from valueset KLChangeValueCodesFFB
 
 ValueSet: KLChangeValueCodesFSIII // <288533004 |værdier vedr. ændring|
-Title: "KLChangeValueCodesFSIII"
+Title: "KLMåltypeKoderFSIII"
 Description: "Change values for goals in FSIII (FSIII måltype). Express the target value for change of a health condition or funtional condition"
 * FSIII#81c827de-ef31-4410-aa57-0d1d1bc6c264 //"forsvinder"
 * FSIII#8addc23a-f7c6-47c4-97fb-a73fcdfc9f65 //"mindskes"
 * FSIII#15846728-58b4-4413-a9d1-be0f1404b10f //"forblive uædret"
 
 ValueSet: KLChangeValueCodesFFB //ISA b5257b2d-0fbf-4d00-bf38-d298c8568116
-Title: "KLChangeValueCodesFFB"
+Title: "KLMåltypekoderFFB"
 Description: "Change values for goals in FFB (FFB måltype). Express the target value for change of an activity or participation condition"
 * FFB#d41c8072-52f8-42b5-9375-ddbea454d27f	//"Udvikle funktionsevne"
 * FFB#10752a63-00b4-4958-b7f4-9f3a18f74266	//"Fastholde funktionsevne"
 * FFB#e47c22bd-d88d-48ab-882b-419923e1f44e	//"Begrænse tab af funktionsevne"
 
 ValueSet: KLTargetMeasureCodes
-Title: "KLTargetMeasureCodes"
-Description: "Target measure code, that determines whether the target is expressed as a severity or a change value"
+Title: "KLTypeAfObservationPåMål"
+Description: "Target measure code, that determines whether the target is expressed as a severity, change value or using another observation"
 * KLCommonCareSocialCodes#66959f77-6e2a-4574-8423-3ff097f8b9fa //"funktionsevneniveau"
 * KLCommonCareSocialCodes#90c48f03-f194-4b2f-ad7d-6cba1069ae48 //"måltype"
 * codes from valueset KLObservationCodes
 
 ValueSet: KLInformationCodes
-Title: "KLInformation codes"
+Title: "KLOplysningKoder"
 Description: "Information codes from FSIII and FFB (Område, Tema, Generelle oplysninger)"
 * codes from valueset KLGeneralInformationFSIII
 * codes from valueset KLNursingAreasFSIII
@@ -376,7 +376,7 @@ Description: "Information codes from FSIII and FFB (Område, Tema, Generelle opl
 * codes from valueset KLThemesFFB
 
 ValueSet: KLPerformanceLevelCodesFSIII
-Title: "KLPerformanceLevelCodesFSIII"
+Title: "KLUdførelsesKoderFSIII"
 Description: "Performance level codes (Udførelse), as evaluated by the citizen"
 * FSIII#C4 //"Ikke relevant"
 * FSIII#C3 //"Udfører ikke selv"
@@ -384,26 +384,26 @@ Description: "Performance level codes (Udførelse), as evaluated by the citizen"
 * FSIII#C1 //"Udfører selv"
 
 ValueSet: KLImportanceLevelCodesFSIII //Does not expand
-Title: "KLImportanceLevelCodesFSIII"
+Title: "KLBetydningKoderFSIII"
 Description: "Importance level codes (Betydning), as evaluated by the citizen"
 * FSIII#D1 //"Oplever ikke begrænsninger"
 * FSIII#D2 //"Oplever begrænsninger"
 
 ValueSet: KLCitizenObservationResultCodesFSIII
-Title: "KLCitizenObservationResultCodesFSIII"
+Title: "KLBorgervurderingsResultatkoderFSIII"
 Description: "Performance and Importance level codes, as evaluated by the citizen"
 * codes from valueset KLPerformanceLevelCodesFSIII
 * codes from valueset KLImportanceLevelCodesFSIII
 
 ValueSet: KLCitizenObservationCodesFSIII
-Title: "KLCitizenObservationCodesFSIII"
+Title: "KLBorgervurderingsObservationskoderFSIII"
 Description: "Observation codes for citizens own observations as defined by FSIII"
 * FSIII#C //"Udførelse"
 * FSIII#D //"Betydning"
 
 
 ValueSet: KLGeneralInformationFSIII
-Title: "KLGeneralInformationFSIII"
+Title: "KLGenerelInformationFSIII"
 Description: "Generel information codes (observations) as defined by FSIII"
 * FSIII#F12 //"Boligens indretning"
 * FSIII#F2 //"Motivation"
@@ -418,7 +418,7 @@ Description: "Generel information codes (observations) as defined by FSIII"
 * FSIII#F10 //"Hjælpemidler"
 
 ValueSet: KLNursingAreasFSIII
-Title: "KLNursingAreasFSIII"
+Title: "KLSygeplejeOmråderFSIII"
 Description: "Observation codes for the 12 nursing areas as defined by FSIII"
 * FSIII#I9 //"Smerter og sanseindtryk"
 * FSIII#I2 //"Bevægeapparat"
@@ -434,7 +434,7 @@ Description: "Observation codes for the 12 nursing areas as defined by FSIII"
 * FSIII#I6 //"Psykosociale forhold"
 
 ValueSet: KLHomeCareAreasFSIII
-Title: "KLHomeCareAreasFSIII"
+Title: "KLHjemmeplejeOmråderFSIII"
 Description: "Observation codes for the five home care areas as defined by FSIII"
 * FSIII#J1 //"Egenomsorg"
 * FSIII#J5 //"Samfundsliv"
@@ -443,7 +443,7 @@ Description: "Observation codes for the five home care areas as defined by FSIII
 * FSIII#J4 //"Mentale funktioner"
 
 ValueSet: KLTheraphyAreasFSIII
-Title: "KLTheraphyAreasFSIII"
+Title: "KLTræningOmråderFSIII"
 Description: "Theraphy areas (observation codes), used for documentation within physical training, physiotheraphy and occupational theraphy in Danish Municipalities as defined by FSIII"
 * FSIII#7e608d37-3f3c-4374-bbc8-e317505d8bc2 //"Samfundsliv"
 * FSIII#ebd91b5e-114a-48a5-90b8-d3c1fd50b72b //"Viden og udvikling"
@@ -466,7 +466,7 @@ Description: "Prevention areas (observation codes), used for documentation withi
 * FSIII#3547a306-8623-4713-a8ce-db1e82839c50 //"Mental sundhed"
 
 ValueSet: KLThemesFFB
-Title: "KLThemesFFB"
+Title: "KLTemaerFFB"
 Description: "FFB Themes"
 * FFB#4fb78b88-d3af-4cfb-84d7-f06daf423317 //"Sundhedsforhold"
 * FFB#25c5c614-305f-46cd-9891-55d564fc30cf //"Mentale funktioner"
@@ -483,7 +483,7 @@ Description: "FFB Themes"
 * FFB#740934cd-002b-4b96-b92e-b3562eed9448
 
 ValueSet: KLFollowUpCodesFSIII
-Title: "KLFollowUpCodesFSIII"
+Title: "KLOpfølgningKoderFSIII"
 Description: "Follow-up codes used in FSIII"
 * FSIII#E3 //"Afsluttes"
 * FSIII#E1 //"Fortsættes"
@@ -491,20 +491,20 @@ Description: "Follow-up codes used in FSIII"
 * FSIII#E4 //"Revisitation"
 
 ValueSet: KLFollowUpCodesFFB
-Title: "KLFollowUpCodesFFB"
+Title: "KLOpfølgningKoderFFB"
 Description: "Follow-up codes used in FFB" //ISA 90479ffa-bf46-4b3a-a172-91f2798e2a43
 * FFB#1e971d84-10a4-4ef8-a8b3-0daa4c7d088a //"Træf afgørelse om fortsættelse af indsats"
 * FFB#b4c01aa8-82fd-44e4-83ff-ca19ec02c779 //"Træf afgørelse om afslutning af indsats og visiter til ny"
 * FFB#d7d03656-4c87-4e67-9146-aa5990460f16 //"Træf afgørelse om afslutning af indsats"
 
 ValueSet: KLFollowUpCodes
-Title: "KLFollowUpCodes"
+Title: "KLOpfølgningKodes"
 Description: "Follow-up codes used in Danish municipalities"
 * codes from valueset KLFollowUpCodesFFB
 * codes from valueset KLFollowUpCodesFSIII
 
 ValueSet: KLRequestFromFSIII
-Title: "KLRequestFromFSIII"
+Title: "KLHenvendelseHenvisningFraFSIII"
 Description: "Type of service requesters as defined by FSIII"
 * FSIII#A15 //"Andre"
 * FSIII#A3 //"Sagsbehandler, anden forvaltning"
@@ -523,7 +523,7 @@ Description: "Type of service requesters as defined by FSIII"
 * FSIII#A2 //"Pårørende"
 
 ValueSet: KLNursingInterventionsFSIII
-Title: "KLNursingInterventionsFSIII"
+Title: "KLSygeplejeIndsatserFSIII"
 Description: "Nursing interventions as described by FSIII" 
 * FSIII#G1.34 //"Sondeernæring"
 * FSIII#G1.20 //"Medicinadministration"
@@ -570,7 +570,7 @@ Description: "Nursing interventions as described by FSIII"
 * FSIII#G2.2 //"Opfølgning"
 
 ValueSet: KLHomeCareInterventionsFSIII
-Title: "KLHomeCareInterventionsFSIII"
+Title: "KLHjemmeplejeIndsatserFSIII"
 Description: "Home Care Interventions as described by FSIII"
 * FSIII#H1.4 //"Mobilitet"
 * FSIII#H1.12 //"Praktiske indsatser i relation til børn i husstanden"
@@ -605,7 +605,7 @@ Description: "Home Care Interventions as described by FSIII"
 * FSIII#H7.1 //"Generel 0-ydelse"
 
 ValueSet: KLTrainingInterventionsFSIII
-Title: "KLTrainingInterventionsFSIII"
+Title: "KLTræningIndsatserFSIII"
 Description: "Training interventions as defined by FSIII"
 * FSIII#58293f63-00d7-4730-8dbc-c784d40f9e23 //"Funktionstræning"
 * FSIII#2abe20c7-c0b4-41c1-b397-52acf36499ef //"Fysisk træning"
@@ -619,7 +619,7 @@ Description: "Training interventions as defined by FSIII"
 * FSIII#f8ac963c-6ec5-4ec5-bd90-a22fea4e2d16 //"Manuel behandling"
 
 ValueSet: KLPreventionInterventionsFSIII
-Title: "KLPreventionInterventionsFSIII"
+Title: "KLForebyggelseIndsatserFSIII"
 Description: "Prevention and health promotion interventions as defined by FSIII"
 * FSIII#f30cab6d-2a42-4358-99d7-811127fb6e05 //"Mental håndtering"
 * FSIII#e71b7d85-5c78-49c2-8624-8499d162317b //"Sygdomshåndtering"
@@ -637,7 +637,7 @@ Description: "Prevention and health promotion interventions as defined by FSIII"
 * FSIII#d1e016b5-150a-4ac4-97ba-d3e19e28471e //"Opfølgning"
 
 ValueSet: KLInterventionsFFB
-Title: "KLInterventionsFFB"
+Title: "KLYdelserFFB"
 Description: "social interventions (ydelser) as defined by FFB"
 * FFB#35b593cf-724f-4058-9f31-fe1b3e8df124 //"Pædagogisk udredning"
 * FFB#f25674bf-3162-45c3-bde4-6d542bf9629b //"Kompetenceudviklende aktivitet"
@@ -667,7 +667,7 @@ Description: "social interventions (ydelser) as defined by FFB"
 * FFB#bd5fea9a-16ed-4e63-b6a1-8e83caaf9b0b //"Støtte til seksualitet"
 
 ValueSet: KLServiceCodesFFB
-Title: "KLServiceCodesFFB"
+Title: "KLTilbudsKoderFFB"
 Description: "Social service (tilbud) as defined by FFB"
 * FFB#9401777d-bdc5-4f52-9804-63c8cae9a792 //"Aktivitets- og samværstilbud"
 * FFB#a0fb02a2-367c-48bc-bacd-92e49a861a4c //"Beskyttet beskæftigelsestilbud"
@@ -679,7 +679,7 @@ Description: "Social service (tilbud) as defined by FFB"
 
 
 ValueSet: KLInterventions
-Title: "KLInterventions" 
+Title: "KLIndsatser" 
 Description: "Interventions as described by FSIII and FFB"
 * codes from valueset KLNursingInterventionsFSIII
 * codes from valueset KLHomeCareInterventionsFSIII
@@ -688,7 +688,7 @@ Description: "Interventions as described by FSIII and FFB"
 * codes from valueset KLInterventionsFFB
 
 ValueSet: KLInterventionsFSIII
-Title: "KLInterventionsFSIII" 
+Title: "KLIndsatserFSIII" 
 Description: "Interventions as described by FSIII"
 * codes from valueset KLNursingInterventionsFSIII
 * codes from valueset KLHomeCareInterventionsFSIII
@@ -696,7 +696,7 @@ Description: "Interventions as described by FSIII"
 * codes from valueset KLPreventionInterventionsFSIII
 
 ValueSet: KLEncounterTypes
-Title: "KLEncounterTypes"
+Title: "KLKontaktTyper"
 Description: "Encounter types in Danish municipality health, social and elderly care (note that these are specific to this model, they are not replicas of a municipality terminology service)"
 * KLCommonCareSocialCodes#829ac647-c7fc-4964-836b-f708d886e0e3 //"oplysning"
 * KLCommonCareSocialCodes#9269c9a2-8220-447b-a127-811275b41062 //"vurdering/bevilling"
@@ -707,7 +707,7 @@ Description: "Encounter types in Danish municipality health, social and elderly 
 * KLCommonCareSocialCodes#bb6fc544-7f4f-4b50-8868-1431e0df2381 //"observation"
 
 ValueSet: KLServicesTypes
-Title: "KLEncounterTypes"
+Title: "KLServiceTyper"
 Description: "Types of services that the Danish municipalities provide which is covered by FSIII and FFB"
 * KLCommonCareSocialCodes#490ab7be-ddb1-4a54-baf1-009fe6e8a83b //"Sygepleje"
 * KLCommonCareSocialCodes#ad865929-7363-4b2d-a271-01993181fbaf //"Hjemmepleje"
@@ -716,20 +716,20 @@ Description: "Types of services that the Danish municipalities provide which is 
 * KLCommonCareSocialCodes#4a297733-4d66-4726-a933-590d55cf91e0 //"Social indsats"
 
 ValueSet: KLConsentToLiasing
-Title: "KLConsentToLiasing"
+Title: "KLBorgerIndforståetMedHenvendelseKoder"
 Description: "Codes for citizens knowledge of referal/request as defined by FFB"
 * KLCommonCareSocialCodes#e67035da-9179-466b-99ad-ea86835d38c9 //"indforstået"
 * KLCommonCareSocialCodes#54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb //"ikke indforstået"
 
 ValueSet: KLCarePlanCategoryCodes
-Title: "KLCarePlanCategoryCodes"
+Title: "KLIndsatsforløbTypekoder"
 Description: "Codes for constraining the CarePlan category"
 * KLCommonCareSocialCodes#ddd2f670-5ec7-4f9c-9a2c-aee25cb133bf //"Rehabilitering efter §140"
 * KLCommonCareSocialCodes#4fd6c23a-6ff3-4251-ac37-3ca095027b5b //"Sundhedsfremme og forebyggelse §119"
 * KLCommonCareSocialCodes#e459386d-1474-4c31-89c5-c8bc7a25e3d4 //"Social indsats"
 
 ValueSet: KLGoalTypeCodes
-Title: "KLGoalTypeCodes"
+Title: "KLMålKategoriKoder"
 Description: "Codes used to distinguish different kinds of goals"
 * KLCommonCareSocialCodes#ca552020-6ed1-4cdc-b0d4-32697f1f27ad //"FSIII tilstandsmål"
 * KLCommonCareSocialCodes#e6f35a88-6665-4471-9dce-9a98854532b4 //"FSIII indsatsmål"
@@ -740,7 +740,7 @@ Description: "Codes used to distinguish different kinds of goals"
 * KLCommonCareSocialCodes#ffb9886b-d04e-46b1-9165-a400f91f822b //FSIII borgers ønsker og mål
 
 ValueSet: KLEvaluationTypeCodes
-Title: "KLEvaluationTypeCodes"
+Title: "KLVurderingTypekoder"
 Description: "Codes used to distinguish different kinds of evaluations"
 * KLCommonCareSocialCodes#54c4ffea-7caf-4edc-8aa9-ef6e0be26c4c //"FSIII helhedsvurdering"
 * KLCommonCareSocialCodes#053a301d-1bb8-4cc4-b781-87825ecf0ef8 //"FFB vurdering af borgerens situation"
@@ -749,12 +749,12 @@ Description: "Codes used to distinguish different kinds of evaluations"
 * KLCommonCareSocialCodes#f52887de-023f-4193-b6b0-4b0a37b1cffc //VUM Borgerens ressourcer i forhold til indsatsen
 
 ValueSet: KLEvaluationTypeCodesSCT
-Title: "KLEvaluationTypeCodesSCT"
+Title: "KLVurderingTypekoderSCT"
 Description: "SNOMED CT codes used to distinguish different kinds of evaluations"
 * codes from system SCT where concept is-a #225400002 "Personlig vurdering"
 
 ValueSet: KLNeedsAssessmentCodesFFB
-Title: "KLNeedsAssessmentCodesFFB"
+Title: "KLStøttebehovsvurderingskoderFFB"
 Description: "Needs assesment codes as defined in FFB" //ISA 7ac451dc-773b-4877-baaf-1e6b1d5c8e28
 * FFB#dd628e73-d6c9-4837-a2b8-aa62d73bd6ae //"Let støttebehov"
 * FFB#401a397b-b3aa-4ca3-8b23-bd8f99dd3f76 //"Moderat støttebehov"
@@ -764,13 +764,13 @@ Description: "Needs assesment codes as defined in FFB" //ISA 7ac451dc-773b-4877-
 * FFB#2254dac8-8aa3-4334-8502-9720194f49ad //"Ikke vurderet"
 
 ValueSet: KLComplicationCodesSCT //does not expand
-Title: "KLComplicationCodesSCT"
+Title: "KLKomplikationskoderSCT"
 Description: "Codes that indicate whether an intervention had complications or not"
 * SCT#160245001 //"ingen aktuelle problemer eller funktionsnedsættelse"
 * SCT#116223007 //"Komplikation"
 
 ValueSet: KLObservationCodes
-Title: "KLObservationCodes"
+Title: "KLObservationskoder"
 Description: "SNOMED CT and LOINC observation codes used in Danish municipalities"
 //Vital signs
 * SCT#446226005	//Diastolic blood pressure on admission	
@@ -845,7 +845,7 @@ Description: "SNOMED CT and LOINC observation codes used in Danish municipalitie
 * NPU#NPU02195 //"P(vB; fPt)—Glucose; stofk. = ? mmol/L"
 
 ValueSet: KLInformationGatheringTypeCodes
-Title: "KLInformationGatheringTypeCodes"
+Title: "KLOplysningsaktivitetsTypeKoder"
 Description: "Codes used to specify which kind of information gathering is conducted"
 * KLCommonCareSocialCodes#e70c66c0-a939-493b-8ea8-5b7e7b48ba1a //"generelle oplysninger, FSIII"
 * KLCommonCareSocialCodes#e5a73b0e-a5d2-430e-931f-6156306ab00f //"funktionsevnevurdering hjemmepleje, FSIII"
@@ -855,13 +855,13 @@ Description: "Codes used to specify which kind of information gathering is condu
 * KLCommonCareSocialCodes#f8ebd11a-04f3-4aa0-9786-406e8896c84d //"socialfaglig udredning, VUM/FFB"
 
 ValueSet: KLInformationGatheringInvestigationCodes
-Title: "KLInformationGatheringInvestigationCodes"
+Title: "KLOplysningsaktivitetsOgVurderingskoder"
 Description: "Codes that identify valid items in an investigation in Danish municipalities"
 * codes from valueset KLEvaluationTypeCodes
 * codes from valueset KLInformationCodes
 
 ValueSet: KLMatterOfInterestInformerFFB
-Title: "KLMatterOfInterestInformerFFB"
+Title: "KLKildeTilOplysningFFB"
 Description: "Codes that identify who's perspective the matter-of-interest is comming from"
 * KLCommonCareSocialCodes#25b4e705-2e9a-47a2-b11a-c829316b9d3a //borger
 * KLCommonCareSocialCodes#63338442-7b2e-405b-acc0-142361ef19f1 //andre (fx læge, pårørende og udfører)
@@ -869,7 +869,7 @@ Description: "Codes that identify who's perspective the matter-of-interest is co
 * KLCommonCareSocialCodes#f00a6844-1005-401d-965d-1c5859df7beb //Udfører
 
  CodeSystem: KLCommonproprietary
- Title: "KLCommonProprietary"
+ Title: "KLLokaleKoder"
  Description: "Proprietary codes associated with KLCommonCareSocial, partial list, ID's likely to change."
 // * #829ac647-c7fc-4964-836b-f708d886e0e3 "oplysning" "oplysning er foretaget ved kontakt"
 // * #9269c9a2-8220-447b-a127-811275b41062 "vurdering/bevilling" "vurdering og/eller bevilling er foretaget ved kontakt"
