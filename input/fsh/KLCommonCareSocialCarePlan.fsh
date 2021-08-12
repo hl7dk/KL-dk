@@ -30,8 +30,16 @@ Description: "Overall CarePlan for Danish municipalities, for individual plans r
 * addresses only Reference(KLCommonCareSocialFocusCondition) 
 * extension contains RelevantHist named relevantHistory 0..*
 
-* activity.detail.code.coding from KLEvaluationTypeCodes
-* activity.outcomeReference only Reference(KLCommonCareSocialEvaluation) //vurderinger
+* activity ^slicing.discriminator.type = #value
+* activity ^slicing.discriminator.path = "detail.code"
+* activity ^slicing.rules = #open
+* activity ^slicing.ordered = false 
+
+* activity contains
+   carePlanEvaluation 0..*
+
+* activity[carePlanEvaluation].detail.code = KLCommonCareSocialCodes#95ec4535-8fe8-4296-867c-35de421794cf //Evaluering (som her overbegreb til støttebehovsvurdering, helhedsvurdering etc.)
+* activity[carePlanEvaluation].outcomeReference only Reference(KLCommonCareSocialEvaluation) //støttebehovsvurdering
 
 * extension contains
    MunicipalityCaseNumber named municipalityCaseNumber 0..1

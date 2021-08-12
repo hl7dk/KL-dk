@@ -458,7 +458,7 @@ Description: "Theraphy areas (observation codes), used for documentation within 
 * FSIII#0337193a-b5cc-43e1-a324-fa28944bfc3b //"Sanser og smerter"
 
 ValueSet: KLPreventionAreasFSIII
-Title: "KLPreventionAreasFSIII"
+Title: "KLForebyggelseOmråderFSIII"
 Description: "Prevention areas (observation codes), used for documentation within prevention and health promotion"
 * FSIII#d03da587-94dc-46e6-ba71-eb1e43ec7df6 //"Kroppen"
 * FSIII#7b3b3587-4ddd-4b93-a81b-455bfc601492 //"Hverdagsliv"
