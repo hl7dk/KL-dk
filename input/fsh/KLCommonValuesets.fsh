@@ -771,7 +771,7 @@ Description: "Codes that indicate whether an intervention had complications or n
 
 ValueSet: KLObservationCodes
 Title: "KLObservationskoder"
-Description: "SNOMED CT and LOINC observation codes used in Danish municipalities"
+Description: "SNOMED CT and NPU codes used in Danish municipalities"
 //Vital signs
 * SCT#446226005	//Diastolic blood pressure on admission	
 * SCT#400975005	//Standing diastolic blood pressure	
@@ -805,16 +805,15 @@ Description: "SNOMED CT and LOINC observation codes used in Danish municipalitie
 * SCT#248333004 //|Standing height (observable entity)|
 //fuctional observation
 * SCT#450738001 //"Thirty second chair stand test score"
-* LOINC#64098-7 //6-min walking test
-* SCT#165263003 //walking distance
+* SCT#1144649008 //|Six minute walk test distance (observable entity)|
 //TOBS Observations
 * SCT#6942003 //|bevidsthedsniveau|
 * SCT#444714004 //|Assessment of consciousness level (procedure)|
 //Pain scores
 * SCT#443394008 //|Visual analog scale pain score (observable entity)|
-* SCT#225908003 //|Pain score (observable entity)|
+* SCT#1144798005 //|Verbal Rating Scale pain intensity score (observable entity)|
 //Fra spørgeskemaer
-* KLCommonproprietary#e30a95fd-7abd-478b-9a9d-e02dfdd73fd5 //"WHO-5 værdi"
+* SCT#1144665009 // 5-item World Health Organization Well-being Index value (observable entity)
 * SCT#404949004 //"Hvilemønster"
 * SCT#406202006 //"Træk vedr. energi"
 * SCT#247752005 //"Interesseniveau"
@@ -824,7 +823,7 @@ Description: "SNOMED CT and LOINC observation codes used in Danish municipalitie
 * SCT#364624006 //|Pain / sensation observable (observable entity)|
 * SCT#285854004 //|Emotion (observable entity)|
 * SCT#736535009 //|EuroQol visual analogue score (observable entity)|
-* SCT#736534008 //"EuroQol five dimension five level index value (observable entity)"
+* SCT#1144655003 //|EuroQol five dimension three level index value (observable entity)|
 * SCT#420753006 //|Pressure ulcer surface area (observable entity)|
 * SCT#434912009 // |glucosekoncentration i blod|
 * NPU#NPU14924 //"U—Urin; egenskabsart(liste; stix; proc.)"
@@ -871,49 +870,7 @@ Description: "Codes that identify who's perspective the matter-of-interest is co
  CodeSystem: KLCommonproprietary
  Title: "KLLokaleKoder"
  Description: "Proprietary codes associated with KLCommonCareSocial, partial list, ID's likely to change."
-// * #829ac647-c7fc-4964-836b-f708d886e0e3 "oplysning" "oplysning er foretaget ved kontakt"
-// * #9269c9a2-8220-447b-a127-811275b41062 "vurdering/bevilling" "vurdering og/eller bevilling er foretaget ved kontakt"
-// * #9f03dfbb-7a97-45a5-94db-d4c3501714a9 "opfølgning" "opfølgning foretaget ved kontakt"
-// * #784275f1-6822-4a88-b361-d958007d5253 "udførelse af planlagt indsats" "Planlagt indsats udført ved kontakt"
-// * #15775b0a-7ec6-469e-9d3c-a81fbc9a1b45 "udførelse af akutindsats" "Akutindsats, bevilget af læge eller akutteam, udført ved kontakt"
-// * #c03b426a-4348-407f-b343-f4baa9759c72 "udførelse af ikke-bevilget indsats" "Indsats, der ikke i forvejen var bevilget, udført ved kontakt"
-// * #bb6fc544-7f4f-4b50-8868-1431e0df2381 "observation" "observation foretaget ved kontakt"
-// * #69dbfad7-859a-4596-8737-8054f6b4948f "FFB_Fysisk helbred" "Undertemaet Fysisk helbred i FFB"
-// * #081ab1be-7dc1-41fa-803c-12a146eb0b74 "FFB_Sundhedsfaglig behandling og træning" "Undertemaet Sundhedsfaglig behandling og træning i FFB"
-// * #490ab7be-ddb1-4a54-baf1-009fe6e8a83b "Sygepleje" "Der anmodes om sygepleje"
-// * #ad865929-7363-4b2d-a271-01993181fbaf "Hjemmepleje" "Der anmodes om hjemmepleje"
-// * #7fc66c15-0cb3-4c89-9e18-f3a01e6a6592 "Træning" "Der anmodes om træning"
-// * #a71921ea-fe83-441d-933b-cc21d0b3c8c3 "Sundhedsfremme og forebyggelse" "Der anmodes om sundhedsfremme og forebyggelse"
-// * #4a297733-4d66-4726-a933-590d55cf91e0 "Social indsats" "Der anmodes om en social indsats"
-// * #e67035da-9179-466b-99ad-ea86835d38c9 "indforstået" "Borger indforstået med henvendelse"
-// * #54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb "ikke indforstået" "Borger ikke indforstået med henvendelse"
-// * #ddd2f670-5ec7-4f9c-9a2c-aee25cb133bf "Rehabilitering efter §140" "Det planlagte indsatsforløb er rehabilitering efter sundhedslovens §140"
-// * #4fd6c23a-6ff3-4251-ac37-3ca095027b5b "Sundhedsfremme og forebyggelse §119" "Det planlagte indsatsforløb vedrører sundhedsfremme og forebyggelse efter §119"
-// * #e459386d-1474-4c31-89c5-c8bc7a25e3d4 "Social indsats" "Det planlagte indsatsforløb er en social indsats, som defineret af FFB, med tilhørende ydelser, målgruppe og tilbud"
-// * #ca552020-6ed1-4cdc-b0d4-32697f1f27ad "FSIII tilstandsmål" "Tilstandsmål som defineret af FSIII - ofte i form af en forventet tilstand "
-// * #e6f35a88-6665-4471-9dce-9a98854532b4 "FSIII indsatsmål" "Mål for indsatsen i FSIII, som ofte er defineret af udfører. Hvis der specificeres en FSIII målemetode, er det et mål af denne type"
-// * #416fe27d-3ccf-4390-8742-8b52a9d8dc78 "FFB livsmål" "Livsmål  som specificeret af FFB. Det er et overordnet og er som udtrykt af borger"
-// * #424827b1-23aa-4848-962b-56ee47def560 "Indsatsformål" "Det overordnede formål med hele indsatsen (Defineret af FFB men bruges også for FSIII)"
-// * #0bb3daef-538d-45dc-b444-abdbcb63f6bc "FFB indsatsmål" "Indsatsmål i FFB - er de konkrete faglige mål der arbejdes med, og som er knyttet til tilstande og opfølgninger"
-// * #6746d4af-145a-4bfd-a672-05c0cf11b53b "FFB delmål" "Delmål i FFB, ligger under indsatsmål, og er som udtrykt af udfører"
-// * #54c4ffea-7caf-4edc-8aa9-ef6e0be26c4c "FSIII helhedsvurdering" "Sagsvurdering, der sammenholder resultaterne af en myndighedsudredning og den øvrige sagsoplysning med henblik på at træffe en afgørelse"
-// * #053a301d-1bb8-4cc4-b781-87825ecf0ef8 "FFB samlet situation" "Vurdering der sammenholder oplysninger fra udredning mhp en samlet faglig analyse og konklusion."
-// * #effe55c7-572c-4a99-8fb4-2a9dda2f6572 "FFB støttebehovsvurdering" "Angiver, hvor stort et behov borgeren har for hjælp og støtte."
-// * #81c827de-ef31-4410-aa57-0d1d1bc6c264 "forsvinder" " helbredstilstand eller funktionsevnetilstand forventes at forsvinde ifm. indsatsen"
-// * #8addc23a-f7c6-47c4-97fb-a73fcdfc9f65 "mindskes" "helbredstilstand eller funktinsevnetilstand forventes at mindskes ifm. indsatsen"
-// * #15846728-58b4-4413-a9d1-be0f1404b10f "forblive uædret" "helbredstilstand eller funktionsevnetilstand forventes at forblive uændret ifm. indsatsen"
-// * #66959f77-6e2a-4574-8423-3ff097f8b9fa "funktionsevneniveau" "funktionsevneniveau, som kan være et FFB funktionsevneniveau eller FSIII tilstandsniveau"
-// * #90c48f03-f194-4b2f-ad7d-6cba1069ae48 "måltype" "målet udtrykkes i form af en måltype, måltypen er den forventede ændring i tilstanden givet indsatsen"
-// * #e70c66c0-a939-493b-8ea8-5b7e7b48ba1a "generelle oplysninger, FSIII" "indhentning af generelle oplysninger jævnfør FSIII"
-// * #e5a73b0e-a5d2-430e-931f-6156306ab00f "funktionsevnevurdering hjemmepleje, FSIII" "udførelse af funktionsevnevurdering i hjemmeplejen jævnfør FSIII"
-// * #47fd1468-89da-4803-9d7a-ecc039a30d92 "sygeplejefaglig udredning, FSIII" "udførelse af sygeplejefaglig udredning jævnfør FSIII"
-// * #0f0f223c-abe3-4720-aab8-c257679a0a4e "terapeutfaglig udredning, FSIII" "udførelse af terapeutfaglig udredning jævnfør FSIII"
-// * #95e787e0-5490-437d-ae4c-f3736644242f "afklarende samtale §119, FSIII" "udførelse af afklarende samtale vedr. sundhedsfremme og forebyggelse jævnfør FSIII"
-// * #f8ebd11a-04f3-4aa0-9786-406e8896c84d "socialfaglig udredning, VUM/FFB" "udførelse af socialfaglig udredning som specificeret af VUM og FFB"
-// * #4a069078-c3c3-4c67-899d-4e8876026f48Ja "Proceduren fulgt" "Proceduren for observationen, som beskrevet af KL, er fulgt"
-// * #17772b27-bc9d-4d62-9515-d268a98a3a27 "Proceduren ikke fulgt pga. delvis besvarelse/udførelse" "Proceduren for observationen, som beskrevet af KL, er ikke fulgt pga. delvis besvarelse/udførelse"
-// * #a3231c9a-5569-49c4-8760-4fffbf0b2b80 "Proceduren ikke fulgt pga. afvigelse i test-setup/omgivelser" "Proceduren for observationen, som beskrevet af KL, er ikke fulgt pga. afvigelse i test-setup/omgivelser"
-* #e30a95fd-7abd-478b-9a9d-e02dfdd73fd5 "WHO-5 værdi" "Observation vedr. WHO 5 Well being index"
+
 
 CodeSystem: NPU
 Title: "NPU"
