@@ -11,7 +11,6 @@ Description: "Observations and measurements performed in Danish municipalities"
 
 * code.coding ^short = "[DK] observationskode"
 * value[x] ^short = "[DK] observationsresultat"
-* valueQuantity.unit ^short = "[DK] observationsenhed"
 * subject ^short = "[DK] observationssubjekt"
 * encounter ^short = "[DK] observationskontakt"
 * performer ^short = "[DK] observationsansvarlig"
