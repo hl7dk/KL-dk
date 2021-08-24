@@ -874,7 +874,7 @@ Description: "Codes that identify who's perspective the matter-of-interest is co
 
 CodeSystem: NPU
 Title: "NPU"
-Description: "NPUcodes used i danish municipalities"
+Description: "NPUcodes used in Danish municipalities"
 * #NPU14924 "U—Urin; egenskabsart(liste; stix; proc.)"
 * #NPU10504 "U—Acetoacetat; arb.k.(proc.) = ?"
 * #NPU17997 "U—Albumin; arb.k.(proc.) = ?"
