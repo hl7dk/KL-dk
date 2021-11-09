@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "id" : "FFB",
+  "id": "FFB",
   "url": "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB",
   "identifier": [ {
     "system": "urn:oid",
@@ -198,7 +198,7 @@
         }, {
           "code": "8f32c948-41c4-49d7-8913-cdeede2e7fe1",
           "display": "Gøre rent",
-          "definition": "handling, der består i at holde ens nære fysiske omgivelser rene og hygiejniske"
+          "definition": "handling, der består i at holde ens nære fysiske omgivelser rene og hygiejniske "
         }, {
           "code": "58ef570c-1c1e-47be-8bfd-26ed99825762",
           "display": "Udvise hjælp og omsorg for andre",
@@ -375,11 +375,11 @@
     "definition": "indsats, der består af en eller flere ydelser, som leveres til en eller flere borgere af et eller flere tilbud, og som skal forebygge eller tilgodese behov, som følger af en nedsat funktionsevne, og som gives med henblik på at fremme den enkeltes mulighed for at klare sig selv eller at lette den daglige tilværelse eller forbedre livskvaliteten",
     "concept": [ {
       "code": "af7624f8-affd-4a7e-8754-b1b1dd9d8def",
-      "display": "Ydelse",
+      "display": "Ydelse  ",
       "definition": "tjeneste, genstand eller beløb, der gives eller modtages",
       "concept": [ {
         "code": "a2256d86-1cf8-4da5-be49-1f49f4335ecb",
-        "display": "Aktivitet og samvær",
+        "display": "Aktivitet og samvær  ",
         "definition": "ydelse, der gennem udviklende eller vedligeholdende aktiviteter har til formål at fremme socialt samvær eller tilbyde et miljøskift",
         "concept": [ {
           "code": "f25674bf-3162-45c3-bde4-6d542bf9629b",
@@ -408,7 +408,7 @@
         } ]
       }, {
         "code": "d8505298-6ea5-4ca8-923d-6e4451cc9a48",
-        "display": "Beskyttet beskæftigelse",
+        "display": "Beskyttet beskæftigelse  ",
         "definition": "ydelse, der gennem arbejdslignende, lønnede aktiviteter har til formål at afdække, oparbejde, udvikle eller bevare en persons arbejdsevne og beskæftigelsesrelevante kompetencer",
         "concept": [ {
           "code": "55b77d7c-afce-4269-9232-7731ab1ef4fc",
@@ -425,12 +425,16 @@
         } ]
       }, {
         "code": "a1eaa022-9e5c-493c-83d3-7cc40b9df9e9",
-        "display": "Ophold",
+        "display": "Ophold  ",
         "definition": "ydelse, der har til formål at huse en person",
         "concept": [ {
           "code": "5af56051-8413-4115-aaa2-83a0767e1137",
           "display": "Længerevarende ophold",
           "definition": "ophold, der er tilkendt for en ikke-midlertidig periode"
+        }, {
+          "code": "a81a3fa9-6601-4d1e-a11e-f7444dfd3828",
+          "display": "Akut ophold",
+          "definition": "ophold, der leveres akut"
         }, {
           "code": "80aa8ea7-4ad8-405f-876a-4c0f89fde06a",
           "display": "Midlertidigt ophold",
@@ -438,7 +442,7 @@
         } ]
       }, {
         "code": "72a2a2d4-5a83-4093-ba1c-7f759c132801",
-        "display": "Afklaring",
+        "display": "Afklaring  ",
         "definition": "ydelse, der har til formål at afdække en persons situation",
         "concept": [ {
           "code": "35b593cf-724f-4058-9f31-fe1b3e8df124",
@@ -447,7 +451,7 @@
         } ]
       }, {
         "code": "1f0ff82b-3243-422f-9651-1d00fd2dcd61",
-        "display": "Socialpædagogisk støtte",
+        "display": "Socialpædagogisk støtte  ",
         "definition": "ydelse, der gennem motivation, vejledning og støtte har til formål at udvikle eller fastholde en persons funktionsevne og muligheder for selvstændighed og selvbestemmelse i forhold til personens situation",
         "concept": [ {
           "code": "329782cf-a740-4eb7-aa7e-aaaa9a53c99e",
@@ -526,119 +530,153 @@
             "definition": "støtte til praktiske opgaver af administrativ eller økonomisk karakter"
           } ]
         } ]
+      }, {
+        "code": "21dca9cf-c238-465b-9f12-15351f51b038",
+        "display": "Forebyggende hjælp og støtte",
+        "definition": "ydelse til voksne, der retter sig mod personer med lettere fysisk eller psykisk funktionsnedsættelse eller lettere sociale problemer og personer, der er i risiko for at udvikle funktionsnedsættelse eller sociale problemer",
+        "concept": [ {
+          "code": "3459f530-7334-48c4-9037-53bf80df8851",
+          "display": "Gruppebaseret hjælp og støtte",
+          "definition": "forebyggende hjælp og støtte, der leveres til en gruppe af personer"
+        }, {
+          "code": "fe42f8f4-d516-4bab-b006-12b0cd186603",
+          "display": "Individuel tidsbegrænset socialpædagogisk hjælp og støtte",
+          "definition": "forebyggende hjælp og støtte, der leveres i en på forhånd afgrænset periode til enkeltpersoner"
+        }, {
+          "code": "f3edac43-d0d6-4cc3-96c7-4658a557257a",
+          "display": "Akut rådgivning, omsorg og støtte",
+          "definition": "forebyggende hjælp og støtte, der retter sig mod personer med psykiske vanskeligheder, der akut har brug for rådgivning, omsorg eller støtte"
+        }, {
+          "code": "794ebc42-0639-46eb-aca2-40e996568578",
+          "display": "Hjælp og støtte etableret i samarbejde med frivillige",
+          "definition": "forebyggende hjælp og støtte, der leveres i samarbejde med frivillige sociale organisationer eller foreninger",
+          "concept": [ {
+            "code": "b6e1f331-fccf-4a33-8bb6-566546edc405",
+            "display": "Gruppebaseret hjælp og støtte etableret i samarbejde med frivillige",
+            "definition": "gruppebaseret hjælp og støtte der leveres i samabejde med friviilige"
+          }, {
+            "code": "d580bcb7-145a-4346-8e99-d387bbf08a40",
+            "display": "Individuel tidsbegrænset socialpædagogisk hjælp og støtte leveret i samarbejde med frivillige",
+            "definition": "Individuel tidsbegrænset socialpædagogisk hjælp og støtte der leveres i samarbejde med frivillige"
+          } ]
+        } ]
       } ]
     }, {
       "code": "f708aea3-66bd-46c6-af11-7bf28942fa47",
-      "display": "Tilbud",
+      "display": "Tilbud  ",
       "definition": "organisation, der leverer ydelser",
       "concept": [ {
         "code": "d90f4da6-f87a-43b5-833f-646b4baf16d6",
-        "display": "Mobilt tilbud",
+        "display": "Mobilt tilbud  ",
         "definition": "tilbud, der ikke leverer ydelser til en person på en bestemt matrikel, men flyttes ud der, hvor personen opholder sig"
       }, {
+        "code": "5ea75f09-8eec-4edc-aafd-a330a523c33e",
+        "display": "Socialt akuttilbud",
+        "definition": "tilbud til voksne, der retter sig imod personer med psykiske vanskeligheder, der akut har brug for en indsats"
+      }, {
         "code": "7fec7d14-addb-4684-9637-403739de6228",
-        "display": "Dagtilbud til voksne",
+        "display": "Dagtilbud til voksne  ",
         "definition": "tilbud, der både er dagtilbud og tilbud til voksne",
         "concept": [ {
           "code": "9401777d-bdc5-4f52-9804-63c8cae9a792",
-          "display": "Aktivitets- og samværstilbud",
+          "display": "Aktivitets- og samværstilbud  ",
           "definition": "dagtilbud til voksne, der gennem aktivitets- og samværsydelser fremmer socialt samvær eller tilbyder et miljøskift"
         }, {
           "code": "a0fb02a2-367c-48bc-bacd-92e49a861a4c",
-          "display": "Beskyttet beskæftigelsestilbud",
+          "display": "Beskyttet beskæftigelsestilbud  ",
           "definition": "dagtilbud til voksne, der leverer beskyttet beskæftigelsesydelser med fokus på arbejdsevne og beskæftigelsesrelevante kompetencer tilpersoner, der ikke kan opnå eller fastholde beskæftigelse på normale vilkår på arbejdsmarkedet, eller benytte arbejdsmarkedsrelaterede indsatser efter anden lovgivning"
         } ]
       }, {
         "code": "d23e3e8a-7fcf-4603-9d75-481b6e47e0eb",
-        "display": "Botilbudslignende tilbud",
+        "display": "Botilbudslignende tilbud  ",
         "definition": "tilbud, der ligner botilbud efter servicelovens § 107 eller § 108, men som er etableret efter anden lovgivning og opfylder betingelserne i socialtilsynsloven § 4 stk. 3",
         "concept": [ {
           "code": "a7cbf55b-6906-4b2a-872e-c48b4d728837",
-          "display": "Almen ældre- og handicapvenlig bolig",
+          "display": "Almen ældre- og handicapvenlig bolig  ",
           "definition": "botilbudslignende tilbud, der er oprettet som almen bolig, og som retter sig mod ældre og personer med fysisk funktionsnedsættelse eller psykisk funktionsnedsættelse"
         } ]
       }, {
         "code": "2ecfcfe5-10ed-4934-a744-f18ce30b1619",
-        "display": "Botilbud til voksne",
+        "display": "Botilbud til voksne  ",
         "definition": "tilbud, der både er botilbud og tilbud til voksne",
         "concept": [ {
           "code": "25de7444-3919-4dab-b844-8cec6c15f30e",
-          "display": "Midlertidigt botilbud til voksne",
+          "display": "Midlertidigt botilbud til voksne  ",
           "definition": "botilbud til voksne, der retter sig imod personer, som har midlertidig behov for støtte og ophold, og som på sigt forventeligt kan få disse behov dækket på anden vis"
         }, {
           "code": "96c97f55-a11b-47f8-aa52-6fdae4e804c2",
-          "display": "Længerevarende botilbud til voksne",
+          "display": "Længerevarende botilbud til voksne  ",
           "definition": "botilbud til voksne, der retter sig mod personer, som har længerevarende behov for omfattende støtte og ophold, og som ikke kan få dækket disse behov på anden vis",
           "concept": [ {
             "code": "070016aa-e164-4813-aca5-b75acab89d63",
-            "display": "Sikret længerevarende botilbud til voksne",
+            "display": "Sikret længerevarende botilbud til voksne  ",
             "definition": "længerevarende botilbud til voksne, der er sikret, så det omfatter mindst én afdeling eller lejlighed, som er godkendt til at have yderdøre og vinduer aflåst, og som modtager personer i henhold til dom eller retskendelse"
           }, {
             "code": "498fe92c-d7f7-41cd-9404-5b38fe113be0",
-            "display": "Almindeligt længerevarende botilbud til voksne",
+            "display": "Almindeligt længerevarende botilbud til voksne  ",
             "definition": "længerevarende botilbud til voksne, der ikke er sikret"
           } ]
         } ]
       } ]
     }, {
       "code": "cda90d67-f65a-4a34-b8d8-168ee9ff0949",
-      "display": "Målgruppe",
+      "display": "Målgruppe  ",
       "definition": "gruppe, hvis medlemmer en indsats er rettet imod",
       "concept": [ {
         "code": "0919515d-9975-4743-a16f-edb45374b0da",
-        "display": "Socialt problem",
+        "display": "Socialt problem  ",
         "definition": "tilstand, som er kendetegnet ved, at en person er, eller er i fare for at blive, marginaliseret",
         "concept": [ {
           "code": "3e3f5ebf-82c1-401b-ab5e-e6138a31da3a",
-          "display": "Selvskadende adfærd",
+          "display": "Selvskadende adfærd  ",
           "definition": "adfærd, hvor en person intentionelt påfører eller kan påføre sig selv fysisk eller psykisk skade"
         }, {
           "code": "66fac925-3488-43b3-8e50-4510d3821b37",
-          "display": "Andet socialt problem",
+          "display": "Andet socialt problem  ",
           "definition": "socialt problem, der ikke er omfattet af en af de øvrige kategorier under socialt problem"
         }, {
           "code": "16075f99-3694-4878-a48d-b2f4b515cb76",
-          "display": "Social isolation",
+          "display": "Social isolation  ",
           "definition": "tilstand, hvor en person føler sig afsondret fra omverdenen"
         }, {
           "code": "122f3f8e-84a0-476f-b9c5-0e40b1dcf113",
-          "display": "Prostitution",
+          "display": "Prostitution  ",
           "definition": "handling, hvor mindst to handlende personer på markedsmæssige betingelser henholdsvis køber og sælger en prostitutionsydelse mod betaling"
         }, {
           "code": "293bf940-c075-4e3d-b5ef-6e331202e556",
-          "display": "Hjemløshed",
+          "display": "Hjemløshed  ",
           "definition": "tilstand, hvor en person ikke har en bolig"
         }, {
           "code": "5e95db73-4d16-4084-93a3-595c0650b160",
-          "display": "Selvmordstanker eller -forsøg",
+          "display": "Selvmordstanker eller -forsøg  ",
           "definition": "tilstand, hvor en person har tanker om at tage sit eget liv eller har forsøgt at begå selvmord"
         }, {
           "code": "6fd0f315-2297-4d66-b638-3f867a0900e0",
-          "display": "Seksuelt krænkende adfærd",
+          "display": "Seksuelt krænkende adfærd  ",
           "definition": "adfærd, hvor en person udsætter andre for grænseoverskridende seksuelle handlinger eller seksuelt overgreb"
         }, {
           "code": "f1f4d709-19d2-48cc-8942-231bf912323d",
-          "display": "Omsorgssvigt",
+          "display": "Omsorgssvigt  ",
           "definition": "tilstand, hvor en person, der er afhængig af andre personer, ikke får den omsorg og hjælp, som denne har brug for"
         }, {
           "code": "e1b59a4a-9cc2-4113-a5f1-84af588b02a2",
-          "display": "Udadreagerende adfærd",
+          "display": "Udadreagerende adfærd  ",
           "definition": "adfærd, der opleves aggressiv eller voldsom af omgivelserne"
         }, {
           "code": "3b166cb0-df17-4002-a4c4-69e9a943645c",
-          "display": "Indadreagerende adfærd",
+          "display": "Indadreagerende adfærd  ",
           "definition": "adfærd, hvor en person er præget af en lukket og indadrettet opførsel"
         }, {
           "code": "be53dafc-1fc2-4b9f-8ab3-9d468ff03e6e",
-          "display": "Kriminalitet",
+          "display": "Kriminalitet  ",
           "definition": "handling, der er strafbar",
           "concept": [ {
             "code": "6a038911-d866-4910-90ae-72ca55c641ea",
-            "display": "Ikke-personfarlig kriminalitet",
+            "display": "Ikke-personfarlig kriminalitet  ",
             "definition": "kriminalitet, der ikke påfører eller risikerer at påføre en person fysisk eller psykisk skade"
           }, {
             "code": "df42d472-06f6-4c5f-9dcf-64aa6cc20925",
-            "display": "Personfarlig kriminalitet",
+            "display": "Personfarlig kriminalitet  ",
             "definition": "kriminalitet, der påfører eller risikerer at påføre en person fysisk eller psykisk skade"
           } ]
         }, {
@@ -647,28 +685,28 @@
           "definition": "adfærd, der er kendetegnet ved et brugsmønster af rusmiddel eller lægemiddel, som medfører fysisk, psykisk eller social skade",
           "concept": [ {
             "code": "ab4413f0-fa81-41c0-ad8c-21782c12a0fa",
-            "display": "Alkoholmisbrug",
+            "display": "Alkoholmisbrug  ",
             "definition": "misbrug, hvor rusmidlet er alkohol"
           }, {
             "code": "0e25a2ec-4f04-4d14-a5ad-a6519a7d1d5f",
-            "display": "Stofmisbrug",
+            "display": "Stofmisbrug  ",
             "definition": "misbrug, hvor rusmidlet ikke er alkohol"
           } ]
         }, {
           "code": "5c6bc9a0-a955-4168-9692-cdcd691ff866",
-          "display": "Overgreb",
+          "display": "Overgreb  ",
           "definition": "handling, hvor en person eller dennes rettigheder krænkes af en stærkere part",
           "concept": [ {
             "code": "c47fd846-f1e0-4786-89a4-88d00e7a86c0",
-            "display": "Seksuelt overgreb",
+            "display": "Seksuelt overgreb  ",
             "definition": "overgreb, hvor en person udsættes for en seksuel krænkelse"
           }, {
             "code": "3412d671-22bf-456c-b963-c4e05c2725a0",
-            "display": "Voldeligt overgreb",
+            "display": "Voldeligt overgreb  ",
             "definition": "overgreb, hvor en person krænkes med fysisk eller psykisk vold"
           }, {
             "code": "905caa77-2b98-48ce-b0e1-35dc4c1cc4bd",
-            "display": "Andet overgreb",
+            "display": "Andet overgreb  ",
             "definition": "overgreb, der ikke er omfattet af en af de øvrige kategorier under overgreb"
           } ]
         } ]
@@ -678,11 +716,11 @@
         "definition": "del af funktionsevnenedsættelse, der vedrører kroppens anatomi eller kroppens funktion",
         "concept": [ {
           "code": "f1c7ee41-21b4-4dba-9424-c874bf72b5e7",
-          "display": "Multipel funktionsnedsættelse",
+          "display": "Multipel funktionsnedsættelse  ",
           "definition": "funktionsnedsættelse, der er både mental og kropslig og kendetegnet ved et manglende talesprog"
         }, {
           "code": "1f23325e-c9c9-455b-bfe7-b4dcd1bb63e5",
-          "display": "Sjældent forekommende funktionsnedsættelse",
+          "display": "Sjældent forekommende funktionsnedsættelse  ",
           "definition": "funktionsnedsættelse, der er sjældent forekommende"
         }, {
           "code": "112cc0ba-9953-476c-a971-2671697d7639",
@@ -690,65 +728,65 @@
           "definition": "funktionsnedsættelse i kroppens anatomi eller kroppens funktioner, eksklusiv de mentale funktioner",
           "concept": [ {
             "code": "615310e8-f702-4455-910b-9d6d8aa684fb",
-            "display": "Synsnedsættelse",
+            "display": "Synsnedsættelse  ",
             "definition": "fysisk funktionsnedsættelse, der skyldes en begrænsning i en persons evne til at se"
           }, {
             "code": "5cb8997c-eb10-477f-b653-b2a5ff11ce7d",
-            "display": "Kommunikationsnedsættelse",
+            "display": "Kommunikationsnedsættelse  ",
             "definition": "fysisk funktionsnedsættelse, der skyldes en begrænsning i en persons evne til at frembringe meddelelser"
           }, {
             "code": "da298aec-cd7d-436c-9927-d88d00066881",
-            "display": "Anden fysisk funktionsnedsættelse",
+            "display": "Anden fysisk funktionsnedsættelse  ",
             "definition": "fysisk funktionsnedsættelse, der ikke er omfattet af en af de øvrige kategorier under fysisk funktionsnedsættelse"
           }, {
             "code": "7ef8be83-90d1-4375-b1cb-24710bea21c7",
-            "display": "Hørenedsættelse",
+            "display": "Hørenedsættelse  ",
             "definition": "fysisk funktionsnedsættelse, der skyldes en begrænsning i en persons opfattelse af lyd"
           }, {
             "code": "6e155207-db12-419a-8d9c-d67756533056",
-            "display": "Mobilitetsnedsættelse",
+            "display": "Mobilitetsnedsættelse  ",
             "definition": "fysisk funktionsnedsættelse, der skyldes en begrænsning i en persons mulighed for at bevæge sig"
           }, {
             "code": "04a2ecdd-cdc6-4000-91d3-4e21958126ec",
-            "display": "Døvblindhed",
+            "display": "Døvblindhed  ",
             "definition": "fysisk funktionsnedsættelse, der består af en kombineret syns- og hørenedsættelse i alvorlig grad",
             "concept": [ {
               "code": "ab7b7d7b-b7bb-4b8c-99d9-5c98a302b771",
-              "display": "Medfødt døvblindhed",
+              "display": "Medfødt døvblindhed  ",
               "definition": "døvblindhed, der er opstået inden et sprog er udviklet"
             }, {
               "code": "0d66b364-958e-48cf-a18b-744fab284194",
-              "display": "Erhvervet døvblindhed",
+              "display": "Erhvervet døvblindhed  ",
               "definition": "døvblindhed, der er opstået efter et sprog er udviklet"
             } ]
           } ]
         }, {
           "code": "9ed67228-b934-4677-9f7e-ebb0d80de44b",
-          "display": "Psykisk funktionsnedsættelse",
+          "display": "Psykisk funktionsnedsættelse  ",
           "definition": "funktionsnedsættelse i de mentale funktioner",
           "concept": [ {
             "code": "a78fb31e-b30a-4815-af85-932859fd06b9",
-            "display": "Psykiske vanskeligheder",
+            "display": "Psykiske vanskeligheder  ",
             "definition": "psykisk funktionsnedsættelse, der er kendetegnet ved forstyrrelser i adfærd og tanke-, følelses-, stemnings- og fantasilivet",
             "concept": [ {
               "code": "afaa7e31-2b5d-4a49-9008-56aa8df8dc13",
-              "display": "Stressbelastning",
+              "display": "Stressbelastning  ",
               "definition": "sindslidelse, der er kendetegnet ved, at en person gennem længere tid befinder sig i en tilstand af konstant forhøjet fysisk og psykisk beredskab"
             }, {
               "code": "303deb9b-84f0-49d2-ab7a-f8b98eed40a2",
-              "display": "Angst",
+              "display": "Angst  ",
               "definition": "sindslidelse, der er kendetegnet ved en følelse af frygt, anspændthed og uro, uden at det er muligt at identificere en umiddelbar årsag"
             }, {
               "code": "192b7d79-415c-4f4f-9223-607938ecbe97",
-              "display": "Spiseforstyrrelse",
+              "display": "Spiseforstyrrelse  ",
               "definition": "sindslidelse, der er kendetegnet ved et afvigende spisemønster"
             }, {
               "code": "d42d8f41-2d07-4391-a687-bad51172d0c9",
-              "display": "Tilknytningsforstyrrelse",
+              "display": "Tilknytningsforstyrrelse  ",
               "definition": "sindslidelse, der er kendetegnet ved, at en person i en tidlig alder har oplevet omsorgssvigt og nu har svært ved at danne følelsesmæssige relationer til andre mennesker"
             }, {
               "code": "6aac5ae6-ef06-4866-9c66-16d51ebbc83b",
-              "display": "Personlighedsforstyrrelse",
+              "display": "Personlighedsforstyrrelse  ",
               "definition": "sindslidelse, der er kendetegnet ved en forstyrrelse i evnen til at forholde sig til andre mennesker"
             }, {
               "code": "851b2a9d-cde2-4d5d-8f33-d03789022cbb",
@@ -756,69 +794,69 @@
               "definition": "psykiske vanskeligheder, der ikke er omfattet af en af de øvrige kategorier under psykiske vanskeligheder"
             }, {
               "code": "f2ccc0c0-2a0a-49c9-9d6a-741a7cd220a3",
-              "display": "Forandret virkelighedsopfattelse",
+              "display": "Forandret virkelighedsopfattelse  ",
               "definition": "sindslidelse, der er kendetegnet ved en virkelighedsopfattelse, der udgør en væsentlig afvigelse fra accepterede statistiske norme"
             }, {
               "code": "ee5b52bd-b839-4e69-ad04-c8b33eabfbde",
-              "display": "Depression",
+              "display": "Depression  ",
               "definition": "sindslidelse, der er kendetegnet ved en markant, vedvarende følelse af tristhed, håbløshed og handlingslammelse"
             } ]
           }, {
             "code": "01da9924-f4b4-4265-8594-0e892fa60676",
-            "display": "Intellektuel/kognitiv forstyrrelse",
+            "display": "Intellektuel/kognitiv forstyrrelse  ",
             "definition": "psykisk funktionsnedsættelse, der er kendetegnet ved forstyrrelser i overordnede mentale funktioner",
             "concept": [ {
               "code": "7b48f1a0-579b-4976-ae7c-4074b5981449",
-              "display": "Demens",
+              "display": "Demens  ",
               "definition": "intellektuel/kognitiv forstyrrelse, der er kendetegnet ved en fremadskridende nedsættelse af en persons intellektuelle og kognitive færdigheder, heriblandt hukommelsesfunktionen"
             }, {
               "code": "97c355cc-84e3-46d0-ac1b-00bc627d089f",
-              "display": "Udviklingshæmning",
+              "display": "Udviklingshæmning  ",
               "definition": "intellektuel/kognitiv forstyrrelse, der er kendetegnet ved en forsinket eller manglende udvikling inden for bestemte områder af psyken eller mere generel mental retardering"
             }, {
               "code": "17ce646b-4469-4a73-82a9-9628436f6c70",
-              "display": "Anden intellektuel/kognitiv forstyrrelse",
+              "display": "Anden intellektuel/kognitiv forstyrrelse  ",
               "definition": "intellektuel/kognitiv forstyrrelse, der ikke er omfattet af en af de øvrige kategorier under intellektuel/kognitiv forstyrrelse"
             }, {
               "code": "34449052-1150-4900-9d69-c56eb9b26793",
-              "display": "Udviklingsforstyrrelse",
+              "display": "Udviklingsforstyrrelse  ",
               "definition": "intellektuel/kognitiv forstyrrelse, der er kendetegnet ved en dysfunktion eller nedsat funktion i hjernen",
               "concept": [ {
                 "code": "5cfc9530-a193-4f66-9981-3b980ee9ea7b",
-                "display": "Anden udviklingsforstyrrelse",
+                "display": "Anden udviklingsforstyrrelse  ",
                 "definition": "udviklingsforstyrrelse, der ikke er omfattet af en af de øvrige kategorier under udviklingsforstyrrelse"
               }, {
                 "code": "9b3fd322-a75a-4ed8-9b74-425fa1e01c95",
-                "display": "Autismespektrum",
+                "display": "Autismespektrum  ",
                 "definition": "udviklingsforstyrrelse, der er kendetegnet ved mangelfuld udvikling af sociale og kommunikative færdigheder samt repetitiv og stereotyp adfærd"
               }, {
                 "code": "93d52b11-faa7-4ff7-b552-11a84cce8bf1",
-                "display": "Udviklingsforstyrrelse af skolefærdigheder",
+                "display": "Udviklingsforstyrrelse af skolefærdigheder  ",
                 "definition": "udviklingsforstyrrelse, hvor normale mønstre for udviklingen af intellektuelle skolefærdigheder er tilbagestående fra de tidligste udviklingstrin"
               }, {
                 "code": "71dfe6d1-ebc1-4414-8527-edf8e605c356",
-                "display": "Udviklingsforstyrrelse af tale og sprog",
+                "display": "Udviklingsforstyrrelse af tale og sprog  ",
                 "definition": "udviklingsforstyrrelse, hvor normale mønstre for sprogerhvervelse er påvirkede fra de tidligste udviklingstrin"
               }, {
                 "code": "e6a269f5-944a-4ff8-b4d8-6dc2134d9167",
-                "display": "Udviklingsforstyrrelse af sansemotoriske færdigheder",
+                "display": "Udviklingsforstyrrelse af sansemotoriske færdigheder  ",
                 "definition": "udviklingsforstyrrelse, der er karakteriseret ved alvorlige forstyrrelser i udviklingen af motorisk koordination"
               }, {
                 "code": "cc6a58cf-d3d2-4e5f-b7fe-98b009647eac",
-                "display": "Opmærksomhedsforstyrrelse",
+                "display": "Opmærksomhedsforstyrrelse  ",
                 "definition": "udviklingsforstyrrelse, der er kendetegnet ved betydelige opmærksomheds- og koncentrationsproblemer"
               } ]
             }, {
               "code": "59254ffb-8efb-4023-84f8-73e5bcba0bc7",
-              "display": "Hjerneskade",
+              "display": "Hjerneskade  ",
               "definition": "intellektuel/kognitiv forstyrrelse, der er kendetegnet ved misdannet eller ødelagt hjernevæv",
               "concept": [ {
                 "code": "d26f97e8-99ed-46a9-94db-93340f77a950",
-                "display": "Erhvervet hjerneskade",
+                "display": "Erhvervet hjerneskade  ",
                 "definition": "hjerneskade, der er kommet til efter fødslen"
               }, {
                 "code": "1097d07f-1dba-4cc2-ae3a-399a501c2eb6",
-                "display": "Medfødt hjerneskade",
+                "display": "Medfødt hjerneskade  ",
                 "definition": "hjerneskade, der er opstået før eller under fødslen"
               } ]
             } ]
@@ -829,15 +867,19 @@
   }, {
     "code": "b5257b2d-0fbf-4d00-bf38-d298c8568116",
     "display": "Måltype",
+    "definition": "type af mål, der præciserer forventningen til den bevægelse, der er frem mod den ønskede tilstand, som målet er udtryk for",
     "concept": [ {
       "code": "d41c8072-52f8-42b5-9375-ddbea454d27f",
-      "display": "Udvikle funktionsevne"
+      "display": "Udvikle funktionsevne",
+      "definition": "måltype, der er udtryk for en forventning om, at borgeren støttes i at udvikle sin funktionsevne i relation til målet"
     }, {
       "code": "10752a63-00b4-4958-b7f4-9f3a18f74266",
-      "display": "Fastholde funktionsevne"
+      "display": "Fastholde funktionsevne",
+      "definition": "måltype, der er udtryk for en forventning om, at borgeren støttes i at fastholde sin funktionsevne i relation til målet"
     }, {
       "code": "e47c22bd-d88d-48ab-882b-419923e1f44e",
-      "display": "Begrænse tab af funktionsevne"
+      "display": "Begrænse tab af funktionsevne",
+      "definition": "måltype, der er udtryk for en forventning om, at der vil være et tab af funktionsevne i relation til målet, men at borgeren støttes i at begrænse sit tab af funktionsevne i relation til målet mest muligt"
     } ]
   }, {
     "code": "e89d317c-4657-4970-b614-ada2ed220595",

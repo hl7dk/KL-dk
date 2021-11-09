@@ -28,7 +28,6 @@ Description: "Danish municipality home care condition codes (funktionsevnetilsta
 * FSIII#J1.6 //"Spise"
 * FSIII#J1.5 //"Fødeindtagelse"
 * FSIII#J5.1 //"Have lønnet beskæftigelse"
-* FSIII#J2.3 //"Udføre daglige rutiner"
 * FSIII#J1.4 //"Drikke"
 * FSIII#J2.1 //"Lave husligt arbejde"
 * FSIII#J4.5 //"Følelsesfunktioner"
@@ -159,75 +158,135 @@ Description: "Danish municipality Prevention condition codes"
 ValueSet: KLConditionCodesFFB
 Title: "KLTilstandKoderFFB"
 Description: "Danish municipality FFB condition codes"
-*  FFB#a80e8f96-18ba-4ee4-9496-d3ce882c2f85 //"Anvende kommunikationsudstyr- og teknikker"
-*  FFB#4934e45a-0f93-4c23-a767-2b681378700b //"Bevidsthedstilstand"
-*  FFB#3b4bcb40-f761-46a5-bc5f-b30ac37c88ed //"Bevægelse"
-*  FFB#83342ff3-5f2e-4914-b045-e98357685866 //"Boligområde"
-*  FFB#35c56275-0093-4901-9fd8-d06fdb5cb8f3 //"Boligsituation"
-*  FFB#320c9aa6-630e-4695-bba2-29ea808fad24 //"Bære, flytte og håndtere genstande"
-*  FFB#dcc6bb77-45af-4625-9c4d-7d7878307220 //"Deltage i sociale fællesskaber og fritidsaktiviteter"
-*  FFB#14615a09-bd94-4602-b43a-f6d3d3f9801d //"Drikke"
-*  FFB#3a748135-98a8-416a-808d-bff88a8e40ee //"Dyrke interesse"
-*  FFB#e6f82424-da5a-41d1-bd1a-5796aa79d5f2 //"Døgnrytme"
-*  FFB#7a8f247b-baf8-4552-95bb-acf8ef004b74 //"Familiesituation"
-*  FFB#9bbbffef-c404-4ea3-a927-cd22d8027e6d //"Forstå meddelelser"
-*  FFB#2ba29098-a527-43d5-b858-4c5353669f42 //"Fremstille meddelelser"
-*  FFB#eff3385d-01fa-4c9c-9850-52e179243f21 //"Færdes med transportmidler"
-*  FFB#dccaa419-0bcd-4056-a11a-2e385e23edc6 //"Følelser og adfærd"
-*  FFB#8f32c948-41c4-49d7-8913-cdeede2e7fe1 //"Gøre rent"
-*  FFB#4977ce08-df4d-4c09-8e03-c2a563862e68 //"Gå og bevæge sig"
-*  FFB#94fb3ea0-92cf-43b1-929b-c95e6fb739a1 //"Gå på toilettet"
-*  FFB#61452fe5-cea2-4d92-b2f1-406e9a5d31cb //"Hukommelse"
-*  FFB#eb3599bc-c0bb-4281-8a1c-bf6eab8ffde3 //"Hørelse"
-*  FFB#8bef71de-55b5-47fe-b438-18ac769106b3 //"Håndtere post"
-*  FFB#8028b034-cad2-42df-b51c-aaba9c0bba61 //"Igangsætning og motivation"
-*  FFB#3f9da5ac-9686-4eeb-b517-b46e17fcb1d7 //"Indgå i samspil og kontakt"
-*  FFB#6279a3dc-7085-4157-809c-f96922242b1b //"Indsigt i egen situation"
-*  FFB#ef4271c4-f942-4194-a2b0-e9a7045eab22 //"Intellektuelle funktioner"
-*  FFB#52efa2e9-e0dc-41eb-8c01-9865e2fdebae //"Interesser"
-*  FFB#347aa085-4fe2-411f-ac56-5693d164adc3 //"Klæde sig af og på"
-*  FFB#c67aed23-d4f3-4ae6-8886-156c99048e5b //"Kost"
-*  FFB#83cf43f1-6d71-477c-8583-2e28755b41d3 //"Kriminalitet"
-*  FFB#01770afa-cd17-41fe-a966-b8895e4d55d8 //"Købe ind"
-*  FFB#b947f321-7cdb-4b33-9653-f3ff800572b0 //"Lave mad"
-*  FFB#0b650369-258a-4d01-a811-42b306c2f89d //"Motion"
-*  FFB#17c35058-eb88-4a7a-8727-74cd12be42c7 //"Opmærksomhed og koncentrationsevne"
-*  FFB#9c2173e6-6465-44d3-af16-7c44059193b2 //"Organisering og planlægning"
-*  FFB#f7c0ef6c-18ba-4d38-9df5-4c891f154a08 //"Orienteringsevne"
-*  FFB#4a51d7a7-61e7-48fa-a1d5-9d26337c6c38 //"Passe ejendele"
-*  FFB#df194a84-6e4b-4f14-a194-d8d9d9a1fcad //"Personer i netværk"
-*  FFB#b3939f0b-43d9-4e8c-bb2e-50ff8bb7ed03 //"Pleje sin krop"
-*  FFB#b93216fa-3843-4a7e-85bc-e3ef35a1967f //"Problemløsning"
-*  FFB#e993d8c3-b7d7-4d72-9be2-937e5ba38b5a //"Prostitution"
-*  FFB#52e0b8dd-f5fa-4e1a-b66e-f5e4a41bd313 //"Psykosociale funktioner"
-*  FFB#c8f4475a-8de3-4920-ad0c-eea78c49a68d //"Rusmidler"
-*  FFB#986898d0-e2e5-4afa-9cb3-ee7aecaa0143 //"Samtale"
-*  FFB#b37419b3-c5f2-43e9-9e9d-4037b06b3fa5 //"Smerte og sansefunktioner"
-*  FFB#464a2ab6-a7df-4b3a-b74d-7873f4cfe668 //"Spise"
-*  FFB#1a6585e7-25a6-4518-9384-8f6290f879cc //"Stemme og tale"
-*  FFB#9959e779-e8ee-47e8-989b-bbff4aae2883 //"Syn"
-*  FFB#83376fdb-f55d-4dd9-944e-b49631a9836f //"Søvn"
-*  FFB#f5b8e809-7689-4952-838c-a069c99408b3 //"Tobak"
-*  FFB#d493a97d-6036-423d-87ff-c2a086e9d664 //"Traumatiske oplevelser"
-*  FFB#f695cec7-2b39-4c7e-8731-da8558a4fb3f //"Uddannelse og job"
-*  FFB#58ef570c-1c1e-47be-8bfd-26ed99825762 //"Udvise hjælp og omsorg for andre"
-*  FFB#685e8517-2f5c-4ef8-a7c4-fa2d008fdd9d //"Varetage beskæftigelse"
-*  FFB#fd4b8dd3-5c4b-4257-8c13-ea045617d2f6 //"Varetage bolig"
-*  FFB#4a58417e-9a75-43f2-9763-66505050159f //"Varetage egen sundhed"
-*  FFB#4c082610-b122-4019-96f2-1061e287445e //"Varetage relationer til netværk"
-*  FFB#28fbf17e-bca3-45e1-be35-553e3d91f1b7 //"Varetage sin seksualitet"
-*  FFB#8888edfa-642b-4329-9fe3-a9b180e6d3f4 //"Varetage uddannelse"
-*  FFB#70443014-3faf-402d-abcf-396bfad32eb9 //"Varetage økonomi"
-*  FFB#885400cc-dd71-479e-8993-3fc48fdd6710 //"Vaske sig"
-*  FFB#bd67597b-e80f-427f-8cf9-79d01eff91fc //"Vaske tøj"
-* FFB#3591c972-5b15-4bbd-86c7-91622cda56e8 //"Virkelighedsopfattelse"
-* FFB#759ddc8e-57c0-4aa6-8d32-14d8eb51c5dd //"Ændre og opretholde kropsstilling"
-* FFB#08aa68ce-acd6-4e03-b6b5-091811324345 //"Økonomisk situation"
-* FFB#69dbfad7-859a-4596-8737-8054f6b4948f //"Fysisk helbred"
-* FFB#081ab1be-7dc1-41fa-803c-12a146eb0b74 //"Sundhedsfaglig behandling og træning"
-* FFB#df194a84-6e4b-4f14-a194-d8d9d9a1fcad //"Personer i netværk"
-* FFB#22eef871-6650-426f-8b79-8d40a6c62808 //"Holdninger i omgivelserne"
-* FFB#83342ff3-5f2e-4914-b045-e98357685866 //"Boligområde"
+* codes from valueset KLConditionFFCodesFFB
+* codes from valueset KLConditionADCodesFFB
+* codes from valueset KLConditionOCodesFFB
+// * FFB#a80e8f96-18ba-4ee4-9496-d3ce882c2f85 //"Anvende kommunikationsudstyr- og teknikker"
+// * FFB#4934e45a-0f93-4c23-a767-2b681378700b //"Bevidsthedstilstand"
+// * FFB#3b4bcb40-f761-46a5-bc5f-b30ac37c88ed //"Bevægelse"
+// * FFB#83342ff3-5f2e-4914-b045-e98357685866 //"Boligområde"
+// * FFB#35c56275-0093-4901-9fd8-d06fdb5cb8f3 //"Boligsituation"
+// * FFB#320c9aa6-630e-4695-bba2-29ea808fad24 //"Bære, flytte og håndtere genstande"
+// * FFB#dcc6bb77-45af-4625-9c4d-7d7878307220 //"Deltage i sociale fællesskaber og fritidsaktiviteter"
+// * FFB#14615a09-bd94-4602-b43a-f6d3d3f9801d //"Drikke"
+// * FFB#3a748135-98a8-416a-808d-bff88a8e40ee //"Dyrke interesse"
+// * FFB#e6f82424-da5a-41d1-bd1a-5796aa79d5f2 //"Døgnrytme"
+// * FFB#7a8f247b-baf8-4552-95bb-acf8ef004b74 //"Familiesituation"
+// * FFB#9bbbffef-c404-4ea3-a927-cd22d8027e6d //"Forstå meddelelser"
+// * FFB#2ba29098-a527-43d5-b858-4c5353669f42 //"Fremstille meddelelser"
+// * FFB#eff3385d-01fa-4c9c-9850-52e179243f21 //"Færdes med transportmidler"
+// * FFB#dccaa419-0bcd-4056-a11a-2e385e23edc6 //"Følelser og adfærd"
+// * FFB#8f32c948-41c4-49d7-8913-cdeede2e7fe1 //"Gøre rent"
+// * FFB#4977ce08-df4d-4c09-8e03-c2a563862e68 //"Gå og bevæge sig"
+// * FFB#94fb3ea0-92cf-43b1-929b-c95e6fb739a1 //"Gå på toilettet"
+// * FFB#61452fe5-cea2-4d92-b2f1-406e9a5d31cb //"Hukommelse"
+// * FFB#eb3599bc-c0bb-4281-8a1c-bf6eab8ffde3 //"Hørelse"
+// * FFB#8bef71de-55b5-47fe-b438-18ac769106b3 //"Håndtere post"
+// * FFB#8028b034-cad2-42df-b51c-aaba9c0bba61 //"Igangsætning og motivation"
+// * FFB#3f9da5ac-9686-4eeb-b517-b46e17fcb1d7 //"Indgå i samspil og kontakt"
+// * FFB#6279a3dc-7085-4157-809c-f96922242b1b //"Indsigt i egen situation"
+// * FFB#ef4271c4-f942-4194-a2b0-e9a7045eab22 //"Intellektuelle funktioner"
+// * FFB#52efa2e9-e0dc-41eb-8c01-9865e2fdebae //"Interesser"
+// * FFB#347aa085-4fe2-411f-ac56-5693d164adc3 //"Klæde sig af og på"
+// * FFB#c67aed23-d4f3-4ae6-8886-156c99048e5b //"Kost"
+// * FFB#83cf43f1-6d71-477c-8583-2e28755b41d3 //"Kriminalitet"
+// * FFB#01770afa-cd17-41fe-a966-b8895e4d55d8 //"Købe ind"
+// * FFB#b947f321-7cdb-4b33-9653-f3ff800572b0 //"Lave mad"
+// * FFB#0b650369-258a-4d01-a811-42b306c2f89d //"Motion"
+// * FFB#17c35058-eb88-4a7a-8727-74cd12be42c7 //"Opmærksomhed og koncentrationsevne"
+// * FFB#9c2173e6-6465-44d3-af16-7c44059193b2 //"Organisering og planlægning"
+// * FFB#f7c0ef6c-18ba-4d38-9df5-4c891f154a08 //"Orienteringsevne"
+// * FFB#4a51d7a7-61e7-48fa-a1d5-9d26337c6c38 //"Passe ejendele"
+// * FFB#df194a84-6e4b-4f14-a194-d8d9d9a1fcad //"Personer i netværk"
+// * FFB#b3939f0b-43d9-4e8c-bb2e-50ff8bb7ed03 //"Pleje sin krop"
+// * FFB#b93216fa-3843-4a7e-85bc-e3ef35a1967f //"Problemløsning"
+// * FFB#e993d8c3-b7d7-4d72-9be2-937e5ba38b5a //"Prostitution"
+// * FFB#52e0b8dd-f5fa-4e1a-b66e-f5e4a41bd313 //"Psykosociale funktioner"
+// * FFB#c8f4475a-8de3-4920-ad0c-eea78c49a68d //"Rusmidler"
+// * FFB#986898d0-e2e5-4afa-9cb3-ee7aecaa0143 //"Samtale"
+// * FFB#b37419b3-c5f2-43e9-9e9d-4037b06b3fa5 //"Smerte og sansefunktioner"
+// * FFB#464a2ab6-a7df-4b3a-b74d-7873f4cfe668 //"Spise"
+// * FFB#1a6585e7-25a6-4518-9384-8f6290f879cc //"Stemme og tale"
+// * FFB#9959e779-e8ee-47e8-989b-bbff4aae2883 //"Syn"
+// * FFB#83376fdb-f55d-4dd9-944e-b49631a9836f //"Søvn"
+// * FFB#f5b8e809-7689-4952-838c-a069c99408b3 //"Tobak"
+// * FFB#d493a97d-6036-423d-87ff-c2a086e9d664 //"Traumatiske oplevelser"
+// * FFB#f695cec7-2b39-4c7e-8731-da8558a4fb3f //"Uddannelse og job"
+// * FFB#58ef570c-1c1e-47be-8bfd-26ed99825762 //"Udvise hjælp og omsorg for andre"
+// * FFB#685e8517-2f5c-4ef8-a7c4-fa2d008fdd9d //"Varetage beskæftigelse"
+// * FFB#fd4b8dd3-5c4b-4257-8c13-ea045617d2f6 //"Varetage bolig"
+// * FFB#4a58417e-9a75-43f2-9763-66505050159f //"Varetage egen sundhed"
+// * FFB#4c082610-b122-4019-96f2-1061e287445e //"Varetage relationer til netværk"
+// * FFB#28fbf17e-bca3-45e1-be35-553e3d91f1b7 //"Varetage sin seksualitet"
+// * FFB#8888edfa-642b-4329-9fe3-a9b180e6d3f4 //"Varetage uddannelse"
+// * FFB#70443014-3faf-402d-abcf-396bfad32eb9 //"Varetage økonomi"
+// * FFB#885400cc-dd71-479e-8993-3fc48fdd6710 //"Vaske sig"
+// * FFB#bd67597b-e80f-427f-8cf9-79d01eff91fc //"Vaske tøj"
+// * FFB#3591c972-5b15-4bbd-86c7-91622cda56e8 //"Virkelighedsopfattelse"
+// * FFB#759ddc8e-57c0-4aa6-8d32-14d8eb51c5dd //"Ændre og opretholde kropsstilling"
+// * FFB#08aa68ce-acd6-4e03-b6b5-091811324345 //"Økonomisk situation"
+// * FFB#69dbfad7-859a-4596-8737-8054f6b4948f //"Fysisk helbred"
+// * FFB#081ab1be-7dc1-41fa-803c-12a146eb0b74 //"Sundhedsfaglig behandling og træning"
+// * FFB#22eef871-6650-426f-8b79-8d40a6c62808 //"Holdninger i omgivelserne"
+
+ValueSet: KLConditionFFCodesFFB
+Title: "KLTilstandFFKoderFFB"
+Description: "Danish municipality FFB condition codes for body functions and structures"
+* include codes from system FFB where concept descendent-of #a134c31d-d316-46d4-935e-e500874dbbe1 //Fysiske funktioner 
+* include codes from system FFB where concept descendent-of #25c5c614-305f-46cd-9891-55d564fc30cf //Mentale funktioner
+* include codes from system FFB where concept descendent-of #e1836145-0c20-4e20-971e-d62dfe4ea1a0 //Sociale forhold
+* include codes from system FFB where concept descendent-of #4fb78b88-d3af-4cfb-84d7-f06daf423317 //Sundhedsforhold
+// * FFB#b37419b3-c5f2-43e9-9e9d-4037b06b3fa5
+// * FFB#3b4bcb40-f761-46a5-bc5f-b30ac37c88ed
+// * FFB#9959e779-e8ee-47e8-989b-bbff4aae2883
+// * FFB#1a6585e7-25a6-4518-9384-8f6290f879cc
+// * FFB#eb3599bc-c0bb-4281-8a1c-bf6eab8ffde3
+// * FFB#ef4271c4-f942-4194-a2b0-e9a7045eab22
+// * FFB#dccaa419-0bcd-4056-a11a-2e385e23edc6
+// * FFB#f7c0ef6c-18ba-4d38-9df5-4c891f154a08
+// * FFB#4934e45a-0f93-4c23-a767-2b681378700b
+// * FFB#9c2173e6-6465-44d3-af16-7c44059193b2
+// * FFB#52e0b8dd-f5fa-4e1a-b66e-f5e4a41bd313
+// * FFB#3591c972-5b15-4bbd-86c7-91622cda56e8
+// * FFB#8028b034-cad2-42df-b51c-aaba9c0bba61
+// * FFB#b93216fa-3843-4a7e-85bc-e3ef35a1967f
+// * FFB#6279a3dc-7085-4157-809c-f96922242b1b
+// * FFB#17c35058-eb88-4a7a-8727-74cd12be42c7
+// * FFB#61452fe5-cea2-4d92-b2f1-406e9a5d31cb
+// * FFB#08aa68ce-acd6-4e03-b6b5-091811324345
+// * FFB#f695cec7-2b39-4c7e-8731-da8558a4fb3f
+// * FFB#35c56275-0093-4901-9fd8-d06fdb5cb8f3
+// * FFB#7a8f247b-baf8-4552-95bb-acf8ef004b74
+// * FFB#d493a97d-6036-423d-87ff-c2a086e9d664
+// * FFB#52efa2e9-e0dc-41eb-8c01-9865e2fdebae
+// * FFB#e993d8c3-b7d7-4d72-9be2-937e5ba38b5a
+// * FFB#83cf43f1-6d71-477c-8583-2e28755b41d3
+// * FFB#f5b8e809-7689-4952-838c-a069c99408b3
+// * FFB#83376fdb-f55d-4dd9-944e-b49631a9836f
+// * FFB#081ab1be-7dc1-41fa-803c-12a146eb0b74
+// * FFB#e6f82424-da5a-41d1-bd1a-5796aa79d5f2
+// * FFB#69dbfad7-859a-4596-8737-8054f6b4948f
+// * FFB#c67aed23-d4f3-4ae6-8886-156c99048e5b
+// * FFB#c8f4475a-8de3-4920-ad0c-eea78c49a68d
+// * FFB#0b650369-258a-4d01-a811-42b306c2f89d
+
+
+
+ValueSet: KLConditionADCodesFFB
+Title: "KLTilstandADKoderFFB"
+Description: "Danish municipality FFB condition codes for Activities and Participation"
+* include codes from system FFB where concept descendent-of #3856b434-f72e-42a5-b9d1-0cc93f48434b //Relationer
+* include codes from system FFB where concept descendent-of #dfbe6ff6-223b-436a-b864-8ba29bda41e2 //Samfundsliv
+* include codes from system FFB where concept descendent-of #c2b186f9-9c10-478e-8345-2d2c37ab4c46 //Kommunikation
+* include codes from system FFB where concept descendent-of #eef71492-65f5-4297-aa95-3c3a6866ddef //Praktiske opgaver
+* include codes from system FFB where concept descendent-of #da3f488f-1742-4d00-b247-a7d47500b36b //Egenomsorg
+* include codes from system FFB where concept descendent-of #d1495b2c-1452-4e49-8dbe-8193af5d8823 //mobilitet
+
+
+ValueSet: KLConditionOCodesFFB
+Title: "KLTilstandOKoderFFB"
+Description: "Danish municipality FFB condition codes for Environmental Factors"
+* include codes from system FFB where concept descendent-of #7445fb2b-0009-43d9-b49b-1b9782f2fcd9
 
 ValueSet: KLConditionCodesFSIII
 Title: "KLTilstandKoderFSIII"
@@ -639,6 +698,7 @@ Description: "Prevention and health promotion interventions as defined by FSIII"
 ValueSet: KLInterventionsFFB
 Title: "KLYdelserFFB"
 Description: "social interventions (ydelser) as defined by FFB"
+//* include codes from system FFB where concept descendent-of #794ebc42-0639-46eb-aca2-40e996568578
 * FFB#35b593cf-724f-4058-9f31-fe1b3e8df124 //"Pædagogisk udredning"
 * FFB#f25674bf-3162-45c3-bde4-6d542bf9629b //"Kompetenceudviklende aktivitet"
 * FFB#299af83f-586c-4c17-8af6-c8c47a847d6d //"Sansestimulerende aktivitet"
@@ -648,6 +708,7 @@ Description: "social interventions (ydelser) as defined by FFB"
 * FFB#2c1944be-fe87-4c42-b08e-9cc075c9ef18 //"Oplevelsesaktivitet"
 * FFB#5af56051-8413-4115-aaa2-83a0767e1137 //"Længerevarende ophold"
 * FFB#80aa8ea7-4ad8-405f-876a-4c0f89fde06a //"Midlertidigt ophold"
+* FFB#a81a3fa9-6601-4d1e-a11e-f7444dfd3828 // Akut ophold
 * FFB#55b77d7c-afce-4269-9232-7731ab1ef4fc //"Service"
 * FFB#fb3d8722-90e0-4a80-ba65-490617ffeb0f //"Produktion og værksted"
 * FFB#c429b7a9-5085-472b-b118-a21ca90f769f //"Praktikforløb"
@@ -665,6 +726,11 @@ Description: "social interventions (ydelser) as defined by FFB"
 * FFB#e7c8b42e-b882-4629-8e03-65e44b1aa3e3 //"Støtte til behandling"
 * FFB#3c1639d0-e486-43c6-8add-448b8aff4b8f //"Støtte til sund levevis"
 * FFB#bd5fea9a-16ed-4e63-b6a1-8e83caaf9b0b //"Støtte til seksualitet"
+* FFB#3459f530-7334-48c4-9037-53bf80df8851 //Gruppebaseret hjælp og støtte
+* FFB#fe42f8f4-d516-4bab-b006-12b0cd186603 //Individuel tidsbegrænset socialpædagogisk hjælp og støtte
+* FFB#b6e1f331-fccf-4a33-8bb6-566546edc405 //Gruppebaseret hjælp og støtte etableret i samarbejde med frivillige
+* FFB#d580bcb7-145a-4346-8e99-d387bbf08a40 //Individuel tidsbegrænset socialpædagogisk hjælp og støtte leveret i samarbejde med frivillige
+* FFB#f3edac43-d0d6-4cc3-96c7-4658a557257a //Akut rådgivning, omsorg og støtte
 
 ValueSet: KLServiceCodesFFB
 Title: "KLTilbudsKoderFFB"
@@ -676,7 +742,7 @@ Description: "Social service (tilbud) as defined by FFB"
 * FFB#070016aa-e164-4813-aca5-b75acab89d63 //"Sikret længerevarende botilbud til voksne"  
 * FFB#d90f4da6-f87a-43b5-833f-646b4baf16d6 //"Mobilt tilbud"
 * FFB#a7cbf55b-6906-4b2a-872e-c48b4d728837 //"Almen ældre- og handicapvenlig bolig"  
-
+* FFB#5ea75f09-8eec-4edc-aafd-a330a523c33e //Socialt akuttilbud
 
 ValueSet: KLInterventions
 Title: "KLIndsatser" 
