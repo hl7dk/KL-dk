@@ -17,7 +17,7 @@ description: Danish municipalities implementation guide for common informationmo
 status: draft
 license: CC0-1.0
 date: 2020-12-02
-version: 0.6.0
+version: 0.7.0
 fhirVersion: 4.0.1
 copyrightYear: 2020+
 releaseLabel: CI Build
@@ -31,7 +31,7 @@ jurisdiction: urn:iso:std:iso:3166#DNK "Denmark"
 
 dependencies:
 #  hl7.fhir.us.core: 3.1.0
-  dk.fhir.ig.dk-core: current
+  dk.fhir.ig.dk-core: 1.1.0
 parameters:
   show-inherited-invariants: false
 
