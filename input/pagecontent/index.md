@@ -11,13 +11,13 @@ FKI is a core model, which means that it is the recommended way to encapsulate t
 * Structuring documentation tools, meassurements and observations commonly used in Danish municipalities. [Implementation guide for FFinst](http://build.fhir.org/ig/hl7dk/KL-dk-tools/branches/main/)
 
 ### Documentation in Danish
-The documentation of the FHIR profiles is also available in a Danish edition for non-FHIR users. This edition is called [Guide til den Fælleskommunale informationsmodel](./FKIGuide.pdf). The guide includes four appendices:
-* [Application of FKI in FFB](./FFB-bilag.pdf)
-* [Application of FKI in FSIII](./FSIII-bilag.pdf)
-* [Explaination of FKI concepts](./FKIBegreber.pdf)
-* [FKI to FKI FHIR conversion](./FKIFHIRBilag.pdf)
+The documentation of the FHIR profiles is also available in a Danish edition for non-FHIR users. This edition is called [Guide til den Fælleskommunale informationsmodel](https://www.kl.dk/media/51540/guide-til-den-faelleskommunale-informationsmodel.pdf). The guide includes four appendices:
+* [Application of FKI in FFB](https://www.kl.dk/media/51542/guide-til-brug-af-fki-med-udgangspunkt-i-faelles-faglige-begreber.pdf)
+* [Application of FKI in FSIII](https://www.kl.dk/media/51541/guide-til-brug-af-fki-med-udgangspunkt-i-faelles-sprog-iii.pdf)
+* [Explaination of FKI concepts](https://www.kl.dk/media/51543/forklaring-af-fki-begreber.pdf)
+* [FKI to FKI FHIR conversion](https://www.kl.dk/media/51585/fkifhirbilagv1.pdf)
 
-The HL7 FHIR-profiles are based on information modelling work done according to a common municipality architectural framework (Fælleskommunal rammearkitektur). You may read the [overview document](./faelleskommunalInformationsmodel.pdf) or dive into the [interactive UML model](https://rammearkitektur.kl.dk/forretningsviden/anvendelsesmodeller/faelleskommunal-informationsmodel-paa-sundheds-aeldre-og-voksensocialomraadet-fki/).
+The HL7 FHIR-profiles are based on information modelling work done according to a common municipality architectural framework (Fælleskommunal rammearkitektur). You may dive into the [interactive UML model](https://rammearkitektur.kl.dk/forretningsviden/anvendelsesmodeller/faelleskommunal-informationsmodel-paa-sundheds-aeldre-og-voksensocialomraadet-fki/).
 
 ### Getting started
 To get a comprehension of the content included in FKI, and the way it may be combined to form meaningful collections of information, starter-examples have been created.  
@@ -96,4 +96,4 @@ This implementation guide is regularly updated, and stable versions published on
 * Third level updates are updates that only relates to naming and communication, which means that the FHIR validator will not have errors running on another minor version, than the current (except for some warnings if coding.displays' are changed).
 
 #### Instance level
-When implementing use cases exploiting the profiles in this implementation guide, there may be a need to keep track of temporal development in data. Without knowing the specific use cases and implementation paradigm, unambiguous guidance about change management cannot be given. However, general guidance is available [here](./changeManagementFSIII_FFB.pdf) in Danish.
+When implementing use cases exploiting the profiles in this implementation guide, there may be a need to keep track of temporal development in data. Without knowing the specific use cases and implementation paradigm, unambiguous guidance about change management cannot be given. However, general guidance is available [here](https://www.kl.dk/media/51545/notat-om-tidsmaessig-udvikling-i-fsiii-og-ffb-data-vha-fki.pdf) in Danish.
