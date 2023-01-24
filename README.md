@@ -5,3 +5,4 @@ This repository contains Local Goverment Denmark FHIR profiles and documentation
 Changes to the IG are automatically built and viewed at http://build.fhir.org/ig/hl7dk/KL-dk/ as an HL7 Implementation Guide. Profiles can also be viewed on Simplifier at https://simplifier.net/klcommondanishmunicipalitiesprofiles
 
 
+
