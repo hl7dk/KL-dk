@@ -36,12 +36,12 @@ Title: "Henvendelse mor social indsats"
 Description: "Henvendelse fra mor vedr. social indsats"
 Usage: #example
 * requester = Reference(SocialOgSundhedMorsoe)
-* extension[requesterType].valueCodeableConcept = FSIII#A2 "Pårørende"
-* extension[subjectConsentToLiasing].valueCodeableConcept = KLCommonCareSocialCodes#e67035da-9179-466b-99ad-ea86835d38c9 "indforstået"
+* extension[requesterType].valueCodeableConcept = $FSIII#A2 "Pårørende"
+* extension[subjectConsentToLiasing].valueCodeableConcept = $CareSocialCodes#e67035da-9179-466b-99ad-ea86835d38c9 "indforstået"
 * reasonCode.text = "Andreas er udviklingshæmmet og bor pt. hjemme hos sin mor. Moderen har fået svær gigt og har derfor ikke mulighed for at have ham boende længere, og Andreas ønsker derfor at komme i et botilbud."
-* code = KLCommonCareSocialCodes#4a297733-4d66-4726-a933-590d55cf91e0 "Social indsats"
-* orderDetail[0] = FFB#80aa8ea7-4ad8-405f-876a-4c0f89fde06a "Midlertidigt ophold"
-* orderDetail[1] = FFB#638f44df-6bf2-47f8-9935-b8fdc83e5bf5 "Støtte til daglige opgaver i hjemmet"
+* code = $CareSocialCodes#4a297733-4d66-4726-a933-590d55cf91e0 "Social indsats"
+* orderDetail[0] = $FFB#80aa8ea7-4ad8-405f-876a-4c0f89fde06a "Midlertidigt ophold"
+* orderDetail[1] = $FFB#638f44df-6bf2-47f8-9935-b8fdc83e5bf5 "Støtte til daglige opgaver i hjemmet"
 * subject = Reference(Andreas)
 * authoredOn = 2020-06-23
 * status = REQUESTSTATUS#active
@@ -79,10 +79,10 @@ Title: "Henvisning læge akut sygepleje"
 Description: "Henvisning fra læge vedr. akut sygepleje"
 Usage: #example
 * requester = Reference(LaegerneHasserisBymidte)
-* extension[requesterType].valueCodeableConcept = FSIII#A9 "Egen læge/vagtlæge"
+* extension[requesterType].valueCodeableConcept = $FSIII#A9 "Egen læge/vagtlæge"
 * reasonCode.text = "Mark har efter et ildebefindende brug for at akutsygeplejen undersøger situationen og måler vitale værdier."
-* code = KLCommonCareSocialCodes#490ab7be-ddb1-4a54-baf1-009fe6e8a83b "Hjemmesygepleje"
-* orderDetail[0] = FSIII#G1.41 "Undersøgelser og måling af værdier"
+* code = $CareSocialCodes#490ab7be-ddb1-4a54-baf1-009fe6e8a83b "Hjemmesygepleje"
+* orderDetail[0] = $FSIII#G1.41 "Undersøgelser og måling af værdier"
 * subject = Reference(Mark)
 * authoredOn = 2020-06-21
 * status = REQUESTSTATUS#active
@@ -94,9 +94,9 @@ Title: "Henvendelse vedr hjemmesygepleje"
 Description: "Henvisning fra læge vedr. akut sygepleje"
 Usage: #example
 * requester = Reference(SundhedsforvaltningAalborg)
-* extension[requesterType].valueCodeableConcept = FSIII#A1 "Borger"
+* extension[requesterType].valueCodeableConcept = $FSIII#A1 "Borger"
 * reasonCode.text = "Borger har henvendt sig pga. et sår, der skal undersøges nærmere."
-* code = KLCommonCareSocialCodes#490ab7be-ddb1-4a54-baf1-009fe6e8a83b "Hjemmesygepleje"
+* code = $CareSocialCodes#490ab7be-ddb1-4a54-baf1-009fe6e8a83b "Hjemmesygepleje"
 * subject = Reference(Mark)
 * authoredOn = 2020-06-21
 * status = REQUESTSTATUS#active
@@ -126,11 +126,11 @@ Title: "Intern henvendelse efter opfølgning"
 Description: "Intern henvisning i hjemmeplejen, efter en opfølgning der viste behov for revisitation"
 Usage: #example
 * requester = Reference(HanneFraVisitationenAalborg)
-* extension[requesterType].valueCodeableConcept = FSIII#A4 "Hjemmeplejen"
+* extension[requesterType].valueCodeableConcept = $FSIII#A4 "Hjemmeplejen"
 * reasonCode.text = "Sidste opfølgning på Marks hjemmepleje viste behov for revisitation fordi funktionsevnen er blevet bedre, særligt ift. mobilitet. Der skal ses på om nogle af §83 indsatserne, med fordel kan gøres til §83a for yderligere at styrke hverdags rehabiliteringsindsatsen og dermed borgers funktionsniveau."
-* code = KLCommonCareSocialCodes#ad865929-7363-4b2d-a271-01993181fbaf "Hjemmepleje"
-* orderDetail[0] = FSIII#H1.4 "Mobilitet"
-* orderDetail[1] = FSIII#H2.2 "RH Hverdagens aktiviteter"
+* code = $CareSocialCodes#ad865929-7363-4b2d-a271-01993181fbaf "Hjemmepleje"
+* orderDetail[0] = $FSIII#H1.4 "Mobilitet"
+* orderDetail[1] = $FSIII#H2.2 "RH Hverdagens aktiviteter"
 * subject = Reference(Mark)
 * authoredOn = 2020-04-11
 * status = REQUESTSTATUS#active

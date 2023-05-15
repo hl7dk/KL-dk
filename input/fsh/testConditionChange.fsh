@@ -31,7 +31,7 @@ Usage: #example
 * verificationStatus.coding.system = VerSTATUS
 
 //kodning
-* code.coding[0] = FSIII#I6.3
+* code.coding[0] = $FSIII#I6.3
 * code.coding[0].display = "Problemer med misbrug"
 * code.coding[1] = SCT#160590009
 * code.coding[1].display = "Drinks beer and hard liquor (finding)"
@@ -79,7 +79,7 @@ Usage: #example
 * verificationStatus.coding.system = VerSTATUS
 
 //kodning
-* code.coding[0] = FSIII#I6.3
+* code.coding[0] = $FSIII#I6.3
 * code.coding[0].display = "Problemer med misbrug"
 * code.coding[1] = SCT#160590009
 * code.coding[1].display = "Drinks beer and hard liquor (finding)"
@@ -136,7 +136,7 @@ Usage: #example
 * verificationStatus.coding.system = VerSTATUS
 
 //kodning
-* code.coding[0] = FSIII#I6.3
+* code.coding[0] = $FSIII#I6.3
 * code.coding[0].display = "Problemer med misbrug"
 * code.coding[1] = SCT#160590009
 * code.coding[1].display = "Drinks beer and hard liquor (finding)"
@@ -195,7 +195,7 @@ InstanceOf: KLCommonCareSocialEncounter
 Title: "EjnarsPlanlagteOpfølgning"
 Description: "Ejnars planlagte opfølgning"
 Usage: #example
-* type = KLCommonCareSocialCodes#9f03dfbb-7a97-45a5-94db-d4c3501714a9 "opfølgning"
+* type = $CareSocialCodes#9f03dfbb-7a97-45a5-94db-d4c3501714a9 "opfølgning"
 * period.start = 2021-02-10
 * status = EncounterStatus#planned
 * subject = Reference(BorgerEjnar)
@@ -207,7 +207,7 @@ InstanceOf: KLCommonCareSocialEncounter
 Title: "EjnarsOpfølgning"
 Description: "Ejnars udførte opfølgning, der er en opdatering af Ejnars planlagte opfølgning"
 Usage: #example
-* type = KLCommonCareSocialCodes#9f03dfbb-7a97-45a5-94db-d4c3501714a9 "opfølgning"
+* type = $CareSocialCodes#9f03dfbb-7a97-45a5-94db-d4c3501714a9 "opfølgning"
 * period.start = 2021-02-10
 * status = EncounterStatus#finished
 * subject = Reference(BorgerEjnar)
@@ -222,7 +222,7 @@ Usage: #example
 * subject = Reference(BorgerEjnar)
 * code = SCT#712744002
 * valueCodeableConcept.text = "Borger har fået hjælp til håndtering af sin sorg, og drikker ikke for meget længere"
-* valueCodeableConcept = FSIII#E3 "Afsluttes"
+* valueCodeableConcept = $FSIII#E3 "Afsluttes"
 * effectiveDateTime = 2021-02-10
 * performer = Reference(NatasjaFraSygeplejen)
 * status = #final
@@ -234,7 +234,7 @@ Description: "Notat vedr. psykosociale forhold, som beskrevet af hjemmesygepleje
 Usage: #example
 * subject = Reference(BorgerEjnar)
 * code.coding.code = #I6
-* code.coding.system = FSIII
+* code.coding.system = $FSIII
 * code.coding.display = "Psykosociale forhold"
 * effectiveDateTime = 2020-03-17
 * valueCodeableConcept.text = "Borger drikker for meget, sandsynligvis pga. sorg over ægtefællens død, men der skal selvf"

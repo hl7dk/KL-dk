@@ -37,6 +37,6 @@ Usage: #example
 * complication.coding = SCT#160245001
 * subject = Reference(Mark)
 * recorder = Reference(AbrahamFraAkutSygeplejen)
-* code = FSIII#G1.41 "Undersøgelser og måling af værdier"
+* code = $FSIII#G1.41 "Undersøgelser og måling af værdier"
 * basedOn = Reference(HenvisningFraLageVedrAkutSygepleje)
 * encounter = Reference(MarkOgAkutsygeplejerske)

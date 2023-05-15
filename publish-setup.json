@@ -1,0 +1,17 @@
+{
+  "website": {
+    "style": "fhir.layout",
+    "url": "http://fhir.kl.dk/",
+    "server": "asp-new",
+    "org": "KL Denmark",
+    "no-registry": "1",
+    "layout": {
+      "id": "kl.dk.fhir.[code]",
+      "canonical": "http://fhir.kl.dk/[code]"
+    }
+  },
+  "feeds": {
+    "package": "package-feed.xml",
+    "publication": "publication-feed.xml"
+  }
+}

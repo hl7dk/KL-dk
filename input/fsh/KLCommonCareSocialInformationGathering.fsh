@@ -30,14 +30,14 @@ InstanceOf: KLCommonCareSocialInformationGathering
 Title: "Mark sygeplejefaglig udredning"
 Description: "Borgeren Marks sygeplejefaglige udredning"
 Usage: #example
-* code.coding = KLCommonCareSocialCodes#47fd1468-89da-4803-9d7a-ecc039a30d92 "sygeplejefaglig udredning, FSIII"
+* code.coding = $CareSocialCodes#47fd1468-89da-4803-9d7a-ecc039a30d92 "sygeplejefaglig udredning, FSIII"
 * subject = Reference(Mark)
 * assessor = Reference(HanneFraVisitationenAalborg)
 * effectiveDateTime = 2020-06-05
 * encounter = Reference(MarkogUdredningSygepleje)
-* investigation[0].code = FSIII#I7 "Respiration og cirkulation"
+* investigation[0].code = $FSIII#I7 "Respiration og cirkulation"
 * investigation[0].item = Reference(RespirationCirculationInformationMark)
-* investigation[1].code = FSIII#I4 "Hud og slimhinder"
+* investigation[1].code = $FSIII#I4 "Hud og slimhinder"
 * investigation[1].item = Reference(SkinInformationMark)
 * finding.itemReference = Reference(ConditionPressureUlcer)
 * status = #completed
