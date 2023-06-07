@@ -14,11 +14,11 @@ canonical: http://fhir.kl.dk/core
 name: KLCore
 title: "Implementation Guide for fælleskommunal informationsmodel"
 description: Danish municipalities implementation guide for common informationmodel
-status: draft
+status: active # draft # active
 version: 1.2.0
 fhirVersion: 4.0.1
 copyrightYear: 2020+
-releaseLabel: CI Build
+releaseLabel: release # CI Build # release
 
 publisher:
   name: Kommunernes landsforening
