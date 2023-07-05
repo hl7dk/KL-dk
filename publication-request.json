@@ -7,8 +7,8 @@
     "sequence" : "Releases",
     "descmd": "@release-notes.md",
     "title" : "KLCore",
-    "first" : true,
-    "ci-build" : "https://build.fhir.org/ig/hl7dk/KL-dk/branches/1.2.0/",
+    "first" : false,
+    "ci-build" : "https://build.fhir.org/ig/hl7dk/KL-dk",
     "category" : "Core",
     "introduction" : "This IG includes core models for Danish Municipalities defined by KL/Local Government Denmark used in KL's FHIR standards."
   }
