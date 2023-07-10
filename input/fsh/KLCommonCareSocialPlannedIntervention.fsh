@@ -11,10 +11,10 @@ Description:    "Planned interventions (indsats/ydelse) in Danish Municipalities
 * activity.detail.code.coding contains 
    FFBintervention 0..1 and FSIIIlevel2 0..1 and FSIIIlevel3 0..1 and KLECode 0..1
 
-* activity.detail.code.coding[FFBintervention].system = FFB
+* activity.detail.code.coding[FFBintervention].system = $FFB
 * activity.detail.code.coding[FFBintervention] from KLInterventionsFFB
 
-* activity.detail.code.coding[FSIIIlevel2].system = FSIII
+* activity.detail.code.coding[FSIIIlevel2].system = $FSIII
 * activity.detail.code.coding[FSIIIlevel2] from KLInterventionsFSIII
 
 * activity.detail.code.coding[FSIIIlevel3].system = KLCommonproprietarySystem
@@ -63,7 +63,7 @@ InstanceOf: KLCommonCareSocialPlannedIntervention
 Title: "MarkTryksårsindsats"
 Description: "Mark's planlagte tryksårsindsats, med én tilknyttet kontakt"
 Usage: #example
-* activity.detail.code.coding[FSIIIlevel2] = FSIII#G1.39 "Sårbehandling"
+* activity.detail.code.coding[FSIIIlevel2] = $FSIII#G1.39 "Sårbehandling"
 * activity.detail.description = "Tryksår på venstre ben skal tilses og behandles dagligt. Vigtigt at tjekke for infektion"
 * created = 2020-05-29
 * intent = CarePlanIntentCodes#order
@@ -82,7 +82,7 @@ Title: "AndreasSocialeRelationer"
 Description: "Andreas' ydelse sociale relationer"
 Usage: #example
 * basedOn = Reference(NySocialIndsats)
-* activity.detail.code.coding[FFBintervention] = FFB#05cd5e81-1a3a-4bdd-901b-7ec96c12d990 "Støtte til sociale relationer"
+* activity.detail.code.coding[FFBintervention] = $FFB#05cd5e81-1a3a-4bdd-901b-7ec96c12d990 "Støtte til sociale relationer"
 * activity.detail.status = CarePlanActivityStatus#in-progress
 * subject = Reference(Andreas)
 * intent = CarePlanIntentCodes#order
@@ -95,7 +95,7 @@ Title: "AndreasDagligeOpgaver"
 Description: "Andreas' ydelse daglige opgaver"
 Usage: #example
 * basedOn = Reference(NySocialIndsats)
-* activity.detail.code.coding[FFBintervention] = FFB#638f44df-6bf2-47f8-9935-b8fdc83e5bf5 "Støtte til daglige opgaver i hjemmet"
+* activity.detail.code.coding[FFBintervention] = $FFB#638f44df-6bf2-47f8-9935-b8fdc83e5bf5 "Støtte til daglige opgaver i hjemmet"
 * activity.detail.status = CarePlanActivityStatus#in-progress
 * subject = Reference(Andreas)
 * intent = CarePlanIntentCodes#order

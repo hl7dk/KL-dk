@@ -97,3 +97,15 @@ This implementation guide is regularly updated, and stable versions published on
 
 #### Instance level
 When implementing use cases exploiting the profiles in this implementation guide, there may be a need to keep track of temporal development in data. Without knowing the specific use cases and implementation paradigm, unambiguous guidance about change management cannot be given. However, general guidance is available [here](https://www.kl.dk/media/51545/notat-om-tidsmaessig-udvikling-i-fsiii-og-ffb-data-vha-fki.pdf) in Danish.
+
+### Dependencies
+{% include dependency-table.xhtml %}
+
+### Cross Version Analysis
+{% include cross-version-analysis.xhtml %}
+
+### Global Profiles
+{% include globals-table.xhtml %}
+
+### IP Statements
+{% include ip-statements.xhtml %}

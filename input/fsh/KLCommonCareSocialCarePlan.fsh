@@ -38,7 +38,7 @@ Description: "Overall CarePlan for Danish municipalities, for individual plans r
 * activity contains
    carePlanEvaluation 0..*
 
-* activity[carePlanEvaluation].detail.code = KLCommonCareSocialCodes#95ec4535-8fe8-4296-867c-35de421794cf //Evaluering (som her overbegreb til støttebehovsvurdering, helhedsvurdering etc.)
+* activity[carePlanEvaluation].detail.code = $CareSocialCodes#95ec4535-8fe8-4296-867c-35de421794cf //Evaluering (som her overbegreb til støttebehovsvurdering, helhedsvurdering etc.)
 * activity[carePlanEvaluation].outcomeReference only Reference(KLCommonCareSocialEvaluation) //støttebehovsvurdering
 
 * extension contains
@@ -71,7 +71,7 @@ Description: "Andreas social indsats vedr. midlertidigt ophold"
 Usage: #example
 * status = RequestStatusCodes#active
 * intent = CarePlanIntentCodes#order
-* category = KLCommonCareSocialCodes#4a297733-4d66-4726-a933-590d55cf91e0 "Social indsats"
+* category = $CareSocialCodes#4a297733-4d66-4726-a933-590d55cf91e0 "Social indsats"
 * subject = Reference(Andreas)
 * created = 2020-07-06
 * period.start = 2020-07-07
@@ -82,7 +82,7 @@ Usage: #example
 * addresses[0] = Reference(AndreasMaalgruppeUdviklingshamning)
 * addresses[0].extension[conditionRank].valuePositiveInt = 1
 * activity.outcomeReference = Reference(AndreasStottebehov)
-* activity.detail.code = KLCommonCareSocialCodes#95ec4535-8fe8-4296-867c-35de421794cf
+* activity.detail.code = $CareSocialCodes#95ec4535-8fe8-4296-867c-35de421794cf
 * activity.detail.status = CarePlanActivityStatus#completed
 
 Instance: NySocialIndsats
@@ -93,7 +93,7 @@ Usage: #example
 * subject = Reference(Andreas)
 * description = "Andreas plan for alment botilbud omfatter socialpædagogiske tiltag, med fokus på at klare sig selv i hverdagsaktiviteter, og opbygge relationer til personale og de andre beboere."
 * careTeam = Reference(AlmBotilbud)
-* category = KLCommonCareSocialCodes#4a297733-4d66-4726-a933-590d55cf91e0 "Social indsats"
+* category = $CareSocialCodes#4a297733-4d66-4726-a933-590d55cf91e0 "Social indsats"
 * addresses = Reference(AndreasMaalgruppeUdviklingshamning)
 * created = 2020-08-12
 * goal[fpurpose] = Reference(AndreasIndsatsformaal2)

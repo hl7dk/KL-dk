@@ -52,7 +52,7 @@ Description: "Områdenotat vedr. Judiths mobilitet"
 Usage: #example
 * subject = Reference(Judith)
 * code.coding.code = #J3
-* code.coding.system = FSIII
+* code.coding.system = $FSIII
 * code.coding.display = "Mobilitet"
 * effectiveDateTime = 2020-08-11T15:28:17-01:00
 * valueCodeableConcept.text = "Judith har faldtendens, men er meget dedikeret ift. at lære at bruge sin rollator indendørs og udendørs, og desuden går hun en tur på 30min hver dag"
@@ -66,7 +66,7 @@ Description: "Områdenotat vedr. respiration og cirkulation for Mark"
 Usage: #example
 * subject = Reference(Mark)
 * code.coding.code = #I7
-* code.coding.system = FSIII
+* code.coding.system = $FSIII
 * code.coding.display = "Respiration og cirkulation"
 * effectiveDateTime = 2020-06-05
 * valueCodeableConcept.text = "Mark har tendens til hævede fødder og ben, så der er et potentielt problem med cirkulationen, som kan forvære Mark's tryksår"
@@ -80,7 +80,7 @@ Description: "Områdenotat vedr. hud og slimhinder for Mark"
 Usage: #example
 * subject = Reference(Mark)
 * code.coding.code = #I4
-* code.coding.system = FSIII
+* code.coding.system = $FSIII
 * code.coding.display = "Hud og slimhinder"
 * effectiveDateTime = 2020-06-05
 * valueCodeableConcept.text = "Tryksår konstateret, ellers er Marks hud fin"
@@ -94,7 +94,7 @@ Description: "Mads' mentale funktioner, med perspektivet, at det er oplysninger 
 Usage: #example
 * subject = Reference(Mads)
 * code.coding.code = #25c5c614-305f-46cd-9891-55d564fc30cf
-* code.coding.system = FFB
+* code.coding.system = $FFB
 * code.coding.display = "Mentale funktioner"
 * effectiveDateTime = 2020-12-12T13:16:19-04:00
 * valueCodeableConcept.text = "Besøg hos Mads, hvor hans mor, Malene, deltager, 3.
@@ -105,7 +105,7 @@ kan overskue, det han skal. Så får han ondt bag i hovedet, og det
 er som om, han ikke kan tænke. Det kan også ske, hvis andre ikke
 behandler ham ordentligt eller ikke forstår ham"
 * status = #final
-* extension[matterOfInterestInformer].valueCodeableConcept = KLCommonCareSocialCodes#25b4e705-2e9a-47a2-b11a-c829316b9d3a
+* extension[matterOfInterestInformer].valueCodeableConcept = $CareSocialCodes#25b4e705-2e9a-47a2-b11a-c829316b9d3a
 * performer = Reference(KristinaFraVoksensocialomraadet)
 
 Instance: MentalInformationMadsOthers
@@ -115,7 +115,7 @@ Description: "Mads' mentale funktioner, med perspektivet, at det er oplysninger 
 Usage: #example
 * subject = Reference(Mads)
 * code.coding.code = #25c5c614-305f-46cd-9891-55d564fc30cf
-* code.coding.system = FFB
+* code.coding.system = $FFB
 * code.coding.display = "Mentale funktioner"
 * effectiveDateTime = 2020-12-12T13:16:19-04:00
 * valueCodeableConcept.text = "Besøg hos Mads, hvor hans mor, Malene, deltager, 3.
@@ -154,5 +154,5 @@ udadreagerende, når han er vred. Vreden udløses af naturlige
 overdrevne. […] Der ses ikke øvrige symptomer på angst, OCD,
 depression eller psykose."
 * status = #final
-* extension[matterOfInterestInformer].valueCodeableConcept = KLCommonCareSocialCodes#63338442-7b2e-405b-acc0-142361ef19f1
+* extension[matterOfInterestInformer].valueCodeableConcept = $CareSocialCodes#63338442-7b2e-405b-acc0-142361ef19f1
 * performer = Reference(KristinaFraVoksensocialomraadet)

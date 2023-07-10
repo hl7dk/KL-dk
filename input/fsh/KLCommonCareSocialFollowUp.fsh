@@ -31,7 +31,7 @@ Usage: #example
 * subject = Reference(Mark)
 * code = SCT#712744002
 * valueCodeableConcept.text = "Borgers funktionsevne er blevet bedre, særligt ift. mobilitet. Der skal ses på om nogle af §83 indsatserne, med fordel kan gøres til §83a for yderligere at styrke hverdags rehabiliteringsindsatsen og dermed borgers funktionsniveau. "
-* valueCodeableConcept = FSIII#E4 "revisitation"
+* valueCodeableConcept = $FSIII#E4 "revisitation"
 * effectiveDateTime = 2020-04-11
 * performer = Reference(HanneFraVisitationenAalborg)
 * status = #final
@@ -44,7 +44,7 @@ Usage: #example
 * subject = Reference(Andreas)
 * code = SCT#712744002
 * valueCodeableConcept.text = "Det midlertidige botilbud har været godt for Andreas og hans mor. Andreas har udviklet sig positivt vedr. sociale relationer i perioden. Det vurderes at Andreas skal revisiteres mhp. at få tildelt alment botilbud"
-* valueCodeableConcept = FFB#b4c01aa8-82fd-44e4-83ff-ca19ec02c779
+* valueCodeableConcept = $FFB#b4c01aa8-82fd-44e4-83ff-ca19ec02c779
 * effectiveDateTime = 2020-08-05
 * performer = Reference(BirteFraVisitationenMorsoe)
 * status = #final

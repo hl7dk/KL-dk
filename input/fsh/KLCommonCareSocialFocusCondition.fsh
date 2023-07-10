@@ -16,7 +16,7 @@ Description:    "Conditions which may be used to express the focus of an interve
 //Declaring the value set binding for the KLConditionCode slice, and setting the system.
 //System is fixed to allow the slicing to work
 * code.coding[FSIIIConditionCode] from KLConditionCodesFSIII (required)
-* code.coding[FSIIIConditionCode].system = FSIII
+* code.coding[FSIIIConditionCode].system = $FSIII
 
 //Declaring the value set binding for the SCTConditionCode slice, and setting the system.
 //System is fixed to allow the slicing to work (See Aliases for value set, and system info)
@@ -24,7 +24,7 @@ Description:    "Conditions which may be used to express the focus of an interve
 * code.coding[SCTConditionCode].system = SCT
 
 * code.coding[FFBCodesCT] from KLConditionsAndTargetGroupsFFB (required)
-* code.coding[FFBCodesCT].system = FFB
+* code.coding[FFBCodesCT].system = $FFB
 
 * code.coding[ICD10codes].system = "urn:oid:1.2.208.176.2.4.12"
 
@@ -55,7 +55,7 @@ InstanceOf: KLCommonCareSocialFocusCondition
 Title: "Andreas målgruppe udviklingshæmning"
 Description: "Andreas' målgruppe"
 Usage: #example
-* code.coding[FFBCodesCT] = FFB#97c355cc-84e3-46d0-ac1b-00bc627d089f "Udviklingshæmning"
+* code.coding[FFBCodesCT] = $FFB#97c355cc-84e3-46d0-ac1b-00bc627d089f "Udviklingshæmning"
 * subject = Reference(Andreas)
 * asserter = Reference(MarianneLaege)
 * recorder = Reference(BirteFraVisitationenMorsoe)

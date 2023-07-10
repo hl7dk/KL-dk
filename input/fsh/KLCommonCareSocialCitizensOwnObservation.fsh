@@ -36,8 +36,8 @@ InstanceOf: KLCommonCareSocialCitizensOwnObservation
 Usage: #example
 Title: "Judith Gå Egenvurdering"
 Description: "Judiths vurdering af egen evne til at gå"
-* code.coding = FSIII#D
-* valueCodeableConcept = FSIII#D2
+* code.coding = $FSIII#D
+* valueCodeableConcept = $FSIII#D2
 * subject = Reference(Judith)
 * focus = Reference(ConditionWalking)
 * effectiveDateTime = 2020-08-11
